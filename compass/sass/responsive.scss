@@ -1,0 +1,597 @@
+﻿/*  MIN WIDTH 1689PX -------------------------- */
+@media screen and (min-width:1698PX) {
+  #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal-dialog .modal-content .modal-body {
+    height: 100vh;
+  }
+  .modal {
+    left: 42vw;
+    max-width: 490px;
+    top: 5vh;
+    overflow: visible;
+  }
+  section#points {
+    .table-responsive,
+    header,
+    #table-banner-add
+     {
+      max-width: 620px;
+      float: right;
+    }
+}
+
+
+}
+
+
+
+
+
+/*  MAX WIDTH 1200PX --------------------------------- */ 
+@media screen and (max-width:1200px){    
+    #dashboard-wrapper {
+
+/*  Header ------------------------------- */
+      .navbar-wrapper {
+          #PrediktaTop {
+              .container {
+                  ul {
+                  li {
+                      h3 {
+                          font-size:1.4em;
+                          margin-right:0;
+                          span {
+    
+                          }
+                      }
+                  }
+                  li#logoListItem {
+                      a#logoLink {
+                          .lologo {
+                              background-position:160% 100%;
+                              width:160px;
+                              height:50px;
+                              margin-top:10px;
+                              margin-left:0;
+                          }
+                      }
+                  }
+                  li.know-football {
+                  }
+                  li.play-predikta-button {
+                      #play-predikta-button {
+                          margin-top:10px;
+                          padding:9px 16px;
+                          @include scale(0.9, 1);
+                      }
+                  }
+                  li.read-predikta-blog {
+                      width:15%;
+                      a {
+                          font-size: 0.9em;
+                          line-height: 16px;
+                          padding-left: 0;
+                          padding-right: 0;
+                          @include scale(0.8, 1);
+                      }
+                  }            
+                  li.admin-panel {
+                      margin-top:0;
+                      .name-clock-wrapper {
+                      }
+                      h1 {
+                          font-size:1em;
+                          margin-top:11px;
+                      }
+                      span {
+                      }
+                      .btn-group {
+                          button {
+                              padding:5px;
+                          }                  
+                          .glyphicon-cog:before {
+                              font-size:2.4em;
+                          }            
+                          .dropdown-menu {
+                              left:-128px;
+                          }
+                          &:hover {
+                              .glyphicon-cog:before {
+                              } 
+                              .dropdown-menu {
+                              } 
+                          }        
+                      }
+                  }
+                }
+            }
+          }
+        } 
+/*  END Header --------------------------- */
+
+    }   
+}  
+/*  END MAX WIDTH 1200PX ----------------------------- */ 
+
+
+/*  MAX WIDTH 1024PX --------------------------------- */ 
+@media screen and (max-width:1024px){
+#dashboard-wrapper {
+/*  Header -------------------------------------------- */
+    .navbar-wrapper {
+          #PrediktaTop {
+              .container {
+                  ul {
+                  li {
+                      h3 {
+                          width:234px;
+                          font-size:1.1em;
+                          @include scale(0.7,1);
+                          margin-top:5px;
+                          position:relative;
+                          left:10%;
+                          span {
+    
+                          }
+                      }
+                  }
+                  li#logoListItem {
+                      a#logoLink {
+                          .lologo {
+                              width:150px;
+                              height:47px;
+                              margin-top:0;
+                          }
+                      }
+                  }
+                  li.know-football {
+                      width:33%;
+                  }
+                  li.play-predikta-button {
+                      #play-predikta-button {
+                          border-radius:6px;
+                          border-width:2px;
+                          margin-top:3px;
+                          padding:5px 11px;
+                          @include scale(0.8, 1);
+                          font-size:0.8em;
+                          &:before {
+                              border-width:2px;
+                              border-radius:6px;
+                          }
+                      }
+                  }
+                  li.read-predikta-blog {
+                      width:12%;
+                      a {
+                          font-size: 0.8em;
+                          line-height: 14px;
+                          padding-left: 0;
+                          padding-right: 0;
+                          padding-top:5px;
+                          @include scale(0.8, 1);
+                      }
+                  }            
+                  li.admin-panel {
+                      margin-top:0;
+                      .name-clock-wrapper {
+                          font-size:0.8em;
+                      }
+                      h1 {
+                          font-size:1em;
+                          margin-top:11px;
+                      }
+                      span {
+                      }
+                      .btn-group {
+                          button {
+                              padding:3px;
+                          }                  
+                          .glyphicon-cog:before {
+                              font-size:2em;
+                          }            
+                          .dropdown-menu {
+                              left:-128px;
+                          }
+                          &:hover {
+                              .glyphicon-cog:before {
+                              } 
+                              .dropdown-menu {
+                              } 
+                          }        
+                      }
+                  }
+                }
+            }
+          }
+        } 
+/*  END Header ---------------------------------------- */
+/*  POINTS SECTION ------------------------ */
+    section#points {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      float: left;
+      padding-left: 0;
+      padding-right: 0;
+      header {
+        h1 {
+          font-size:2em;
+        }
+        .leaguedrop {
+          width:220px;
+          height:30px;
+          select {
+            width:220px;
+          }
+        }
+      }
+
+.table-responsive {
+   table {
+        font-size:0.8em;
+        thead {
+          display: block;
+          float: left;
+          width: 100%;
+          tr {
+            th.away {
+              padding-left: 29px;
+              padding-right: 2px;
+            }
+            th.akka {
+              padding-left:0;
+            }
+            th.home-team {
+              padding-left:0;
+              min-width:90px;
+            }
+            th.actual {
+              padding-left:0;
+              padding-right:5px;
+            }
+            th.away-team {
+              padding-left:4px;
+              min-width:65px;
+            }
+          }
+        }
+        tbody {
+          display: block;
+          float: left;
+          width: 100%;
+          tr {
+          .game-state {
+            padding-left:20px;
+          }
+          .game-state.bet-in-play {
+            padding-left:0;
+            span {
+              width:50px;
+              font-size:9px;
+            }
+          }
+          td.home-team {
+            min-width:100px;
+          }
+          td.away-team {
+            min-width:80px;
+            padding-left:25px;
+          }
+          td.akka {
+            padding-left: 9px;
+            padding-right: 9px;
+            width: 0;
+          }
+            .client-away,
+            .client-home,
+            .actual-away,
+            .actual-home {
+              min-width:10px;
+            }
+            .actual-home,
+            .client-home {
+              padding-left:6px;
+            }
+          }
+          tr.pending {
+            td.game-state {
+              padding-left:7px;
+              .day,
+              .time {
+                font-size:12px;
+              }
+            }
+          }
+        }
+        tfoot {
+          .tfoot-header {
+            padding-left:25px;            
+          }
+          tr {
+            padding-left:24px;
+            td {
+              width:78px;
+            }
+          }
+        }
+      }   
+    }
+}
+/*  END POINTS SECTION -------------------- */
+    #predikta-dashboard {
+/*  LEAGUE SECTION ------------------------ */
+    section#league {
+      width:100%;
+      max-width:350px;
+      display:inline-block;
+      #details {
+        height: 364px;
+        overflow-y: scroll;
+      }
+      header {
+        #myTAb {
+          li,
+          li.active {
+            a {
+              font-size:0.8em;
+              margin-top:9px;
+              width:80px;
+            }
+          }
+        }
+        h1 {
+          font-size:2em;
+        }
+      }
+    } 
+    #myTabContent {
+        #week {
+          #leagues {
+            .table-responsive {
+              table {
+                tr {
+                  width:100%;
+                }
+                font-size:0.8em;
+                thead {
+                  display: block;
+                  float: left;
+                  margin-bottom:6px;
+                  margin-top:10px;
+                  width: 100%;
+                  tr {
+                    th.away {
+                      padding-left: 15px;
+                      padding-right: 0;
+                    }
+                    th.akka {
+                      padding-left:0;
+                    }
+                    th.home-team {
+                      padding-left:0;
+                      min-width:99px;
+                    }
+                    th.actual {
+                      padding-left:7px;
+                      padding-right:1px;
+                    }
+                    th.away-team {
+                      padding-left:4px;
+                      min-width:65px;
+                    }
+                  }
+                }
+          tbody {
+          display: block;
+          float: left;
+          width: 100%;
+          tr {
+          .game-state {
+            padding-left:20px;
+          }
+          .game-state.bet-in-play {
+            padding-left:0;
+            span {
+              width:50px;
+              font-size:9px;
+            }
+          }
+          td.home-team {
+            min-width:100px;
+          }
+          td.away-team {
+            min-width:80px;
+            padding-left:25px;
+          }
+          td.akka {
+            padding-left: 9px;
+            padding-right: 9px;
+            width: 0;
+          }
+            .client-away,
+            .client-home,
+            .actual-away,
+            .actual-home {
+              min-width:10px;
+            }
+            .actual-home,
+            .client-home {
+              padding-left:6px;
+            }
+          }
+          tr.pending {
+            td.game-state {
+              padding-left:7px;
+              .day,
+              .time {
+                font-size:12px;
+              }
+            }
+          }
+        }
+          tfoot {
+          .tfoot-header {
+            padding-left:25px;            
+          }
+          tr {
+            td {
+              width:78px;
+            }
+          }
+        }
+        }   
+      }
+            .modal {
+              left:41vw;
+              top:3vh;
+              max-width:340px;
+              .modal-dialog {
+                width:340px;
+                .modal-content {
+                  .modal-header {
+                    button.close {
+                      width:auto;
+                      clear:left;
+                    }
+                    h4#myModalLabel {
+                      font-size:1.8em;
+                      margin-top:8px;
+                    }
+                  }
+                  .modal-body {
+                    max-width:340px;
+                  }
+                }
+              }     
+            }
+            #players {
+              height:350px;
+            }
+          }
+          #leagues h3,
+          #seasonDetails h3 {
+            font-size:0.8em;
+           }   
+        }
+        #season {
+          #leagues h3, 
+          #seasonDetails h3 {
+            font-size:0.8em;
+           }
+        }
+    } 
+/*  END LEAGUE SECTION ------------------------ */
+}
+
+    }
+
+ } 
+/*  END  MAX WIDTH 1024PX ---------------------------- */ 
+
+
+/*  MAX WIDTH 767PX ---------------------------------- */ 
+  @media screen and (max-width:767px){
+    #dashboard-wrapper {
+/*  Header -------------------------------------------- */
+      .navbar-wrapper {
+          #PrediktaTop {
+              .container {
+                  ul {
+                  li {
+                      h3 {
+                          width:234px;
+                          font-size:1.1em;
+                          @include scale(0.7,1);
+                          margin-top:5px;
+                          position:relative;
+                          left:10%;
+                          span {
+    
+                          }
+                      }
+                  }
+                  li#logoListItem {
+                      display: block;
+                      float: left;
+                      width: 100%;
+                      a#logoLink {
+                          display: block;
+                          float: left;
+                          padding: 0;
+                          position: relative;
+                          width: 100%;
+                          z-index: 99999;
+                          .lologo {
+                              width:150px;
+                              height:47px;
+                              margin-top:0;
+                          }
+                      }
+                  }
+                  li.know-football {
+                      width:33%;
+                  }
+                  li.play-predikta-button {
+                      #play-predikta-button {
+                          border-radius:6px;
+                          border-width:2px;
+                          margin-top:3px;
+                          padding:5px 11px;
+                          @include scale(0.8, 1);
+                          font-size:0.8em;
+                          &:before {
+                              border-width:2px;
+                              border-radius:6px;
+                          }
+                      }
+                  }
+                  li.read-predikta-blog {
+                      width:12%;
+                      a {
+                          font-size: 0.8em;
+                          line-height: 14px;
+                          padding-left: 0;
+                          padding-right: 0;
+                          padding-top:5px;
+                          @include scale(0.8, 1);
+                      }
+                  }            
+                  li.admin-panel {
+                      margin-top:0;
+                      .name-clock-wrapper {
+                          font-size:0.8em;
+                      }
+                      h1 {
+                          font-size:1em;
+                          margin-top:11px;
+                      }
+                      span {
+                      }
+                      .btn-group {
+                          button {
+                              padding:3px;
+                          }                  
+                          .glyphicon-cog:before {
+                              font-size:2em;
+                          }            
+                          .dropdown-menu {
+                              left:-128px;
+                          }
+                          &:hover {
+                              .glyphicon-cog:before {
+                              } 
+                              .dropdown-menu {
+                              } 
+                          }        
+                      }
+                  }
+                }
+            }
+          }
+        } 
+    }
+/*  END Header ---------------------------------------- */
+
+ } 
+/*  END  MAX WIDTH 767PX ----------------------------- */ 
+

@@ -1,0 +1,929 @@
+﻿/* Predikta Custom Styles ==================================== 
+   =========================================================== */
+
+/*  Carosel buttons ------------------------------ */
+.carousel-indicators {
+  bottom: 5px;
+  height: auto;
+  left: 0;
+  list-style: outside none none;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 15;
+  padding:0;
+  margin:0;
+  li {
+    margin: 0;
+    width: 33%;
+    height: 50px;
+    border-radius: 0;
+    height:89px;
+    text-indent:0;
+  }
+  .active {
+    background-color:rgba(255, 255, 255, 0.7);
+    margin: 0;
+    width: 33%;
+    height: 89px;
+    border-radius: 0;
+  }
+}
+/*  END Carosel buttons -------------------------- */
+
+
+.navbar .lologo {
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
+  float: left;
+  height: 62px;
+  margin: 2px 0 0 5px;
+  width: 100%;
+  background-size: cover;
+}
+.logIn,
+.signUp {
+  margin-top: 10px;
+}
+a#logoLink {
+  display: block;
+  float: none;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin: 0 auto;
+  width: 44%;
+}
+
+.navbar-inverse .navbar-nav > li > a.social-link {
+    color: #1788ca;
+    font-family: "typicons";
+    font-size: 2.5em;
+    font-style: normal;
+    font-weight: normal;
+    max-width:50px;
+}
+
+a.twitter-predikta:before {
+    content: '\e0f9'; /* '' */
+}
+
+a.facebook-predikta:before {
+    content: "";
+    font-size: 1.3em;
+}
+
+a.linkedin-predikta:before {
+    content: "";
+}
+
+a.googleplus-predikta:before {
+    content: "";
+}
+
+a.twitter-predikta,
+a.facebook-predikta,
+a.linkedin-predikta,
+a.googleplus-predikta {
+    bottom: 10px;
+    position: relative;
+}
+
+a.googleplus-predikta span,
+a.twitter-predikta span,
+a.facebook-predikta span,
+a.linkedin-predikta span {
+    display: block;
+    text-indent: -9000px;
+}
+li.socialListItem {
+  margin-left: 20px;
+}
+a.twitter-predikta {
+  top: 8px;
+}
+a.facebook-predikta {
+  top: 12px;
+}
+a.linkedin-predikta {
+  top: 6px;
+}
+a.googleplus-predikta {
+  font-size: 3em;
+  top: 8px;
+}
+ul.nav.navbar-nav {
+  width: 100%;
+}
+li#logoListItem {
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  float: left;
+}
+a#logInButton, 
+a#signUpButton {
+  border: 2px solid #1788ca;
+  border-radius: 4px;
+  color: #1788ca;
+  font-size: 1em;
+  margin-right: 20px;
+  margin-top: 10px;
+  padding: 4px 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 80px;
+}
+ul.caption-list {
+  clear: both;
+  display: block;
+  float: left;
+}
+div.container div.carousel-caption h3,
+ul.caption-list li h3 {
+  color: $prediktaRed;
+  font-size: 1.6em;
+  margin-bottom: 5px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+div.boocarousel-caption h3 span,
+ul.caption-list li h3 span {
+  clear: both;
+  color: $prediktaBlue;
+  display: block;
+  font-size: 1.4em;
+}
+ul.caption-list li p {
+  color: #595959;
+  font-size: 14px;
+  margin: 0 auto;
+  width: 70%;
+}
+ul.caption-list li {
+  background-color: #ffffff;
+  display: inline;
+  float: left;
+  margin-right: 5%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  transform: perspective(600px) rotateY(20deg);
+  width: 28%;
+}
+ul.caption-list li {
+  background-color: #fff;
+  display: inline;
+  float: left;
+  width: 28%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 5%;
+  @include perspective-rotate(600px, 20deg);
+  @include backface-visibility(hidden);
+}
+.moreOne {
+    span:before {
+    bottom: 6px;
+    color: $prediktaBlue;
+    content: "";
+    font-size: 4.8em;
+    left: 1px;
+    position: relative;
+  }
+  span {
+    background-color: #fff;
+    color: $prediktaBlue;
+    display: block;
+    font-family: "typicons";
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 40px;
+  }
+}
+
+.goTop {
+  background-color: transparent;
+  display: block;
+  float: right;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  position: fixed;
+  right: 0;
+  text-align: left;
+  top: 94%;
+  width: 5%;
+  position: fixed;
+
+  a:before {
+    bottom: -20px;
+    color: #fff;
+    content: "";
+    display: block;
+    font-size: 3.6em;
+    left: 13px;
+    position: absolute;
+    width: 100%;
+    z-index: 99999;
+  }
+
+  a {
+    background-color: rgba(24, 136, 202, 0.7);
+    border-radius: 6px;
+    display: block;
+    font-family: "typicons";
+    height: 35px;
+    margin: 0 auto;
+    position: relative;
+    width: 54px;
+    z-index: 99999;
+  }
+}
+
+
+#poolSlide {
+  h1 {
+    margin-top: 0;
+    font-size: 2em;
+  }
+  h3 span {
+    bottom: 15px;
+    color: #fff;
+    display: block;
+    font-size: 1.6em;
+    position: relative;
+  }
+    .btn-primary {
+    display: block;
+    top: 20px;
+  }
+  h3 {
+    color: #fff;
+    display: block;
+    font-size: 4.2em;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  p {
+    bottom: 15px;
+    color: #fff;
+    display: block;
+    font-size: 1.8em;
+    line-height: 1;
+    margin: 0 auto;
+    position: relative;
+    width: 30%;
+    text-transform: uppercase;
+  }
+}
+
+
+.pool-size-guarantee {
+  background-image: url("../img/red-chevron.png");
+  background-size: cover;
+  color: #fff;
+  display: block;
+  float: right;
+  font-size: 1.4em;
+  height: 24%;
+  line-height: 20px;
+  position: relative;
+  right: 22%;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  width: 10%;
+
+  span {
+    display: block;
+    font-size: 2.2em;
+    height: 34px;
+    margin-top: 54px;
+  }
+
+  p {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+  }
+}
+
+#PrediktaTop nav div.container {
+  background-color:#fff;
+}
+h1#about-predikta-heading {
+  color: $prediktaRed;
+  font-size: 2.2em;
+  margin-bottom: 4%;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  span {
+    color: $prediktaBlue;
+    display: block;
+    font-size: 1.4em;
+  }
+}
+
+.football-icon:before {
+  content: "";
+}
+.navbar-wrapper {
+  background-color: #fff;
+  border-bottom: 5px solid $prediktaBlue;
+}
+.carousel-inner {
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.container.marketing {
+  padding-left:0;
+  padding-right:0;
+}
+.container.marketing .row {
+  clear: both;
+  display: block;
+  float: left;
+  height: 100%;
+}
+#about-predikta-football {
+  clear: both;
+  color: #1888ac;
+  display: block;
+  float: left;
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+}
+/* TOP Feature row 3 elements ------------------------------  */
+#about-predikta-row {
+  height: 100vh;
+  width: 100vw;
+  position:relative;
+  #play-predikta-button {
+    top:79%;
+    top:80vh;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 200px;
+    z-index: 2147483647;
+  }
+  img {
+    max-height: 200px;
+  }
+  h2 {
+    color: #595959;
+    font-size: 1.8em;
+    font-weight: normal;
+    margin: 30px auto 0;
+    width: 55%;
+  }
+}
+/* END TOP Feature row 3 elements ---------------------------  */
+
+
+a.predikta-sign-up,
+a.have-a-go-next,
+a.make-money-next,
+a.this-game-next,
+a.about-predikta-next,
+a.where-predikta-next {
+  @include nextLink;
+}
+.sign-up-wrapper,
+.about-predikta-wrapper,
+.this-game-wrapper,
+.make-money-wrapper,
+.have-a-go-wrapper,
+.where-predikta-wrapper {
+  @include nextLinkWrapper;
+}
+.about-predikta-wrapper {
+  background-color: #000;
+  border-width: 3px;
+  font-size: 1.6em;
+  height: 60px;
+  padding: 12px 0 0;
+  width: 220px;
+  color: $prediktaDarkBlue;
+}
+element.style {
+  bottom: 10%;
+}
+.btn.btn-lg.btn-primary {
+  font-size: 1.1em;
+}
+.about-predikta-next .arrow-down-2:before {
+  bottom: 42px;
+  color: $prediktaDarkBlue;
+  left: 25px;
+}
+.about-predikta-next .arrow-down-2:after {
+  bottom: 46px;
+  color: #000;
+  right: 13px;
+}
+a.about-predikta-next {
+  bottom: 15%;
+  z-index: 2147483647;
+  width: auto;
+}
+.arrow-down,
+.arrow-down-2 {
+  clear: both;
+  display: block;
+  height: 20px;
+  margin-top: 0;
+  width: 100%;
+}
+.arrow-down:before,
+.arrow-down-2:before,
+.arrow-down-2:after {
+  bottom: 42px;
+  color: $prediktaRed;
+  content: "";
+  font-family: typicons;
+  font-size: 5em;
+  height: 0;
+  position: relative;
+  width: 0;
+}
+.arrow-down-2:before {
+  bottom: 42px;
+  color: $prediktaDarkBlue;
+  left: 17px;
+}
+#play-predikta-button {
+  @include play-predikta-button;
+}
+#play-predikta-button:before {
+  @include play-predikta-button-before;
+}
+.arrow-down-2:after {
+  bottom: 45px;
+  right: 21px;
+  color: #fff;
+}
+#moreAboutPredikta {
+  position: absolute;
+  width: 100%;
+}
+#PrediktaTop {
+  max-width: 1200px;
+}
+.about-predikta.col-lg-4 {
+  clear: none;
+  display: inline-block;
+  width: 32%;
+}
+.predikta-row.row.featurette,
+.predikta-row1.row.featurette,
+.predikta-row2.row.featurette {
+  position: relative;
+  display:block;
+  float:left;
+  width:100%;
+}
+/*  ROW ONE Reward Skill Feature section ----------------------  */
+.predikta-row1.row.featurette {
+  // background-image: url("../img/first-feature-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height:100vh;
+  margin: 0;
+  padding: 0;
+  width:100vw;
+  #play-predikta-button {
+    top:79%;
+    top:80vh;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 200px;
+    z-index: 2147483647;
+  }
+  h1 {
+    color: #e31c21;
+    float: left;
+    font-family: helvetica;
+    font-size: 5.4em;
+    font-size:4vw;
+    font-weight: bold;
+    left: 5%;
+    letter-spacing: 0;
+    max-height: 140px;
+    position: relative;
+    text-transform: uppercase;
+    @include rotate(-9deg);
+      span {
+        bottom: 60px;
+        clear: both;
+        display: inline-block;
+        float: left;
+        font-size: 1.4em;
+        position: relative;
+        text-indent: 100px;
+      }
+  }
+  .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    bottom:26px;
+  }
+  .col-md-9 {
+    display: block;
+    float: right;
+    margin-top: 5%;
+  }
+  .col-md-5 {
+    padding-left:0;
+    padding-right:0;
+    bottom:99px;
+  }
+  img.blue-arrows-both {
+    position: relative;
+    right: 8%;
+    transform: rotate(13deg);
+    top:31px;
+  }
+  img.down-arrows {
+    bottom: 51px;
+    max-width: 74px;
+    position: relative;
+    transform: rotate(6deg);
+  }
+  img.arrow-copy {
+    bottom: 172px;
+    bottom: 22vh;
+    display: inline;
+    float: right;
+    max-width: 440px;
+    position: relative;
+    right: 26%;
+  }
+}
+/*  END ROW ONE Reward Skill Feature section ------------------  */
+
+/*  ROW TWO HAVE A GO Feature section -------------------------  */
+.predikta-row2.row.featurette {
+  //  background-image: url("../img/second-feature-background.jpg");
+  height:100vh;
+  width:100vw;
+  background-size:100% 100%;
+  position:relative;
+  #play-predikta-button {
+    top:79%;
+    top:80vh;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 200px;
+    z-index: 2147483647;
+  }
+  h1 {
+    color: $prediktaDarkBlue;
+    display: block;
+    font-family: helvetica;
+    font-size: 9em;
+    font-size:6.5vw;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 0.8em;
+    margin-top: 66px;
+    position: relative;
+    right: 4%;
+    text-transform: uppercase;
+    transform: scale(0.9, 1.2);
+    width: 100%;
+  }
+  h2 {
+    background-image: url("../img/hand.png");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    color: #ec1c22;
+    display: inline-block;
+    float: right;
+    font-size: 3.6em;
+    padding-bottom: 34px;
+    padding-right: 152px;
+    padding-top: 96px;
+    position: absolute;
+    right: 86px;
+    text-transform: uppercase;
+    top: 107px;
+    transform: rotate(-9deg);
+  }
+      h3 {
+        background-image: url("../img/target.png");
+        background-position: 99% 78px;
+        background-repeat: no-repeat;
+        background-size: 33% auto;
+        bottom: 10%;
+        bottom:10vh;
+        color: #838383;
+        float: right;
+        font-size: 4em;
+        margin-top: 0;
+        padding-bottom: 137px;
+        padding-top: 10%;
+        position: relative;
+        text-transform: uppercase;
+        transform: rotate(17deg);
+        width: 57%;
+        .lead {
+          color: #838383;
+          display: block;
+          font-size: 1.9vw;
+          height: 30px;
+          margin: 0;
+          padding: 0;
+          position: relative;
+        }
+        &:after {
+          bottom: 100px;
+          clear: none;
+          color: #898989;
+          content: "";
+          display: inline;
+          font-family: "Glyphicons Halflings";
+          font-size: 2.5em;
+          position: absolute;
+          right: 300px;
+        }
+      }
+}
+/*  END ROW TWO  HAVE A GO Feature section --------------------  */
+
+/*  Feature row THREE make money ------------------------------  */
+.predikta-row3.row.featurette {
+  // background-image: url("../img/third-feature-background.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: 100% 100%;
+  position:relative;
+  #play-predikta-button {
+    top:79%;
+    top:80vh;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 200px;
+    z-index: 2147483647;
+  }
+  h1 {
+    color: #1996d3;
+    font-size: 8.2em;
+    margin-top: 3.5%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+   h2 {
+    color: #898989;
+    font-size: 4.2em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top:0;
+  }
+  img.prize-cup,
+  img.dollar-bill {
+    display:block;
+    margin:0 auto;
+  }
+  img.dollar-bill {
+    width:8%;
+  }
+  img.prize-cup {
+    width:9%;
+  }
+  .star-icon:before {
+    color: #898989;
+    content: "";
+    display: block;
+    float: none;
+    font-family: Typicons;
+    font-size: 4.2em;
+    margin: 9px auto 0;
+    text-align: center;
+    height:64px;
+  }
+}
+/*  END Feature row THREE make money --------------------------  */
+
+/*  Feature row FOUR this game --------------------------------  */
+.predikta-row4.row.featurette {
+  // background-image: url("../img/fourth-feature-background.jpg");
+  height: 92vh;
+  width: 100vw;
+  background-size: 100% 100%;
+  position:relative;
+  #play-predikta-button {
+    top:74%;
+    top:75vh;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 200px;
+    z-index: 2147483647;
+  }
+  .col-md-6 {
+    display: block;
+    float: left;
+    padding-top: 35px;
+    ul {
+      height: 50px;
+      left: 12%;
+      position: relative;
+      top: 15%;
+      transform: rotate(-14deg);
+      li {
+        height:35px;
+        list-style: outside none none;
+        &:nth-child(2) {
+          padding-left:60px;
+        }
+        &:nth-child(3) {
+          padding-left:120px;
+        }
+        &:nth-child(4) {
+          padding-left:180px;
+        }
+        img {
+          max-width:245px;
+          float:left;
+        }
+        h2 {
+          bottom: 8px;
+          color: #1888ca;
+          font-size: 3.2em;
+          left: 5px;
+          position: relative;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  #next-week-predikta {
+    padding-top: 89px;
+    h3 {
+      color: #df1c22;
+      font-size: 2.2em;
+      right:6%;
+      position:relative;
+      text-transform: uppercase;
+      transform: rotate(-14deg);
+      span {
+        display: block;
+        margin-left: 26%;
+      }
+    } 
+  }
+  #predikta-certainty {
+    h2 {
+      color: $prediktaBlue;
+      font-size: 3em;
+      margin-bottom:0;
+      margin-top: 47px;
+      text-align: center;
+      text-transform: uppercase;
+    }  
+    h1 {
+      color: $prediktaBlue;
+      font-size: 8em;
+      line-height:55px;
+      margin-top: 11px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom:0;
+    }  
+    p {
+      color: #1888ca;
+      display: block;
+      font-size: 1.4em;
+      line-height: 24px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 37%;
+    } 
+  }
+  .btn-primary {
+    top:10px;
+  }
+}
+/*  END Feature row FOUR this game ----------------------------  */
+
+/*  FOOTER ----------------------------------------------------  */
+footer {
+  background-color: #000000;
+  display: block;
+  float: left;
+  width: 100%;
+  ul {
+    display: block;
+    margin: 0 auto;
+    max-width: 1330px;
+    li {
+      display: inline;
+      float: left;
+      list-style: outside none none;
+      width:auto;
+      a {
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: underline;
+        font-style: italic;
+        width: 100%;
+        display: block;
+        float: left;
+        margin-left:15px;
+        img {
+          display: block;
+          float: left;
+          width: 100%;
+        }    
+      }
+    }
+    li.opta-logo {
+      margin-right:8%;
+      a {
+        img {
+          max-width:70px;
+          max-height:30px;
+        }
+      }
+    }
+    li.ladbrokes-logo {
+    margin-right:10%;
+      a {
+        img {
+          max-width: 106px;
+        }
+      }
+    }
+    li.stakes-ladders {
+      margin-left: 11%;
+      a {
+        img {
+          max-width: 169px;
+        }
+      }
+    }
+    li.age-rating {
+      position: absolute;
+      right: 15px;
+      a {
+        img {
+          max-width: 40px;
+        }
+      }
+    }
+  }
+  p.footer-predikta-info {
+    display: block;
+    width: 100%;
+    clear: both;
+    float: left;
+    text-align: center;
+  }
+}
+/*  END FOOTER ------------------------------------------------  */
+
+
+/* ===================================================
+   END Predikta custom styles
+   =================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

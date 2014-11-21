@@ -1,0 +1,124 @@
+﻿
+@mixin scale($x, $y) {
+   transform : scale( $x, $y);
+  -webkit-transform:scale( $x, $y); /* Safari and Chrome */
+  -moz-transform:scale( $x, $y);    /* Firefox */
+  -ms-transform:scale( $x, $y);     /* IE 9+ */
+  -o-transform:scale( $x, $y);      /* Opera */
+}
+@mixin perspective-rotate($perspective, $rotate) {
+  -webkit-transform: perspective($perspective) rotateY($rotate);
+  -moz-transform: perspective($perspective) rotateY($rotate);
+  -ms-transform: perspective($perspective) rotateY($rotate);
+  -o-transform: perspective($perspective) rotateY($rotate);
+  transform: perspective( $perspective ) rotateY($rotate);
+}
+
+/*  when you are using rotate this hides the backface to prevent pixellation
+    along the element edge.  The two states are 'hidden' and default 'visible' */
+@mixin backface-visibility($state) {
+  -webkit-backface-visibility: $state;
+  -moz-backface-visibility: $state;
+  -ms-backface-visibility: $state;
+  -o-backface-visibility: $state;
+  backface-visibility: $state;
+}
+
+/*  rotate in degrees with the numeric first and then the 'deg' after 
+    of the format XXdeg */
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+@mixin scale-rotate($x, $y, $deg) {
+   transform : scale( $x, $y) rotate($deg);
+  -webkit-transform:scale( $x, $y) rotate($deg); /* Safari and Chrome */
+  -moz-transform:scale( $x, $y) rotate($deg);    /* Firefox */
+  -ms-transform:scale( $x, $y) rotate($deg);     /* IE 9+ */
+  -o-transform:scale( $x, $y) rotate($deg);      /* Opera */
+}
+
+/*  Linear gradient.  A bit cobbled together but should work for basic top to 
+    bottom linear gradients */
+@mixin linear-gradient( $start, $from, $stop, $to ) {
+  background: $start;
+  background: -webkit-gradient(linear, left top, left bottom, from(ie-hex-str($start)), to(ie-hex-str($stop)));
+  background: -moz-linear-gradient(center top, $start $from, $stop $to);
+  background: -moz-gradient(center top, $start $from, $stop $to);
+  background: -webkit-linear-gradient(top, $start $from,$stop $to);
+  background: -o-linear-gradient(top, $start $from,$stop $to);
+  background: -ms-linear-gradient(top, $start $from,$stop $to);
+  background: linear-gradient(to bottom, $start $from,$stop $to);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{ie-hex-str($start)}', endColorstr='#{ie-hex-str($stop)}',GradientType=0 );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  MIXINS for general styles -------------------------------- */
+@mixin nextLink {
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 200px;
+  z-index: 9999999999;
+}
+@mixin nextLinkWrapper {
+  background-color: transparent;
+  border: 2px solid rgba(23, 153, 214, 1);
+  clear: both;
+  color: rgba(42, 87, 169, 1);
+  display: block;
+  font-size: 1.4em;
+  height: 44px;
+  margin: 0 auto;
+  max-width: 244px;
+  padding: 6px 22px 0px 20px;
+  text-transform: uppercase;
+}
+@mixin play-predikta-button-before {
+  border: 4px solid #fff;
+  border-radius: 10px;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@mixin play-predikta-button {
+    border:4px solid #1382c4;
+    color: #fff;
+    text-transform: uppercase;
+    @include linear-gradient( #e7444a, 0%, #941913, 100% );
+    border-radius: 15px;
+    clear: both;
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 16px;
+    position: relative;
+    text-transform: uppercase;
+    width: 215px;
+    top:80px;
+}

@@ -1,0 +1,24 @@
+
+/*  SASS libraries ------------------------------------ */
+@import 'libraries/variables';
+@import 'libraries/mixins.scss';
+
+/*  CSS and SASS from other project and third party  -- */
+@import 'vendor/font-awesome';
+@import 'vendor/jquery.jscrollpane';
+
+/*  Bootstrap styles ---------------------------------- */
+@import 'bootstrap/normalize';
+@import 'bootstrap/bootstrap-theme';
+@import 'bootstrap/bootstrap.min';
+@import 'bootstrap/bootstrap';
+
+/*  Partials - CSS and SASS for specific elements ----- */
+@import 'partials/carousel';
+@import 'partials/dashboard-points';
+@import 'partials/dashboard';
+@import 'partials/dashboard-bets';
+
+/*  My custom styles ---------------------------------  */
+@import 'main';
+@import 'responsive';

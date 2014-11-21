@@ -1,0 +1,715 @@
+﻿@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+
+/*  Dash board SASS -------------------------- */
+.modal-backdrop {
+  display:none;
+}
+#dashboard-wrapper {
+    .no-display {
+      display:none;
+    }
+/*  HEADER -----------------------------*/
+  .navbar-wrapper {
+      #PrediktaTop {
+          width: 100%;
+          max-width: none;
+          padding-left:0;
+          padding-right:0;
+          .container {
+              padding-left:0;
+              padding-right:0;
+              ul {
+              li {
+                  h3 {
+                      float: right;
+                      font-size: 1.5em;
+                      margin-bottom: 0;
+                      margin-right: 4%;
+                      margin-top:5px;
+                      max-width: 320px;
+                      @include scale(0.8, 1);
+                      text-align: center;
+                      text-transform: uppercase;
+                      width: 100%;
+                      span {
+                          display: block;
+                          font-size: 0.7em;
+                      }
+                  }
+              }
+              li#logoListItem {
+                  width: 15%;
+                  a#logoLink {
+                      width: 100%;
+                      .lologo {
+                          background-image: url("../img/logo.svg");
+                          background-repeat: no-repeat;
+                          background-size: cover;
+                          float: left;
+                          height: 60px;
+                          width: 90%;
+                      }
+                  }
+              }
+              li.know-football {
+                      width: 33%;
+              }
+              li.play-predikta-button {
+                  #play-predikta-button {
+                      margin:5px 0;
+                      top: 0;
+                      width: auto;
+                      font-size:1em;
+                    }
+              }
+              li.read-predikta-blog {
+                  width: 17%;
+                  a {
+                    color: #1888ca;
+                    text-align: right;
+                    text-transform: uppercase;
+                    font-size: 1em;
+                    text-decoration: underline;
+                    padding-top:5px;
+                  }
+              }            
+              li.admin-panel {
+                  float: right;
+                  text-align: right;
+                  width: 14%;
+                  .name-clock-wrapper {
+                      float:right;
+                  }
+                  h1 {
+                      font-size: 1.2em;
+                      margin-bottom: 0;
+                      margin-top: 15px;
+                      text-transform: uppercase;
+                      color: #1888CA;
+                  }
+                  span {
+                      color: #1888CA;
+                  }
+                  .btn-group {
+                      margin-left:10px;
+                      float:right;
+                      margin-top:2px;
+                      button {
+                          border-radius: 0;
+                          border: none;
+                          background-color: transparent;
+                      }                  
+                      .glyphicon-cog:before {
+                          color: #1799D6;
+                          font-size: 2.6em;
+                      }            
+                      .dropdown-menu {
+                          margin-top:-1px;
+                          left:-103px;
+                      }
+                      &:hover {
+                      @include linear-gradient( #01519e, 0%,  #009fe3, 100% ); 
+                          .glyphicon-cog:before {
+                              color: #fff;
+                          } 
+                          .dropdown-menu {
+                              display:block;
+                          } 
+                      }        
+                  }
+              }
+            }
+          
+          }
+        }
+    } 
+/*  HEADER -----------------------------*/
+
+    #predikta-dashboard {
+        width: 98%;
+        display: block;
+        margin: 0 auto;
+        float: none;
+
+/*  LEAGUE SECTION ---------------------*/
+    section#league {
+      text-transform:uppercase;
+      max-width:490px;
+      header {
+        clear: both;
+        display: block;
+        float: left;
+        width:100%;
+        .overall-predikta {
+                background-color: #1888ca;
+                color: #ffffff;
+                margin-bottom: 10px;
+                display: block;
+                float: left;
+                width: 100%;
+                margin-top: 10px;
+              h4 {
+                float: left;
+                display: inline-block;
+                margin-left:20px;
+                font-size:1em;
+              }
+              .result-wrapper {
+                float: right;
+                font-size: 1em;
+                position: relative;
+                right: 20px;
+                top: 7px;
+                .result {
+                    sup {
+                      text-transform:lowercase;
+                    }
+                }
+                .progress-icon.back {
+                    @include scale-rotate(3, 1.5, 90deg);
+                    display:inline-block;
+                    color:#df1a22;
+                    font-size:0.8em;
+                    position:relative;
+                    right:19px;
+                }
+              }
+         }
+        #myTab {
+          clear: none;
+          display: inline-block;
+          float: right;
+          width: auto;
+          border-bottom:none;
+            li {
+              float: right;
+              top: 5px;
+              a {
+                background-color:#d9d9d9;
+                border-radius: 5px;
+                border-width: 0;
+                color: #ffffff;
+                padding: 5px 0px;
+                width: 100px;
+                margin-top: 10px;
+              }
+            }
+            li.active {
+              a {
+                background-color: #868686;
+                border-radius: 5px;
+                border-width: 0;
+                color: #ffffff;
+                padding: 5px 0px;
+                width: 100px;
+                margin-top: 10px;
+                margin-right: 10px;
+              }
+            }
+        } 
+        h1 {
+          color: #df1c22;
+          display: inline;
+          float: left;
+          font-size: 2.6em;
+          margin-bottom: 0;
+          margin-top: 10px;
+          text-transform: uppercase;
+        }
+      }
+    }
+      #myTabContent {
+        #week {
+        .modal {
+          max-width: 490px;
+          overflow:visible;
+          left:42vw;
+          .modal-dialog {
+            .modal-content {
+              background-clip: padding-box;
+              background-color: #ffffff;
+              border: medium none;
+              border-radius: 0;
+              box-shadow: none;
+              outline: 0 none;
+              position: relative;
+              display: block;
+              float: left;
+              border-top: none;
+              max-width:490px;
+              .modal-header {
+                  background-color:#fff;
+                  border-bottom: medium none;
+                  border-top: medium none;
+                  clear: both;
+                  display: block;
+                  float: left;
+                  min-height: 0;
+                  padding: 0;
+                  width: 100%;
+                  h4#myModalLabel {
+                    background-color:#fff;
+                    color: #df1c22;
+                    display: inline;
+                    float: left;
+                    font-size: 2.6em;
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+                  }
+                  button.close {
+                    color: #1888ca;
+                    display: block;
+                    float: left;
+                    font-size: 1em;
+                    opacity: 1;
+                    padding-left: 25px;
+                    position: relative;
+                    text-align: left;
+                    width: 100%;
+                    z-index: 99999;
+                    &:before {
+                        @include rotate(180deg);
+                        background-color: #1888ca;
+                        border-radius: 35px;
+                        color: #ffffff;
+                        content: "";
+                        display: block;
+                        float: left;
+                        font-family: "Glyphicons Halflings";
+                        font-size: 0.8em;
+                        left: 0;
+                        opacity: 1;
+                        padding: 3px 4px 8px 6px;
+                        position: absolute;
+                        top:-4px;
+                    }
+                  }
+                }
+              .modal-body {
+                bottom:10px;
+                display: block;
+                float: left;
+                padding:0;
+                padding-bottom:100px;
+                position: relative;
+                width: 100%;
+              }
+            }
+            }
+    overflow: visible;
+}
+
+        }
+        #week,
+        #season {
+          #leagues,
+          #seasonDetails {
+              display: block;
+              float: left;
+              width: 100%;
+              margin-bottom:0;
+            .table-responsive {
+                &::-moz-scrollbar {
+                  width: 12px;
+                }
+                &::-moz-scrollbar-track {
+                  -moz-box-shadow: inset 0 0 6px #fff;
+                  background:#000;
+                }
+                &::-moz-scrollbar-thumb {
+                  border-radius: 10px;
+                  -moz-box-shadow: inset 0 0 6px #fff;
+                  background:#7A252B;
+                }
+                clear: both;
+                display: block;
+                float: left;
+/*  try and set element to sit within any device view */
+                width: 100%;
+                table {
+                  border-collapse: collapse;
+                  border-spacing: 0;
+                  clear: both;
+                  display: block;
+                  float: left;
+                  font-size:1em;
+                  margin-bottom: 0;
+                  text-transform: uppercase;
+                  width: 100%;
+                  tbody {
+                    tr {
+                      margin-top:0;
+                      margin-bottom:0;
+                      td {
+                        border-top:1px solid #dddddd;
+                        padding-bottom:1px;
+                        padding-top:4px;
+                      }
+                    }
+                  }
+                  thead {
+                    th.akka {
+                      padding-left:20px;
+                    }
+                    th {
+                      border-bottom:none;
+                      color:#bdbdbd;
+                    }
+                    th.actual {
+                      padding-left:14px;
+                    }
+                  }               
+                  tr {
+                    display: block;
+                    clear: both;
+                    float: left;
+                    position:relative;
+                    .home-team,
+                    .away-team {
+                        min-width:120px;
+                        width:100%;
+                    }
+                    .home-team {
+                      text-align:right;
+                      padding-left:0;                      
+                    }
+                    th.home-team {
+                      padding-left:0;
+                    }
+                    .away-team {
+                      padding-left: 28px;
+                      padding-right: 0;
+                    }
+                    th.away-team {
+                      min-width: 120px;
+                      padding-left: 10px;
+                    }
+                    th.away {
+                      padding-left:25px;
+                    }
+                    .actual-home, 
+                    .actual-away,
+                    .client-home,
+                    .client-away {
+                      min-width: 20px;
+                      text-align: center;
+                      padding-left:0;
+                      padding-right:0;
+                    }
+                    .actual-home,
+                    .client-home {
+                      padding-left:14px;
+                    }
+                    .game-state,
+                    .dash {
+                      padding-left:0;
+                      padding-right:0;
+                    }
+                    .game-state {
+                      padding-left: 25px;
+                      border-top: none;
+                      span {
+                        display: block;
+                        float: left;
+                        font-size: 10px;
+                        line-height: 10px;
+                        text-align: center;
+                        width: 40px;
+                      }
+                      .time {
+                        display: block;
+                        float: left;
+                        width: 1px;
+                        font-size:14px;
+                      }
+                      .day {
+                        clear: both;
+                        display: block;
+                        font-size: 14px;
+                        padding-left: 4px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        margin-bottom:3px;
+                        width: 100%;
+                      }
+                    }
+                    .points {
+                      padding-top:0;
+                      min-width:80px;
+                      text-align:center;
+                      span {
+                        background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+                        color: #ffffff;
+                        display: block;
+                        float: right;
+                        height: 30px;
+                        margin-bottom: 3px;
+                        margin-right: 24px;
+                        margin-top: 3px;
+                        padding-top: 4px;
+                        width: 30px;
+                      }
+                    }
+                    .game-state.bet-in-play {
+                      padding-left:3px;
+                      padding-top:0;
+                      padding-bottom:0;
+                      span {
+                        background: linear-gradient(to bottom, #e7444a 0%, #941913 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+                        border: 2px solid #1382c4;
+                        border-radius: 10px;
+                        color: #ffffff;
+                        display: block;
+                        float: left;
+                        padding: 4px 0;
+                        position: relative;
+                        text-transform: uppercase;
+                        width: 62px;
+                        padding-bottom: 6px;
+                        &:before {
+                          border: 2px solid #ffffff;
+                          border-radius: 6px;
+                          bottom: 0;
+                          content: "";
+                          display: block;
+                          left: 0;
+                          position: absolute;
+                          right: 0;
+                          top: 0;
+                        }
+                      }
+                    }
+                    
+                    .AKKA {
+                      width:40px;
+                      span {
+                        border-radius: 20px;
+                        display: block;
+                        float: left;
+                        height: 10px;
+                        margin-top:74%;
+                        width: 10px;
+                      }
+                      .red-circle {
+                        background-color:#df1a22;
+                      }
+                      .yellow-circle {
+                        background-color:#fbb03b;
+                      }
+                      .green-circle {
+                        background-color:#39b54a;
+                      }
+                    }
+                    td.akka {
+                      padding-left:25px;
+                      padding-right:25px;
+                    }
+                  }
+                  tr.pending {
+                    color:#bdbdbd;
+                    .red-circle,
+                    .yellow-circle,
+                    .green-circle {
+                        background-color:#bdbdbd;
+                    }
+                    td.game-state {
+                      padding-left:10px; 
+                    }
+                  }
+                  tr.in-play {
+                    background-color: #deeaf0;
+                    border: medium none;
+                    border-radius: 9px;
+                    display: block;
+                    float: left;
+                    height:35px;
+                    padding: 0;
+                    margin-top: 2px;
+                    margin-bottom: 3px;
+                    td {
+                      border-top:none;
+                      padding-top:0;
+                    }
+                  }
+                  tfoot {
+                    tr {
+                      padding-left:77px;
+                      margin-top:0;
+                      td {
+                        border: medium none;
+                        padding-left: 0;
+                        padding-right: 0;
+                        text-align: center;
+                        width: 100px;
+                      }
+                    }
+                    .tfoot-header {
+                      margin-top:10px;
+                      margin-bottom:0;
+                    }
+                    .results {
+                      margin-top:0;
+                      td {
+                        padding-top:0;
+                        padding-bottom:0;
+                      }
+                    }
+                  }
+
+              }
+            }
+              panel-body {
+                padding-bottom:0;
+              }
+              #players {
+                margin-bottom: 0;
+                overflow-x: hidden;
+                overflow-y: scroll;
+              }
+              .name-overflow {
+                display: inline-block;
+                float: left;
+                font-size: 0.8em;
+                left: 10px;
+                position: relative;
+                text-align: left;
+                top: 9px;
+                width: auto;
+              }
+              [data-toggle="modal"],
+              [data-parent="#details"] {
+                background-color: #1888ca;
+                border-radius: 5px;
+                color: #ffffff;
+                cursor:pointer;
+                display: block;
+                float: left;
+                font-size: 0.8em;
+                margin-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-top: 5px;
+                text-align: left;
+                width: 100%;
+                clear:both;
+                span.rank {
+                  display: inline-block;
+                  width: 20px;
+                }
+                span.points {
+                  float:right;
+                  margin-right:10px;
+                }
+              }
+              h4 {
+                margin-bottom:0;
+              }
+              h3 {
+                display: block;
+                float: left;
+                font-size: 1.3em;
+                margin-top: 0;
+                padding-left: 20px;
+                text-align: left;
+                width: 100%;
+                font-size:1em;
+              }
+               .overall-predikta {
+                margin-bottom: 10px;
+                display: block;
+                float: left;
+                width: 100%;
+              h4 {
+                float: left;
+                display: inline-block;
+                margin-left:20px;
+                font-size:1em;
+              }
+              .result-wrapper {
+                float: right;
+                font-size: 1em;
+                position: relative;
+                right: 20px;
+                top: 7px;
+                .progress-icon.up {
+                    @include scale-rotate(3, 1.5, 269deg);
+                    display:inline-block;
+                    font-size:0.8em;
+                    color:$prediktaGreen;
+                    position:relative;
+                    right:30px;
+                }
+                .progress-icon.no-change {
+                    display: inline-block;
+                    font-size: 1.4em;
+                    position: relative;
+                    transform: scale(2, 1.5);
+                    right:12px;
+                }
+                .result {
+                    color:$prediktaBlue;
+                    sup {
+                      text-transform:lowercase;
+                    }
+                }
+              }
+         }
+              .panel.panel-default {
+                background-color: #ececec;
+                border: medium none;
+                border-radius:0;
+                .player-wrapper {
+                  display: block;
+                  float: left;
+                  width: 100%;
+                }
+                ul.season-results {
+                  display: block;
+                  float: left;
+                  margin-bottom:0;
+                  width:100%;
+                  li {
+                    list-style:none;
+                    float: left;
+                    display: block;
+                    clear:both;
+                    border-radius: 10px;
+                    color: #ffffff;
+                    font-size: 0.8em;
+                    padding-bottom: 5px;
+                    padding-left: 15px;
+                    padding-top: 5px;
+                    text-align: left;
+                    span {
+                      float:right;
+                      margin-right:10px;
+                    }
+                  }
+                  .result {
+                    background-color: #167ab5;
+                    width: 50%;
+                  }
+                  .spot-on {
+                    background-color:#136da2;
+                    width:40%;
+                  }
+                  .goal-diff {
+                    background-color:#115f8d;
+                    width:30%;
+                  }
+                }
+              }
+            }
+        }
+        #week {
+
+          }
+        }
+        #season { 
+        }
+      }
+/*  END LEAGUE SECTION ------------------------ */
+    }
+/*  END Dash board SASS ---------------------- */

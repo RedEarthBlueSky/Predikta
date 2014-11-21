@@ -1,0 +1,306 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="favicon.ico" rel="icon">
+    <title>Predikta | Dashboard </title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<div id="dashboard-wrapper"> <!--  Dashboard Wrapper -->
+
+<!-- HEADER ------------------------------------------------------>
+    <div class="navbar-wrapper">
+        <div id="PrediktaTop" class="container">
+                <div class="container">
+                        <ul class="nav navbar-nav">
+                            <li id="logoListItem">
+                                <a id="logoLink" href="/">
+                                    <div class="lologo"></div>
+                                </a>
+                            </li>
+                            <li class="know-football">
+                                <h3>Know your football?
+                                    <span>Put your money where your mouth is</span>
+                                </h3>
+                            </li>
+                            <li class="play-predikta-button">
+                              <a id="play-predikta-button" role="button" href="/Prediktions" class="btn btn-lg btn-primary">
+                                Play the Predikta Pool
+                              </a>
+                            </li>
+                            <li class="read-predikta-blog">
+                                <a href="/blog">
+                                    Read the <br /> 
+                                    Predikta Blog
+                                </a>
+                            </li>
+                            <li class="admin-panel">
+                              <div class="btn-group">
+                                <button data-toggle="dropdown" class="btn btn-info dropdown-toggle glyphicon glyphicon-cog"></button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="/">Dashboard</a></li>
+                                  <li><a href="/Account/Profile">My Account</a></li>
+                                  <li><a href="/League">Search leahu</a></li>
+                                  <li><a href="/Anorak">My Anorak</a></li>
+                                  <li><a href="#">Account List Item</a></li>
+                                  <li><a href="#">Account List Item 2</a></li>
+                                  <li><a href="#">Account List Item 3</a></li>
+                                  <li><a href="#">Account List Item 4</a></li>
+                                  <li><a href="#">Account List Item 4</a></li>
+                                </ul>
+                              </div>
+                              <div class="name-clock-wrapper">
+                                <h1 class="navtext">Ian</h1>
+                                <span id="clock"></span>
+                              </div>
+                            </li>
+                        </ul>
+                </div>
+        </div>
+    </div>
+<!--  END HEADER ------------------------------------------------------>
+
+
+<!--  MAIN DASHBOARD ------------------------------------------------------>
+    <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div id="predikta-dashboard" class="row">
+            <section id="points" class="col-lg-5">
+            <header>
+              <h1>Points</h1>
+              <div class="leaguedrop">
+                <select name="scoreRounds" id="scoreRounds">
+                  <option value="week1">Week1 16/17 Aug</option>
+                  <option value="week1">Week2 23/24 Aug</option>
+                  <option value="week1">Week3 30/31 Aug</option>
+                  <option value="week1">Week4 7-9 Sep</option>
+                  <option value="week1">Week5 13/14 Sep</option>
+                  <option value="week1">Week6 20/21 Sep</option>
+                  <option value="week1">Week7 27/28 Sep</option>
+                  <option value="week1">Week8 4/5 Oct</option>
+                  <option value="week1">Week9 9-12 Oct</option>
+                  <option value="week1">Week10 18/19 Oct</option>
+                  <option value="week1">Week11 25/26 Oct</option>
+                  <option value="week1">Week12 1/2 Nov</option>
+                  <option value="week1">Week13</option>
+                  <option value="week1" selected="selected">Week14</option>
+                </select>
+              </div>
+              <a href="#" data-type="DisplayMyResultsFirstTimeMessage" class="first-time-notification">
+                <p class="conditional bluegradinv">
+                  View actual results, your prediktions and where you earned your points this week. Click on each fixture for details.
+                </p>
+              </a>
+            </header>
+
+              
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>HOME</th>
+                      <th colspan="2">ACTUAL</th>
+                      <th>AWAY</th>
+                      <th colspan="2">ME</th>
+                      <th >PTS</th>
+                      <th>AKKA</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="banker">
+                      <td class="home-team">Home Team 1</td>
+                      <td class="home-score">1</td>
+                      <td class="away-score">2</td>
+                      <td class="away-team">AwayTeam1</td>
+                      <td class="client-home">1</td>
+                      <td class="client-away">2</td>
+                      <td class="points">3</td>
+                      <td class="AKKA">3</td>
+                      <td class="game-state">FT</td>
+                    </tr>
+                    <tr>
+                      <td class="home-team">Home Team 2</td>
+                      <td class="home-score">1</td>
+                      <td class="away-score">2</td>
+                      <td class="away-team">AwayTeam2</td>
+                      <td class="client-home">1</td>
+                      <td class="client-away">2</td>
+                      <td class="points">5</td>
+                      <td class="AKKA">3</td>
+                      <td class="game-state">FT</td>
+                    </tr>
+                    <tr>
+                      <td class="home-team">Home Team 3</td>
+                      <td class="home-score">1</td>
+                      <td class="away-score">2</td>
+                      <td class="away-team">AwayTeam3</td>
+                      <td class="client-home">1</td>
+                      <td class="client-away">2</td>
+                      <td class="points">6</td>
+                      <td class="AKKA">3</td>
+                      <td class="game-state">FT</td>
+                    </tr>
+                    <tr>
+                      <td class="home-team">Home Team 4</td>
+                      <td class="home-score">1</td>
+                      <td class="away-score">1</td>
+                      <td class="away-team">AwayTeam4</td>
+                      <td class="client-home">1</td>
+                      <td class="client-away">2</td>
+                      <td class="points">8</td>
+                      <td class="AKKA">3</td>
+                      <td class="game-state">FT</td>
+                    </tr>
+                    <tr>
+                      <td class="home-team">Home Team 5</td>
+                      <td class="home-score">1</td>
+                      <td class="away-score">1</td>
+                      <td class="away-team">AwayTeam5</td>
+                      <td class="client-home">1</td>
+                      <td class="client-away">2</td>
+                      <td class="points">8</td>
+                      <td class="AKKA">3</td>
+                      <td class="game-state"><span>Bet in play</span></td>
+                    </tr>
+                    <tr>
+                      <td class="home-team">Home Team 6</td>
+                      <td class="home-score">1</td>
+                      <td class="away-score">2</td>
+                      <td class="away-team">AwayTeam6</td>
+                      <td class="client-home">1</td>
+                      <td class="client-away">2</td>
+                      <td class="points">2</td>
+                      <td class="AKKA">3</td>
+                      <td class="game-state"><span>Bet in play</span></td>
+                    </tr>
+                    <tr>
+                      <td class="home-team">Home Team 7</td>
+                      <td class="home-score">3</td>
+                      <td class="away-score">3</td>
+                      <td class="away-team">AwayTeam7</td>
+                      <td class="client-home">1</td>
+                      <td class="client-away">2</td>
+                      <td class="points">4</td>
+                      <td class="AKKA">3</td>
+                      <td class="game-state"><span>Bet in play</span></td>
+                    </tr>
+                    <tr>
+                      <td class="home-team">Home Team 8</td>
+                      <td class="home-score">5</td>
+                      <td class="away-score">3</td>
+                      <td class="away-team">AwayTeam8</td>
+                      <td class="client-home">1</td>
+                      <td class="client-away">2</td>
+                      <td class="points">4</td>
+                      <td class="AKKA">3</td>
+                      <td class="game-state"><span>Bet in play</span></td>
+                    </tr>
+                    <tr>
+                      <td class="home-team">Home Team 9</td>
+                      <td class="home-score">2</td>
+                      <td class="away-score">1</td>
+                      <td class="away-team">AwayTeam9</td>
+                      <td class="client-home">1</td>
+                      <td class="client-away">2</td>
+                      <td class="points">2</td>
+                      <td class="AKKA">3</td>
+                      <td class="game-state"><span class="day">day</span><span class="time">11:03</span></td>
+                    </tr>
+                    <tr>
+                      <td class="home-team">Home Team 10</td>
+                      <td class="home-score">1</td>
+                      <td class="away-score">2</td>
+                      <td class="away-team">AwayTeam10</td>
+                      <td class="client-home">1</td>
+                      <td class="client-away">2</td>
+                      <td class="points">3</td>
+                      <td class="AKKA">3</td>
+                      <td class="game-state"><span class="day">day</span><span class="time">11:03</span></td>
+                    </tr>
+                    <tr>
+                      <td class="home-team">Home Team 11</td>
+                      <td class="home-score">1</td>
+                      <td class="away-score">2</td>
+                      <td data-team-id="" class="away-team">AwayTeam11</td>
+                      <td class="client-home">1</td>
+                      <td class="client-away">2</td>
+                      <td class="points">1</td>
+                      <td class="AKKA">3</td>
+                      <td class="game-state"><span class="day">day</span><span class="time">11:03</span></td>
+                    </tr>
+           
+                  </tbody>
+                </table>
+              </div>
+                
+            </section><!-- /.col-lg-5 -->
+
+            <div class="about-predikta col-lg-4">
+
+            </div><!-- /.col-lg-4 -->
+
+            <div class="about-predikta col-lg-3">
+
+            </div><!-- /.col-lg-3 -->
+
+        </div><!-- /.row -->
+        <section class="goTop">
+            <a href="#PrediktaTop"></a>
+        </section>
+
+    </div><!-- /.container -->
+<!--  MAIN DASHBOARD ------------------------------------------------------>
+
+    <!-- FOOTER -->
+    <footer>
+      <ul>
+        <li class="opta-logo"><a href="#"><img src="img/opta-logo.png" alt="Opta logo" /></a></li>
+        <li class="ladbrokes-logo"><a href="#"><img src="img/ladbrokes-logo.png" alt="Ladbrokes logo" /></a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">How to play</a></li>
+        <li><a href="#">Terms and conditions</a></li>
+        <li class="stakes-ladders"><a href="#"><img src="img/stakes-and-ladders-logo.png" alt="Stakes and Ladders logo" /></a></li>
+        <li class="age-rating"><a href="#"><img src="img/18-plus.png" alt="Eighteen years and over image button" /></a></li>
+      </ul>
+      <!-- <p class="pull-right"><a href="#">Back to top</a></p> -->
+      <p class="footer-predikta-info">&copy; 2014 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+</div>  <!--  DASHBOARD WRAPPER closing tag ----------->
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/vendor/jquery-1.11.1.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/docs.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+        <script src="js/vendor/moment.js"></script>
+        <script src="js/main.js"></script>
+
+  <script>
+
+  </script>
+
+
+
+        <div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;" title="" data-original-title="Copy to clipboard">      <object width="100%" height="100%" id="global-zeroclipboard-flash-bridge" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000">         <param value="/assets/flash/ZeroClipboard.swf?noCache=1415008201263" name="movie">         <param value="sameDomain" name="allowScriptAccess">         <param value="exactfit" name="scale">         <param value="false" name="loop">         <param value="false" name="menu">         <param value="best" name="quality">         <param value="#ffffff" name="bgcolor">         <param value="transparent" name="wmode">         <param value="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com" name="flashvars">         <embed width="100%" height="100%" scale="exactfit" flashvars="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com" pluginspage="http://www.macromedia.com/go/getflashplayer" wmode="transparent" type="application/x-shockwave-flash" allowfullscreen="false" allowscriptaccess="sameDomain" name="global-zeroclipboard-flash-bridge" bgcolor="#ffffff" quality="best" menu="false" loop="false" src="/assets/flash/ZeroClipboard.swf?noCache=1415008201263">                </object></div><svg width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none" style="visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs /><text x="0" y="23" style="font-weight:bold;font-size:23pt;font-family:Arial, Helvetica, Open Sans, sans-serif;dominant-baseline:middle">500x500</text></svg>
+</body>
+<iframe frameborder="0" allowtransparency="true" id="abs-top-frame" style="position: fixed; z-index: 2147483647; overflow: hidden; top: 0px; left: 0px; right: 0px; width: 138px; height: 13px; max-height: none; min-height: 0px; margin: 0px auto; padding: 0px; border: 0px none; background-color: transparent; display: block;" src="resource://firefox.abs.avira.com/html/top.html#minimized"></iframe>
+</html>
