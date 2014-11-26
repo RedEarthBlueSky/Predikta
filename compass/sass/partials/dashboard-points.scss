@@ -161,14 +161,12 @@
                     .home-team,
                     .away-team {
                         min-width:120px;
-                        width:100%;
                     }
                     .home-team {
                       text-align:right;
                       padding-left:0;                      
                     }
                     th.home-team {
-                      padding-left:29px;
                     }
                     .away-team {
                       padding-left: 28px;
@@ -279,7 +277,7 @@
                         display: block;
                         float: left;
                         height: 10px;
-                        margin-top:74%;
+                        margin-top:10%;
                         width: 10px;
                       }
                       .red-circle {

@@ -239,11 +239,11 @@
                   <td class="game-state"><span class=" day">day</span><span class="time">11:03</span></td>
                 </tr>
                 <tr class="pending">
-                  <td class="home-team">Aston Villa10</td>
+                  <td class="home-team">Aston Villa</td>
                   <td class="actual-home">1</td>
                   <td class="dash">-</td>
                   <td class="actual-away">2</td>
-                  <td class="away-team">AwayTeam10</td>
+                  <td class="away-team">AwayTeam</td>
                   <td class="client-home">1</td>
                   <td class="dash">-</td>
                   <td class="client-away">2</td>
@@ -1627,18 +1627,37 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Pool</td>
-                    <td>85</td>
-                    <td>£380</td>
+                    <td class="pool">Pool</td>
+                    <td class="pool-position">85</td>
+                    <td class="pool-payout">£380</td>
                   </tr>
                   <tr>
-                    <td>AKKA</td>
-                    <td><span class="red"></span><span class="blue"></span><span class="green"></span><span class="grey"></span><span class="grey"></span></td>
-                    <td>£125 - £125</td>
+                    <td class="akka">AKKA</td>
+                    <td class="akka-position"><span class="red"></span><span class="yellow"></span><span class="green"></span><span class="grey"></span><span class="grey"></span></td>
+                    <td class="akka-result">£125 - £125</td>
                   </tr>
                 </tbody>
                 <tfoot></tfoot>
               </table>
+          </div>
+
+          <div id="banter">
+            <h1>
+              Banter
+            </h1>
+          <div class="new-post-wrapper">
+            <div class="player-wrapper">
+              <button data-toggle="collapse" data-target="#new-post" type="button">New Post</button>
+              <div class="name-overflow"></div>
+            </div>
+            <div id="new-post" class="panel-collapse collapse">
+              <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+            </div>
+          </div>
+
           </div>
         </aside><!-- /.col-lg-3 BETS -->
 

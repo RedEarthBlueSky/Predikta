@@ -12343,13 +12343,10 @@ section#points .table-responsive {
       position: relative; }
       section#points .table-responsive table tr .home-team,
       section#points .table-responsive table tr .away-team {
-        min-width: 120px;
-        width: 100%; }
+        min-width: 120px; }
       section#points .table-responsive table tr .home-team {
         text-align: right;
         padding-left: 0; }
-      section#points .table-responsive table tr th.home-team {
-        padding-left: 29px; }
       section#points .table-responsive table tr .away-team {
         padding-left: 28px;
         padding-right: 0; }
@@ -12443,7 +12440,7 @@ section#points .table-responsive {
           display: block;
           float: left;
           height: 10px;
-          margin-top: 74%;
+          margin-top: 10%;
           width: 10px; }
         section#points .table-responsive table tr .AKKA .red-circle {
           background-color: #df1a22; }
@@ -12746,7 +12743,7 @@ section#points #table-banner-add {
             display: inline;
             float: left;
             font-size: 2.6em;
-            margin-bottom: 0;
+            margin-bottom: 7px;
             text-transform: uppercase; }
           #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog .modal-content .modal-header button.close {
             color: #1888ca;
@@ -13358,20 +13355,124 @@ section#points #table-banner-add {
             width: 30%; }
 
 /*  END Dash board SASS ---------------------- */
-aside#bets header h1 {
-  color: #df1c22;
-  display: inline;
-  float: left;
-  font-size: 2.6em;
-  margin-bottom: 0;
-  margin-top: 10px;
-  text-transform: uppercase; }
-aside#bets header .play-predikta-button {
-  clear: both;
-  display: block;
-  width: 100%; }
-  aside#bets header .play-predikta-button #play-predikta-button {
-    top: 0; }
+aside#bets {
+  padding-right: 0; }
+  aside#bets header h1 {
+    color: #df1c22;
+    display: inline;
+    float: left;
+    font-size: 2.6em;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-transform: uppercase; }
+  aside#bets header .play-predikta-button {
+    clear: both;
+    display: block;
+    width: 100%; }
+    aside#bets header .play-predikta-button #play-predikta-button {
+      top: 0; }
+  aside#bets .table-responsive {
+    display: block;
+    float: left;
+    clear: both;
+    color: #b1b1b1;
+    text-transform: uppercase;
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 30px; }
+    aside#bets .table-responsive table {
+      display: block;
+      float: left;
+      width: 100%; }
+      aside#bets .table-responsive table thead {
+        width: 100%;
+        display: block;
+        float: left; }
+        aside#bets .table-responsive table thead tr {
+          border-top: 1px dotted #d9d9d9;
+          display: block;
+          float: left;
+          padding-top: 10px;
+          width: 100%;
+          padding-bottom: 10px; }
+          aside#bets .table-responsive table thead tr th {
+            width: 33%;
+            color: #b1b1b1; }
+            aside#bets .table-responsive table thead tr th:first-child {
+              width: 25%; }
+            aside#bets .table-responsive table thead tr th:nth-child(2) {
+              width: 50%; }
+      aside#bets .table-responsive table tbody {
+        display: block;
+        float: left;
+        width: 100%; }
+        aside#bets .table-responsive table tbody tr {
+          border-top: 1px dotted #d9d9d9;
+          display: block;
+          float: left;
+          padding-top: 10px;
+          width: 100%;
+          padding-bottom: 10px; }
+          aside#bets .table-responsive table tbody tr:last-child {
+            border-bottom: 1px dotted #d9d9d9;
+            padding-bottom: 12px; }
+          aside#bets .table-responsive table tbody tr .pool {
+            width: 29%; }
+          aside#bets .table-responsive table tbody tr .akka {
+            width: 24%; }
+          aside#bets .table-responsive table tbody tr .pool-position {
+            width: 56%; }
+          aside#bets .table-responsive table tbody tr .akka-position {
+            width: 46%; }
+            aside#bets .table-responsive table tbody tr .akka-position span {
+              border-radius: 20px;
+              display: block;
+              float: left;
+              height: 10px;
+              width: 10px;
+              position: relative;
+              margin-right: 3px; }
+            aside#bets .table-responsive table tbody tr .akka-position .red {
+              background-color: #df1a22; }
+            aside#bets .table-responsive table tbody tr .akka-position .yellow {
+              background-color: #fbb03b; }
+            aside#bets .table-responsive table tbody tr .akka-position .green {
+              background-color: #39b54a; }
+            aside#bets .table-responsive table tbody tr .akka-position .grey {
+              background-color: #bdbdbd; }
+          aside#bets .table-responsive table tbody tr td {
+            color: #868686;
+            width: 40.5%; }
+  aside#bets #banter h1 {
+    color: #df1c22;
+    display: inline;
+    float: left;
+    font-size: 2.6em;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-transform: uppercase; }
+  aside#bets #banter .new-post-wrapper {
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%; }
+    aside#bets #banter .new-post-wrapper button {
+      background-color: #1888ca;
+      border: medium none;
+      border-radius: 5px;
+      clear: both;
+      color: #ffffff;
+      cursor: pointer;
+      display: block;
+      float: left;
+      font-size: 1.2em;
+      margin-top: 5px;
+      padding-bottom: 8px;
+      padding-left: 10px;
+      padding-top: 8px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%; }
 
 /*  My custom styles ---------------------------------  */
 /* Predikta Custom Styles ==================================== 
