@@ -1,23 +1,30 @@
 ﻿
 
 aside#bets {
+  background-color:$prediktaDashboarBG;
+  max-width:387px;
   padding-right:0;
+  #banterWrapper div[class^="league"] {
+    display:none;
+  }
   header {
     h1 {
-      color: #df1c22;
-      display: inline;
-      float: left;
-      font-size: 2.6em;
-      margin-bottom: 0;
-      margin-top: 10px;
-      text-transform: uppercase;
+      @include dashboardH1;
     }
     .play-predikta-button {
       clear: both;
       display:block;
-      width: 100%;
         #play-predikta-button {
+          border-radius:5px;
+          border-width:3px;
           top:0;
+          margin:9px auto 0;
+          padding:4px 16px;
+          width: 65%;
+          &:before {
+            border-radius:2px;
+            border-width:2px;
+          }
         }
     }
   }
@@ -27,9 +34,9 @@ aside#bets {
     clear:both;
     color:#b1b1b1;
     text-transform:uppercase;
-    margin-top:20px;
+    margin-top:14px;
     width:100%;
-    margin-bottom:30px;
+    margin-bottom:25px;
     table {
       display: block;
       float: left;
@@ -42,9 +49,9 @@ aside#bets {
             border-top: 1px dotted #d9d9d9;
             display: block;
             float: left;
-            padding-top: 10px;
+            padding-top: 8px;
             width: 100%;
-            padding-bottom: 10px;
+            padding-bottom: 8px;
               th {
                 width:33%;
                 color: #b1b1b1;
@@ -65,9 +72,9 @@ aside#bets {
             border-top: 1px dotted #d9d9d9;
             display: block;
             float: left;
-            padding-top: 10px;
+            padding-top: 8px;
             width: 100%;
-            padding-bottom: 10px;
+            padding-bottom: 8px;
             &:last-child {
             border-bottom: 1px dotted #d9d9d9;
             padding-bottom:12px;
@@ -118,21 +125,43 @@ aside#bets {
     }
   #banter {
      h1 {
-      color: #df1c22;
-      display: inline;
-      float: left;
-      font-size: 2.6em;
-      margin-bottom: 0;
-      margin-top: 10px;
-      text-transform: uppercase;
+       @include dashboardH1;
+       margin-top:0;
       }
       .new-post-wrapper {
         clear: both;
         display: block;
         float: left;
         width: 100%;
-          button{
+          #banterSubmit {
+            background-color: $prediktaRed;
+            border: medium none;
+            border-radius: 5px;
+            color: #ffffff;
+            display: block;
+            float: left;
+            margin-top: 10px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            width: 100%;
+          }
+          .btn-group {
+            width:100%;
+            margin-top:15px;
+            ul.multiselect-container.dropdown-menu {
+              //max-height: 200px;
+              //overflow-y: scroll;
+              width: 100%;
+              li {
+                label {
+                }
+              }
+            }
+          }
+          button.multiselect.dropdown-toggle.btn.btn-default,
+          button {
             background-color: #1888ca;
+            background-image:none;
             border: medium none;
             border-radius: 5px;
             clear: both;
@@ -140,15 +169,205 @@ aside#bets {
             cursor: pointer;
             display: block;
             float: left;
-            font-size: 1.2em;
-            margin-top: 5px;
-            padding-bottom: 8px;
+            font-size: 1em;
+            padding-bottom: 5px;
             padding-left: 10px;
-            padding-top: 8px;
+            padding-top: 5px;
             text-align: center;
             text-transform: uppercase;
             width: 100%;
           }
+          textarea {
+            background-color: #1888ca;
+            color: #ffffff;
+            display: block;
+            float: left;
+            font-size: 1.2em;
+            height: 100px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+          }
+
+          .newPostCheckbox {
+            clear: both;
+            display: block;
+            float: left;
+            text-align:center;
+            width: 100%;
+            span {
+                display: block;
+                line-height: 14px;
+                margin: 5px auto 0;
+                text-transform: uppercase;
+                width: 75%;
+             }
+            .squaredTwo {
+              background: -moz-linear-gradient(center top , #1888ca 70%, #1799d6 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+              border-radius: 5px;
+              //  box-shadow: 0 1px 1px #ffffff inset, 0 1px 3px rgba(0, 0, 0, 0.5);
+              display: inline-block;
+              height: 35px;
+              margin-left: 15%;
+              margin-right: 15%;
+              position: relative;
+              width: 35px;
+              label {
+                background: linear-gradient(to bottom, #e7444a 0%, #941913 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+                border-radius: 5px;
+                cursor: pointer;
+                height: 28px;
+                left: 4px;
+                position: absolute;
+                top: 4px;
+                width: 27px;
+                 &:hover::after {
+	                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	                filter: alpha(opacity=30);
+	                opacity: 0.3;
+                }         
+              } 
+              label:after {
+                -moz-border-bottom-colors: none;
+                -moz-border-left-colors: none;
+                -moz-border-right-colors: none;
+                -moz-border-top-colors: none;
+                background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+                border-color: -moz-use-text-color -moz-use-text-color #fcfff4 #fcfff4;
+                border-image: none;
+                border-style: none none solid solid;
+                border-width: medium medium 5px 5px;
+                content: "";
+                height: 12px;
+                left: 3px;
+                opacity: 0;
+                position: absolute;
+                top: 5px;
+                transform: rotate(-45deg);
+                width: 21px;
+              }  
+              input[type=checkbox] {
+                visibility:hidden;
+              }
+              input[type=checkbox]:checked + label:after {
+	              -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	              filter: alpha(opacity=100);
+	              opacity: 1;
+              }
+            }   
+          }
+
+      }
+      #banterForm,
+      #banterWrapper {
+        clear: both;
+        display: block;
+        float: left;
+        width: 100%;
+        margin-bottom:10px;
+        #commets-wrapper {
+            color: #838383;
+            display: block;
+            float: left;
+            height: 200px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            text-transform: uppercase;   
+            ul {
+              padding-left: 0;
+              li {
+                background-color: #ffffff;
+                border-radius: 40px;
+                font-size: 0.9em;
+                list-style: outside none none;
+                margin: 10px auto;
+                padding: 15px 15px 15px 30px;
+                position:relative;
+                width: 86%;
+                &:before {
+                  content:"";
+                  width: 0;
+                  height: 0;
+                  left:-22px;
+                  border-style: solid;
+                  border-width: 22.5px 30px 22.5px 0;
+                  border-color: transparent #ffffff transparent;
+                  position:absolute;
+                }
+                &:nth-child(2n){
+                  background-color:#1485c8;
+                  color:#fff;
+                  .name {
+                    border-bottom: 1px dotted #fff;
+                  }
+                  &:before {
+                    content:none;
+                  }
+                  &:after {
+                    border-color: rgba(0, 0, 0, 0) #1485c8;
+                    border-style: solid;
+                    border-width: 22.5px 0 22.5px 30px;
+                    bottom: 20px;
+                    content: "";
+                    height: 0;
+                    position: absolute;
+                    right: -20px;
+                    width: 0;
+                  }
+                }
+                .name {
+                  border-bottom: 1px dotted #838383;
+                  display: inline-block;
+                  width: auto;
+                }
+                .time {
+                  width: 45px;
+                  display: inline-block;
+                  text-align: right;
+                }
+                .date {
+                  display: inline-block;
+                  text-align: right;
+                  width: 60px;
+                  text-align: left;
+                }
+                .seperator {
+                  margin-left: 10px;
+                  margin-right: 10px;
+                }
+                .comment {
+                  font-size: 0.9em;
+                  margin-top: 10px;
+                  line-height: 14px;
+                }
+              }
+            }
+        }
+        .new-post {
+          clear: both;
+          display: block;
+          float: left;
+          height: auto;
+          margin-top: 20px;
+          width: 100%;
+          }
+      }
+      #banterLeague {
+        background-color: #1888ca;
+        border: medium none;
+        border-radius: 5px;
+        clear: both;
+        color: #ffffff;
+        cursor: pointer;
+        display: block;
+        float: left;
+        font-size: 1em;
+        margin-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-top: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
       }
    }
 }

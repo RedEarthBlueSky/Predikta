@@ -17,9 +17,109 @@
       max-width: 620px;
       float: right;
     }
+  }
 }
+@media screen and (min-width:1560PX) {
+  section#points {
+    .table-responsive {
+      table {
+        thead {
+          th.actual {
 
+          }
+        }
+        tr.pending {
+          .game-state {
+          }
+        }
+        tr {
+          .game-state {
+          }
+          .game-state.bet-in-pay {
+          }
+          th.akka {
+          }
+          td.akka {
+            span {
+              display:block;
+              float:none;
+              margin-right:auto;
+              margin-left:auto;
+            }
+          }
+          th.away-team {
 
+          }
+          th.away {
+
+          }
+          .home-team,
+          .away-team {
+
+          }
+          .client-home,
+          .client-away {
+
+          }
+          .client-home,
+          .client-away,
+          .actual-home,
+          .actual-away {
+          }
+        }
+      }
+    }
+  }   
+} 
+@media screen and (max-width:1400PX) {
+  section#points {
+    .table-responsive {
+      table {
+        tr.pending {
+          .game-state {
+
+          }
+        }
+        tr {
+          .game-state {
+
+          }
+          .game-state.bet-in-pay {
+
+          }
+          th.akka {
+
+          }
+          td.akka {
+
+          }
+          th.away-team {
+            min-width:80px;
+          }
+          th.away {
+
+          }
+          .home-team {
+            min-width:110px;
+            }
+          .away-team {
+            min-width:100px;
+
+          }
+          .client-home,
+          .client-away {
+
+          }
+          .client-home,
+          .client-away,
+          .actual-home,
+          .actual-away {
+
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -235,23 +335,16 @@
           width: 100%;
           tr {
             th.away {
-              padding-left: 29px;
-              padding-right: 2px;
             }
             th.akka {
-              padding-left:0;
             }
             th.home-team {
-              padding-left:0;
-              min-width:90px;
+              width:100px;
             }
             th.actual {
-              padding-left:0;
-              padding-right:5px;
+
             }
             th.away-team {
-              padding-left:4px;
-              min-width:65px;
             }
           }
         }
@@ -261,41 +354,44 @@
           width: 100%;
           tr {
           .game-state {
-            padding-left:20px;
           }
           .game-state.bet-in-play {
-            padding-left:0;
             span {
               width:50px;
               font-size:9px;
             }
           }
+          .client-home,        
+          .dash,
+          .client-away {
+            padding-left:0;
+            padding-right:3px;
+          }
           td.home-team {
-            min-width:100px;
+            min-width:90px;
           }
           td.away-team {
             min-width:80px;
-            padding-left:25px;
+          }
+          td.away {
+            width:40px;
           }
           td.akka {
-            padding-left: 9px;
-            padding-right: 9px;
             width: 0;
           }
             .client-away,
             .client-home,
             .actual-away,
             .actual-home {
-              min-width:10px;
+
             }
             .actual-home,
             .client-home {
-              padding-left:6px;
+
             }
           }
           tr.pending {
             td.game-state {
-              padding-left:7px;
               .day,
               .time {
                 font-size:12px;
@@ -412,11 +508,11 @@
             .client-home,
             .actual-away,
             .actual-home {
-              min-width:10px;
+
             }
             .actual-home,
             .client-home {
-              padding-left:6px;
+
             }
           }
           tr.pending {
@@ -442,8 +538,6 @@
         }   
       }
             .modal {
-              left:41vw;
-              top:3vh;
               max-width:340px;
               .modal-dialog {
                 width:340px;

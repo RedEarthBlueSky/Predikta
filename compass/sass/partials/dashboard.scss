@@ -7,14 +7,48 @@
   display:none;
 }
 #dashboard-wrapper {
+    background-color:$prediktaDashboarBG;
     .no-display {
       display:none;
+    }
+    .container.marketing {
+      background-color:$prediktaDashboarBG;
+    }
+    #predikta-dashboard {
+      max-width:1600px;
+    }
+    a.where-anorak-next {
+      bottom: 0;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      width: 100%;
+      z-index: 2147483647;
+      .where-anorak-wrapper {
+        background-color:$prediktaBlue;
+        clear: both;
+        color: #fff;
+        display: block;
+        font-size: 1em;
+        height: 20px;
+        padding: 0;
+        text-transform: uppercase;
+        width:100%;
+        &:before {
+          @include rotate(90deg);
+          content: "\e029";
+          display:inline-block;
+          font-family:'Glyphicons Halflings';
+        }
+      }
     }
 /*  HEADER -----------------------------*/
   .navbar-wrapper {
       #PrediktaTop {
           width: 100%;
-          max-width: none;
+          max-width:1583px;
           padding-left:0;
           padding-right:0;
           .container {
@@ -48,7 +82,7 @@
                           background-repeat: no-repeat;
                           background-size: cover;
                           float: left;
-                          height: 60px;
+                          height: 50px;
                           width: 90%;
                       }
                   }
@@ -59,6 +93,7 @@
               li.play-predikta-button {
                   #play-predikta-button {
                       margin:5px 0;
+                      padding:10px 16px;
                       top: 0;
                       width: auto;
                       font-size:1em;
@@ -96,28 +131,47 @@
                       margin-left:10px;
                       float:right;
                       margin-top:2px;
+                      &:hover {
+                        .dropdown-menu {
+                           display:block;
+                        } 
+                      }
                       button {
-                          border-radius: 0;
-                          border: none;
-                          background-color: transparent;
+                        border-radius: 0;
+                        border: none;
+                        background-color: transparent;
+                        &:hover,
+                        &:focus {
+                          background-color:#232022;
+                            .glyphicon-cog:before {
+                                color: #fff;
+                            } 
+                        }      
                       }                  
                       .glyphicon-cog:before {
                           color: #1799D6;
                           font-size: 2.6em;
                       }            
                       .dropdown-menu {
-                          margin-top:-1px;
-                          left:-103px;
-                      }
-                      &:hover {
-                      @include linear-gradient( #01519e, 0%,  #009fe3, 100% ); 
-                          .glyphicon-cog:before {
-                              color: #fff;
-                          } 
-                          .dropdown-menu {
-                              display:block;
-                          } 
-                      }        
+                        @include linear-gradient( #232022, 0%,  #1385c7, 100% );
+                        top: 98%;
+                        left: -200px;
+                        min-width: 260px;
+                        border-radius: 0;
+                        border: none;
+                        text-align: left;
+                        text-transform: uppercase;
+                        li {
+                          margin-top:5px;
+                          margin-bottom:10px;
+                          a {
+                            color:#fff;
+                            &:hover {
+                              color:#232022;
+                            }
+                          }
+                        }
+                      }   
                   }
               }
             }
@@ -210,26 +264,22 @@
             }
         } 
         h1 {
-          color: #df1c22;
-          display: inline;
-          float: left;
-          font-size: 2.6em;
-          margin-bottom: 0;
-          margin-top: 10px;
-          text-transform: uppercase;
+          @include dashboardH1;
         }
       }
     }
       #myTabContent {
         #week {
         .modal {
+          left: 0;
           max-width: 490px;
-          overflow:visible;
-          left:42vw;
+          overflow: visible;
+          position: absolute;
+          top: -22px;
           .modal-dialog {
             .modal-content {
               background-clip: padding-box;
-              background-color: #ffffff;
+              background-color: #f7f7f7;
               border: medium none;
               border-radius: 0;
               box-shadow: none;
@@ -240,7 +290,7 @@
               border-top: none;
               max-width:490px;
               .modal-header {
-                  background-color:#fff;
+                  background-color:#f7f7f7;
                   border-bottom: medium none;
                   border-top: medium none;
                   clear: both;
@@ -250,11 +300,10 @@
                   padding: 0;
                   width: 100%;
                   h4#myModalLabel {
-                    background-color:#fff;
                     color: #df1c22;
                     display: inline;
                     float: left;
-                    font-size: 2.6em;
+                    font-size: 2.2em;
                     margin-bottom: 7px;
                     text-transform: uppercase;
                   }
@@ -712,4 +761,14 @@
       }
 /*  END LEAGUE SECTION ------------------------ */
     }
+
+
+// this works
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+   #dashboard-wrapper .container.marketing {
+     //background-color:black;
+   }
+}
+
 /*  END Dash board SASS ---------------------- */

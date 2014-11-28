@@ -9,16 +9,19 @@
 
 /*  Bootstrap styles ---------------------------------- */
 @import 'bootstrap/normalize';
-@import 'bootstrap/bootstrap-theme';
-@import 'bootstrap/bootstrap.min';
 @import 'bootstrap/bootstrap';
+@import 'bootstrap/bootstrap-theme';
 
 /*  Partials - CSS and SASS for specific elements ----- */
 @import 'partials/carousel';
 @import 'partials/dashboard-points';
 @import 'partials/dashboard';
 @import 'partials/dashboard-bets';
+@import 'partials/blog';
 
 /*  My custom styles ---------------------------------  */
 @import 'main';
 @import 'responsive';
+
+/*  CSS and SASS from other project and third party  -- */
+@import 'vendor/bootstrap-multiselect';
