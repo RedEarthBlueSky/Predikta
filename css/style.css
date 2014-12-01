@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*  SASS libraries ------------------------------------ */
+/*  for styles unique to ie */
 /*  when you are using rotate this hides the backface to prevent pixellation
     along the element edge.  The two states are 'hidden' and default 'visible' */
 /*  rotate in degrees with the numeric first and then the 'deg' after 
@@ -6761,352 +6762,6 @@ button.close {
 
   .carousel-indicators {
     bottom: 20px; } }
-/*!
- * Bootstrap v3.1.1 (http://getbootstrap.com)
- * Copyright 2011-2014 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-.btn-default,
-.btn-primary,
-.btn-success,
-.btn-info,
-.btn-warning,
-.btn-danger {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075); }
-
-.btn-default:active,
-.btn-primary:active,
-.btn-success:active,
-.btn-info:active,
-.btn-warning:active,
-.btn-danger:active,
-.btn-default.active,
-.btn-primary.active,
-.btn-success.active,
-.btn-info.active,
-.btn-warning.active,
-.btn-danger.active {
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
-
-.btn:active,
-.btn.active {
-  background-image: none; }
-
-.btn-default {
-  text-shadow: 0 1px 0 #fff;
-  background-image: -webkit-linear-gradient(top, #fff 0%, #e0e0e0 100%);
-  background-image: linear-gradient(to bottom, #fff 0%, #e0e0e0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
-  border-color: #dbdbdb;
-  border-color: #ccc; }
-
-.btn-default:hover,
-.btn-default:focus {
-  background-color: #e0e0e0;
-  background-position: 0 -15px; }
-
-.btn-default:active,
-.btn-default.active {
-  background-color: #e0e0e0;
-  border-color: #dbdbdb; }
-
-.btn-primary {
-  background-image: -webkit-linear-gradient(top, #428bca 0%, #2d6ca2 100%);
-  background-image: linear-gradient(to bottom, #428bca 0%, #2d6ca2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff2d6ca2', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
-  border-color: #2b669a; }
-
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #2d6ca2;
-  background-position: 0 -15px; }
-
-.btn-primary:active,
-.btn-primary.active {
-  background-color: #2d6ca2;
-  border-color: #2b669a; }
-
-.btn-success {
-  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);
-  background-image: linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
-  border-color: #3e8f3e; }
-
-.btn-success:hover,
-.btn-success:focus {
-  background-color: #419641;
-  background-position: 0 -15px; }
-
-.btn-success:active,
-.btn-success.active {
-  background-color: #419641;
-  border-color: #3e8f3e; }
-
-.btn-info {
-  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #2aabd2 100%);
-  background-image: linear-gradient(to bottom, #5bc0de 0%, #2aabd2 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2aabd2', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
-  border-color: #28a4c9; }
-
-.btn-info:hover,
-.btn-info:focus {
-  background-color: #2aabd2;
-  background-position: 0 -15px; }
-
-.btn-info:active,
-.btn-info.active {
-  background-color: #2aabd2;
-  border-color: #28a4c9; }
-
-.btn-warning {
-  background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
-  background-image: linear-gradient(to bottom, #f0ad4e 0%, #eb9316 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffeb9316', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
-  border-color: #e38d13; }
-
-.btn-warning:hover,
-.btn-warning:focus {
-  background-color: #eb9316;
-  background-position: 0 -15px; }
-
-.btn-warning:active,
-.btn-warning.active {
-  background-color: #eb9316;
-  border-color: #e38d13; }
-
-.btn-danger {
-  background-image: -webkit-linear-gradient(top, #d9534f 0%, #c12e2a 100%);
-  background-image: linear-gradient(to bottom, #d9534f 0%, #c12e2a 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc12e2a', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
-  border-color: #b92c28; }
-
-.btn-danger:hover,
-.btn-danger:focus {
-  background-color: #c12e2a;
-  background-position: 0 -15px; }
-
-.btn-danger:active,
-.btn-danger.active {
-  background-color: #c12e2a;
-  border-color: #b92c28; }
-
-.thumbnail,
-.img-thumbnail {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075); }
-
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-  background-color: #e8e8e8;
-  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
-  background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
-  background-repeat: repeat-x; }
-
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover,
-.dropdown-menu > .active > a:focus {
-  background-color: #357ebd;
-  background-image: -webkit-linear-gradient(top, #428bca 0%, #357ebd 100%);
-  background-image: linear-gradient(to bottom, #428bca 0%, #357ebd 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);
-  background-repeat: repeat-x; }
-
-.navbar-default {
-  background-image: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%);
-  background-image: linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0, 0, 0, 0.075); }
-
-.navbar-default .navbar-nav > .active > a {
-  background-image: -webkit-linear-gradient(top, #ebebeb 0%, #f3f3f3 100%);
-  background-image: linear-gradient(to bottom, #ebebeb 0%, #f3f3f3 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff3f3f3', GradientType=0);
-  background-repeat: repeat-x;
-  -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.075); }
-
-.navbar-brand,
-.navbar-nav > li > a {
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25); }
-
-.navbar-inverse {
-  background-image: -webkit-linear-gradient(top, #3c3c3c 0%, #222 100%);
-  background-image: linear-gradient(to bottom, #3c3c3c 0%, #222 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  background-repeat: repeat-x; }
-
-.navbar-inverse .navbar-nav > .active > a {
-  background-image: -webkit-linear-gradient(top, #222 0%, #282828 100%);
-  background-image: linear-gradient(to bottom, #222 0%, #282828 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff282828', GradientType=0);
-  background-repeat: repeat-x;
-  -webkit-box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.25); }
-
-.navbar-inverse .navbar-brand,
-.navbar-inverse .navbar-nav > li > a {
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); }
-
-.navbar-static-top,
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  border-radius: 0; }
-
-.alert {
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05); }
-
-.alert-success {
-  background-image: -webkit-linear-gradient(top, #dff0d8 0%, #c8e5bc 100%);
-  background-image: linear-gradient(to bottom, #dff0d8 0%, #c8e5bc 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);
-  background-repeat: repeat-x;
-  border-color: #b2dba1; }
-
-.alert-info {
-  background-image: -webkit-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
-  background-image: linear-gradient(to bottom, #d9edf7 0%, #b9def0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0);
-  background-repeat: repeat-x;
-  border-color: #9acfea; }
-
-.alert-warning {
-  background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #f8efc0 100%);
-  background-image: linear-gradient(to bottom, #fcf8e3 0%, #f8efc0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fff8efc0', GradientType=0);
-  background-repeat: repeat-x;
-  border-color: #f5e79e; }
-
-.alert-danger {
-  background-image: -webkit-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);
-  background-image: linear-gradient(to bottom, #f2dede 0%, #e7c3c3 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0);
-  background-repeat: repeat-x;
-  border-color: #dca7a7; }
-
-.progress {
-  background-image: -webkit-linear-gradient(top, #ebebeb 0%, #f5f5f5 100%);
-  background-image: linear-gradient(to bottom, #ebebeb 0%, #f5f5f5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff5f5f5', GradientType=0);
-  background-repeat: repeat-x; }
-
-.progress-bar {
-  background-image: -webkit-linear-gradient(top, #428bca 0%, #3071a9 100%);
-  background-image: linear-gradient(to bottom, #428bca 0%, #3071a9 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3071a9', GradientType=0);
-  background-repeat: repeat-x; }
-
-.progress-bar-success {
-  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #449d44 100%);
-  background-image: linear-gradient(to bottom, #5cb85c 0%, #449d44 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff449d44', GradientType=0);
-  background-repeat: repeat-x; }
-
-.progress-bar-info {
-  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
-  background-image: linear-gradient(to bottom, #5bc0de 0%, #31b0d5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff31b0d5', GradientType=0);
-  background-repeat: repeat-x; }
-
-.progress-bar-warning {
-  background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #ec971f 100%);
-  background-image: linear-gradient(to bottom, #f0ad4e 0%, #ec971f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffec971f', GradientType=0);
-  background-repeat: repeat-x; }
-
-.progress-bar-danger {
-  background-image: -webkit-linear-gradient(top, #d9534f 0%, #c9302c 100%);
-  background-image: linear-gradient(to bottom, #d9534f 0%, #c9302c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc9302c', GradientType=0);
-  background-repeat: repeat-x; }
-
-.list-group {
-  border-radius: 4px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075); }
-
-.list-group-item.active,
-.list-group-item.active:hover,
-.list-group-item.active:focus {
-  text-shadow: 0 -1px 0 #3071a9;
-  background-image: -webkit-linear-gradient(top, #428bca 0%, #3278b3 100%);
-  background-image: linear-gradient(to bottom, #428bca 0%, #3278b3 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff3278b3', GradientType=0);
-  background-repeat: repeat-x;
-  border-color: #3278b3; }
-
-.panel {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
-
-.panel-default > .panel-heading {
-  background-image: -webkit-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
-  background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
-  background-repeat: repeat-x; }
-
-.panel-primary > .panel-heading {
-  background-image: -webkit-linear-gradient(top, #428bca 0%, #357ebd 100%);
-  background-image: linear-gradient(to bottom, #428bca 0%, #357ebd 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff357ebd', GradientType=0);
-  background-repeat: repeat-x; }
-
-.panel-success > .panel-heading {
-  background-image: -webkit-linear-gradient(top, #dff0d8 0%, #d0e9c6 100%);
-  background-image: linear-gradient(to bottom, #dff0d8 0%, #d0e9c6 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffd0e9c6', GradientType=0);
-  background-repeat: repeat-x; }
-
-.panel-info > .panel-heading {
-  background-image: -webkit-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);
-  background-image: linear-gradient(to bottom, #d9edf7 0%, #c4e3f3 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffc4e3f3', GradientType=0);
-  background-repeat: repeat-x; }
-
-.panel-warning > .panel-heading {
-  background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #faf2cc 100%);
-  background-image: linear-gradient(to bottom, #fcf8e3 0%, #faf2cc 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fffaf2cc', GradientType=0);
-  background-repeat: repeat-x; }
-
-.panel-danger > .panel-heading {
-  background-image: -webkit-linear-gradient(top, #f2dede 0%, #ebcccc 100%);
-  background-image: linear-gradient(to bottom, #f2dede 0%, #ebcccc 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffebcccc', GradientType=0);
-  background-repeat: repeat-x; }
-
-.well {
-  background-image: -webkit-linear-gradient(top, #e8e8e8 0%, #f5f5f5 100%);
-  background-image: linear-gradient(to bottom, #e8e8e8 0%, #f5f5f5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8e8e8', endColorstr='#fff5f5f5', GradientType=0);
-  background-repeat: repeat-x;
-  border-color: #dcdcdc;
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1); }
-
-/*# sourceMappingURL=bootstrap-theme.css.map */
 /*  Partials - CSS and SASS for specific elements ----- */
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -7292,7 +6947,7 @@ section#points {
     float: left;
     width: 100%; }
     section#points header h1 {
-      color: #df1c22;
+      color: #000;
       display: inline;
       float: left;
       font-size: 2.2em;
@@ -7323,6 +6978,10 @@ section#points {
         right: 0;
         text-align: center;
         top: 0;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
         transform: rotate(90deg);
         width: 30px; }
       section#points header .leaguedrop select {
@@ -7343,10 +7002,17 @@ section#points {
     top: 14%;
     width: 300px;
     left: 17%; }
-    section#points a.first-time-notification .bluegradinv {
-      background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%) repeat scroll 0 0 transparent; }
     section#points a.first-time-notification .conditional {
       background-clip: padding-box;
+      background: #009fe3;
+      background: -webkit-gradient(linear, left top, left bottom, from(#FF009FE3), to(#FF01519E));
+      background: -moz-linear-gradient(center top, #009fe3 0%, #01519e 100%);
+      background: -moz-gradient(center top, #009fe3 0%, #01519e 100%);
+      background: -webkit-linear-gradient(top, #009fe3 0%, #01519e 100%);
+      background: -o-linear-gradient(top, #009fe3 0%, #01519e 100%);
+      background: -ms-linear-gradient(top, #009fe3 0%, #01519e 100%);
+      background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF009FE3', endColorstr='#FF01519E',GradientType=0 );
       border-radius: 22px;
       box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.6);
       color: #ffffff;
@@ -7359,7 +7025,7 @@ section#points {
         border-bottom: 28px solid #009fe3;
         border-left: 12px solid transparent;
         border-right: 12px solid transparent;
-        bottom: 79px;
+        bottom: 75px;
         content: "";
         height: 0;
         left: 59px;
@@ -7381,73 +7047,83 @@ section#points {
         width: 27px; }
   section#points .table-responsive {
     clear: both;
-    display: block;
+    display: table;
     float: left;
     /*  try and set element to sit within any device view */
     width: 100%; }
-    section#points .table-responsive::-moz-scrollbar {
-      width: 12px; }
-    section#points .table-responsive::-moz-scrollbar-track {
-      -moz-box-shadow: inset 0 0 6px #fff;
-      background: #000; }
-    section#points .table-responsive::-moz-scrollbar-thumb {
-      border-radius: 10px;
-      -moz-box-shadow: inset 0 0 6px #fff;
-      background: #7A252B; }
     section#points .table-responsive table {
       border-collapse: collapse;
       border-spacing: 0;
       clear: both;
-      display: block;
+      color: #000;
+      display: table;
       float: left;
       font-size: 1em;
       margin-bottom: 0;
       text-transform: uppercase;
       width: 100%; }
-      section#points .table-responsive table tbody {
-        display: block;
-        float: left;
-        width: 100%; }
-        section#points .table-responsive table tbody tr {
-          margin-top: 0;
-          margin-bottom: 0; }
-          section#points .table-responsive table tbody tr td {
-            padding-bottom: 0;
-            padding-top: 8px; }
-      section#points .table-responsive table thead {
-        display: block;
-        float: left;
-        width: 100%; }
-        section#points .table-responsive table thead th {
-          border-bottom: none;
-          color: #bdbdbd; }
-        section#points .table-responsive table thead th.actual {
-          width: 60px; }
+      section#points .table-responsive table tbody tr {
+        margin-top: 0;
+        margin-bottom: 0; }
+        section#points .table-responsive table tbody tr td {
+          padding-bottom: 0;
+          padding-top: 8px; }
+      section#points .table-responsive table thead th {
+        border-bottom: none;
+        color: #bdbdbd; }
+      section#points .table-responsive table thead th.actual {
+        width: 85px;
+        padding-left: 0;
+        padding-right: 0; }
+      section#points .table-responsive table thead th.points {
+        width: 50px; }
       section#points .table-responsive table tr {
         display: block;
         clear: both;
         float: left;
         position: relative;
-        width: 100%; }
+        width: 100%;
+        /*  firefox only hack because of table bug in moz  */ }
         section#points .table-responsive table tr .actual {
+          padding-left: 0;
+          padding-right: 0;
+          padding-top: 5px;
           text-align: center;
-          width: 60px; }
-          section#points .table-responsive table tr .actual table tr td {
-            padding: 5px; }
+          width: 80px; }
+          section#points .table-responsive table tr .actual table {
+            width: 70%;
+            margin: 0 auto;
+            display: block;
+            float: none; }
+            section#points .table-responsive table tr .actual table tr td {
+              padding: 5px; }
         section#points .table-responsive table tr .away {
+          padding-top: 5px;
           text-align: center;
-          width: 45px; }
-          section#points .table-responsive table tr .away table tr td {
-            padding: 5px; }
+          width: 75px; }
+          section#points .table-responsive table tr .away table {
+            width: 70%;
+            margin: 0 auto;
+            display: block;
+            float: none; }
+            section#points .table-responsive table tr .away table tr td {
+              padding: 5px; }
         section#points .table-responsive table tr .home-team {
           text-align: right;
+          padding-left: 0;
+          padding-right: 0;
           width: 130px; }
         section#points .table-responsive table tr .away-team {
-          width: 120px; }
+          width: 130px;
+          padding-left: 0;
+          padding-right: 0; }
+@-moz-document url-prefix() {
+  section#points .table-responsive table tr .away-team {
+    width: 96px; } }
         section#points .table-responsive table tr .game-state {
           border-top: none;
           text-align: center;
-          width: 40px; }
+          width: 60px; }
           section#points .table-responsive table tr .game-state span {
             display: block;
             float: left;
@@ -7470,14 +7146,24 @@ section#points {
             width: 100%; }
         section#points .table-responsive table tr .points {
           padding-top: 0;
-          min-width: 30px;
+          width: 55px;
           text-align: center; }
           section#points .table-responsive table tr .points span {
             background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%) repeat scroll 0 0 transparent;
+            background: #009fe3;
+            background: -webkit-gradient(linear, left top, left bottom, from(#FF009FE3), to(#FF01519E));
+            background: -moz-linear-gradient(center top, #009fe3 0%, #01519e 100%);
+            background: -moz-gradient(center top, #009fe3 0%, #01519e 100%);
+            background: -webkit-linear-gradient(top, #009fe3 0%, #01519e 100%);
+            background: -o-linear-gradient(top, #009fe3 0%, #01519e 100%);
+            background: -ms-linear-gradient(top, #009fe3 0%, #01519e 100%);
+            background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF009FE3', endColorstr='#FF01519E',GradientType=0 );
             color: #ffffff;
             display: block;
+            float: right;
             height: 30px;
-            padding-top: 4px;
+            padding-top: 7px;
             width: 30px;
             margin-bottom: 3px;
             margin-top: 3px; }
@@ -7488,6 +7174,15 @@ section#points {
           padding-bottom: 0; }
           section#points .table-responsive table tr .game-state.bet-in-play span {
             background: linear-gradient(to bottom, #e7444a 0%, #941913 100%) repeat scroll 0 0 transparent;
+            background: #e7444a;
+            background: -webkit-gradient(linear, left top, left bottom, from(#FFE7444A), to(#FF941913));
+            background: -moz-linear-gradient(center top, #e7444a 0%, #941913 100%);
+            background: -moz-gradient(center top, #e7444a 0%, #941913 100%);
+            background: -webkit-linear-gradient(top, #e7444a 0%, #941913 100%);
+            background: -o-linear-gradient(top, #e7444a 0%, #941913 100%);
+            background: -ms-linear-gradient(top, #e7444a 0%, #941913 100%);
+            background: linear-gradient(to bottom, #e7444a 0%, #941913 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE7444A', endColorstr='#FF941913',GradientType=0 );
             border: 2px solid #1382c4;
             border-radius: 10px;
             color: #ffffff;
@@ -7509,7 +7204,7 @@ section#points {
               right: 0;
               top: 0; }
         section#points .table-responsive table tr .AKKA {
-          width: 30px; }
+          width: 55px; }
           section#points .table-responsive table tr .AKKA span {
             border-radius: 20px;
             display: block;
@@ -7529,6 +7224,9 @@ section#points {
         section#points .table-responsive table tr.pending .yellow-circle,
         section#points .table-responsive table tr.pending .green-circle {
           background-color: #bdbdbd; }
+        section#points .table-responsive table tr.pending .points span {
+          background: none;
+          color: #333; }
       section#points .table-responsive table tr.in-play {
         background-color: #deeaf0;
         border: medium none;
@@ -7571,9 +7269,14 @@ section#points {
     font-size: 15px;
     padding: 0 2px 2px;
     position: absolute;
-    text-shadow: 1px 1px 1px #000000;
     left: 0;
-    top: 0; }
+    top: 0;
+    text-shadow: 1px 1px 1px #000000;
+    /*  hack for internet explorer 9 and above */ }
+    @media screen and (min-width: 0\0) {
+      section#points .banker:after {
+        top: 80px !important;
+        left: 14px !important; } }
   section#points #table-banner-add {
     margin-top: 10px;
     display: block;
@@ -7638,6 +7341,7 @@ section#points {
       padding-left: 0;
       padding-right: 0; }
       #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li h3 {
+        color: #000;
         float: right;
         font-size: 1.5em;
         margin-bottom: 0;
@@ -7678,19 +7382,23 @@ section#points {
         top: 0;
         width: auto;
         font-size: 1em; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.read-predikta-blog {
-        width: 17%; }
-        #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.read-predikta-blog a {
-          color: #1888ca;
-          text-align: right;
-          text-transform: uppercase;
-          font-size: 1em;
-          text-decoration: underline;
-          padding-top: 5px; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.mini-nav {
+        width: 9%; }
+        #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.mini-nav a {
+          background-color: #1888ca;
+          border-radius: 5px;
+          color: #ffffff;
+          font-size: 0.9em;
+          margin-left: 25px;
+          margin-right: 0;
+          margin-top: 15px;
+          padding: 5px 0 6px;
+          text-align: center;
+          text-transform: uppercase; }
       #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel {
         float: right;
         text-align: right;
-        width: 14%; }
+        width: 10%; }
         #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .name-clock-wrapper {
           float: right; }
         #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel h1 {
@@ -7750,7 +7458,9 @@ section#points {
     /*  LEAGUE SECTION ---------------------*/ }
     #dashboard-wrapper #predikta-dashboard section#league {
       text-transform: uppercase;
-      max-width: 490px; }
+      max-width: 490px;
+      display: inline-block;
+      float: left; }
       #dashboard-wrapper #predikta-dashboard section#league header {
         clear: both;
         display: block;
@@ -7819,7 +7529,7 @@ section#points {
             margin-top: 10px;
             margin-right: 10px; }
         #dashboard-wrapper #predikta-dashboard section#league header h1 {
-          color: #df1c22;
+          color: #000;
           display: inline;
           float: left;
           font-size: 2.2em;
@@ -7844,7 +7554,7 @@ section#points {
         display: block;
         float: left;
         border-top: none;
-        max-width: 490px; }
+        max-width: 475px; }
         #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog .modal-content .modal-header {
           background-color: #f7f7f7;
           border-bottom: medium none;
@@ -7856,7 +7566,7 @@ section#points {
           padding: 0;
           width: 100%; }
           #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog .modal-content .modal-header h4#myModalLabel {
-            color: #df1c22;
+            color: #000;
             display: inline;
             float: left;
             font-size: 2.2em;
@@ -7942,25 +7652,13 @@ section#points {
           border-collapse: collapse;
           border-spacing: 0;
           clear: both;
+          color: #000;
           display: block;
           float: left;
           font-size: 1em;
           margin-bottom: 0;
           text-transform: uppercase;
           width: 100%; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr,
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tbody tr,
-          #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tbody tr,
-          #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tbody tr {
-            margin-top: 0;
-            margin-bottom: 0; }
-            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr td,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tbody tr td,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tbody tr td,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tbody tr td {
-              border-top: 1px solid #dddddd;
-              padding-bottom: 1px;
-              padding-top: 4px; }
           #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead th.akka,
           #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table thead th.akka,
           #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table thead th.akka,
@@ -7976,7 +7674,31 @@ section#points {
           #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table thead th.actual,
           #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table thead th.actual,
           #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table thead th.actual {
-            padding-left: 14px; }
+            padding-left: 7px; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead th.away-team,
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table thead th.away-team,
+          #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table thead th.away-team,
+          #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table thead th.away-team {
+            width: 116px;
+            padding-left: 10px; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead th.points,
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table thead th.points,
+          #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table thead th.points,
+          #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table thead th.points {
+            width: 70px; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr,
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tbody tr,
+          #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tbody tr,
+          #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tbody tr {
+            margin-top: 0;
+            margin-bottom: 0; }
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr td,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tbody tr td,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tbody tr td,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tbody tr td {
+              border-top: 1px solid #dddddd;
+              padding-bottom: 1px;
+              padding-top: 4px; }
           #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr,
           #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr,
           #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr,
@@ -7985,44 +7707,46 @@ section#points {
             clear: both;
             float: left;
             position: relative; }
-            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .home-team,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .away-team,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr .home-team,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr .away-team,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr .home-team,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr .away-team,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .home-team,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .away-team {
-              min-width: 120px;
-              width: 100%; }
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .actual,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr .actual,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr .actual,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .actual {
+              padding-top: 0; }
+              #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .actual table tr td,
+              #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr .actual table tr td,
+              #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr .actual table tr td,
+              #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .actual table tr td {
+                border-top: none; }
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .away,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr .away,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr .away,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .away {
+              padding-top: 0; }
+              #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .away table tr td,
+              #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr .away table tr td,
+              #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr .away table tr td,
+              #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .away table tr td {
+                border-top: none; }
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .home-team,
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr .home-team,
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr .home-team,
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .home-team {
               text-align: right;
-              padding-left: 0; }
+              padding-left: 0;
+              width: 120px; }
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr th.home-team,
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr th.home-team,
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr th.home-team,
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr th.home-team {
-              padding-left: 0; }
+              padding-left: 0;
+              width: 120px; }
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .away-team,
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr .away-team,
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr .away-team,
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .away-team {
               padding-left: 28px;
-              padding-right: 0; }
-            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr th.away-team,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr th.away-team,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr th.away-team,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr th.away-team {
-              min-width: 120px;
-              padding-left: 10px; }
-            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr th.away,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr th.away,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr th.away,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr th.away {
-              padding-left: 25px; }
+              padding-right: 0;
+              width: 120px; }
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .actual-home,
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .actual-away,
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .client-home,
@@ -8039,7 +7763,7 @@ section#points {
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .actual-away,
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .client-home,
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .client-away {
-              min-width: 20px;
+              width: 20px;
               text-align: center;
               padding-left: 0;
               padding-right: 0; }
@@ -8103,13 +7827,21 @@ section#points {
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr .points,
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .points {
               padding-top: 0;
-              min-width: 80px;
+              width: 80px;
               text-align: center; }
               #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .points span,
               #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr .points span,
               #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr .points span,
               #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .points span {
-                background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%) repeat scroll 0 0 transparent;
+                background: #009fe3;
+                background: -webkit-gradient(linear, left top, left bottom, from(#FF009FE3), to(#FF01519E));
+                background: -moz-linear-gradient(center top, #009fe3 0%, #01519e 100%);
+                background: -moz-gradient(center top, #009fe3 0%, #01519e 100%);
+                background: -webkit-linear-gradient(top, #009fe3 0%, #01519e 100%);
+                background: -o-linear-gradient(top, #009fe3 0%, #01519e 100%);
+                background: -ms-linear-gradient(top, #009fe3 0%, #01519e 100%);
+                background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF009FE3', endColorstr='#FF01519E',GradientType=0 );
                 color: #ffffff;
                 display: block;
                 float: right;
@@ -8117,7 +7849,7 @@ section#points {
                 margin-bottom: 3px;
                 margin-right: 24px;
                 margin-top: 3px;
-                padding-top: 4px;
+                padding-top: 7px;
                 width: 30px; }
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .game-state.bet-in-play,
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr .game-state.bet-in-play,
@@ -8213,6 +7945,13 @@ section#points {
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr.pending td.game-state,
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr.pending td.game-state {
               padding-left: 10px; }
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr.pending .points span,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr.pending .points span,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr.pending .points span,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr.pending .points span {
+              background: none;
+              color: #333;
+              padding-top: 7px; }
           #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr.in-play,
           #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr.in-play,
           #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr.in-play,
@@ -8236,7 +7975,7 @@ section#points {
           #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tfoot tr,
           #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tfoot tr,
           #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tfoot tr {
-            padding-left: 77px;
+            padding-left: 10px;
             margin-top: 0; }
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tfoot tr td,
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tfoot tr td,
@@ -8474,12 +8213,14 @@ section#points {
 /*  END Dash board SASS ---------------------- */
 aside#bets {
   background-color: #f7f7f7;
+  display: inline-block;
+  float: left;
   max-width: 387px;
   padding-right: 0; }
   aside#bets #banterWrapper div[class^="league"] {
     display: none; }
   aside#bets header h1 {
-    color: #df1c22;
+    color: #000;
     display: inline;
     float: left;
     font-size: 2.2em;
@@ -8572,7 +8313,7 @@ aside#bets {
             color: #868686;
             width: 40.5%; }
   aside#bets #banter h1 {
-    color: #df1c22;
+    color: #000;
     display: inline;
     float: left;
     font-size: 2.2em;
@@ -8641,7 +8382,15 @@ aside#bets {
         text-transform: uppercase;
         width: 75%; }
       aside#bets #banter .new-post-wrapper .newPostCheckbox .squaredTwo {
-        background: -moz-linear-gradient(center top, #1888ca 70%, #1799d6 100%) repeat scroll 0 0 transparent;
+        background: #1888ca;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FF1888CA), to(#FF1799D6));
+        background: -moz-linear-gradient(center top, #1888ca 70%, #1799d6 100%);
+        background: -moz-gradient(center top, #1888ca 70%, #1799d6 100%);
+        background: -webkit-linear-gradient(top, #1888ca 70%, #1799d6 100%);
+        background: -o-linear-gradient(top, #1888ca 70%, #1799d6 100%);
+        background: -ms-linear-gradient(top, #1888ca 70%, #1799d6 100%);
+        background: linear-gradient(to bottom, #1888ca 70%, #1799d6 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF1888CA', endColorstr='#FF1799D6',GradientType=0 );
         border-radius: 5px;
         display: inline-block;
         height: 35px;
@@ -8651,6 +8400,15 @@ aside#bets {
         width: 35px; }
         aside#bets #banter .new-post-wrapper .newPostCheckbox .squaredTwo label {
           background: linear-gradient(to bottom, #e7444a 0%, #941913 100%) repeat scroll 0 0 transparent;
+          background: #e7444a;
+          background: -webkit-gradient(linear, left top, left bottom, from(#FFE7444A), to(#FF941913));
+          background: -moz-linear-gradient(center top, #e7444a 0%, #941913 100%);
+          background: -moz-gradient(center top, #e7444a 0%, #941913 100%);
+          background: -webkit-linear-gradient(top, #e7444a 0%, #941913 100%);
+          background: -o-linear-gradient(top, #e7444a 0%, #941913 100%);
+          background: -ms-linear-gradient(top, #e7444a 0%, #941913 100%);
+          background: linear-gradient(to bottom, #e7444a 0%, #941913 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE7444A', endColorstr='#FF941913',GradientType=0 );
           border-radius: 5px;
           cursor: pointer;
           height: 28px;
@@ -8663,21 +8421,21 @@ aside#bets {
             filter: alpha(opacity=30);
             opacity: 0.3; }
         aside#bets #banter .new-post-wrapper .newPostCheckbox .squaredTwo label:after {
-          -moz-border-bottom-colors: none;
-          -moz-border-left-colors: none;
-          -moz-border-right-colors: none;
-          -moz-border-top-colors: none;
           background: none repeat scroll 0 0 transparent;
-          border-color: -moz-use-text-color -moz-use-text-color #fcfff4 #fcfff4;
+          border-color: #fcfff4;
           border-image: none;
           border-style: none none solid solid;
-          border-width: medium medium 5px 5px;
+          border-width: 5px;
           content: "";
           height: 12px;
           left: 3px;
           opacity: 0;
           position: absolute;
           top: 5px;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
           transform: rotate(-45deg);
           width: 21px; }
         aside#bets #banter .new-post-wrapper .newPostCheckbox .squaredTwo input[type=checkbox] {
@@ -8910,6 +8668,9 @@ aside#bets {
     border-radius: 0; }
 
 /*  END Carosel buttons -------------------------- */
+.ie #dashboard-wrapper.marketing.container {
+  background-color: black; }
+
 .navbar .lologo {
   background-image: url("../img/logo.svg");
   background-repeat: no-repeat;
@@ -9760,13 +9521,76 @@ footer {
     float: none;
     margin-right: auto;
     margin-left: auto; } }
+@media screen and (max-width: 1600PX) {
+  #myTabContent #week .modal .modal-dialog .modal-content {
+    width: 460px; }
+
+  section#points .table-responsive table tr .points {
+    width: 46px; }
+  section#points .table-responsive table tr .akka {
+    width: 25px; } }
+@media all and (min--moz-device-pixel-ratio: 0) and (min-resolution: 30dpcm) and (max-width: 1600PX) {
+  section#points .table-responsive table thead th.points {
+    width: 26px; }
+  section#points .table-responsive table tr .points {
+    width: 30px; }
+  section#points .table-responsive table tr .akka {
+    width: 15px; }
+  section#points .table-responsive table tr .game-state {
+    width: 40px; } }
 @media screen and (max-width: 1400PX) {
-  section#points .table-responsive table tr th.away-team {
-    min-width: 80px; }
+  #mytabcontent #week .modal .modal-dialog .modal-content {
+    width: 423px; }
+
+  aside#bets #banter #banterForm #commets-wrapper ul li, aside#bets #banter #banterWrapper #commets-wrapper ul li {
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+  aside#bets #banter #banterForm #commets-wrapper,
+  aside#bets #banter #banterWrapper #commets-wrapper {
+    height: 400px; }
+
+  #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink .lologo {
+    width: 100%; }
+
+  section#points .table-responsive table thead th.home-team {
+    width: 110px; }
+  section#points .table-responsive table thead th.actual {
+    width: 140px; }
+  section#points .table-responsive table thead th.away-team {
+    width: 80px; }
+  section#points .table-responsive table thead th.away {
+    width: 60px; }
+  section#points .table-responsive table tr .actual {
+    width: 70px; }
+  section#points .table-responsive table tr .away {
+    width: 65px; }
+  section#points .table-responsive table tr .game-state.bet-in-play {
+    width: 40px; }
+    section#points .table-responsive table tr .game-state.bet-in-play span {
+      width: 60px; }
   section#points .table-responsive table tr .home-team {
-    min-width: 110px; }
+    width: 120px; }
   section#points .table-responsive table tr .away-team {
-    min-width: 100px; } }
+    width: 100px; } }
+@media all and (min--moz-device-pixel-ratio: 0) and (min-resolution: 30dpcm) and (max-width: 1400PX) {
+  section#points .table-responsive table thead th.home-team {
+    width: 120px; }
+  section#points .table-responsive table thead th.actual {
+    width: 72px; }
+  section#points .table-responsive table thead th.game-state {
+    width: 0; }
+  section#points .table-responsive table thead th.away-team {
+    width: 108px; }
+  section#points .table-responsive table thead th.away {
+    width: 30px; }
+  section#points .table-responsive table tr .game-state.bet-in-play span {
+    width: 53px; }
+  section#points .table-responsive table tr .away-team {
+    width: 89px; }
+  section#points .table-responsive table tr .away {
+    width: 50px; } }
 /*  MAX WIDTH 1200PX --------------------------------- */
 @media screen and (max-width: 1200px) {
   #dashboard-wrapper {
@@ -9810,7 +9634,8 @@ footer {
         -o-transform: scale(0.8, 1);
         /* Opera */ }
     #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel {
-      margin-top: 0; }
+      margin-top: 0;
+      width: 12%; }
       #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel h1 {
         font-size: 1em;
         margin-top: 11px; }
@@ -9821,224 +9646,6 @@ footer {
       #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .dropdown-menu {
         left: -128px; } }
 /*  END MAX WIDTH 1200PX ----------------------------- */
-/*  MAX WIDTH 1024PX --------------------------------- */
-@media screen and (max-width: 1024px) {
-  #dashboard-wrapper {
-    /*  Header -------------------------------------------- */
-    /*  END Header ---------------------------------------- */
-    /*  POINTS SECTION ------------------------ */
-    /*  END POINTS SECTION -------------------- */ }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li h3 {
-      width: 234px;
-      font-size: 1.1em;
-      transform: scale(0.7, 1);
-      -webkit-transform: scale(0.7, 1);
-      /* Safari and Chrome */
-      -moz-transform: scale(0.7, 1);
-      /* Firefox */
-      -ms-transform: scale(0.7, 1);
-      /* IE 9+ */
-      -o-transform: scale(0.7, 1);
-      /* Opera */
-      margin-top: 5px;
-      position: relative;
-      left: 10%; }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink .lologo {
-      width: 150px;
-      height: 47px;
-      margin-top: 0; }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.know-football {
-      width: 33%; }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button #play-predikta-button {
-      border-radius: 6px;
-      border-width: 2px;
-      margin-top: 3px;
-      padding: 5px 11px;
-      transform: scale(0.8, 1);
-      -webkit-transform: scale(0.8, 1);
-      /* Safari and Chrome */
-      -moz-transform: scale(0.8, 1);
-      /* Firefox */
-      -ms-transform: scale(0.8, 1);
-      /* IE 9+ */
-      -o-transform: scale(0.8, 1);
-      /* Opera */
-      font-size: 0.8em; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button #play-predikta-button:before {
-        border-width: 2px;
-        border-radius: 6px; }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.read-predikta-blog {
-      width: 12%; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.read-predikta-blog a {
-        font-size: 0.8em;
-        line-height: 14px;
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 5px;
-        transform: scale(0.8, 1);
-        -webkit-transform: scale(0.8, 1);
-        /* Safari and Chrome */
-        -moz-transform: scale(0.8, 1);
-        /* Firefox */
-        -ms-transform: scale(0.8, 1);
-        /* IE 9+ */
-        -o-transform: scale(0.8, 1);
-        /* Opera */ }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel {
-      margin-top: 0; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .name-clock-wrapper {
-        font-size: 0.8em; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel h1 {
-        font-size: 1em;
-        margin-top: 11px; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group button {
-        padding: 3px; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .glyphicon-cog:before {
-        font-size: 2em; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .dropdown-menu {
-        left: -128px; }
-    #dashboard-wrapper section#points {
-      width: 100%;
-      max-width: 400px;
-      display: block;
-      float: left;
-      padding-left: 0;
-      padding-right: 0; }
-      #dashboard-wrapper section#points header h1 {
-        font-size: 2em; }
-      #dashboard-wrapper section#points header .leaguedrop {
-        width: 220px;
-        height: 30px; }
-        #dashboard-wrapper section#points header .leaguedrop select {
-          width: 220px; }
-      #dashboard-wrapper section#points .table-responsive table {
-        font-size: 0.8em; }
-        #dashboard-wrapper section#points .table-responsive table thead {
-          display: block;
-          float: left;
-          width: 100%; }
-          #dashboard-wrapper section#points .table-responsive table thead tr th.home-team {
-            width: 100px; }
-        #dashboard-wrapper section#points .table-responsive table tbody {
-          display: block;
-          float: left;
-          width: 100%; }
-          #dashboard-wrapper section#points .table-responsive table tbody tr .game-state.bet-in-play span {
-            width: 50px;
-            font-size: 9px; }
-          #dashboard-wrapper section#points .table-responsive table tbody tr .client-home,
-          #dashboard-wrapper section#points .table-responsive table tbody tr .dash,
-          #dashboard-wrapper section#points .table-responsive table tbody tr .client-away {
-            padding-left: 0;
-            padding-right: 3px; }
-          #dashboard-wrapper section#points .table-responsive table tbody tr td.home-team {
-            min-width: 90px; }
-          #dashboard-wrapper section#points .table-responsive table tbody tr td.away-team {
-            min-width: 80px; }
-          #dashboard-wrapper section#points .table-responsive table tbody tr td.away {
-            width: 40px; }
-          #dashboard-wrapper section#points .table-responsive table tbody tr td.akka {
-            width: 0; }
-          #dashboard-wrapper section#points .table-responsive table tbody tr.pending td.game-state .day,
-          #dashboard-wrapper section#points .table-responsive table tbody tr.pending td.game-state .time {
-            font-size: 12px; }
-        #dashboard-wrapper section#points .table-responsive table tfoot .tfoot-header {
-          padding-left: 25px; }
-        #dashboard-wrapper section#points .table-responsive table tfoot tr {
-          padding-left: 24px; }
-          #dashboard-wrapper section#points .table-responsive table tfoot tr td {
-            width: 78px; }
-    #dashboard-wrapper #predikta-dashboard {
-      /*  LEAGUE SECTION ------------------------ */
-      /*  END LEAGUE SECTION ------------------------ */ }
-      #dashboard-wrapper #predikta-dashboard section#league {
-        width: 100%;
-        max-width: 350px;
-        display: inline-block; }
-        #dashboard-wrapper #predikta-dashboard section#league #details {
-          height: 364px;
-          overflow-y: scroll; }
-        #dashboard-wrapper #predikta-dashboard section#league header #myTAb li a,
-        #dashboard-wrapper #predikta-dashboard section#league header #myTAb li.active a {
-          font-size: 0.8em;
-          margin-top: 9px;
-          width: 80px; }
-        #dashboard-wrapper #predikta-dashboard section#league header h1 {
-          font-size: 2em; }
-      #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table {
-        font-size: 0.8em; }
-        #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr {
-          width: 100%; }
-        #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead {
-          display: block;
-          float: left;
-          margin-bottom: 6px;
-          margin-top: 10px;
-          width: 100%; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead tr th.away {
-            padding-left: 15px;
-            padding-right: 0; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead tr th.akka {
-            padding-left: 0; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead tr th.home-team {
-            padding-left: 0;
-            min-width: 99px; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead tr th.actual {
-            padding-left: 7px;
-            padding-right: 1px; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead tr th.away-team {
-            padding-left: 4px;
-            min-width: 65px; }
-        #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody {
-          display: block;
-          float: left;
-          width: 100%; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr .game-state {
-            padding-left: 20px; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr .game-state.bet-in-play {
-            padding-left: 0; }
-            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr .game-state.bet-in-play span {
-              width: 50px;
-              font-size: 9px; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr td.home-team {
-            min-width: 100px; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr td.away-team {
-            min-width: 80px;
-            padding-left: 25px; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr td.akka {
-            padding-left: 9px;
-            padding-right: 9px;
-            width: 0; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr.pending td.game-state {
-            padding-left: 7px; }
-            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr.pending td.game-state .day,
-            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr.pending td.game-state .time {
-              font-size: 12px; }
-        #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tfoot .tfoot-header {
-          padding-left: 25px; }
-        #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tfoot tr td {
-          width: 78px; }
-      #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .modal {
-        max-width: 340px; }
-        #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .modal .modal-dialog {
-          width: 340px; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .modal .modal-dialog .modal-content .modal-header button.close {
-            width: auto;
-            clear: left; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .modal .modal-dialog .modal-content .modal-header h4#myModalLabel {
-            font-size: 1.8em;
-            margin-top: 8px; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .modal .modal-dialog .modal-content .modal-body {
-            max-width: 340px; }
-      #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues #players {
-        height: 350px; }
-      #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues h3,
-      #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails h3 {
-        font-size: 0.8em; }
-      #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues h3,
-      #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails h3 {
-        font-size: 0.8em; } }
-/*  END  MAX WIDTH 1024PX ---------------------------- */
 /*  MAX WIDTH 767PX ---------------------------------- */
 @media screen and (max-width: 767px) {
   #dashboard-wrapper {
@@ -10126,6 +9733,332 @@ footer {
 
   /*  END Header ---------------------------------------- */ }
 /*  END  MAX WIDTH 767PX ----------------------------- */
+/*  MAX WIDTH 1024PX --------------------------------- */
+@media screen and (max-width: 1024px) {
+  #dashboard-wrapper {
+    /*  Header -------------------------------------------- */
+    /*  END Header ---------------------------------------- */
+    /*  POINTS SECTION ---------------------------- */
+    /*  END POINTS SECTION ------------------------ */ }
+    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li h3 {
+      width: 310px;
+      font-size: 1em;
+      transform: scale(0.7, 1);
+      -webkit-transform: scale(0.7, 1);
+      /* Safari and Chrome */
+      -moz-transform: scale(0.7, 1);
+      /* Firefox */
+      -ms-transform: scale(0.7, 1);
+      /* IE 9+ */
+      -o-transform: scale(0.7, 1);
+      /* Opera */
+      margin-top: 14px;
+      position: relative;
+      left: 10%; }
+    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink .lologo {
+      width: 150px;
+      height: 47px;
+      margin-top: 0; }
+    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.know-football {
+      width: 27%; }
+    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button #play-predikta-button {
+      border-radius: 6px;
+      border-width: 2px;
+      margin-top: 3px;
+      padding: 5px 11px;
+      transform: scale(0.8, 1);
+      -webkit-transform: scale(0.8, 1);
+      /* Safari and Chrome */
+      -moz-transform: scale(0.8, 1);
+      /* Firefox */
+      -ms-transform: scale(0.8, 1);
+      /* IE 9+ */
+      -o-transform: scale(0.8, 1);
+      /* Opera */
+      font-size: 0.8em; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button #play-predikta-button:before {
+        border-width: 2px;
+        border-radius: 6px; }
+    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.mini-nav {
+      width: 8%; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.mini-nav a {
+        font-size: 0.8em;
+        line-height: 14px;
+        margin-left: 0;
+        margin-top: 8px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 5px;
+        transform: scale(0.8, 1);
+        -webkit-transform: scale(0.8, 1);
+        /* Safari and Chrome */
+        -moz-transform: scale(0.8, 1);
+        /* Firefox */
+        -ms-transform: scale(0.8, 1);
+        /* IE 9+ */
+        -o-transform: scale(0.8, 1);
+        /* Opera */ }
+    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel {
+      margin-top: 0; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .name-clock-wrapper {
+        font-size: 0.8em; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel h1 {
+        font-size: 1em;
+        margin-top: 11px; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group button {
+        padding: 3px;
+        padding-top: 4px;
+        padding-right: 13px;
+        font-size: 1.2em; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .glyphicon-cog:before {
+        font-size: 2em; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .dropdown-menu {
+        left: -128px; }
+    #dashboard-wrapper section#points {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      float: left;
+      padding-left: 0;
+      padding-right: 0; }
+      #dashboard-wrapper section#points header h1 {
+        font-size: 1.8em; }
+      #dashboard-wrapper section#points header .leaguedrop {
+        width: 220px;
+        height: 30px; }
+        #dashboard-wrapper section#points header .leaguedrop select {
+          width: 220px; }
+      #dashboard-wrapper section#points .table-responsive table {
+        font-size: 0.8em; }
+        #dashboard-wrapper section#points .table-responsive table thead {
+          display: block;
+          float: left;
+          width: 100%; }
+          #dashboard-wrapper section#points .table-responsive table thead tr th.away {
+            width: 50px; }
+          #dashboard-wrapper section#points .table-responsive table thead tr th.home-team {
+            width: 93px; }
+          #dashboard-wrapper section#points .table-responsive table thead tr th.actual {
+            width: 85px; }
+          #dashboard-wrapper section#points .table-responsive table thead tr th.away-team {
+            width: 60px; }
+          #dashboard-wrapper section#points .table-responsive table thead tr th.points {
+            width: 53px; }
+        #dashboard-wrapper section#points .table-responsive table tbody {
+          display: block;
+          float: left;
+          width: 100%; }
+          #dashboard-wrapper section#points .table-responsive table tbody tr .game-state.bet-in-play span {
+            width: 50px;
+            font-size: 9px; }
+          #dashboard-wrapper section#points .table-responsive table tbody tr .client-home,
+          #dashboard-wrapper section#points .table-responsive table tbody tr .dash,
+          #dashboard-wrapper section#points .table-responsive table tbody tr .client-away {
+            padding-left: 0;
+            padding-right: 3px; }
+          #dashboard-wrapper section#points .table-responsive table tbody tr td.home-team {
+            width: 95px; }
+          #dashboard-wrapper section#points .table-responsive table tbody tr .actual {
+            width: 50px;
+            font-size: 1.2em;
+            font-weight: bold; }
+            #dashboard-wrapper section#points .table-responsive table tbody tr .actual table tr .actual-home {
+              padding-right: 2px; }
+            #dashboard-wrapper section#points .table-responsive table tbody tr .actual table tr .dash {
+              padding-right: 2px; }
+            #dashboard-wrapper section#points .table-responsive table tbody tr .actual table tr .actual-away {
+              padding-left: 0; }
+          #dashboard-wrapper section#points .table-responsive table tbody tr td.away-team {
+            width: 75px; }
+          #dashboard-wrapper section#points .table-responsive table tbody tr td.away {
+            width: 40px;
+            font-size: 1.2em;
+            font-weight: bold; }
+            #dashboard-wrapper section#points .table-responsive table tbody tr td.away table tr .client-home {
+              padding-right: 2px; }
+            #dashboard-wrapper section#points .table-responsive table tbody tr td.away table tr .dash {
+              padding-right: 2px; }
+            #dashboard-wrapper section#points .table-responsive table tbody tr td.away table tr .client-away {
+              padding-left: 0; }
+          #dashboard-wrapper section#points .table-responsive table tbody tr td.akka {
+            width: 0; }
+          #dashboard-wrapper section#points .table-responsive table tbody tr.in-play .points span {
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 33px;
+            padding-top: 8px; }
+          #dashboard-wrapper section#points .table-responsive table tbody tr.pending td.game-state .day,
+          #dashboard-wrapper section#points .table-responsive table tbody tr.pending td.game-state .time {
+            font-size: 12px; }
+        #dashboard-wrapper section#points .table-responsive table tfoot .tfoot-header {
+          padding-left: 25px; }
+        #dashboard-wrapper section#points .table-responsive table tfoot tr {
+          padding-left: 24px; }
+          #dashboard-wrapper section#points .table-responsive table tfoot tr td {
+            width: 78px; }
+    #dashboard-wrapper #predikta-dashboard {
+      /*  LEAGUE SECTION ---------------------------- */
+      /*  END LEAGUE SECTION ------------------------ */
+      /*  LEAGUE SECTION ---------------------------- */
+      /*  BETS SECTION ------------------------------ */
+      /*  END BETS SECTION -------------------------- */ }
+      #dashboard-wrapper #predikta-dashboard section#league {
+        width: 100%;
+        max-width: 330px;
+        display: inline-block; }
+        #dashboard-wrapper #predikta-dashboard section#league #details {
+          height: 364px;
+          overflow-y: scroll; }
+        #dashboard-wrapper #predikta-dashboard section#league header #myTAb li a,
+        #dashboard-wrapper #predikta-dashboard section#league header #myTAb li.active a {
+          font-size: 0.8em;
+          margin-top: 9px;
+          width: 80px; }
+        #dashboard-wrapper #predikta-dashboard section#league header h1 {
+          font-size: 1.8em; }
+      #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .panel-body {
+        padding-left: 10px;
+        padding-right: 0; }
+      #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues h3 {
+        color: #000;
+        margin-left: 0px;
+        padding-left: 10px; }
+      #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table {
+        font-size: 0.8em; }
+        #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead {
+          display: block;
+          float: left;
+          margin-bottom: 6px;
+          margin-top: 10px;
+          width: 100%; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead tr th.away {
+            padding-left: 0;
+            padding-right: 0; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead tr th.akka {
+            padding-left: 0; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead tr th.home-team {
+            padding-left: 0;
+            width: 200px; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead tr th.actual {
+            padding-left: 7px;
+            padding-right: 1px; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table thead tr th.away-team {
+            padding-left: 4px;
+            width: 140px; }
+        #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody {
+          display: block;
+          float: left;
+          width: 100%; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr .game-state {
+            padding-left: 20px; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr .game-state.bet-in-play {
+            padding-left: 0; }
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr .game-state.bet-in-play span {
+              width: 50px;
+              font-size: 9px; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr td.home-team {
+            width: 155px; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr td.away-team {
+            width: 80px; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr td.akka {
+            padding-left: 9px;
+            padding-right: 9px;
+            width: 0; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr .points {
+            width: 60px; }
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr .points span {
+              margin-right: 10px; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr.pending td.game-state {
+            padding-left: 7px; }
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr.pending td.game-state .day,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr.pending td.game-state .time {
+              font-size: 12px; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tbody tr.in-play .points span {
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 33px;
+            padding-top: 8px; }
+        #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tfoot .tfoot-header {
+          padding-left: 25px; }
+        #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tfoot tr td {
+          width: 78px; }
+      #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .modal {
+        left: 8px;
+        max-width: 340px;
+        top: -30px; }
+        #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .modal .modal-dialog {
+          width: 340px; }
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .modal .modal-dialog .modal-content {
+            width: 320px; }
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .modal .modal-dialog .modal-content .modal-header button.close {
+              clear: left;
+              position: relative;
+              top: 12px;
+              width: auto; }
+              #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .modal .modal-dialog .modal-content .modal-header button.close:before {
+                padding: 5px 5px 7px 7px; }
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .modal .modal-dialog .modal-content .modal-header h4#myModalLabel {
+              font-size: 1.8em;
+              margin-top: 4px;
+              margin-bottom: 0; }
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .modal .modal-dialog .modal-content .modal-body {
+              max-width: 340px; }
+      #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues #players {
+        height: 350px; }
+      #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .overall-predikta h4 {
+        margin-left: 10px; }
+      #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues h3,
+      #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails h3 {
+        font-size: 0.8em; }
+      #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues h3,
+      #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails h3 {
+        font-size: 0.8em; }
+      #dashboard-wrapper #predikta-dashboard section#league header .overall-predikta h4 {
+        margin-left: 10px; }
+      #dashboard-wrapper #predikta-dashboard aside#bets {
+        display: inline-block;
+        float: left;
+        max-width: 245px;
+        padding-left: 5px; }
+        #dashboard-wrapper #predikta-dashboard aside#bets header h1 {
+          font-size: 1.8em; }
+        #dashboard-wrapper #predikta-dashboard aside#bets header .play-predikta-button #play-predikta-button {
+          width: 100%; }
+        #dashboard-wrapper #predikta-dashboard aside#bets .table-responsive table {
+          font-size: 12px; }
+        #dashboard-wrapper #predikta-dashboard aside#bets #banter h1 {
+          font-size: 1.8em; }
+        #dashboard-wrapper #predikta-dashboard aside#bets #banter #banterWrapper #commets-wrapper {
+          height: 300px; }
+          #dashboard-wrapper #predikta-dashboard aside#bets #banter #banterWrapper #commets-wrapper ul li {
+            margin-right: 0;
+            width: 95%;
+            border-radius: 33px;
+            font-size: 0.8em;
+            padding: 10px 10px 10px 20px; }
+            #dashboard-wrapper #predikta-dashboard aside#bets #banter #banterWrapper #commets-wrapper ul li .comment {
+              margin-top: 0;
+              line-height: 12px; }
+            #dashboard-wrapper #predikta-dashboard aside#bets #banter #banterWrapper #commets-wrapper ul li:before {
+              border-width: 14px 29px 16px 0;
+              left: -12px;
+              top: 17%; }
+            #dashboard-wrapper #predikta-dashboard aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-child(2n) {
+              margin-left: 0; }
+              #dashboard-wrapper #predikta-dashboard aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-child(2n):after {
+                border-width: 12.5px 0 12.5px 14px;
+                right: -8px;
+                top: 16px; }
+            #dashboard-wrapper #predikta-dashboard aside#bets #banter #banterWrapper #commets-wrapper ul li .time {
+              width: 35px; }
+            #dashboard-wrapper #predikta-dashboard aside#bets #banter #banterWrapper #commets-wrapper ul li .seperator {
+              margin-left: 5px;
+              margin-right: 5px; }
+            #dashboard-wrapper #predikta-dashboard aside#bets #banter #banterWrapper #commets-wrapper ul li .date {
+              width: 47px; }
+        #dashboard-wrapper #predikta-dashboard aside#bets #banterForm h1 {
+          font-size: 1.8em; } }
+/*  END  MAX WIDTH 1024PX ---------------------------- */
 /*  CSS and SASS from other project and third party  -- */
 .multiselect-container {
   position: absolute;

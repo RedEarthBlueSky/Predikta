@@ -9,8 +9,16 @@ $(document).ready(function () {
     newPostButton: '.player-wrapper button'
   }
 
+  $(".modal").on("show", function () {
+    $("body").addClass("modal-open");
+  }).on("hidden", function () {
+    $("body").removeClass("modal-open")
+  });
+
   $(varbs.newPostButton).click(function () {
-    $('#bets h1, #bets table, #commets-wrapper').slideToggle();
+    $('#bets h1, #bets table, #commets-wrapper').slideToggle(function () {
+      $('#comments-wrapper').hide();
+    });
     /* hide the button group as this will not work on the document load */
     $(varbs.buttonGroup).hide();
     /*  make sure the check box is not checked */
@@ -56,10 +64,12 @@ $(document).ready(function () {
 
 
 
-/*  detect the window height and set the players element to it */
+/*  detect the window and viewport height and set the players element, and modal body to it */
     function setHeight() {
       windowHeight = ($(window).innerHeight() - 400);
+      viewportHeight = $("body").innerHeight();
       $('#players').css('max-height', windowHeight);
+      $('.modal-body').css("height", viewportHeight);
     };
     setHeight();
 

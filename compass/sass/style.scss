@@ -10,7 +10,6 @@
 /*  Bootstrap styles ---------------------------------- */
 @import 'bootstrap/normalize';
 @import 'bootstrap/bootstrap';
-@import 'bootstrap/bootstrap-theme';
 
 /*  Partials - CSS and SASS for specific elements ----- */
 @import 'partials/carousel';
@@ -22,6 +21,7 @@
 /*  My custom styles ---------------------------------  */
 @import 'main';
 @import 'responsive';
+@import 'partials/_tablet-landscape';
 
 /*  CSS and SASS from other project and third party  -- */
 @import 'vendor/bootstrap-multiselect';

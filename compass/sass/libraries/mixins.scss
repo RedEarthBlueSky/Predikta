@@ -1,4 +1,23 @@
 ﻿
+/*  for styles unique to ie */
+$default-legacy-ie: 7 8 9 !default;
+
+@mixin legacy-ie($versions: $default-legacy-ie) {
+    $sel: ();
+    @each $v in $versions {
+        $sel: append($sel, unquote('.ie#{$v} &'), comma);
+    }
+
+    #{$sel} {
+        @content;
+    }
+}
+
+
+
+
+
+
 @mixin scale($x, $y) {
    transform : scale( $x, $y);
   -webkit-transform:scale( $x, $y); /* Safari and Chrome */
@@ -84,13 +103,18 @@
   z-index: 9999999999;
 }
 @mixin dashboardH1 {
-  color: #df1c22;
+  color: #000;
   display: inline;
   float: left;
   font-size: 2.2em;
   margin-bottom: 0;
   margin-top: 10px;
   text-transform: uppercase;
+}
+@media screen and (max-width:1024px){
+  @mixin dashboardH1 {
+    font-size:1.8em;
+  }  
 }
 @mixin nextLinkWrapper {
   background-color: transparent;

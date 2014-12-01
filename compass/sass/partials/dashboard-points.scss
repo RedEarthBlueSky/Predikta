@@ -1,6 +1,4 @@
 ﻿/*  POINTS SECTION -------------------- */
-
-
 section#points {
     background-color:$prediktaDashboarBG;
     max-width:646px;
@@ -39,7 +37,7 @@ section#points {
                       right: 0;
                       text-align: center;
                       top: 0;
-                      transform: rotate(90deg);
+                      @include rotate(90deg);
                       width: 30px;
                   }
                   select {
@@ -63,11 +61,9 @@ section#points {
                 top: 14%;
                 width: 300px;
                 left: 17%;
-                .bluegradinv {
-                    background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
-                  }
                 .conditional {
                     background-clip: padding-box;
+                    @include linear-gradient( #009fe3, 0%, #01519e, 100% );                   
                     border-radius: 22px;
                     box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.6);
                     color: #ffffff;
@@ -80,7 +76,7 @@ section#points {
                         border-bottom: 28px solid #009fe3;
                         border-left: 12px solid rgba(0, 0, 0, 0);
                         border-right: 12px solid rgba(0, 0, 0, 0);
-                        bottom: 79px;
+                        bottom: 75px;
                         content: "";
                         height: 0;
                         left: 59px;
@@ -107,20 +103,8 @@ section#points {
 
 /*  table styles ----------------------------  */
     .table-responsive {
-                &::-moz-scrollbar {
-                  width: 12px;
-                }
-                &::-moz-scrollbar-track {
-                  -moz-box-shadow: inset 0 0 6px #fff;
-                  background:#000;
-                }
-                &::-moz-scrollbar-thumb {
-                  border-radius: 10px;
-                  -moz-box-shadow: inset 0 0 6px #fff;
-                  background:#7A252B;
-                }
                 clear: both;
-                display: block;
+                display: table;
                 float: left;
 /*  try and set element to sit within any device view */
                 width: 100%;
@@ -128,16 +112,14 @@ section#points {
                   border-collapse: collapse;
                   border-spacing: 0;
                   clear: both;
-                  display: block;
+                  color:#000;
+                  display: table;
                   float: left;
                   font-size:1em;
                   margin-bottom: 0;
                   text-transform: uppercase;
                   width: 100%;
                   tbody {
-                    display:block;
-                    float:left;
-                    width:100%;
                     tr {
                       margin-top:0;
                       margin-bottom:0;
@@ -148,9 +130,6 @@ section#points {
                     }
                   }
                   thead {
-                    display:block;
-                    float:left;
-                    width:100%;
                     th.akka {
 
                     }
@@ -159,7 +138,14 @@ section#points {
                       color:#bdbdbd;
                     }
                     th.actual {
-                      width:60px;
+                      width: 85px;
+                      padding-left: 0;
+                      padding-right: 0;
+                    }
+                    th.away-team {
+                    }
+                    th.points {
+                      width:50px;
                     }
                   }               
                   tr {
@@ -169,9 +155,16 @@ section#points {
                     position:relative;
                     width:100%;
                     .actual {
+                       padding-left:0;
+                       padding-right:0;
+                       padding-top:5px;
                        text-align:center;
-                       width:60px;
+                       width:80px;
                        table {
+                        width: 70%;
+                        margin: 0 auto;
+                        display: block;
+                        float: none;
                           tr {
                             td {
                               padding:5px;
@@ -180,9 +173,14 @@ section#points {
                        }
                     }
                     .away {
+                       padding-top:5px;
                        text-align:center;
-                       width:45px;
+                       width:75px;
                        table {
+                        width: 70%;
+                        margin: 0 auto;
+                        display: block;
+                        float: none;
                           tr {
                             td {
                               padding:5px;
@@ -192,10 +190,20 @@ section#points {
                     }
                     .home-team {
                       text-align:right;
+                      padding-left:0;
+                      padding-right:0;
                       width:130px;
                     }
                     .away-team {
-                        width:120px;
+                        width:130px;
+                        padding-left:0;
+                        padding-right:0;
+                    }
+/*  firefox only hack because of table bug in moz  */
+                    @-moz-document url-prefix() { 
+                      .away-team {
+                        width:96px;
+                      }
                     }
                     th.home-team {
                     }
@@ -218,7 +226,7 @@ section#points {
                     .game-state {
                       border-top: none;
                       text-align:center;
-                      width:40px;
+                      width:60px;
                       span {
                         display: block;
                         float: left;
@@ -246,14 +254,16 @@ section#points {
                     }
                     .points {
                       padding-top:0;
-                      min-width:30px;
+                      width:55px;
                       text-align:center;
                       span {
                         background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+                        @include linear-gradient( #009fe3, 0%, #01519e, 100% );
                         color: #ffffff;
                         display: block;
+                        float:right;
                         height: 30px;
-                        padding-top: 4px;
+                        padding-top: 7px;
                         width: 30px;
                         margin-bottom:3px;
                         margin-top:3px;
@@ -266,6 +276,7 @@ section#points {
                       padding-bottom:0;
                       span {
                         background: linear-gradient(to bottom, #e7444a 0%, #941913 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+                        @include linear-gradient( #e7444a, 0%, #941913, 100% );
                         border: 2px solid #1382c4;
                         border-radius: 10px;
                         color: #ffffff;
@@ -291,7 +302,7 @@ section#points {
                     }
                     
                     .AKKA {
-                      width:30px;
+                      width:55px;
                       span {
                         border-radius: 20px;
                         display: block;
@@ -322,6 +333,12 @@ section#points {
                     }
                     td.game-state {
  
+                    }
+                    .points {
+                      span {
+                        background:none;
+                        color:#333;
+                      } 
                     }
                   }
                   tr.in-play {
@@ -381,11 +398,18 @@ section#points {
                   font-size: 15px;
                   padding: 0 2px 2px;
                   position: absolute;
-                  text-shadow: 1px 1px 1px #000000;
                   left:0;
                   top:0;
+                  text-shadow: 1px 1px 1px #000000;
+/*  hack for internet explorer 9 and above */
+                  @media screen and (min-width:0\0) {
+                    top:80px !important;
+                    left:14px !important;
+                  }
               }
-            }   
+
+     }
+
      #table-banner-add {
               margin-top: 10px;
               display: block;

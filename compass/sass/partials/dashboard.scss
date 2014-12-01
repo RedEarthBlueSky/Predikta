@@ -57,6 +57,7 @@
               ul {
               li {
                   h3 {
+                      color:#000;
                       float: right;
                       font-size: 1.5em;
                       margin-bottom: 0;
@@ -99,21 +100,25 @@
                       font-size:1em;
                     }
               }
-              li.read-predikta-blog {
-                  width: 17%;
+              li.mini-nav {
+                  width: 9%;
                   a {
-                    color: #1888ca;
-                    text-align: right;
+                    background-color: #1888ca;
+                    border-radius: 5px;
+                    color: #ffffff;
+                    font-size: 0.9em;
+                    margin-left: 25px;
+                    margin-right: 0;
+                    margin-top: 15px;
+                    padding: 5px 0 6px;
+                    text-align: center;
                     text-transform: uppercase;
-                    font-size: 1em;
-                    text-decoration: underline;
-                    padding-top:5px;
                   }
               }            
               li.admin-panel {
                   float: right;
                   text-align: right;
-                  width: 14%;
+                  width: 10%;
                   .name-clock-wrapper {
                       float:right;
                   }
@@ -191,6 +196,8 @@
     section#league {
       text-transform:uppercase;
       max-width:490px;
+      display:inline-block;
+      float:left;
       header {
         clear: both;
         display: block;
@@ -288,7 +295,7 @@
               display: block;
               float: left;
               border-top: none;
-              max-width:490px;
+              max-width:475px;
               .modal-header {
                   background-color:#f7f7f7;
                   border-bottom: medium none;
@@ -300,7 +307,7 @@
                   padding: 0;
                   width: 100%;
                   h4#myModalLabel {
-                    color: #df1c22;
+                    color: #000;
                     display: inline;
                     float: left;
                     font-size: 2.2em;
@@ -381,12 +388,34 @@
                   border-collapse: collapse;
                   border-spacing: 0;
                   clear: both;
+                  color:#000;
                   display: block;
                   float: left;
                   font-size:1em;
                   margin-bottom: 0;
                   text-transform: uppercase;
                   width: 100%;
+                  thead {
+                    th.akka {
+                      padding-left:20px;
+                    }
+                    th {
+                      border-bottom:none;
+                      color:#bdbdbd;
+                    }
+                    th.actual {
+                      padding-left:7px;
+                    }
+                    th.away {
+                    }
+                    th.away-team {
+                      width: 116px;
+                      padding-left: 10px;
+                    }
+                    th.points {
+                      width:70px;
+                    }
+                  }  
                   tbody {
                     tr {
                       margin-top:0;
@@ -397,52 +426,51 @@
                         padding-top:4px;
                       }
                     }
-                  }
-                  thead {
-                    th.akka {
-                      padding-left:20px;
-                    }
-                    th {
-                      border-bottom:none;
-                      color:#bdbdbd;
-                    }
-                    th.actual {
-                      padding-left:14px;
-                    }
-                  }               
+                  }             
                   tr {
                     display: block;
                     clear: both;
                     float: left;
                     position:relative;
-                    .home-team,
-                    .away-team {
-                        min-width:120px;
-                        width:100%;
+                    .actual {
+                      padding-top:0;
+                      table {
+                        tr {
+                          td {
+                            border-top:none;
+                          }
+                        }
+                      }
+                    }
+                    .away {
+                      padding-top:0;
+                      table {
+                        tr {
+                          td {
+                            border-top:none;
+                          }
+                        }
+                      }             
                     }
                     .home-team {
                       text-align:right;
-                      padding-left:0;                      
+                      padding-left:0; 
+                      width:120px;                     
                     }
                     th.home-team {
                       padding-left:0;
+                      width:120px;
                     }
                     .away-team {
                       padding-left: 28px;
                       padding-right: 0;
-                    }
-                    th.away-team {
-                      min-width: 120px;
-                      padding-left: 10px;
-                    }
-                    th.away {
-                      padding-left:25px;
+                      width:120px;
                     }
                     .actual-home, 
                     .actual-away,
                     .client-home,
                     .client-away {
-                      min-width: 20px;
+                      width: 20px;
                       text-align: center;
                       padding-left:0;
                       padding-right:0;
@@ -486,10 +514,10 @@
                     }
                     .points {
                       padding-top:0;
-                      min-width:80px;
+                      width:80px;
                       text-align:center;
                       span {
-                        background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+                        @include linear-gradient( #009fe3, 0%, #01519e, 100% );
                         color: #ffffff;
                         display: block;
                         float: right;
@@ -497,7 +525,7 @@
                         margin-bottom: 3px;
                         margin-right: 24px;
                         margin-top: 3px;
-                        padding-top: 4px;
+                        padding-top: 7px;
                         width: 30px;
                       }
                     }
@@ -566,6 +594,13 @@
                     td.game-state {
                       padding-left:10px; 
                     }
+                    .points {
+                      span {
+                        background:none;
+                        color:#333;
+                        padding-top:7px;
+                      }
+                    }
                   }
                   tr.in-play {
                     background-color: #deeaf0;
@@ -584,7 +619,7 @@
                   }
                   tfoot {
                     tr {
-                      padding-left:77px;
+                      padding-left:10px;
                       margin-top:0;
                       td {
                         border: medium none;
