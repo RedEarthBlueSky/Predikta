@@ -1,6 +1,24 @@
 ﻿/* Predikta Custom Styles ==================================== 
    =========================================================== */
+  ::-webkit-scrollbar {
+      width: 8px;
+  }
+ 
+  ::-webkit-scrollbar-button {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); 
+      color:#bdbdbd;
+  }
 
+  ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); 
+      border-radius: 10px;
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.5); 
+  }
 /*  Carosel buttons ------------------------------ */
 .carousel-indicators {
   bottom: 5px;

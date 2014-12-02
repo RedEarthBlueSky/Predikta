@@ -45,7 +45,7 @@
                 Play the Predikta Pool
               </a>
             </li>
-            <li class="mini-nav">
+            <li class="mini-nav one">
               <a href="/blog">
                 Blog
               </a>
@@ -1910,39 +1910,41 @@
         </section><!-- /.col-lg-4 -->
         <!--  BETS SECTION ----------------------------------->
         <aside id="bets" class="about-predikta col-lg-3">
-          <header>
+          <div id="bets-table-wrapper">
+            <header>
+             <h1>
+                Bets
+              </h1>
+            </header>
+            <div class="table-responsive">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Position</th>
+                    <th>Payout</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="pool">Pool</td>
+                    <td class="pool-position">85</td>
+                    <td class="pool-payout">£380</td>
+                  </tr>
+                  <tr>
+                    <td class="akka">AKKA</td>
+                    <td class="akka-position"><span class="red"></span><span class="yellow"></span><span class="green"></span><span class="grey"></span><span class="grey"></span></td>
+                    <td class="akka-result">£125 - £125</td>
+                  </tr>
+                </tbody>
+                <tfoot></tfoot>
+              </table>
+            </div>
             <div class="play-predikta-button">
               <a class="btn btn-lg btn-primary" href="/Prediktions" role="button" id="play-predikta-button">
                 Play Predikta
               </a>
             </div>
-            <h1>
-              Bets
-            </h1>
-          </header>
-          <div class="table-responsive">
-            <table>
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Position</th>
-                  <th>Payout</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="pool">Pool</td>
-                  <td class="pool-position">85</td>
-                  <td class="pool-payout">£380</td>
-                </tr>
-                <tr>
-                  <td class="akka">AKKA</td>
-                  <td class="akka-position"><span class="red"></span><span class="yellow"></span><span class="green"></span><span class="grey"></span><span class="grey"></span></td>
-                  <td class="akka-result">£125 - £125</td>
-                </tr>
-              </tbody>
-              <tfoot></tfoot>
-            </table>
           </div>
 
           <div id="banter">
@@ -2114,7 +2116,7 @@
 
       </div><!-- /.row -->
       <section class="goTop">
-        <a href="#PrediktaTop"></a>
+        <a href="#PrediktaTop"><span>Top</span></a>
       </section>
 
     </div><!-- /.container -->

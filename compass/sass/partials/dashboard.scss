@@ -1,7 +1,7 @@
 ﻿@-moz-document url-prefix() {
   fieldset { display: table-cell; }
 }
-
+section.goTop
 /*  Dash board SASS -------------------------- */
 .modal-backdrop {
   display:none;
@@ -12,6 +12,26 @@
       display:none;
     }
     .container.marketing {
+      section.goTop {
+          right: 15px;
+          text-transform: uppercase;
+          top: 90%;
+        a {
+          &:before {
+            bottom: 0;
+            font-size: 2.5em;
+            left: 18px;
+          }
+          span {
+            color: #ffffff;
+            font-family: helvetica;
+            font-weight: bold;
+            left: 15px;
+            position: relative;
+            top: 14px;
+          }
+        }
+      }
       background-color:$prediktaDashboarBG;
     }
     a.where-anorak-next {
@@ -187,6 +207,7 @@
         width: 98%;
         display: block;
         margin: 0 auto;
+        max-width:1600px;
         float: none;
 
 /*  LEAGUE SECTION ---------------------*/

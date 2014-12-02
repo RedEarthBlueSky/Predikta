@@ -190,7 +190,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: inherit;
+    font-family: 'tradegothic bold', sans-serif;
     font-weight: 500;
     line-height: 1.1;
     color: inherit;
@@ -2256,7 +2256,14 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
     src: url(../fonts/glyphicons-halflings-regular.eot);
     src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
 }
-
+@font-face {
+    font-family: 'tradegothic bold';
+    src: url(../fonts/gTradeGothicLTStd-Bold.eot);
+    src: url(../fonts/TradeGothicLTStd-Bold.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/TradeGothicLTStd-Bold.woff) format('woff'),
+    url(../fonts/TradeGothicLTStd-Bold.ttf) format('truetype'),
+    url(../fonts/TradeGothicLTStd-Bold.svg#glyphicons_halflingsregular) format('svg');
+}
 .glyphicon {
     position: relative;
     top: 1px;
@@ -5379,6 +5386,7 @@ button.close {
     left: 0;
     z-index: 1040;
     background-color: #000;
+    display:none;
 }
 
     .modal-backdrop.fade {

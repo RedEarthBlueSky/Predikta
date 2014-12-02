@@ -13,6 +13,7 @@ aside#bets {
     h1 {
       @include dashboardH1;
     }
+  }
     .play-predikta-button {
       clear: both;
       display:block;
@@ -20,16 +21,15 @@ aside#bets {
           border-radius:5px;
           border-width:3px;
           top:0;
-          margin:9px auto 0;
+          margin:9px auto 10px;
           padding:4px 16px;
-          width: 65%;
+          width: 100%;
           &:before {
             border-radius:2px;
             border-width:2px;
           }
         }
     }
-  }
   .table-responsive {
     display:block;
     float:left;
@@ -38,7 +38,7 @@ aside#bets {
     text-transform:uppercase;
     margin-top:14px;
     width:100%;
-    margin-bottom:25px;
+    margin-bottom:15px;
     table {
       display: block;
       float: left;
@@ -59,6 +59,9 @@ aside#bets {
                 color: #b1b1b1;
                 &:first-child {
                   width:25%;
+                  @media screen and (min-width:0\0) {
+                    width:28%;  /*  IE9 and above */
+                  }
                 }
                 &:nth-child(2) {
                   width:50%;
@@ -267,7 +270,7 @@ aside#bets {
             color: #838383;
             display: block;
             float: left;
-            height: 200px;
+            height: 400px;
             overflow-x: hidden;
             overflow-y: scroll;
             text-transform: uppercase;   

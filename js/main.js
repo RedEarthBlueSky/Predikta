@@ -9,6 +9,16 @@ $(document).ready(function () {
     newPostButton: '.player-wrapper button'
   }
 
+  function moveStuff() {
+    width = $(window).width();
+    if (width <= 999 && (($("#points #table-banner-add").length) > 0)) {
+      $("#table-banner-add").appendTo("#bets-table-wrapper");
+    }
+    else if (width > 999 && (($("#bets-table-wrapper #table-banner-add").length) > 0)) {
+      $("#table-banner-add").appendTo("#points");
+    }
+  }
+
   $(".modal").on("show", function () {
     $("body").addClass("modal-open");
   }).on("hidden", function () {
@@ -71,11 +81,17 @@ $(document).ready(function () {
       $('#players').css('max-height', windowHeight);
       $('.modal-body').css("height", viewportHeight);
     };
-    setHeight();
 
+
+    setHeight();
+    moveStuff();
     $(window).resize(function () {
       setHeight();
+      moveStuff();
     });
+
+
+
 /*
     function setDivWidth() {
       var first = $("[data-parent=\"#players\"]").first();
