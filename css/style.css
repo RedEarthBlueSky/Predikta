@@ -1758,6 +1758,63 @@
 * html .jspCorner {
   margin: 0 -3px 0 0; }
 
+.multiselect-container {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.multiselect-container .input-group {
+  margin: 5px; }
+
+.multiselect-container > li {
+  padding: 0; }
+
+.multiselect-container > li > a.multiselect-all label {
+  font-weight: 700; }
+
+.multiselect-container > li.multiselect-group label {
+  margin: 0;
+  padding: 3px 20px;
+  height: 100%;
+  font-weight: 700; }
+
+.multiselect-container > li.multiselect-group-clickable label {
+  cursor: pointer; }
+
+.multiselect-container > li > a {
+  padding: 0; }
+
+.multiselect-container > li > a > label {
+  margin: 0;
+  height: 100%;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 3px 20px 3px 40px; }
+
+.multiselect-container > li > a > label.radio,
+.multiselect-container > li > a > label.checkbox {
+  margin: 0; }
+
+.multiselect-container > li > a > label > input[type=checkbox] {
+  margin-bottom: 5px; }
+
+.filter .btn {
+  padding: 6px 3px; }
+
+.btn-group > .btn-group:nth-child(2) > .multiselect.btn {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+.form-inline .multiselect-container label.checkbox,
+.form-inline .multiselect-container label.radio {
+  padding: 3px 20px 3px 40px; }
+
+.form-inline .multiselect-container li a label.checkbox input[type=checkbox],
+.form-inline .multiselect-container li a label.radio input[type=radio] {
+  margin-left: -20px;
+  margin-right: 0; }
+
 /*  Bootstrap styles ---------------------------------- */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
@@ -7226,7 +7283,10 @@ section#points {
           background-color: #bdbdbd; }
         section#points .table-responsive table tr.pending .points span {
           background: none;
-          color: #333; }
+          color: #bdbdbd; }
+      section#points .table-responsive table tr.pending td.actual table,
+      section#points .table-responsive table tr.pending td.away table {
+        color: #bdbdbd; }
       section#points .table-responsive table tr.in-play {
         background-color: #deeaf0;
         border: medium none;
@@ -7302,8 +7362,6 @@ section#points {
     display: none; }
   #dashboard-wrapper .container.marketing {
     background-color: #f7f7f7; }
-  #dashboard-wrapper #predikta-dashboard {
-    max-width: 1600px; }
   #dashboard-wrapper a.where-anorak-next {
     bottom: 0;
     left: 0;
@@ -7627,24 +7685,6 @@ section#points {
         float: left;
         /*  try and set element to sit within any device view */
         width: 100%; }
-        #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive::-moz-scrollbar,
-        #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive::-moz-scrollbar,
-        #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive::-moz-scrollbar,
-        #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive::-moz-scrollbar {
-          width: 12px; }
-        #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive::-moz-scrollbar-track,
-        #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive::-moz-scrollbar-track,
-        #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive::-moz-scrollbar-track,
-        #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive::-moz-scrollbar-track {
-          -moz-box-shadow: inset 0 0 6px #fff;
-          background: #000; }
-        #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive::-moz-scrollbar-thumb,
-        #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive::-moz-scrollbar-thumb,
-        #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive::-moz-scrollbar-thumb,
-        #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive::-moz-scrollbar-thumb {
-          border-radius: 10px;
-          -moz-box-shadow: inset 0 0 6px #fff;
-          background: #7A252B; }
         #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table,
         #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table,
         #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table,
@@ -7950,8 +7990,17 @@ section#points {
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr.pending .points span,
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr.pending .points span {
               background: none;
-              color: #333;
+              color: #bdbdbd;
               padding-top: 7px; }
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr.pending td.actual table,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr.pending td.away table,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr.pending td.actual table,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr.pending td.away table,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr.pending td.actual table,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr.pending td.away table,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr.pending td.actual table,
+            #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr.pending td.away table {
+              color: #bdbdbd; }
           #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr.in-play,
           #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr.in-play,
           #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr.in-play,
@@ -8161,7 +8210,7 @@ section#points {
         #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .panel.panel-default .player-wrapper {
           display: block;
           float: left;
-          width: 100%; }
+          width: 95%; }
         #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .panel.panel-default ul.season-results,
         #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .panel.panel-default ul.season-results,
         #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .panel.panel-default ul.season-results,
@@ -9499,6 +9548,7 @@ footer {
 /* ===================================================
    END Predikta custom styles
    =================================================== */
+/* Responsive ----------------------------------------  */
 /*  MIN WIDTH 1689PX -------------------------- */
 @media screen and (min-width: 1698PX) {
   #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal-dialog .modal-content .modal-body {
@@ -9646,93 +9696,6 @@ footer {
       #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .dropdown-menu {
         left: -128px; } }
 /*  END MAX WIDTH 1200PX ----------------------------- */
-/*  MAX WIDTH 767PX ---------------------------------- */
-@media screen and (max-width: 767px) {
-  #dashboard-wrapper {
-    /*  Header -------------------------------------------- */ }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li h3 {
-      width: 234px;
-      font-size: 1.1em;
-      transform: scale(0.7, 1);
-      -webkit-transform: scale(0.7, 1);
-      /* Safari and Chrome */
-      -moz-transform: scale(0.7, 1);
-      /* Firefox */
-      -ms-transform: scale(0.7, 1);
-      /* IE 9+ */
-      -o-transform: scale(0.7, 1);
-      /* Opera */
-      margin-top: 5px;
-      position: relative;
-      left: 10%; }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li#logoListItem {
-      display: block;
-      float: left;
-      width: 100%; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink {
-        display: block;
-        float: left;
-        padding: 0;
-        position: relative;
-        width: 100%;
-        z-index: 99999; }
-        #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink .lologo {
-          width: 150px;
-          height: 47px;
-          margin-top: 0; }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.know-football {
-      width: 33%; }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button #play-predikta-button {
-      border-radius: 6px;
-      border-width: 2px;
-      margin-top: 3px;
-      padding: 5px 11px;
-      transform: scale(0.8, 1);
-      -webkit-transform: scale(0.8, 1);
-      /* Safari and Chrome */
-      -moz-transform: scale(0.8, 1);
-      /* Firefox */
-      -ms-transform: scale(0.8, 1);
-      /* IE 9+ */
-      -o-transform: scale(0.8, 1);
-      /* Opera */
-      font-size: 0.8em; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button #play-predikta-button:before {
-        border-width: 2px;
-        border-radius: 6px; }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.read-predikta-blog {
-      width: 12%; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.read-predikta-blog a {
-        font-size: 0.8em;
-        line-height: 14px;
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 5px;
-        transform: scale(0.8, 1);
-        -webkit-transform: scale(0.8, 1);
-        /* Safari and Chrome */
-        -moz-transform: scale(0.8, 1);
-        /* Firefox */
-        -ms-transform: scale(0.8, 1);
-        /* IE 9+ */
-        -o-transform: scale(0.8, 1);
-        /* Opera */ }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel {
-      margin-top: 0; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .name-clock-wrapper {
-        font-size: 0.8em; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel h1 {
-        font-size: 1em;
-        margin-top: 11px; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group button {
-        padding: 3px; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .glyphicon-cog:before {
-        font-size: 2em; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .dropdown-menu {
-        left: -128px; }
-
-  /*  END Header ---------------------------------------- */ }
-/*  END  MAX WIDTH 767PX ----------------------------- */
 /*  MAX WIDTH 1024PX --------------------------------- */
 @media screen and (max-width: 1024px) {
   #dashboard-wrapper {
@@ -9827,6 +9790,7 @@ footer {
         width: 220px;
         height: 30px; }
         #dashboard-wrapper section#points header .leaguedrop select {
+          margin-top: 2px;
           width: 220px; }
       #dashboard-wrapper section#points .table-responsive table {
         font-size: 0.8em; }
@@ -9885,7 +9849,7 @@ footer {
           #dashboard-wrapper section#points .table-responsive table tbody tr.in-play .points span {
             margin-top: 0;
             margin-bottom: 0;
-            height: 33px;
+            height: 36px;
             padding-top: 8px; }
           #dashboard-wrapper section#points .table-responsive table tbody tr.pending td.game-state .day,
           #dashboard-wrapper section#points .table-responsive table tbody tr.pending td.game-state .time {
@@ -9917,8 +9881,11 @@ footer {
         #dashboard-wrapper #predikta-dashboard section#league header h1 {
           font-size: 1.8em; }
       #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .panel-body {
+        display: block;
+        float: left;
         padding-left: 10px;
-        padding-right: 0; }
+        padding-right: 0;
+        padding-top: 0; }
       #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues h3 {
         color: #000;
         margin-left: 0px;
@@ -10059,62 +10026,93 @@ footer {
         #dashboard-wrapper #predikta-dashboard aside#bets #banterForm h1 {
           font-size: 1.8em; } }
 /*  END  MAX WIDTH 1024PX ---------------------------- */
-/*  CSS and SASS from other project and third party  -- */
-.multiselect-container {
-  position: absolute;
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
+/*  this is theoretically for min width of 768px ---  */
+/*  MAX WIDTH 767PX ---------------------------------- */
+@media screen and (max-width: 767px) {
+  #dashboard-wrapper {
+    /*  Header -------------------------------------------- */ }
+    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li h3 {
+      width: 234px;
+      font-size: 1.1em;
+      transform: scale(0.7, 1);
+      -webkit-transform: scale(0.7, 1);
+      /* Safari and Chrome */
+      -moz-transform: scale(0.7, 1);
+      /* Firefox */
+      -ms-transform: scale(0.7, 1);
+      /* IE 9+ */
+      -o-transform: scale(0.7, 1);
+      /* Opera */
+      margin-top: 5px;
+      position: relative;
+      left: 10%; }
+    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li#logoListItem {
+      display: block;
+      float: left;
+      width: 100%; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink {
+        display: block;
+        float: left;
+        padding: 0;
+        position: relative;
+        width: 100%;
+        z-index: 99999; }
+        #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink .lologo {
+          width: 150px;
+          height: 47px;
+          margin-top: 0; }
+    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.know-football {
+      width: 33%; }
+    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button #play-predikta-button {
+      border-radius: 6px;
+      border-width: 2px;
+      margin-top: 3px;
+      padding: 5px 11px;
+      transform: scale(0.8, 1);
+      -webkit-transform: scale(0.8, 1);
+      /* Safari and Chrome */
+      -moz-transform: scale(0.8, 1);
+      /* Firefox */
+      -ms-transform: scale(0.8, 1);
+      /* IE 9+ */
+      -o-transform: scale(0.8, 1);
+      /* Opera */
+      font-size: 0.8em; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button #play-predikta-button:before {
+        border-width: 2px;
+        border-radius: 6px; }
+    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.read-predikta-blog {
+      width: 12%; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.read-predikta-blog a {
+        font-size: 0.8em;
+        line-height: 14px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 5px;
+        transform: scale(0.8, 1);
+        -webkit-transform: scale(0.8, 1);
+        /* Safari and Chrome */
+        -moz-transform: scale(0.8, 1);
+        /* Firefox */
+        -ms-transform: scale(0.8, 1);
+        /* IE 9+ */
+        -o-transform: scale(0.8, 1);
+        /* Opera */ }
+    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel {
+      margin-top: 0; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .name-clock-wrapper {
+        font-size: 0.8em; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel h1 {
+        font-size: 1em;
+        margin-top: 11px; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group button {
+        padding: 3px; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .glyphicon-cog:before {
+        font-size: 2em; }
+      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .dropdown-menu {
+        left: -128px; }
 
-.multiselect-container .input-group {
-  margin: 5px; }
-
-.multiselect-container > li {
-  padding: 0; }
-
-.multiselect-container > li > a.multiselect-all label {
-  font-weight: 700; }
-
-.multiselect-container > li.multiselect-group label {
-  margin: 0;
-  padding: 3px 20px;
-  height: 100%;
-  font-weight: 700; }
-
-.multiselect-container > li.multiselect-group-clickable label {
-  cursor: pointer; }
-
-.multiselect-container > li > a {
-  padding: 0; }
-
-.multiselect-container > li > a > label {
-  margin: 0;
-  height: 100%;
-  cursor: pointer;
-  font-weight: 400;
-  padding: 3px 20px 3px 40px; }
-
-.multiselect-container > li > a > label.radio,
-.multiselect-container > li > a > label.checkbox {
-  margin: 0; }
-
-.multiselect-container > li > a > label > input[type=checkbox] {
-  margin-bottom: 5px; }
-
-.filter .btn {
-  padding: 6px 3px; }
-
-.btn-group > .btn-group:nth-child(2) > .multiselect.btn {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px; }
-
-.form-inline .multiselect-container label.checkbox,
-.form-inline .multiselect-container label.radio {
-  padding: 3px 20px 3px 40px; }
-
-.form-inline .multiselect-container li a label.checkbox input[type=checkbox],
-.form-inline .multiselect-container li a label.radio input[type=radio] {
-  margin-left: -20px;
-  margin-right: 0; }
+  /*  END Header ---------------------------------------- */ }
+/*  END  MAX WIDTH 767PX ----------------------------- */
 
 /*# sourceMappingURL=style.css.map */

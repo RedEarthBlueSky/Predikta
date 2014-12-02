@@ -337,8 +337,16 @@ section#points {
                     .points {
                       span {
                         background:none;
-                        color:#333;
+                        color:#bdbdbd;
                       } 
+                    }
+                  }
+                  tr.pending {
+                    td.actual, 
+                    td.away {
+                       table {
+                        color:#bdbdbd;
+                       }
                     }
                   }
                   tr.in-play {

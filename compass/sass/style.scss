@@ -6,6 +6,7 @@
 /*  CSS and SASS from other project and third party  -- */
 @import 'vendor/font-awesome';
 @import 'vendor/jquery.jscrollpane';
+@import 'vendor/bootstrap-multiselect';
 
 /*  Bootstrap styles ---------------------------------- */
 @import 'bootstrap/normalize';
@@ -20,8 +21,10 @@
 
 /*  My custom styles ---------------------------------  */
 @import 'main';
-@import 'responsive';
-@import 'partials/_tablet-landscape';
 
-/*  CSS and SASS from other project and third party  -- */
-@import 'vendor/bootstrap-multiselect';
+/* Responsive ----------------------------------------  */
+@import 'responsive/responsive';
+@import 'responsive/_tablet-landscape';
+@import 'responsive/_tablet-portrait';
+@import 'responsive/_max_767';
+
