@@ -2,19 +2,48 @@
 
 $(document).ready(function () {
 
-  /*  hide and show the comments panel upon the creation of a new post */
   var varbs = {
     buttonGroup:    "aside#bets #banter .new-post-wrapper .btn-group",
     eb: "#emailBanter",
     newPostButton: '.player-wrapper button'
   }
 
+/*  At mobile width provide slider for points element */
+  function togglePoints() {
+    width = $(window).width();  
+    if (width < 768)
+    {
+      /*  add the id and class identifiers we need to continue */
+      $('section#points header h1').attr('id', 'points-header').addClass('minus');
+    }
+      /*  remove the id and class identifiers when we leave mobile width -- making sure to check they are there at all */
+    else if (width >= 768 && ($('section#points header h1').hasClass()))
+    {
+      $('section#points header h1').removeClass().removeAttr('id');  
+    }
+    /*  here is our functionality, but it only works if the class and id have been added to the h1 element */
+    $('#points-header').on('click', function () {
+      $('.leaguedrop, #box-wrapper').slideToggle(500);
+      if ($('#points-header').hasClass('minus'))
+      {
+        $('#points-header').attr('class', 'plus');
+      }
+      else if ($('#points-header').hasClass('plus'))
+      {
+        $('#points-header').attr('class', 'minus');
+      }
+    });
+  }
+  togglePoints();
+
+
+/*  move the banner add when we get to below iPad landscape */
   function moveStuff() {
     width = $(window).width();
-    if (width <= 999 && (($("#points #table-banner-add").length) > 0)) {
+    if (width <= 1023 && (($("#points #table-banner-add").length) > 0)) {
       $("#table-banner-add").appendTo("#bets-table-wrapper");
     }
-    else if (width > 999 && (($("#bets-table-wrapper #table-banner-add").length) > 0)) {
+    else if (width > 1023 && (($("#bets-table-wrapper #table-banner-add").length) > 0)) {
       $("#table-banner-add").appendTo("#points");
     }
   }
@@ -25,6 +54,7 @@ $(document).ready(function () {
     $("body").removeClass("modal-open")
   });
 
+/*  functionality of the 'new post' button when clicked */
   $(varbs.newPostButton).click(function () {
     $('#bets h1, #bets table, #commets-wrapper').slideToggle(function () {
       $('#comments-wrapper').hide();
@@ -33,7 +63,15 @@ $(document).ready(function () {
     $(varbs.buttonGroup).hide();
     /*  make sure the check box is not checked */
     $(varbs.eb).prop('checked', false);
+    /*  change the text so it is clear this is also the button to close the element */
+    if ($(this).text() == "New Post") {
+      $(this).text("Close this Post");
+    }
+    else {
+      $(this).text("New Post");
+    }; 
   });
+
 
   /*  hide the email list and display it when the checkbox is selected */
   $('#emailBanter').on('change', (function () {
@@ -75,11 +113,20 @@ $(document).ready(function () {
 
 
 /*  detect the window and viewport height and set the players element, and modal body to it */
-    function setHeight() {
-      windowHeight = ($(window).innerHeight() - 400);
-      viewportHeight = $("body").innerHeight();
-      $('#players').css('max-height', windowHeight);
-      $('.modal-body').css("height", viewportHeight);
+  function setHeight() {
+    var width = $(window).width();
+        /*  this only works for iPad portrait view and above so remove if this is the case  */
+        if (width >= 1023) {
+          windowHeight = ($(window).innerHeight() - 400);
+          viewportHeight = ($("body").innerHeight()-250);
+          $('.modal-body').css("height", viewportHeight);
+          $('#players').css('max-height', windowHeight);
+        }
+        else {
+          windowHeight = ($(window).innerHeight() - 400);
+          $('#players').css('max-height', windowHeight);
+          $('.modal-body').css("height", "463");
+        }
     };
 
 
@@ -120,6 +167,8 @@ $(document).ready(function () {
   //$(function () {
   //  $('.table-responsive').jScrollPane();
  // });
+
+
 
 
 

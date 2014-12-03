@@ -5,6 +5,11 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="" name="description">
   <meta content="" name="author">
+
+  <!--  have set user scale to no but might need to test this for 'yes' -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width /">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
   <link href="favicon.ico" rel="icon">
   <title>Predikta | Dashboard </title>
   <!-- Bootstrap core CSS -->
@@ -234,7 +239,7 @@
                       <td class="AKKA"><span></span> </td>
                       <td class="game-state bet-in-play"><span>Bet<br />in play</span></td>
                     </tr>
-                    <tr class="in-play">
+                    <tr class="in-play banker">
                       <td class="home-team">Hull5</td>
                       <td class="actual">
                         <table>
@@ -282,7 +287,7 @@
                       </td>
                       <td class="points"><span>2</span></td>
                       <td class="AKKA"><span class="yellow-circle"></span></td>
-                      <td class="game-state bet-in-play"><span>Bet in play</span></td>
+                      <td class="game-state bet-in-play"><span>Bet<br/>in play</span></td>
                     </tr>
                     <tr class="in-play">
                       <td class="home-team">Stoke7</td>
@@ -582,7 +587,7 @@
                                           </td>
                                           <td class="points"><span>2</span></td>
                                         </tr>
-                                        <tr class="in-play">
+                                        <tr class="in-play banker">
                                           <td class="home-team">Everton4</td>
                                           <td class="actual">
                                             <table>
