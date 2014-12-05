@@ -1,0 +1,205 @@
+﻿
+@media only screen and (min-width:640px) and (max-width: 767px), only screen and (max-device-width: 767px) {
+  #dashboard-wrapper {
+     .minus:after {
+      color: #ffffff;
+      content: "-";
+      display: block;
+      font-size: 1.7em;
+      height: 0;
+      position: absolute;
+      right: 27px;
+      top: -10px;
+      width: 0;
+     }
+     .plus:after {
+      color: #ffffff;
+      content: "+";
+      display: block;
+      font-size: 1.4em;
+      height: 0;
+      position: absolute;
+      right: 27px;
+      top: -2px;
+      width: 0;
+     }
+     a.where-anorak-next {
+        display:none;
+     }
+    .navbar-wrapper {
+      #PrediktaTop {
+        .container {
+          ul {
+          padding-left:20px;
+          li.know-football {
+            display:none;
+          }
+          li.mini-nav {
+            display:none;
+          }
+          li.play-predikta-button {
+            clear: both;
+            display: block;
+            float: left;
+            width: 100%;
+            display:none;
+            #play-predikta-button {
+              width:100%;
+              transform:none;
+              display:none;
+            }
+          }
+          li.admin-panel {
+            width:50%;
+            .name-clock-wrapper {
+              font-size:1em;
+            }
+            .btn-group {
+              .dropdown-menu {
+                position:absolute;
+                left:0;
+              }
+            }
+          }
+        }
+        }
+      }
+    }
+     #predikta-dashboard {
+      padding-left:0;
+      width:440px;
+      #myTabContent {
+        #week {
+          #leagues {
+            .panel.panel-default {
+              border-radius: 4px;
+              clear: both;
+              display: block;
+              float: left;
+              margin-bottom: 0;
+              overflow: visible;
+              width: 100%;
+            }
+            #players {
+              height:auto;
+              overflow:visible;
+            }
+          }
+        }
+      }
+      section#points {
+        width:100%;
+        header {
+            h1#points-header {
+              @include linear-gradient( #009fe3, 0%, #01519e, 100% );
+              color: #ffffff;
+              cursor:pointer;
+              display: block;
+              float: right;
+              height: 36px;
+              margin-bottom: 0;
+              margin-top: 3px;
+              padding-left: 20px;
+              padding-top: 4px;
+              width: 100%;
+            }
+          .leaguedrop {
+            clear: both;
+            display: block;
+            float: left;
+            width: 100%;
+            select {
+              width:100%;
+            }
+          }
+        }
+        .table-responsive {
+          border:none;
+          margin-bottom:0;
+        }
+      }
+      section#league {
+        padding-left:0;
+        padding-right:0;
+        width:100%;
+        header {
+          h1 {
+            margin-top:0;
+          }
+          ul#myTab {
+            clear:both;
+            display:block;
+            float:left;
+            width:100%;
+            li,
+            li.active {
+              a {
+                margin-top:0;
+              }
+            }
+          }
+        }
+        #myTabContent {
+          #week {
+            .modal {
+              left: 0;
+              max-width: none;
+              top: 20px;
+              width: 100%;   
+              .modal-dialog {
+                margin-left:0;
+                width:420px;
+                .modal-content {
+                  width:440px;
+                  .modal-body {
+                    width:390px;
+                  }
+                }
+              }      
+            }
+          }
+        }
+        .table-responsive {
+          border:none;
+        }
+      }
+      aside#bets {
+      #bets-table-wrapper {
+          width:100%;
+          .table-responsive {
+            border:none;
+          }
+          #table-banner-add {
+            a {
+              img {
+                width:100%;
+              }
+            }
+          }
+        }
+      #banter {
+          margin-left:0;
+          width:100%;
+          #banterWrapper {
+            #commets-wrapper {
+              height:auto;
+              ul {
+                li {
+                  &:nth-child(2n) {
+                    min-height:45px;
+                    &:after {
+                    top:9px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .new-post-wrapper {
+            margin-bottom:60px;
+          }
+        }
+      }
+    }
+  }  /*  dashboard-wrapper closing brace -------  */
+}  /*  640 closing brace ------------------------ */
