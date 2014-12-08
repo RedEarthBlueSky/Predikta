@@ -22,16 +22,17 @@ $(document).ready(function () {
       $('section#points header h1').removeClass().removeAttr('id');  
     }
     /*  here is our functionality, but it only works if the class and id have been added to the h1 element */
-    $('#points-header').on('click', function () {
+    /*  added unbind to overcome bug of click executing twice */
+    $('#points-header').unbind('click').on('click', function () {
       $('.leaguedrop, #box-wrapper').slideToggle(500);
-      if ($('#points-header').hasClass('minus'))
-      {
-        $('#points-header').attr('class', 'plus');
-      }
-      else if ($('#points-header').hasClass('plus'))
-      {
-        $('#points-header').attr('class', 'minus');
-      }
+        if ($('#points-header').hasClass('minus'))
+        {
+          $('#points-header').attr('class', 'plus').animate({ 'width': '100%' }, 250);
+        }
+        else if ($('#points-header').hasClass('plus'))
+        {
+          $('#points-header').attr('class', 'minus').animate({ 'width': '40%' }, 250);
+        }
     });
   }
   togglePoints();
@@ -40,10 +41,10 @@ $(document).ready(function () {
 /*  move the banner add when we get to below iPad landscape */
   function moveStuff() {
     width = $(window).width();
-    if (width <= 1023 && (($("#points #table-banner-add").length) > 0)) {
+    if (width <= 1016 && (($("#points #table-banner-add").length) > 0)) {
       $("#table-banner-add").appendTo("#bets-table-wrapper");
     }
-    else if (width > 1023 && (($("#bets-table-wrapper #table-banner-add").length) > 0)) {
+    else if (width > 1016 && (($("#bets-table-wrapper #table-banner-add").length) > 0)) {
       $("#table-banner-add").appendTo("#points");
     }
   }
@@ -135,6 +136,7 @@ $(document).ready(function () {
     $(window).resize(function () {
       setHeight();
       moveStuff();
+      togglePoints();
     });
 
 
@@ -162,15 +164,7 @@ $(document).ready(function () {
       $(".first-time-notification").on('click', function () {
         $(this).addClass("no-display");
       });
- });
-  //  Initialize jScrollPane 
-  //$(function () {
-  //  $('.table-responsive').jScrollPane();
- // });
-
-
-
-
+  });
 
 
 /*  provie a smooth transition between links in the same page 
@@ -188,17 +182,16 @@ $(document).ready(function () {
     }
   });
 */
-/*  Update the clock using moment.js -----------------  */
-  $(function () {
-    updateClock();
-    setInterval(updateClock, 1000);
-    function updateClock() {
-      var gmtOffset = 0;
-      var time = moment.utc().add("hours", gmtOffset).format("hh:mm:ss");
-      $('#clock').html(time);
-    }
-  });
 
+
+  /*  remove the need for moment.js with simple time function ------ */
+
+  function date() {
+    var now = new Date(),
+        now = now.getHours() + ':' + now.getMinutes();
+    $('#clock').html(now);
+  }
+  setInterval(function(){date()}, 1000);
 
 });
 

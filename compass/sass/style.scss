@@ -12,6 +12,9 @@
 @import 'bootstrap/bootstrap';
 
 /*  Partials - CSS and SASS for specific elements ----- */
+@import 'partials/generic-grid';
+@import 'partials/header';
+@import 'partials/footer';
 @import 'partials/carousel';
 @import 'partials/dashboard-points';
 @import 'partials/dashboard';
@@ -25,6 +28,8 @@
 @import 'responsive/responsive';
 @import 'responsive/_tablet-landscape';
 @import 'responsive/_tablet-portrait';
-@import 'responsive/_mobile_640';
+@import 'responsive/_mobile_640_767';
+@import 'responsive/_mobile_639';
+@import 'responsive/_mobile_440';
 
 

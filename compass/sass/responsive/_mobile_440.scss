@@ -2,7 +2,228 @@
 /*  HGV older iPhones and Android devices with screen size 320 x 480px */
 
 @media only screen and (max-width: 440px), only screen and (max-device-width: 440px) {
+  .navbar-wrapper {
+      border-bottom-width:4px;
+      #PrediktaTop {
+        .container {
+          ul { 
+            margin-bottom:0;
+            margin-right: 0;
+            margin-top: 0;
+            padding-left: 10px;
+            padding-top: 0;
+            li.logoListItem {
+              width:145px;
+              height:30px;
+              a#logoLink {
+                height:30px;
+                .lologo {
+                  height:42px;
+                }
+              }
+            }
+            li.admin-panel {
+              width:45%;
+              h1 {
+                margin-top:5px;
+              }
+              .btn-group {
+                margin-top:0;
+                .name-clock-wrapper {
+                  line-height:12px;
+                }
+                .dropdown-menu {
+                  left:-223px;
+                  margin-right:20px;
+                  position:absolute;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  #dashboard-wrapper {
+    .container.marketing {
+      section.goTop {
+        display:none;
+      }
+    }
+    .banker {
+      &:before {
+        border-right-width:20px;
+        border-top-width:21px;
+      }
+      &:after {
+        font-size:10px;
+        left:-1px;
+        top:-1px;
+      }
+    }
+    .minus {
+        &:after {
+          left: 100px;
+          top: -7px;
+        }
+    }
+    #predikta-dashboard {
+      width:310px;
+      section#points {
+        header {
+          h1#points-header {
+            float: left;
+            font-size: 1.6em;
+            height: 32px;
+            padding-left: 10px;
+            padding-top: 3px;
+            width: 40%;    
+          }
+          .leaguedrop {
+            clear: none;
+            display: inline;
+            float: right;
+            margin-top: 4px;
+            width: 55%;
+            select {
+              margin-top:0;
+              padding-bottom:0;
+            }
+          }
+        }
+        .table-responsive {
+            padding-left:3px;
+            padding-right:3px;
+            table {
+              font-size:8px;
+              thead {
+                tr {
+                  th.home-team {
+                    width:60px;
+                  }
+                  th.actual {
+                    width:50px;
+                  }
+                  th.away-team {
+                    width:50px;
+                  }
+                  th.away {
+                    padding-left:0;
+                    padding-right:0;
+                    width:45px;
+                  }
+                  th.points {
+                    padding-left:0;  
+                    padding-right:0;
+                    width:40px;
+                  }
+                  th.akka {
+                    padding-left:0;
+                  }
+                }
+              }
+              tbody {
+                tr {
+                  td.home-team {
+                    width:65px;
+                  }
+                  .actual {
+                    width:50px;
+                    table {
+                      tr {
+                        td {
+                          padding-top:3px;
+                        }
+                      }
+                    }
+                  }
+                  td.away-team {
+                    width:50px;
+                  }
+                  td.away {
+                    padding-left:0;
+                    padding-right:0;
+                    table {
+                      tbody {
+                        tr {
+                          td {
+                            padding-top:3px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .points {
+                    padding-left:0;
+                    padding-right:0;
+                    width:31px;
+                    span {
+                      height:25px;
+                      margin-bottom:1px;
+                      margin-top:1px;
+                      padding-top:6px;
+                      width:25px;
+                    }
+                  }
+                  .game-state {
+                    font-family: trade gothic lt std;
+                    padding-left: 0;
+                    padding-right:0;
+                    padding-top: 5px;
+                    width: 45px;  
+                  }
+                  .game-state.bet-in-play {
+                    padding-top:0;
+                    span {
+                      bottom:3px;
+                      padding-top:4px;
+                      position:relative;
+                      font-size:8px;
+                      height:33px;
+                      width:45px;
+                      font-family:'Trade Gothic LT Std';
+                    }
+                  }
+                }
+                tr.pending {
+                  td.game-state {
+                    .time,
+                    .day {
+                      font-size:10px;
+                    }
+                    .time {
+                      display: block;
+                      width: 100%;    
+                    }
+                  }
+                }
+                tr.in-play {
+                  height:28px;
+                  .points {
+                    span {
+                      height:25px;
+                    }
+                  }
+                  td.akka {
 
-  
-
+                  }
+                }
+            }
+          }
+      }
+        a.first-time-notification {
+          display:none;
+        }
+      }
+      aside#bets {
+        .table-responsive {
+          overflow:hidden;
+          table {
+            thead {
+              width:98%;
+            }
+          }
+        }
+      }
+    }
+  }
 }

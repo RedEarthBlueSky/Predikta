@@ -1,32 +1,6 @@
 ﻿
 @media only screen and (min-width:640px) and (max-width: 767px), only screen and (max-device-width: 767px) {
-  #dashboard-wrapper {
-     .minus:after {
-      color: #ffffff;
-      content: "-";
-      display: block;
-      font-size: 1.7em;
-      height: 0;
-      position: absolute;
-      right: 27px;
-      top: -10px;
-      width: 0;
-     }
-     .plus:after {
-      color: #ffffff;
-      content: "+";
-      display: block;
-      font-size: 1.4em;
-      height: 0;
-      position: absolute;
-      right: 27px;
-      top: -2px;
-      width: 0;
-     }
-     a.where-anorak-next {
-        display:none;
-     }
-    .navbar-wrapper {
+  .navbar-wrapper {
       #PrediktaTop {
         .container {
           ul {
@@ -65,28 +39,35 @@
         }
       }
     }
+  #dashboard-wrapper {
+     .minus:after {
+      color: #ffffff;
+      content: "-";
+      display: block;
+      font-size: 1.7em;
+      height: 0;
+      position: absolute;
+      left:210px;
+      top: -7px;
+      width: 0;
+     }
+     .plus:after {
+      color: #ffffff;
+      content: "+";
+      display: block;
+      font-size: 1.4em;
+      height: 0;
+      position: absolute;
+      right: 27px;
+      top: -2px;
+      width: 0;
+     }
+     a.where-anorak-next {
+        display:none;
+     }
      #predikta-dashboard {
       padding-left:0;
-      width:440px;
-      #myTabContent {
-        #week {
-          #leagues {
-            .panel.panel-default {
-              border-radius: 4px;
-              clear: both;
-              display: block;
-              float: left;
-              margin-bottom: 0;
-              overflow: visible;
-              width: 100%;
-            }
-            #players {
-              height:auto;
-              overflow:visible;
-            }
-          }
-        }
-      }
+      width:620px;
       section#points {
         width:100%;
         header {
@@ -95,32 +76,317 @@
               color: #ffffff;
               cursor:pointer;
               display: block;
-              float: right;
+              float: left;
               height: 36px;
               margin-bottom: 0;
-              margin-top: 3px;
+              margin-top: 5px;
               padding-left: 20px;
               padding-top: 4px;
-              width: 100%;
+              width: 40%;
             }
           .leaguedrop {
-            clear: both;
-            display: block;
-            float: left;
-            width: 100%;
+            clear: none;
+            display: inline;
+            float: right;
+            width: 55%;
             select {
               width:100%;
             }
           }
         }
-        .table-responsive {
-          border:none;
-          margin-bottom:0;
-        }
+    .table-responsive {
+                border:none;
+                clear: both;
+                display: table;
+                float: left;
+/*  try and set element to sit within any device view */
+                width: 100%;
+                table {
+                  border-collapse: collapse;
+                  border-spacing: 0;
+                  clear: both;
+                  color:#000;
+                  display: table;
+                  float: left;
+                  font-size:1em;
+                  margin-bottom: 0;
+                  text-transform: uppercase;
+                  width: 100%;
+                  tbody {
+                    tr {
+                      margin-top:0;
+                      margin-bottom:0;
+                      td {
+                        padding-bottom:0;
+                        padding-top:8px;
+                      }
+                    }
+                  }
+                  thead {
+                    th.akka {
+
+                    }
+                    th {
+                      border-bottom:none;
+                      color:#bdbdbd;
+                    }
+                    th.actual {
+                      width: 85px;
+                      padding-left: 0;
+                      padding-right: 0;
+                    }
+                    th.away-team {
+                    }
+                    th.points {
+                      width:50px;
+                    }
+                  }               
+                  tr {
+                    display: block;
+                    clear: both;
+                    float: left;
+                    position:relative;
+                    width:100%;
+                    .actual {
+                       padding-left:0;
+                       padding-right:0;
+                       padding-top:5px;
+                       text-align:center;
+                       width:80px;
+                       table {
+                        width: 70%;
+                        margin: 0 auto;
+                        display: block;
+                        float: none;
+                          tr {
+                            td {
+                              padding:5px;
+                            }
+                          }
+                       }
+                    }
+                    .away {
+                       padding-top:5px;
+                       text-align:center;
+                       width:75px;
+                       table {
+                        width: 70%;
+                        margin: 0 auto;
+                        display: block;
+                        float: none;
+                          tr {
+                            td {
+                              padding:5px;
+                            }
+                          }
+                       }
+                    }
+                    .home-team {
+                      text-align:right;
+                      padding-left:0;
+                      padding-right:0;
+                      width:130px;
+                    }
+                    .away-team {
+                        width:130px;
+                        padding-left:0;
+                        padding-right:0;
+                    }
+/*  firefox only hack because of table bug in moz  */
+                    @-moz-document url-prefix() { 
+                      .away-team {
+                        width:96px;
+                      }
+                    }
+                    th.home-team {
+                    }
+                    th.away {
+
+                    }
+                    .actual-home, 
+                    .actual-away,
+                    .client-home,
+                    .client-away {
+
+                    }
+                    .actual-home {
+                    }
+                    .client-home {
+
+                    }
+                    .dash {
+                    }
+                    .game-state {
+                      border-top: none;
+                      text-align:center;
+                      width:60px;
+                      span {
+                        display: block;
+                        float: left;
+                        font-size: 10px;
+                        line-height: 10px;
+                        text-align: center;
+                        width: 40px;
+                      }
+                      .time {
+                        display: block;
+                        float: left;
+                        width: 1px;
+                        font-size:14px;
+                      }
+                      .day {
+                        clear: both;
+                        display: block;
+                        font-size: 14px;
+
+                        text-align: center;
+                        text-transform: uppercase;
+                        margin-bottom:3px;
+                        width: 100%;
+                      }
+                    }
+                    .points {
+                      padding-top:0;
+                      width:55px;
+                      text-align:center;
+                      span {
+                        background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+                        @include linear-gradient( #009fe3, 0%, #01519e, 100% );
+                        color: #ffffff;
+                        display: block;
+                        float:right;
+                        height: 30px;
+                        padding-top: 7px;
+                        width: 30px;
+                        margin-bottom:3px;
+                        margin-top:3px;
+                      }
+                    }
+                    .game-state.bet-in-play {
+                      padding-left:0;
+                      padding-right:0;
+                      padding-top:0;
+                      padding-bottom:0;
+                      span {
+                        background: linear-gradient(to bottom, #e7444a 0%, #941913 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+                        @include linear-gradient( #e7444a, 0%, #941913, 100% );
+                        border: 2px solid #1382c4;
+                        border-radius: 10px;
+                        color: #ffffff;
+                        display: block;
+                        float: left;
+                        padding: 4px 0;
+                        position: relative;
+                        text-transform: uppercase;
+                        width: 62px;
+                        padding-bottom: 6px;
+                        &:before {
+                          border: 2px solid #ffffff;
+                          border-radius: 6px;
+                          bottom: 0;
+                          content: "";
+                          display: block;
+                          left: 0;
+                          position: absolute;
+                          right: 0;
+                          top: 0;
+                        }
+                      }
+                    }
+                    
+                    .AKKA {
+                      width:55px;
+                      span {
+                        border-radius: 20px;
+                        display: block;
+                        float: left;
+                        height: 10px;
+                        margin-top:10%;
+                        width: 10px;
+                      }
+                      .red-circle {
+                        background-color:#df1a22;
+                      }
+                      .yellow-circle {
+                        background-color:#fbb03b;
+                      }
+                      .green-circle {
+                        background-color:#39b54a;
+                      }
+                    }
+                    td.akka {
+                    }
+                  }
+                  tr.pending {
+                    color:#bdbdbd;
+                    .red-circle,
+                    .yellow-circle,
+                    .green-circle {
+                        background-color:#bdbdbd;
+                    }
+                    td.game-state {
+ 
+                    }
+                    .points {
+                      span {
+                        background:none;
+                        color:#bdbdbd;
+                      } 
+                    }
+                  }
+                  tr.pending {
+                    td.actual, 
+                    td.away {
+                       table {
+                        color:#bdbdbd;
+                       }
+                    }
+                  }
+                  tr.in-play {
+                    background-color: #deeaf0;
+                    border: medium none;
+                    border-radius: 9px;
+                    display: block;
+                    float: left;
+                    padding: 0;
+                    margin-top: 2px;
+                    margin-bottom: 3px;
+                    td {
+                      border-top:none;
+                    }
+                  }
+                  tfoot {
+                    tr {
+                      padding-left:77px;
+                      margin-top:0;
+                      td {
+                        border: medium none;
+  
+                        text-align: center;
+                        width: 100px;
+                      }
+                    }
+                    .tfoot-header {
+                      margin-bottom:0;
+                    }
+                    .results {
+                      margin-top:0;
+                      position:relative;
+                      bottom:8px;
+                      td {
+                        padding-top:0;
+                        padding-bottom:0;
+                      }
+                    }
+                  }
+
+              }
+            }
       }
       section#league {
         padding-left:0;
         padding-right:0;
+        max-width:620px;
         width:100%;
         header {
           h1 {
@@ -139,29 +405,313 @@
             }
           }
         }
-        #myTabContent {
-          #week {
-            .modal {
-              left: 0;
-              max-width: none;
-              top: 20px;
-              width: 100%;   
-              .modal-dialog {
-                margin-left:0;
-                width:420px;
-                .modal-content {
-                  width:440px;
-                  .modal-body {
-                    width:390px;
-                  }
+      #myTabContent {
+        #week {
+          .modal {
+            left:0;
+            max-width:none;
+            top:20px;
+            width:100%;
+            .modal-dialog {
+              width:100%;
+              display:block;
+              float:left;
+              margin-left:0;
+              .modal-content {
+                width:100%;
+                max-width:620px;
+                .modal-body {
+                  width:100%;
                 }
-              }      
+              }
+            }
+          }
+          #leagues {
+            .panel.panel-default {
+              border-radius: 4px;
+              clear: both;
+              display: block;
+              float: left;
+              margin-bottom: 0;
+              overflow: visible;
+              width: 100%;
+            }
+            #players {
+              height:auto;
+              overflow:visible;
+            }
+            .table-responsive {
+                border:none;
+                table {
+                  font-size:1.1em;
+                  thead {
+                    th.home-team {
+                      width:130px;
+                    }
+                    th.actual {
+                      padding-left:7px;
+                    }
+                    th.away-team {
+                      width: 116px;
+                      padding-left:0;
+                    }
+                    th.away {
+                    }
+                    th.akka {
+                      padding-left:20px;
+                    }
+                    th.points {
+                      width:70px;
+                    }
+                    th {
+                      border-bottom:none;
+                      color:#bdbdbd;
+                    }
+                  }  
+                  tbody {
+                    tr {
+                      margin-top:0;
+                      margin-bottom:0;
+                      td {
+                        border-top:1px solid #dddddd;
+                        padding-bottom:1px;
+                        padding-top:4px;
+                      }
+                    }
+                  }             
+                  tr {
+                    display: block;
+                    clear: both;
+                    float: left;
+                    position:relative;
+                    .home-team {
+                      text-align:right;
+                      padding-left:0; 
+                      width:131px;                     
+                    }
+                    .actual {
+                      padding-top:0;
+                      width:80px;
+                      table {
+                        display:block;
+                        float:none;
+                        margin:0 auto;
+                        width:70%;
+                        tr {
+                          td {
+                            border-top:none;
+                          }
+                          td.actual-home,
+                          td.dash,
+                          td.actual-away {
+                            padding-left:5px;
+                            padding-right:5px;
+                          }
+                        }
+                      }
+                    }
+                    .away {
+                      padding-top:0;
+                      table {
+                        tr {
+                          td {
+                            border-top:none;
+                          }
+                        }
+                      }             
+                    }
+                    .away-team {
+                      padding-left: 0px;
+                      padding-right: 0;
+                      width:120px;
+                    }
+                    .actual-home, 
+                    .actual-away,
+                    .client-home,
+                    .client-away {
+                      width: 20px;
+                      text-align: center;
+                      padding-left:0;
+                      padding-right:0;
+                    }
+                    .actual-home,
+                    .client-home {
+                      padding-left:14px;
+                    }
+                    .game-state,
+                    .dash {
+                      padding-left:0;
+                      padding-right:0;
+                    }
+                    .game-state {
+                      padding-left: 25px;
+                      border-top: none;
+                      span {
+                        display: block;
+                        float: left;
+                        font-size: 10px;
+                        line-height: 10px;
+                        text-align: center;
+                        width: 40px;
+                      }
+                      .time {
+                        display: block;
+                        float: left;
+                        width: 1px;
+                        font-size:14px;
+                      }
+                      .day {
+                        clear: both;
+                        display: block;
+                        font-size: 14px;
+                        padding-left: 4px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        margin-bottom:3px;
+                        width: 100%;
+                      }
+                    }
+                    .points {
+                      padding-top:0;
+                      width:80px;
+                      text-align:center;
+                      span {
+                        @include linear-gradient( #009fe3, 0%, #01519e, 100% );
+                        color: #ffffff;
+                        display: block;
+                        float: right;
+                        height: 30px;
+                        margin-bottom: 3px;
+                        margin-right: 24px;
+                        margin-top: 3px;
+                        padding-top: 7px;
+                        width: 30px;
+                      }
+                    }
+                    .game-state.bet-in-play {
+                      padding-left:3px;
+                      padding-top:0;
+                      padding-bottom:0;
+                      span {
+                        background: linear-gradient(to bottom, #e7444a 0%, #941913 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+                        border: 2px solid #1382c4;
+                        border-radius: 10px;
+                        color: #ffffff;
+                        display: block;
+                        float: left;
+                        padding: 4px 0;
+                        position: relative;
+                        text-transform: uppercase;
+                        width: 62px;
+                        padding-bottom: 6px;
+                        &:before {
+                          border: 2px solid #ffffff;
+                          border-radius: 6px;
+                          bottom: 0;
+                          content: "";
+                          display: block;
+                          left: 0;
+                          position: absolute;
+                          right: 0;
+                          top: 0;
+                        }
+                      }
+                    }
+                    
+                    .AKKA {
+                      width:40px;
+                      span {
+                        border-radius: 20px;
+                        display: block;
+                        float: left;
+                        height: 10px;
+                        margin-top:74%;
+                        width: 10px;
+                      }
+                      .red-circle {
+                        background-color:#df1a22;
+                      }
+                      .yellow-circle {
+                        background-color:#fbb03b;
+                      }
+                      .green-circle {
+                        background-color:#39b54a;
+                      }
+                    }
+                    td.akka {
+                      padding-left:25px;
+                      padding-right:25px;
+                    }
+                  }
+                  tr.pending {
+                    color:#bdbdbd;
+                    .red-circle,
+                    .yellow-circle,
+                    .green-circle {
+                        background-color:#bdbdbd;
+                    }
+                    td.game-state {
+                      padding-left:10px; 
+                    }
+                    .points {
+                      span {
+                        background:none;
+                        color:#bdbdbd;
+                        padding-top:7px;
+                      }
+                    }
+                    td.actual, 
+                    td.away {
+                       table {
+                        color:#bdbdbd;
+                       }
+                    }
+                  }
+                  tr.in-play {
+                    background-color: #deeaf0;
+                    border: medium none;
+                    border-radius: 9px;
+                    display: block;
+                    float: left;
+                    height:35px;
+                    padding: 0;
+                    margin-top: 2px;
+                    margin-bottom: 3px;
+                    td {
+                      border-top:none;
+                      padding-top:0;
+                    }
+                  }
+                  tfoot {
+                    tr {
+                      padding-left:10px;
+                      margin-top:0;
+                      td {
+                        border: medium none;
+                        padding-left: 0;
+                        padding-right: 0;
+                        text-align: center;
+                        width: 100px;
+                      }
+                    }
+                    .tfoot-header {
+                      margin-top:10px;
+                      margin-bottom:0;
+                    }
+                    .results {
+                      margin-top:0;
+                      td {
+                        padding-top:0;
+                        padding-bottom:0;
+                      }
+                    }
+                  }
+
+              }
             }
           }
         }
-        .table-responsive {
-          border:none;
-        }
+      }
       }
       aside#bets {
       #bets-table-wrapper {

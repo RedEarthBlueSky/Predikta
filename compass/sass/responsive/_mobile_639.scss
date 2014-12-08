@@ -1,31 +1,6 @@
 ﻿
 @media only screen and (max-width: 639px), only screen and (max-device-width: 639px) {
   #dashboard-wrapper {
-     .minus:after {
-      color: #ffffff;
-      content: "-";
-      display: block;
-      font-size: 1.7em;
-      height: 0;
-      position: absolute;
-      right: 27px;
-      top: -10px;
-      width: 0;
-     }
-     .plus:after {
-      color: #ffffff;
-      content: "+";
-      display: block;
-      font-size: 1.4em;
-      height: 0;
-      position: absolute;
-      right: 27px;
-      top: -2px;
-      width: 0;
-     }
-     a.where-anorak-next {
-        display:none;
-     }
     .navbar-wrapper {
       #PrediktaTop {
         .container {
@@ -65,6 +40,31 @@
         }
       }
     }
+     .minus:after {
+      color: #ffffff;
+      content: "-";
+      display: block;
+      font-size: 1.7em;
+      height: 0;
+      position: absolute;
+      right: 27px;
+      top: -10px;
+      width: 0;
+     }
+     .plus:after {
+      color: #ffffff;
+      content: "+";
+      display: block;
+      font-size: 1.4em;
+      height: 0;
+      position: absolute;
+      right: 27px;
+      top: -2px;
+      width: 0;
+     }
+     a.where-anorak-next {
+        display:none;
+     }
      #predikta-dashboard {
       padding-left:0;
       width:440px;
