@@ -1,0 +1,75 @@
+﻿/*  FOOTER ----------------------------------------------------  */
+footer {
+  background-color: #000000;
+  display: block;
+  float: left;
+  width: 100%;
+  ul {
+    display: block;
+    margin: 0 auto;
+    max-width: 1330px;
+    li {
+      display: inline;
+      float: left;
+      list-style: outside none none;
+      width:auto;
+      a {
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: underline;
+        font-style: italic;
+        width: 100%;
+        display: block;
+        float: left;
+        margin-left:15px;
+        img {
+          display: block;
+          float: left;
+          width: 100%;
+        }    
+      }
+    }
+    li.opta-logo {
+      margin-right:8%;
+      a {
+        img {
+          max-width:70px;
+          max-height:30px;
+        }
+      }
+    }
+    li.ladbrokes-logo {
+    margin-right:10%;
+      a {
+        img {
+          max-width: 106px;
+        }
+      }
+    }
+    li.stakes-ladders {
+      margin-left: 11%;
+      a {
+        img {
+          max-width: 169px;
+        }
+      }
+    }
+    li.age-rating {
+      position: absolute;
+      right: 15px;
+      a {
+        img {
+          max-width: 40px;
+        }
+      }
+    }
+  }
+  p.footer-predikta-info {
+    display: block;
+    width: 100%;
+    clear: both;
+    float: left;
+    text-align: center;
+  }
+}
+/*  END FOOTER ------------------------------------------------  */
