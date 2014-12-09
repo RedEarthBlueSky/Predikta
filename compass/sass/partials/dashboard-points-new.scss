@@ -1,7 +1,11 @@
-﻿/*  POINTS SECTION -------------------- */
-section#points {
+﻿#dashboard-wrapper #predikta-dashboard.row.new-dashboard {
+  max-width:1920px;
+}
+/*  POINTS SECTION -------------------- */
+section#points-new {
     background-color:$prediktaDashboarBG;
-    max-width:646px;
+    max-width:720px;
+    width:38%;
     header {
               clear: both;
               display: block;
@@ -106,43 +110,35 @@ section#points {
 /*  try and set element to sit within any device view */
                 width: 100%;
                 table {
-                  border-collapse: collapse;
-                  border-spacing: 0;
-                  clear: both;
                   color:#000;
-                  display: table;
-                  float: left;
-                  font-size:1em;
                   margin-bottom: 0;
                   text-transform: uppercase;
-                  width: 100%;
                   tbody {
                     tr {
-                      margin-top:0;
-                      margin-bottom:0;
+                      width:100%;
                       td {
-                        padding-bottom:0;
-                        padding-top:8px;
+                        float:left;
+                        padding-top:12px;
                       }
                     }
                   }
                   thead {
-                    th.akka {
-
-                    }
-                    th {
-                      border-bottom:none;
-                      color:#bdbdbd;
-                    }
-                    th.actual {
-                      width: 85px;
-                      padding-left: 0;
-                      padding-right: 0;
-                    }
-                    th.away-team {
-                    }
-                    th.points {
-                      width:50px;
+                    tr {
+                      width:100%;
+                      th {
+                        border-bottom:none;
+                        float:left;
+                        color:#bdbdbd;
+                      }
+                      .points {
+                        padding-top:9px;
+                      }
+                      th.actual{
+                        padding-top:8px;
+                      }
+                      th.away {
+                        padding-top:9px;
+                      }
                     }
                   }               
                   tr {
@@ -150,87 +146,66 @@ section#points {
                     clear: both;
                     float: left;
                     position:relative;
-                    width:100%;
                     .actual {
-                       padding-left:0;
                        padding-right:0;
-                       padding-top:5px;
+                       padding-top:0;
                        text-align:center;
-                       width:80px;
                        table {
-                        width: 70%;
                         margin: 0 auto;
                         display: block;
                         float: none;
+                        tbody {
+                           float:left;
+                            width:100%;
+                        }
                           tr {
+                            display: block;
+                            float: none;
+                            margin: 0 auto;
+                            width:35px;
                             td {
-                              padding:5px;
+                            }
+                            .actual-home {
+                              padding-right:5px;
+                            }
+                            .actual-away {
+                              padding-left:5px;
                             }
                           }
                        }
                     }
                     .away {
-                       padding-top:5px;
-                       text-align:center;
-                       width:75px;
+                       padding-top:0;
                        table {
-                        width: 70%;
                         margin: 0 auto;
                         display: block;
                         float: none;
                           tr {
+                            width:35px;
                             td {
-                              padding:5px;
+                            }
+                            .client-home {
+                              padding-right:5px;
+                            }
+                            .client-away {
+                              padding-left:5px;
                             }
                           }
                        }
                     }
                     .home-team {
                       text-align:right;
-                      padding-left:0;
-                      padding-right:0;
-                      width:130px;
-                    }
-                    .away-team {
-                        width:130px;
-                        padding-left:0;
-                        padding-right:0;
-                    }
-/*  firefox only hack because of table bug in moz  */
-                    @-moz-document url-prefix() { 
-                      .away-team {
-                        width:96px;
-                      }
-                    }
-                    th.home-team {
-                    }
-                    th.away {
-
-                    }
-                    .actual-home, 
-                    .actual-away,
-                    .client-home,
-                    .client-away {
-
-                    }
-                    .actual-home {
-                    }
-                    .client-home {
-
-                    }
-                    .dash {
                     }
                     .game-state {
                       border-top: none;
                       text-align:center;
-                      width:60px;
                       span {
                         display: block;
                         float: left;
                         font-size: 10px;
                         line-height: 10px;
                         text-align: center;
-                        width: 40px;
+                        width:100%;
                       }
                       .time {
                         display: block;
@@ -242,35 +217,28 @@ section#points {
                         clear: both;
                         display: block;
                         font-size: 14px;
-
                         text-align: center;
                         text-transform: uppercase;
                         margin-bottom:3px;
-                        width: 100%;
                       }
                     }
                     .points {
+                      padding-bottom:0;
                       padding-top:0;
-                      width:55px;
                       text-align:center;
                       span {
                         background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
                         @include linear-gradient( #009fe3, 0%, #01519e, 100% );
                         color: #ffffff;
                         display: block;
-                        float:right;
-                        height: 30px;
+                        height: 35px;
                         padding-top: 7px;
-                        width: 30px;
                         margin-bottom:3px;
                         margin-top:3px;
                       }
                     }
                     .game-state.bet-in-play {
-                      padding-left:0;
-                      padding-right:0;
-                      padding-top:0;
-                      padding-bottom:0;
+                      padding:0;
                       span {
                         background: linear-gradient(to bottom, #e7444a 0%, #941913 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
                         @include linear-gradient( #e7444a, 0%, #941913, 100% );
@@ -279,11 +247,9 @@ section#points {
                         color: #ffffff;
                         display: block;
                         float: left;
-                        padding: 4px 0;
+                        padding: 10px 0;
                         position: relative;
-                        text-transform: uppercase;
-                        width: 62px;
-                        padding-bottom: 6px;
+                        width:110%;
                         &:before {
                           border: 2px solid #ffffff;
                           border-radius: 6px;
@@ -297,15 +263,13 @@ section#points {
                         }
                       }
                     }
-                    
                     .AKKA {
-                      width:55px;
                       span {
                         border-radius: 20px;
                         display: block;
-                        float: left;
+                        float: none;
                         height: 10px;
-                        margin-top:10%;
+                        margin: 10% auto 0;
                         width: 10px;
                       }
                       .red-circle {
@@ -327,9 +291,6 @@ section#points {
                     .yellow-circle,
                     .green-circle {
                         background-color:#bdbdbd;
-                    }
-                    td.game-state {
- 
                     }
                     .points {
                       span {
@@ -360,26 +321,16 @@ section#points {
                     }
                   }
                   tfoot {
+                    float:right;
+                    margin-right:10%;
+                    width:70%;
                     tr {
-                      padding-left:77px;
                       margin-top:0;
+                      width:100%;
                       td {
                         border: medium none;
-  
+                        float:left;
                         text-align: center;
-                        width: 100px;
-                      }
-                    }
-                    .tfoot-header {
-                      margin-bottom:0;
-                    }
-                    .results {
-                      margin-top:0;
-                      position:relative;
-                      bottom:8px;
-                      td {
-                        padding-top:0;
-                        padding-bottom:0;
                       }
                     }
                   }
