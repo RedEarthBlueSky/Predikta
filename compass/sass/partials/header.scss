@@ -2,7 +2,7 @@
   .navbar-wrapper {
       #PrediktaTop {
           width: 100%;
-          max-width:1583px;
+          max-width:1920px;
           padding-left:0;
           padding-right:0;
           .container {
@@ -31,6 +31,7 @@
               li#logoListItem {
                   width: 15%;
                   a#logoLink {
+                      padding-left:0;
                       width: 100%;
                       .lologo {
                           background-image: url("../img/logo.svg");
@@ -38,12 +39,12 @@
                           background-size: cover;
                           float: left;
                           height: 50px;
-                          width: 90%;
+                          width: 72%;
                       }
                   }
               }
               li.know-football {
-                      width: 33%;
+                      width: 30%;
               }
               li.play-predikta-button {
                   #play-predikta-button {

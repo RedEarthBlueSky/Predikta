@@ -1,4 +1,5 @@
-﻿<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -11,7 +12,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
   <link href="favicon.ico" rel="icon">
-  <title>Predikta | Generic Grid </title>
+  <title>Predikta | Generic Form </title>
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="css/style.css">
   <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -27,8 +28,6 @@
 <!-- NAVBAR
 ================================================== -->
 <body>
-  <div id="dashboard-wrapper">
-    <!--  Dashboard Wrapper -->
     <!-- HEADER ------------------------------------------------------>
     <div class="navbar-wrapper">
       <div id="PrediktaTop" class="container">
@@ -87,206 +86,34 @@
     </div>
     <!--  END HEADER ------------------------------------------------------>
 
-    <section class="geneic-grid-wrapper col-xs-7">  
-      <h2>Players</h2> 
-      <div class="row" data-client-id="">
-        <div class="full-name col-xs-4 col-sm-4">
-          Full name
-        </div>
-        <div class="user-name col-xs-4 col-sm-4">
-          User name
-        </div>
-        <div class="user-email col-xs-3 col-sm-3">
-          Email
-        </div>
-        <div class="information col-xs-1 col-sm-1">
-          Information
+<div class="grid-wrapper">
+  <section class="geneic-form-wrapper col-xs-4">
+    <h2>Edit a competition</h2>
+    <form action="">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <input id="competition-name" type="text" name="competition-name" placeholder="Enter a name" />
         </div>
       </div>
-      <div class="row" data-client-id="">
-        <div class="full-name col-xs-4 col-sm-4">
-          Full name
+      <div class="row">
+        <div class="col-xs-6 col-sm-6">
+          <input id="start-date" type="date" name="start-date" placeholder="Start date" />
         </div>
-        <div class="user-name col-xs-4 col-sm-4">
-          User name
-        </div>
-        <div class="user-email col-xs-3 col-sm-3">
-          Email
-        </div>
-        <div class="information col-xs-1 col-sm-1">
-          Information
+        <div class="col-xs-6 col-sm-6">
+          <input id="end-date" type="date" name="end-date" placeholder="End date" />
         </div>
       </div>
-      <div class="row" data-client-id="">
-        <div class="full-name col-xs-4 col-sm-4">
-          Full name
+      <div class="row">
+        <div class="col-xs-6 col-sm-6">
+          <input id="competition-cancel" type="submit" value="Cancel" />
         </div>
-        <div class="user-name col-xs-4 col-sm-4">
-          User name
-        </div>
-        <div class="user-email col-xs-3 col-sm-3">
-          Email
-        </div>
-        <div class="information col-xs-1 col-sm-1">
-          Information
+        <div class="col-xs-6 col-sm-6">
+          <input id="competition-save" type="submit" value="Save" />
         </div>
       </div>
-      <div class="row" data-client-id="">
-        <div class="full-name col-xs-4 col-sm-4">
-          Full name
-        </div>
-        <div class="user-name col-xs-4 col-sm-4">
-          User name
-        </div>
-        <div class="user-email col-xs-3 col-sm-3">
-          Email
-        </div>
-        <div class="information col-xs-1 col-sm-1">
-          Information
-        </div>
-      </div>
-      <div class="row" data-client-id="">
-        <div class="full-name col-xs-4 col-sm-4">
-          Full name
-        </div>
-        <div class="user-name col-xs-4 col-sm-4">
-          User name
-        </div>
-        <div class="user-email col-xs-3 col-sm-3">
-          Email
-        </div>
-        <div class="information col-xs-1 col-sm-1">
-          Information
-        </div>
-      </div>
-      <div class="row" data-client-id="">
-        <div class="full-name col-xs-4 col-sm-4">
-          Full name
-        </div>
-        <div class="user-name col-xs-4 col-sm-4">
-          User name
-        </div>
-        <div class="user-email col-xs-3 col-sm-3">
-          Email
-        </div>
-        <div class="information col-xs-1 col-sm-1">
-          Information
-        </div>
-      </div>
-      <div class="row" data-client-id="">
-        <div class="full-name col-xs-4 col-sm-4">
-          Full name
-        </div>
-        <div class="user-name col-xs-4 col-sm-4">
-          User name
-        </div>
-        <div class="user-email col-xs-3 col-sm-3">
-          Email
-        </div>
-        <div class="information col-xs-1 col-sm-1">
-          Information
-        </div>
-      </div>
-      <div class="row" data-client-id="">
-        <div class="full-name col-xs-4 col-sm-4">
-          Full name
-        </div>
-        <div class="user-name col-xs-4 col-sm-4">
-          User name
-        </div>
-        <div class="user-email col-xs-3 col-sm-3">
-          Email
-        </div>
-        <div class="information col-xs-1 col-sm-1">
-          Information
-        </div>
-      </div>
-      <div class="row" data-client-id="">
-        <div class="full-name col-xs-4 col-sm-4">
-          Full name
-        </div>
-        <div class="user-name col-xs-4 col-sm-4">
-          User name
-        </div>
-        <div class="user-email col-xs-3 col-sm-3">
-          Email
-        </div>
-        <div class="information col-xs-1 col-sm-1">
-          Information
-        </div>
-      </div>
-      <div class="row" data-client-id="">
-        <div class="full-name col-xs-4 col-sm-4">
-          Full name
-        </div>
-        <div class="user-name col-xs-4 col-sm-4">
-          User name
-        </div>
-        <div class="user-email col-xs-3 col-sm-3">
-          Email
-        </div>
-        <div class="information col-xs-1 col-sm-1">
-          Information
-        </div>
-      </div>
-      <div class="row" data-client-id="">
-        <div class="full-name col-xs-4 col-sm-4">
-          Full name
-        </div>
-        <div class="user-name col-xs-4 col-sm-4">
-          User name
-        </div>
-        <div class="user-email col-xs-3 col-sm-3">
-          Email
-        </div>
-        <div class="information col-xs-1 col-sm-1">
-          Information
-        </div>
-      </div>
-      <div class="row" data-client-id="">
-        <div class="full-name col-xs-4 col-sm-4">
-          Full name
-        </div>
-        <div class="user-name col-xs-4 col-sm-4">
-          User name
-        </div>
-        <div class="user-email col-xs-3 col-sm-3">
-          Email
-        </div>
-        <div class="information col-xs-1 col-sm-1">
-          Information
-        </div>
-      </div>
-      <div class="row" data-client-id="">
-        <div class="full-name col-xs-4 col-sm-4">
-          Full name
-        </div>
-        <div class="user-name col-xs-4 col-sm-4">
-          User name
-        </div>
-        <div class="user-email col-xs-3 col-sm-3">
-          Email
-        </div>
-        <div class="information col-xs-1 col-sm-1">
-          Information
-        </div>
-      </div>
-      <div class="row" data-client-id="">
-        <div class="full-name col-xs-4 col-sm-4">
-          Full name
-        </div>
-        <div class="user-name col-xs-4 col-sm-4">
-          User name
-        </div>
-        <div class="user-email col-xs-3 col-sm-3">
-          Email
-        </div>
-        <div class="information col-xs-1 col-sm-1">
-          Information
-        </div>
-      </div>
-    </section>
-
+    </form>
+  </section>
+</div>  <!--  grid wrapper closing div controls element height -->
 
     <!-- FOOTER -->
     <footer>

@@ -1,0 +1,223 @@
+﻿/*  MIN WIDTH 1689PX -------------------------- */
+@media screen and (min-width:1698PX) {
+  #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal-dialog .modal-content .modal-body {
+    height: 100vh;
+  }
+  .modal {
+    left: 42vw;
+    width: 490px;
+    top: 5vh;
+    overflow: visible;
+  }
+  section#points {
+    .table-responsive,
+    header,
+    #table-banner-add
+     {
+      width: 620px;
+      float: right;
+    }
+  }
+}
+
+@media only screen and (min-width:1200px) and (max-width: 1600px), only screen and (max-device-width: 1600px)  {
+      .navbar-wrapper {
+        #PrediktaTop {
+          .container {
+            ul {
+              li.know-football {
+                width: 27%;
+              }
+              li.admin-panel {
+                float: right;
+                text-align: right;
+                width: 12%;
+              }        
+            }
+          }
+        }
+      }
+    }
+    #dashboard-wrapper {
+    #myTabContent {
+      #week {
+        .modal {
+           .modal-dialog {
+              .modal-content {
+                width:460px;
+              }
+           }
+         }
+      }
+    }
+    section#points {
+      .table-responsive {
+        table {
+          tr {
+            .points {
+              width: 46px;
+            }
+            .akka {
+              width:25px;
+            }
+          }
+        }
+      }
+    }
+}
+//  specific styles for Fire Fox
+ @media all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm) and (max-width:1600PX) {
+    #myTabContent {
+      #week {
+        .modal {
+           .modal-dialog {
+              .modal-content {
+              }
+           }
+         }
+      }
+    }
+    section#points {
+      .table-responsive {
+        table {
+          thead {
+            th.points {
+              width:26px;
+            }
+          }
+          tr {
+            .points {
+              width: 30px;
+            }
+            .akka {
+              width: 15px;
+            }
+            .game-state {
+              width: 40px;
+            }
+          }
+        }
+      }
+    }
+}
+    
+@media screen and (max-width:1400PX) {
+#mytabcontent #week .modal .modal-dialog .modal-content {
+width: 423px;
+}
+aside#bets #banter #banterForm #commets-wrapper ul li, aside#bets #banter #banterWrapper #commets-wrapper ul li {
+  width:80%;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+aside#bets #banter #banterForm #commets-wrapper, 
+aside#bets #banter #banterWrapper #commets-wrapper {
+  height:400px;
+}
+#dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink .lologo {
+  width:100%;
+}
+  section#points {
+    .table-responsive {
+      table {
+        thead {
+          th.akka {
+
+          }
+          th.home-team {
+            width:110px;
+          }
+          th.actual {
+            width:140px;
+          }
+          th.away-team {
+            width:80px;
+          }
+          th.away {
+            width:60px;
+          }
+        }
+        tr.pending {
+          .game-state {
+
+          }
+        }
+        tr {
+          .actual {
+            width:70px;
+          }
+          .away {
+            width:65px;
+          }
+          .game-state.bet-in-play {
+            width:40px;
+            span {
+              width:60px;
+            }
+          }
+          td.akka {
+
+          }
+          .home-team {
+            width:120px;
+            }
+          .away-team {
+            width:100px;
+
+          }
+          .client-home,
+          .client-away {
+
+          }
+          .client-home,
+          .client-away,
+          .actual-home,
+          .actual-away {
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm) and (max-width:1400PX) {
+  section#points {
+    .table-responsive {
+      table {
+        thead {
+          th.home-team {
+            width:120px;
+          }
+          th.actual {
+            width:72px;
+          }
+          th.game-state {
+            width:0;
+          }
+          th.away-team {
+            width:108px;
+          }
+          th.away {
+            width:30px;
+          }
+        }
+        tr {
+          .game-state.bet-in-play {
+            span {
+              width:53px;
+            }
+          }
+          .away-team {
+            width:89px;
+          }
+          .away {
+            width:50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

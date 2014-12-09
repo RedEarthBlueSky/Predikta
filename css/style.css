@@ -6747,7 +6747,10 @@ button.close {
   .carousel-indicators {
     bottom: 20px; } }
 /*  Partials - CSS and SASS for specific elements ----- */
-.geneic-grid-wrapper {
+.grid-wrapper {
+  height: 81vh; }
+
+.generic-grid-wrapper {
   background-color: #f5f5f5;
   color: #000000;
   display: block;
@@ -6756,19 +6759,39 @@ button.close {
   font-size: 1.2em;
   margin: 2% auto;
   max-width: 900px;
-  padding-bottom: 1%;
-  padding-top: 1%; }
-  .geneic-grid-wrapper h2 {
+  padding-bottom: 0;
+  padding-top: 0;
+  width: 100%; }
+  .generic-grid-wrapper h2 {
+    display: inline-block;
+    float: left;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 10px;
+    text-transform: uppercase;
+    width: 50%; }
+  .generic-grid-wrapper button {
+    background-color: #1888CA;
+    border: none;
+    float: right;
+    margin-right: 30px;
     text-transform: uppercase; }
-  .geneic-grid-wrapper .row {
-    padding-top: 12px;
-    padding-bottom: 12px; }
-    .geneic-grid-wrapper .row div {
+  .generic-grid-wrapper .row {
+    padding-top: 8px;
+    padding-bottom: 6px; }
+    .generic-grid-wrapper .row button {
+      position: relative;
+      bottom: 3px; }
+    .generic-grid-wrapper .row .row.header {
+      font-size: 1.4em;
+      padding-bottom: 5px;
+      padding-top: 5px; }
+    .generic-grid-wrapper .row div {
       padding-top: 4px; }
-    .geneic-grid-wrapper .row:nth-child(2n - 1) {
+    .generic-grid-wrapper .row:nth-child(2n - 1) {
       background-color: #d6d6d6;
       border-bottom: 1px dotted #ececec; }
-  .geneic-grid-wrapper .information {
+  .generic-grid-wrapper .information {
     background: #fa0000;
     background: -webkit-gradient(linear, left top, left bottom, from(#FFFA0000), to(#FF8B0000));
     background: -moz-linear-gradient(center top, #fa0000 0%, #8b0000 100%);
@@ -6788,7 +6811,7 @@ button.close {
     padding-top: 0;
     text-indent: -9000px;
     width: 27px; }
-    .geneic-grid-wrapper .information:before {
+    .generic-grid-wrapper .information:before {
       border: 3px solid #005cad;
       border-radius: 40px;
       content: "";
@@ -6798,7 +6821,7 @@ button.close {
       position: absolute;
       top: -5px;
       width: 38px; }
-    .geneic-grid-wrapper .information:after {
+    .generic-grid-wrapper .information:after {
       transform: scale(1.5, 1);
       -webkit-transform: scale(1.5, 1);
       /* Safari and Chrome */
@@ -6819,10 +6842,136 @@ button.close {
       text-indent: 0;
       top: -12px; }
 
+.geneic-form-wrapper {
+  background-color: #f5f5f5;
+  color: #000000;
+  display: block;
+  float: none;
+  font-family: "tradegothic bold",sans-serif;
+  font-size: 1.2em;
+  margin: 2% auto;
+  max-width: 590px;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  width: 100%; }
+  .geneic-form-wrapper h2 {
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%; }
+  .geneic-form-wrapper input {
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 12px;
+    width: 100%; }
+  .geneic-form-wrapper #competition-cancel {
+    background-color: #df1a22;
+    color: #ffffff;
+    text-transform: uppercase; }
+  .geneic-form-wrapper #competition-save {
+    background-color: #1485c8;
+    color: #ffffff;
+    text-transform: uppercase; }
+  .geneic-form-wrapper #start-date,
+  .geneic-form-wrapper #end-date {
+    padding: 8px; }
+
+.dialog-box-wrapper {
+  background-color: #f5f5f5;
+  color: #000000;
+  display: block;
+  float: none;
+  font-family: "tradegothic bold",sans-serif;
+  font-size: 1.2em;
+  margin: 2% auto;
+  max-width: 1170px;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  width: 100%; }
+  .dialog-box-wrapper .row {
+    display: block;
+    clear: both; }
+    .dialog-box-wrapper .row p {
+      text-align: center; }
+    .dialog-box-wrapper .row div {
+      display: block;
+      float: none;
+      margin: 0 auto; }
+    .dialog-box-wrapper .row form div {
+      display: inline-block;
+      float: left; }
+  .dialog-box-wrapper .prediktions-wrapper {
+    display: block;
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    width: 100%; }
+  .dialog-box-wrapper .prediktions {
+    color: #df1a22;
+    display: block;
+    float: none;
+    font-size: 14px;
+    font-style: italic;
+    margin: 0 auto;
+    max-width: 290px;
+    text-align: center; }
+    .dialog-box-wrapper .prediktions div {
+      display: inline;
+      float: left; }
+    .dialog-box-wrapper .prediktions .col-sm-5 {
+      width: 40%; }
+    .dialog-box-wrapper .prediktions .dash {
+      padding-left: 0;
+      padding-right: 0;
+      width: 10px; }
+    .dialog-box-wrapper .prediktions .home-score {
+      padding-right: 0;
+      padding-left: 0;
+      width: 20px; }
+    .dialog-box-wrapper .prediktions .away-score {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: left;
+      width: 20px; }
+    .dialog-box-wrapper .prediktions .away-prediktion {
+      text-align: left; }
+  .dialog-box-wrapper h1 {
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-transform: uppercase;
+    width: 100%; }
+  .dialog-box-wrapper input {
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 12px;
+    width: 100%; }
+  .dialog-box-wrapper #prediktion-confirm {
+    background-color: #df1a22;
+    color: #ffffff;
+    float: right;
+    text-transform: uppercase;
+    width: 50%; }
+  .dialog-box-wrapper #prediktion-back {
+    background-color: #1485c8;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 50%; }
+
+@media only screen and (max-width: 464px), only screen and (max-device-width: 464px) {
+  .geneic-grid-wrapper {
+    padding-left: 5px; } }
 /*  HEADER -----------------------------*/
 .navbar-wrapper #PrediktaTop {
   width: 100%;
-  max-width: 1583px;
+  max-width: 1920px;
   padding-left: 0;
   padding-right: 0; }
   .navbar-wrapper #PrediktaTop .container {
@@ -6854,6 +7003,7 @@ button.close {
     .navbar-wrapper #PrediktaTop .container ul li#logoListItem {
       width: 15%; }
       .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink {
+        padding-left: 0;
         width: 100%; }
         .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink .lologo {
           background-image: url("../img/logo.svg");
@@ -6861,9 +7011,9 @@ button.close {
           background-size: cover;
           float: left;
           height: 50px;
-          width: 90%; }
+          width: 72%; }
     .navbar-wrapper #PrediktaTop .container ul li.know-football {
-      width: 33%; }
+      width: 30%; }
     .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button #play-predikta-button {
       margin: 5px 0;
       padding: 10px 16px;
@@ -7709,7 +7859,8 @@ section.goTop
         display: block;
         float: left;
         border-top: none;
-        max-width: 475px; }
+        max-width: 480px;
+        width: 100%; }
         #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog .modal-content .modal-header {
           background-color: #f7f7f7;
           border-bottom: medium none;
@@ -10101,7 +10252,7 @@ a.about-predikta-next {
         width: 50%; }
         #dashboard-wrapper #predikta-dashboard aside#bets #banter .new-post-wrapper textarea {
           height: 60px; } }
-@media only screen and (min-width: 640px) and (max-width: 767px), only screen and (max-device-width: 767px) {
+@media only screen and (min-width: 620px) and (max-width: 767px), only screen and (max-device-width: 767px) {
   .navbar-wrapper #PrediktaTop .container ul {
     padding-left: 20px; }
     .navbar-wrapper #PrediktaTop .container ul li.know-football {
@@ -10662,7 +10813,7 @@ a.about-predikta-next {
 
   /*  dashboard-wrapper closing brace -------  */ }
 /*  640 closing brace ------------------------ */
-@media only screen and (max-width: 639px), only screen and (max-device-width: 639px) {
+@media only screen and (min-width: 440px) and (max-width: 619px), only screen and (max-device-width: 619px) {
   #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul {
     padding-left: 20px; }
     #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.know-football {
@@ -10753,6 +10904,7 @@ a.about-predikta-next {
           width: 100%; }
       #dashboard-wrapper #predikta-dashboard section#points .table-responsive {
         border: none;
+        font-size: 10px;
         margin-bottom: 0; }
     #dashboard-wrapper #predikta-dashboard section#league {
       padding-left: 0;
@@ -10781,7 +10933,8 @@ a.about-predikta-next {
             #dashboard-wrapper #predikta-dashboard section#league #myTabContent #week .modal .modal-dialog .modal-content .modal-body {
               width: 390px; }
       #dashboard-wrapper #predikta-dashboard section#league .table-responsive {
-        border: none; }
+        border: none;
+        font-size: 10px; }
     #dashboard-wrapper #predikta-dashboard aside#bets #bets-table-wrapper {
       width: 100%; }
       #dashboard-wrapper #predikta-dashboard aside#bets #bets-table-wrapper .table-responsive {
@@ -10803,7 +10956,7 @@ a.about-predikta-next {
   /*  dashboard-wrapper closing brace -------  */ }
 /*  640 closing brace ------------------------ */
 /*  HGV older iPhones and Android devices with screen size 320 x 480px */
-@media only screen and (max-width: 440px), only screen and (max-device-width: 440px) {
+@media only screen and (max-width: 439px), only screen and (max-device-width: 439px) {
   .navbar-wrapper {
     border-bottom-width: 4px; }
     .navbar-wrapper #PrediktaTop .container ul {

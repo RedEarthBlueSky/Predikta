@@ -1,0 +1,140 @@
+﻿/*  this is theoretically for min width of 768px ---  */
+
+@media screen and (max-width:1023px){
+  .navbar-wrapper {
+      #PrediktaTop {
+        .container {
+          ul {
+            li {
+              h3 {
+                margin-top:5px;
+                width:180px;
+              }
+            }
+            li#logoListItem {
+               width:155px;
+                a#logoLink {
+                  display: block;
+                  float: left;
+                  padding-left: 0;
+                  padding-right: 0;
+                  width: 100%;
+                  .lologo {
+                  }
+                }
+            }
+            li.know-football {
+               width:150px;
+            }
+            li.mini-nav.one {
+            }
+            li.mini-nav {
+              font-size: 10px;
+              margin-right: 5px;
+              width: 54px;
+               a {
+                 transform:none;
+               }
+            }
+            li.play-predikta-button {
+              #play-predikta-button {
+                  margin:3px auto 0 auto;
+                  padding:5px 0;
+                  width:175px;
+              }
+            }
+            li.admin-panel {
+              .btn-group {
+                button {
+                  padding-right:0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  #dashboard-wrapper {
+    #section#points {
+      header {
+        .leaguedrop {
+          select {
+            font-size:0.8em;
+          }
+        }
+      }
+
+      #table-banner-add {
+        margin-top:0;
+      }
+    }
+
+    #predikta-dashboard {
+      margin:0 auto;
+      width:768px;
+      padding-left:10px;
+      #myTabContent {
+        #week {
+          #leagues {
+            .modal {
+              .modal-dialog {
+                .modal-content {
+                  height: 500px;
+                  width:333px;
+                  .modal-body {
+                  }
+                }
+              }
+            }
+            #players {
+              height:240px;
+            }
+          }
+        }
+      }
+
+    section#league {
+      display: inline-block;
+      width: 355px;
+      #season {
+        #season-details {
+          .panel-body {
+            height:340px;
+          }
+        }
+      }
+    }
+      aside#bets {
+        max-width:none;
+        width:100%;
+        #bets-table-wrapper {
+          display: block;
+          float: left;
+          margin-right: 2%;
+          width: 45%;
+          #table-banner-add {
+            display: block;
+            float: left;
+            margin-top: 10px;
+            a {
+              img {
+                width:350px;
+              }
+            }
+          }
+        }
+        #banter {
+          display: block;
+          float: left;
+          margin-left: 10px;
+          width: 50%;
+          .new-post-wrapper {
+            textarea {
+              height:60px;
+            }
+          }
+        }
+      }
+    } 
+  }
+}

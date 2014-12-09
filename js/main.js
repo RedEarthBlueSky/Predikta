@@ -119,7 +119,7 @@ $(document).ready(function () {
         /*  this only works for iPad portrait view and above so remove if this is the case  */
         if (width >= 1023) {
           windowHeight = ($(window).innerHeight() - 400);
-          viewportHeight = ($("body").innerHeight()-250);
+          viewportHeight = ($("body").innerHeight()-295);
           $('.modal-body').css("height", viewportHeight);
           $('#players').css('max-height', windowHeight);
         }
@@ -185,10 +185,14 @@ $(document).ready(function () {
 
 
   /*  remove the need for moment.js with simple time function ------ */
+  Number.prototype.zeroPad = function (length) {
+    length = length || 2; // defaults to 2 if no parameter is passed
+    return (new Array(length).join('0') + this).slice(length * -1);
+  };
 
   function date() {
     var now = new Date(),
-        now = now.getHours() + ':' + now.getMinutes();
+        now = now.getHours() + ':' + now.getMinutes().zeroPad();
     $('#clock').html(now);
   }
   setInterval(function(){date()}, 1000);
