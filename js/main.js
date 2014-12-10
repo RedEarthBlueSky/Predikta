@@ -8,6 +8,17 @@ $(document).ready(function () {
     newPostButton: '.player-wrapper button'
   }
 
+/*  In edit league panel on the league masters dashboard put the selected league name in the h1 header */
+  $('#edit-league .player-wrapper').click(function () {
+    var league = $(this).find('.name').text();
+    $('.player-wrapper').css('background-color', '#ececec');
+    $(this).css('background-color', '#c2c2c2');
+    $('#edit-league h1').text("Edit " + league + " League");
+    if (!$('#edit-league .dropdown-button').text().indexOf("Select league to edit")) {
+      $('#edit-league .dropdown-button').html("Edit another league <span class=\"up-arrow\">></span>");
+    } 
+  });
+
 /*  At mobile width provide slider for points element */
   function togglePoints() {
     width = $(window).width();  
@@ -37,6 +48,12 @@ $(document).ready(function () {
   }
   togglePoints();
 
+  /*  make the arrow in the league dashboard page change flip up and down */
+  $('.dropdown-button').on('click', function () {
+    $(this).find('span').toggleClass('up-arrow down-arrow');
+    /*  uncheck names if we close the panel */
+    $("input[id*='emailSlacker']").prop('checked', false);
+  });
 
 /*  move the banner add when we get to below iPad landscape */
   function moveStuff() {
@@ -91,6 +108,15 @@ $(document).ready(function () {
     includeSelectAllOption: true,
     selectAllText: 'SELECT ALL PLAYERS!',
     nonSelectedText: 'Select players to email banter',
+    allSelectedText: 'All players selected',
+    maxHeight: 200
+  });
+
+  /*  Configuration for the multiselect plugin */
+  $('#player-banter-list').multiselect({
+    includeSelectAllOption: true,
+    selectAllText: 'SELECT ALL PLAYERS!',
+    nonSelectedText: 'Select players to send banter',
     allSelectedText: 'All players selected',
     maxHeight: 200
   });

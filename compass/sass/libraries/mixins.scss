@@ -92,6 +92,17 @@ $default-legacy-ie: 7 8 9 !default;
 
 
 /*  MIXINS for general styles -------------------------------- */
+@mixin red-button {
+  background-color: #df1c22;
+  border: medium none;
+  border-radius: 5px;
+  color: #ffffff;
+  display: block;
+  float: left;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
 @mixin nextLink {
   bottom: 0;
   left: 0;
