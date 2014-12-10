@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="" name="description">
+  <meta content="" name="author">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width /">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <!--  have set user scale to no but might need to test this for 'yes' -->
+  <link href="favicon.ico" rel="icon">
+  <title>Predikta | Generic Grid </title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+    <!-- HEADER ------------------------------------------------------>
+    <div class="navbar-wrapper">
+      <div id="PrediktaTop" class="container">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li id="logoListItem">
+              <a id="logoLink" href="/">
+                <div class="lologo"></div>
+              </a>
+            </li>
+            <li class="know-football">
+              <h3>
+                Know your football?
+                <span>Put your money where your mouth is</span>
+              </h3>
+            </li>
+            <li class="play-predikta-button">
+              <a id="play-predikta-button" role="button" href="/Prediktions" class="btn btn-lg btn-primary">
+                Play the Predikta Pool
+              </a>
+            </li>
+            <li class="mini-nav one">
+              <a href="/blog">
+                Blog
+              </a>
+            </li>
+            <li class="mini-nav">
+              <a href="#">Nav Two</a>
+            </li>
+            <li class="mini-nav">
+              <a href="#">Nav Three</a>
+            </li>
+            <li class="admin-panel">
+              <div class="btn-group">
+                <button data-toggle="dropdown" class="btn btn-info dropdown-toggle glyphicon glyphicon-cog"></button>
+                <ul class="dropdown-menu">
+                  <li><a href="/">Dashboard</a></li>
+                  <li><a href="/Account/Profile">My Account</a></li>
+                  <li><a href="/League">Search leagues</a></li>
+                  <li><a href="/Anorak">All leagues</a></li>
+                  <li><a href="#">Anorak</a></li>
+                  <li><a href="#">Emailer</a></li>
+                  <li><a href="#">Log off</a></li>
+                  <li><a href="#">Account List Item 4</a></li>
+                  <li><a href="#">Account List Item 4</a></li>
+                </ul>
+              </div>
+              <div class="name-clock-wrapper">
+                <h1 class="navtext">Ian</h1>
+                <span id="clock"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--  END HEADER ------------------------------------------------------>
+
+
+  <div id="master-dashboard" class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <section id="edit-league" class="col-md-12">
+          <h2>Edit League</h2>
+        </section>
+        <section id="slacker-list" class="col-md-12">
+          <h2>Slacker's List</h2>
+        </section>
+      </div>
+      <div class="col-md-3">
+        <section id="auto-banter" class="col-md-12">
+          <h2>Auto Banter</h2>
+        </section>
+      </div>
+      <div class="col-md-3">
+        <section id="invite-players" class="col-md-12">
+          <h2>Invite New Players</h2>
+        </section>
+      </div>
+      <div class="col-md-3">
+        <section id="existing-players" class="col-md-12">
+          <h2>Edit existing players</h2>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+      <ul>
+        <li class="opta-logo"><a href="#"><img src="img/opta-logo.png" alt="Opta logo" /></a></li>
+        <li class="ladbrokes-logo"><a href="#"><img src="img/ladbrokes-logo.png" alt="Ladbrokes logo" /></a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">How to play</a></li>
+        <li><a href="#">Terms and conditions</a></li>
+        <li class="stakes-ladders"><a href="#"><img src="img/stakes-and-ladders-logo.png" alt="Stakes and Ladders logo" /></a></li>
+        <li class="age-rating"><a href="#"><img src="img/18-plus.png" alt="Eighteen years and over image button" /></a></li>
+      </ul>
+      <!-- <p class="pull-right"><a href="#">Back to top</a></p> -->
+      <p class="footer-predikta-info">&copy; 2014 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+  <!-- Core JavaScript  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/vendor/jquery-1.11.1.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script>
+    $.fn.modal.Constructor.prototype.enforceFocus = function () { };
+  </script>
+  <script src="js/docs.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <script src="js/main.js"></script>
+  <!--  include the multiselect plugin -->
+  <script src="js/vendor/bootstrap-multiselect.js"></script>
+</body>
+</html>
