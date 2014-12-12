@@ -9139,10 +9139,52 @@ aside#bets {
 #master-dashboard {
   text-transform: uppercase;
   min-height: 85vh; }
+  #master-dashboard .checkSlackers,
+  #master-dashboard .checkInvite {
+    display: inline-block;
+    height: 40px;
+    position: relative;
+    width: 40px;
+    float: right; }
+    #master-dashboard .checkSlackers input[type="checkbox"],
+    #master-dashboard .checkInvite input[type="checkbox"] {
+      visibility: hidden; }
+      #master-dashboard .checkSlackers input[type="checkbox"]:checked + label:after,
+      #master-dashboard .checkInvite input[type="checkbox"]:checked + label:after {
+        opacity: 1; }
+      #master-dashboard .checkSlackers input[type="checkbox"]:checked + label,
+      #master-dashboard .checkInvite input[type="checkbox"]:checked + label {
+        background-color: #c2c2c2; }
+    #master-dashboard .checkSlackers label,
+    #master-dashboard .checkInvite label {
+      background: none repeat scroll 0 0 #e6e6e6;
+      cursor: pointer;
+      height: 40px;
+      left: -1px;
+      position: absolute;
+      width: 40px; }
+      #master-dashboard .checkSlackers label:after,
+      #master-dashboard .checkInvite label:after {
+        border-color: #1888CA;
+        border-image: none;
+        border-style: none none solid solid;
+        border-width: 5px;
+        content: "";
+        height: 15px;
+        left: 7px;
+        opacity: 0;
+        position: absolute;
+        top: 10px;
+        transform: rotate(-45deg);
+        width: 28px; }
   #master-dashboard p {
     display: block;
     float: left;
     text-transform: none; }
+  #master-dashboard header {
+    display: block;
+    float: left;
+    width: 100%; }
   #master-dashboard .up-arrow {
     bottom: 4px;
     color: #1888CA;
@@ -9216,38 +9258,6 @@ aside#bets {
         margin-bottom: 10px;
         margin-left: 10px;
         margin-top: 10px; }
-    #master-dashboard #edit-league .panel .checkSlackers {
-      display: inline-block;
-      height: 40px;
-      position: relative;
-      width: 40px;
-      float: right; }
-      #master-dashboard #edit-league .panel .checkSlackers input[type="checkbox"] {
-        visibility: hidden; }
-        #master-dashboard #edit-league .panel .checkSlackers input[type="checkbox"]:checked + label:after {
-          opacity: 1; }
-        #master-dashboard #edit-league .panel .checkSlackers input[type="checkbox"]:checked + label {
-          background-color: #c2c2c2; }
-      #master-dashboard #edit-league .panel .checkSlackers label {
-        background: none repeat scroll 0 0 #e6e6e6;
-        cursor: pointer;
-        height: 40px;
-        left: -1px;
-        position: absolute;
-        width: 40px; }
-        #master-dashboard #edit-league .panel .checkSlackers label:after {
-          border-color: #fcfff4;
-          border-image: none;
-          border-style: none none solid solid;
-          border-width: 5px;
-          content: "";
-          height: 15px;
-          left: 7px;
-          opacity: 0;
-          position: absolute;
-          top: 10px;
-          transform: rotate(-45deg);
-          width: 28px; }
   #master-dashboard #edit-league #slackerSubmit {
     background-color: #df1c22;
     border: medium none;
@@ -9311,7 +9321,7 @@ aside#bets {
         position: absolute;
         width: 40px; }
         #master-dashboard #slacker-list .panel .checkSlackers label:after {
-          border-color: #fcfff4;
+          border-color: #1888CA;
           border-image: none;
           border-style: none none solid solid;
           border-width: 5px;
@@ -9402,7 +9412,7 @@ aside#bets {
         position: absolute;
         width: 40px; }
         #master-dashboard #auto-banter .optionWrapper .checkBanter label:after {
-          border-color: #fcfff4;
+          border-color: #1888CA;
           border-image: none;
           border-style: none none solid solid;
           border-width: 5px;
@@ -9451,7 +9461,6 @@ aside#bets {
     text-transform: uppercase;
     width: 100%; }
   #master-dashboard #invite-players .send {
-    margin-bottom: 20px;
     margin-top: 10px;
     text-transform: uppercase;
     background-color: #df1c22;
@@ -9485,7 +9494,7 @@ aside#bets {
     float: left;
     padding: 10px 0 10px 10px;
     width: 100%; }
-  #master-dashboard #invite-players .player-wrapper {
+  #master-dashboard #invite-players .league-wrapper {
     background-color: #ececec;
     border-bottom: 1px dotted #d9d9d9;
     border-radius: 0;
@@ -9495,8 +9504,20 @@ aside#bets {
     float: left;
     padding: 5px 0 5px 10px;
     width: 100%; }
+  #master-dashboard #invite-players .player-wrapper {
+    background-color: rgba(236, 236, 236, 0.5);
+    border-bottom: 1px dotted #d9d9d9;
+    display: block;
+    float: left;
+    width: 100%; }
+    #master-dashboard #invite-players .player-wrapper .name {
+      color: #1888CA;
+      display: block;
+      float: left;
+      padding-left: 20px;
+      padding-top: 10px; }
   #master-dashboard #invite-players #existingLeagues .panel {
-    max-height: 125px;
+    max-height: 380px;
     overflow-y: scroll; }
 
 #blog {

@@ -294,24 +294,28 @@
       </div>
       <div class="col-md-3">
         <section id="invite-players" class="col-md-12">
-          <header>
-            <h1>Invite New Players</h1>
-          </header>
-          <p>
-            Please enter the email addresses of the friends you would like
-            to invite
-          </p>
-          <form action="">
-            <div class="input-wrapper">
-              <input type="email" value="email address" class="player-email" />
-              <input type="email" value="email address" class="player-email" />
-              <input type="email" value="email address" class="player-email" />
-            </div>
-            <button type="button" class="add-more">Add more</button>
-            <button type="button" class="send">Send</button>
-          </form>
-
           <div class="col-md-12">
+            <header>
+              <h1>Invite New Players</h1>
+            </header>
+              <div class="new-players-wrapper">
+                <p>
+                  Please enter the email addresses of the friends you would like
+                  to invite
+                </p>
+                <form action="">
+                  <div class="input-wrapper">
+                    <input type="email" value="email address" class="player-email" />
+                    <input type="email" value="email address" class="player-email" />
+                    <input type="email" value="email address" class="player-email" />
+                  </div>
+                  <button type="button" class="add-more">Add more</button>
+                  <button type="button" class="send">Send</button>
+                </form>
+              </div>
+            </div>
+
+          <div class="existing-league-wrapper col-md-12">
             <p>Invite players from an existing Predikta league</p>
             <h4>
               <a class="dropdown-button" data-toggle="collapse" href="#existingLeagues">Select league to invite from<span class="down-arrow"> &gt; </span></a>
@@ -320,7 +324,7 @@
               <div id="existingLeagues" class="panel-collapse collapse col-md-12">
                 <div class="panel-group" id="invite">
                   <div class="panel panel-default">
-                    <div class="player-wrapper">
+                    <div class="league-wrapper">
                       <div data-toggle="collapse" data-parent="#invite" data-target="#league-one"><span class="name">League One</span><span class="down-arrow"> &gt; </span></div>
                       <div class="name-overflow"></div>
                     </div>
@@ -329,13 +333,58 @@
                         <span class="name">
                           Player One
                         </span>
-                        <span class="checkSlackers">
-                          <input type="checkbox" name="check" id="emailSlacker1" value="Player-1">
-                          <label for="emailSlacker1"></label>
+                        <span class="checkInvite">
+                          <input type="checkbox" name="check" id="invitePlayer1" value="Player1">
+                          <label for="invitePlayer1"></label>
+                        </span>
+                      </div>
+                      <div class="player-wrapper">
+                        <span class="name">
+                          Player Two
+                        </span>
+                        <span class="checkInvite">
+                          <input type="checkbox" name="check" id="invitePlayer2" value="Player2">
+                          <label for="invitePlayer2"></label>
+                        </span>
+                      </div>
+                      <div class="player-wrapper">
+                        <span class="name">
+                          Player Three
+                        </span>
+                        <span class="checkInvite">
+                          <input type="checkbox" name="check" id="invitePlayer3" value="Player3">
+                          <label for="invitePlayer3"></label>
+                        </span>
+                      </div>
+                      <div class="player-wrapper">
+                        <span class="name">
+                          Player Four
+                        </span>
+                        <span class="checkInvite">
+                          <input type="checkbox" name="check" id="invitePlayer4" value="Player4">
+                          <label for="invitePlayer4"></label>
+                        </span>
+                      </div>
+                      <div class="player-wrapper">
+                        <span class="name">
+                          Player Five
+                        </span>
+                        <span class="checkInvite">
+                          <input type="checkbox" name="check" id="invitePlayer5" value="Player5">
+                          <label for="invitePlayer5"></label>
+                        </span>
+                      </div>
+                      <div class="player-wrapper">
+                        <span class="name">
+                          Player Six
+                        </span>
+                        <span class="checkInvite">
+                          <input type="checkbox" name="check" id="invitePlayer6" value="Player6">
+                          <label for="invitePlayer6"></label>
                         </span>
                       </div>
                     </div>
-                    <div class="player-wrapper">
+                    <div class="league-wrapper">
                       <div data-toggle="collapse" data-parent="#invite" data-target="#league-two"><span class="name">League Two</span><span class="down-arrow"> &gt; </span></div>
                       <div class="name-overflow"></div>
                     </div>
@@ -344,13 +393,12 @@
                         <span class="name">
                           Player One
                         </span>
-                        <span class="checkSlackers">
-                          <input type="checkbox" name="check" id="emailSlacker1" value="Player-1">
-                          <label for="emailSlacker1"></label>
-                        </span>
-                      </div>
+                        <span class="checkInvite">
+                          <input type="checkbox" name="check" id="invitePlayer" value="Player">
+                          <label for="invitePlayer"></label>
+                        </span>                      </div>
                     </div>
-                    <div class="player-wrapper">
+                    <div class="league-wrapper">
                       <div data-toggle="collapse" data-parent="#invite" data-target="#league-three"><span class="name">League Three</span><span class="down-arrow"> &gt; </span></div>
                       <div class="name-overflow"></div>
                     </div>
@@ -359,13 +407,12 @@
                         <span class="name">
                           Player One
                         </span>
-                        <span class="checkSlackers">
-                          <input type="checkbox" name="check" id="emailSlacker1" value="Player-1">
-                          <label for="emailSlacker1"></label>
-                        </span>
-                      </div>
+                        <span class="checkInvite">
+                          <input type="checkbox" name="check" id="invitePlayer" value="Player">
+                          <label for="invitePlayer"></label>
+                        </span>                      </div>
                     </div>
-                    <div class="player-wrapper">
+                    <div class="league-wrapper">
                       <div data-toggle="collapse" data-parent="#invite" data-target="#league-four"><span class="name">League Four</span><span class="down-arrow"> &gt; </span></div>
                       <div class="name-overflow"></div>
                     </div>
@@ -374,11 +421,10 @@
                       <span class="name">
                         Player One
                       </span>
-                      <span class="checkSlackers">
-                        <input type="checkbox" name="check" id="emailSlacker1" value="Player-1">
-                        <label for="emailSlacker1"></label>
-                      </span>
-                    </div>
+                      <span class="checkInvite">
+                        <input type="checkbox" name="check" id="invitePlayer" value="Player">
+                        <label for="invitePlayer"></label>
+                      </span>                    </div>
                     </div>
                   </div>
                 </div>
@@ -393,7 +439,32 @@
       </div>
       <div class="col-md-3">
         <section id="existing-players" class="col-md-12">
+          <header>
           <h1>Edit existing players</h1>
+          </header>
+          <h4>
+            <a href="#PlayerOne" data-toggle="collapse" class="dropdown-button">Player One<span class="down-arrow"> &gt; </span></a>
+          </h4>
+          <div class="col-md-12">
+            <div class="panel-collapse collapse" id="PlayerOne" style="height: auto;">
+              <div class="image-wrapper col-md-4">
+              <img src="" alt="Player One" class=""/>
+            </div>
+              <div class="details-wrapper col-md-8">
+              <span class="username">Username</span>
+              <span class="favorite-team">Favorite team</span>
+              <span class="email">Email address</span>
+            </div>
+              <button type="button" class="remove-player">Remove player</button>
+              <button type="button" class="make-master">Make league master</button>
+              <section class="confirmation-screen col-md-12">
+                <h3>Are you sure you want to remove <span class="name">Player name</span>?</h3>
+                <button type="button" class="confirm">Confirm</button>
+                <button type="button" class="cancel">Cancel</button>
+              </section>
+            </div>
+
+          </div> 
         </section>
       </div>
     </div>

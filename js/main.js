@@ -1,5 +1,4 @@
 
-
 $(document).ready(function () {
 
   var varbs = {
@@ -11,12 +10,18 @@ $(document).ready(function () {
 /*  In edit league panel on the league masters dashboard put the selected league name in the h1 header */
   $('#edit-league .player-wrapper').click(function () {
     var league = $(this).find('.name').text();
-    $('.player-wrapper').css('background-color', '#ececec');
+    $('#edit-league .player-wrapper').css('background-color', '#ececec');
     $(this).css('background-color', '#c2c2c2');
     $('#edit-league h1').text("Edit " + league + " League");
     if (!$('#edit-league .dropdown-button').text().indexOf("Select league to edit")) {
       $('#edit-league .dropdown-button').html("Edit another league <span class=\"up-arrow\">></span>");
     } 
+  });
+
+  $('#master-dashboard #invite-players .dropdown-button').on('click', function () {
+
+    $('.new-players-wrapper').slideToggle();
+
   });
 
 /*  At mobile width provide slider for points element */
