@@ -6936,7 +6936,7 @@ button.close {
 /*  HEADER -----------------------------*/
 .navbar-wrapper #PrediktaTop {
   width: 100%;
-  max-width: 1920px;
+  max-width: 2020px;
   padding-left: 0;
   padding-right: 0; }
   .navbar-wrapper #PrediktaTop .container {
@@ -7166,6 +7166,14 @@ body {
   z-index: 10; }
 
 /* Declare heights because of positioning of img element */
+.carousel-inner {
+  clear: both;
+  display: block;
+  float: left;
+  height: 637px;
+  position: relative;
+  width: 100%; }
+
 .carousel .item {
   background-color: #777;
   float: left;
@@ -7321,7 +7329,7 @@ section#points {
       color: #000;
       display: inline;
       float: left;
-      font-size: 2.2em;
+      font-size: 2em;
       margin-bottom: 0;
       margin-top: 10px;
       text-transform: uppercase; }
@@ -7655,7 +7663,7 @@ section#points-new {
       color: #000;
       display: inline;
       float: left;
-      font-size: 2.2em;
+      font-size: 2em;
       margin-bottom: 0;
       margin-top: 10px;
       text-transform: uppercase; }
@@ -8109,7 +8117,7 @@ section.goTop
           color: #000;
           display: inline;
           float: left;
-          font-size: 2.2em;
+          font-size: 2em;
           margin-bottom: 0;
           margin-top: 10px;
           text-transform: uppercase; }
@@ -8792,7 +8800,7 @@ aside#bets {
     color: #000;
     display: inline;
     float: left;
-    font-size: 2.2em;
+    font-size: 2em;
     margin-bottom: 0;
     margin-top: 10px;
     text-transform: uppercase; }
@@ -8889,7 +8897,7 @@ aside#bets {
     color: #000;
     display: inline;
     float: left;
-    font-size: 2.2em;
+    font-size: 2em;
     margin-bottom: 0;
     margin-top: 10px;
     text-transform: uppercase;
@@ -9131,6 +9139,10 @@ aside#bets {
 #master-dashboard {
   text-transform: uppercase;
   min-height: 85vh; }
+  #master-dashboard p {
+    display: block;
+    float: left;
+    text-transform: none; }
   #master-dashboard .up-arrow {
     bottom: 4px;
     color: #1888CA;
@@ -9169,7 +9181,7 @@ aside#bets {
     color: #000;
     display: inline;
     float: left;
-    font-size: 2.2em;
+    font-size: 2em;
     margin-bottom: 0;
     margin-top: 10px;
     text-transform: uppercase; }
@@ -9366,7 +9378,7 @@ aside#bets {
     padding: 0;
     width: 100%; }
     #master-dashboard #auto-banter .optionWrapper span {
-      font-size: 1.3em;
+      font-size: 1.1em;
       left: 10px;
       position: relative;
       top: 7px; }
@@ -9412,12 +9424,80 @@ aside#bets {
       cursor: pointer;
       display: block;
       float: left;
-      font-size: 1.3em;
+      font-size: 1.1em;
       margin-bottom: 10px;
       margin-top: 10px;
       padding: 5px 0 5px 10px;
       text-transform: uppercase;
       width: 100%; }
+  #master-dashboard #invite-players .col-md-12 {
+    padding-left: 0;
+    padding-right: 0; }
+  #master-dashboard #invite-players .input-wrapper {
+    display: block;
+    float: left;
+    height: 82px;
+    overflow-y: scroll; }
+  #master-dashboard #invite-players .add-more {
+    margin-top: 10px;
+    background-color: #1485c8;
+    border: medium none;
+    border-radius: 5px;
+    color: #ffffff;
+    display: block;
+    float: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    width: 100%; }
+  #master-dashboard #invite-players .send {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: #df1c22;
+    border: medium none;
+    border-radius: 5px;
+    color: #ffffff;
+    display: block;
+    float: left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%; }
+  #master-dashboard #invite-players .dropdown-button {
+    background-color: #ececec;
+    display: block;
+    float: left;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 12px;
+    width: 100%; }
+  #master-dashboard #invite-players .player-email {
+    border: none;
+    background-color: #ececec;
+    border-color: -moz-use-text-color -moz-use-text-color #d9d9d9;
+    border-image: none;
+    border-radius: 0;
+    border-style: none none dotted;
+    border-width: medium medium 1px;
+    color: #1888ca;
+    cursor: pointer;
+    display: block;
+    float: left;
+    padding: 10px 0 10px 10px;
+    width: 100%; }
+  #master-dashboard #invite-players .player-wrapper {
+    background-color: #ececec;
+    border-bottom: 1px dotted #d9d9d9;
+    border-radius: 0;
+    color: #1888ca;
+    cursor: pointer;
+    display: block;
+    float: left;
+    padding: 5px 0 5px 10px;
+    width: 100%; }
+  #master-dashboard #invite-players #existingLeagues .panel {
+    max-height: 125px;
+    overflow-y: scroll; }
 
 #blog {
   margin-left: auto;
