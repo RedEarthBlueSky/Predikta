@@ -683,4 +683,24 @@
     }
   }
  } 
-/*  END  MAX WIDTH 1199PX ---------------------------- */ 
+/*  END  MAX WIDTH 1199PX ---------------------------- */
+
+@media screen and (max-width:1024px) {
+  #master-dashboard {
+    .row {
+      .col-md-3 {
+        clear: none;
+        display: inline-block;
+        float: left;
+        padding-left: 0;
+        padding-right: 0;
+        width: 49%;
+        &:nth-child(2n) {
+          float:right;
+        }
+        section {
+        }
+      }
+    }
+  }
+} 

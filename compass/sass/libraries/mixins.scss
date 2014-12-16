@@ -92,6 +92,13 @@ $default-legacy-ie: 7 8 9 !default;
 
 
 /*  MIXINS for general styles -------------------------------- */
+@mixin list-item-grey-blue {
+  background-color: #ececec;
+  display: block;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
 @mixin red-button {
   background-color: #df1c22;
   border: medium none;
@@ -99,8 +106,10 @@ $default-legacy-ie: 7 8 9 !default;
   color: #ffffff;
   display: block;
   float: left;
+  margin-top:5px;
   padding-bottom: 10px;
   padding-top: 10px;
+  text-transform:uppercase;
   width: 100%;
 }
 @mixin blue-button {
@@ -110,6 +119,7 @@ $default-legacy-ie: 7 8 9 !default;
   color: #ffffff;
   display: block;
   float: left;
+  margin-top:5px;
   padding-bottom: 10px;
   padding-top: 10px;
   text-transform:uppercase;
@@ -131,7 +141,7 @@ $default-legacy-ie: 7 8 9 !default;
   float: left;
   font-size: 2em;
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 20px;
   text-transform: uppercase;
 }
 @media screen and (max-width:1024px){

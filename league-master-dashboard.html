@@ -10,9 +10,8 @@
 
   <!--  have set user scale to no but might need to test this for 'yes' -->
   <link href="favicon.ico" rel="icon">
-  <title>Predikta | Generic Grid </title>
+  <title>Predikta | League Master Dashboard </title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -23,7 +22,7 @@
 ================================================== -->
 <body>
     <!-- HEADER ------------------------------------------------------>
-    <div class="navbar-wrapper">
+    <header class="navbar-wrapper">
       <div id="PrediktaTop" class="container">
         <div class="container">
           <ul class="nav navbar-nav">
@@ -77,7 +76,7 @@
           </ul>
         </div>
       </div>
-    </div>
+    </header>
     <!--  END HEADER ------------------------------------------------------>
 
 
@@ -88,7 +87,7 @@
           <header>
             <h1>Edit League</h1>
             <h4>
-              <a href="#YourLeague" data-toggle="collapse" class="dropdown-button">Select league to edit<span class="down-arrow"> &gt; </span></a>
+              <a href="#YourLeague" data-toggle="collapse" class="dropdown-button list-item-grey-blue">Select league to edit<span class="down-arrow"> &gt; </span></a>
             </h4>
           </header>
           <div class="col-md-12">
@@ -230,7 +229,7 @@
                     </div>
                   </div>
                 </div>
-                <input type="submit" value="SEND REMINDER" id="slackerSubmit">
+                <input type="submit" value="SEND REMINDER" class="red-button">
               </form>
 
             </div>
@@ -244,7 +243,7 @@
             <article class="panel-collapse collapse in" id="new-post" style="height: auto;">
               <form class="form-group">
                 <span class=" glyphicon-comment glyphicon"></span>
-                <textarea rows="5" class="form-control">
+                <textarea rows="5" class="form-control" placeholder="type your banter message here...">
                 </textarea>
                 <p>Select where to post banter</p>
                 <div class="optionWrapper">
@@ -284,7 +283,7 @@
                   <option value="Player18">Player 18</option>
                 </select><div class="btn-group" style="display: none;"><button data-toggle="dropdown" class="multiselect dropdown-toggle btn btn-default" type="button" title="Select players to email banter">Select players to email banter <b class="caret"></b></button><ul class="multiselect-container dropdown-menu" style="max-height: 200px; overflow-y: auto; overflow-x: hidden;"><li class="multiselect-item multiselect-all"><a href="javascript:void(0);" class="multiselect-all"><label class="checkbox"><input type="checkbox" value="multiselect-all"> SELECT ALL PLAYERS!</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player1"> Player 1</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player2"> Player 2</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player3"> Player 3</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player4"> Player 4</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player5"> Player 5</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player6"> Player 6</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player7"> Player 7</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player8"> Player 8</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player9"> Player 9</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player10"> Player 10</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player11"> Player 11</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player12"> Player 12</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player13"> Player 13</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player14"> Player 14</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player15"> Player 15</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player16"> Player 16</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player17"> Player 17</label></a></li><li class=""><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="Player18"> Player 18</label></a></li></ul></div>
 
-                <input type="submit" value="POST BANTER" id="banterSubmit">
+                <input type="submit" value="POST BANTER" class="red-button">
 
 
               </form>
@@ -303,14 +302,14 @@
                   Please enter the email addresses of the friends you would like
                   to invite
                 </p>
-                <form action="">
+                <form class="email-invite" action="">
                   <div class="input-wrapper">
-                    <input type="email" value="email address" class="player-email" />
-                    <input type="email" value="email address" class="player-email" />
-                    <input type="email" value="email address" class="player-email" />
+                    <input type="email" value="email address" class="player-email" onfocus="this.value = ''" onblur="this.value = 'email address'"/>
+                    <input type="email" value="email address" class="player-email" onfocus="this.value = ''" onblur="this.value = 'email address'" />
+                    <input type="email" value="email address" class="player-email" onfocus="this.value = ''" onblur="this.value = 'email address'" />
                   </div>
-                  <button type="button" class="add-more">Add more</button>
-                  <button type="button" class="send">Send</button>
+                  <button type="button" class="add-more blue-button">Add more</button>
+                  <button type="button" class="red-button">Send</button>
                 </form>
               </div>
             </div>
@@ -429,7 +428,7 @@
                   </div>
                 </div>
               </div>
-              <button type="button" class="send">Send</button>
+              <button type="button" class="red-button">Send</button>
 `           </form>
           </div>
 
@@ -442,29 +441,238 @@
           <header>
           <h1>Edit existing players</h1>
           </header>
-          <h4>
-            <a href="#PlayerOne" data-toggle="collapse" class="dropdown-button">Player One<span class="down-arrow"> &gt; </span></a>
-          </h4>
-          <div class="col-md-12">
-            <div class="panel-collapse collapse" id="PlayerOne" style="height: auto;">
-              <div class="image-wrapper col-md-4">
-              <img src="" alt="Player One" class=""/>
-            </div>
-              <div class="details-wrapper col-md-8">
-              <span class="username">Username</span>
-              <span class="favorite-team">Favorite team</span>
-              <span class="email">Email address</span>
-            </div>
-              <button type="button" class="remove-player">Remove player</button>
-              <button type="button" class="make-master">Make league master</button>
-              <section class="confirmation-screen col-md-12">
-                <h3>Are you sure you want to remove <span class="name">Player name</span>?</h3>
-                <button type="button" class="confirm">Confirm</button>
-                <button type="button" class="cancel">Cancel</button>
-              </section>
-            </div>
+          <div class="edit-player-wrapper col-md-12">
+            <h4>
+              <a href="#" data-target="#PlayerOne" data-toggle="collapse" class="edit-player dropdown-button">Player One<span class="pencil"> </span></a>
+            </h4>
+            <div class="col-md-12">
+              <div class="panel-collapse collapse" id="PlayerOne" style="height: auto;">
+                <div class="image-wrapper col-md-3">
+                  <img src="http://placehold.it/100x100" alt="Player One Icon" class="" />
+                </div>
+                <div class="details-wrapper col-md-9">
+                  <input type="text"  class="username" placeholder="Username" value="">
+                  <input type="text"  class="favorite-team" placeholder="Favorite team" value="">
+                  <input type="email" class="email" placeholder="Email address" value="">
+                </div>
+                <div class="button-wrapper">
+                  <button type="button" class="remove-player blue-button">Remove player</button>
+                  <button type="button" class="make-master red-button">Make league master</button>
+                  <section class="confirmation-screen col-md-12">
+                    <h3>Are you sure you want to remove <span class="name"></span>?</h3>
+                    <div class="button-wrapper">
+                      <button type="button" class="cancel blue-button">Cancel</button>
+                      <button type="button" class="confirm red-button">Confirm</button>
+                    </div>
+                  </section>
+                </div>
+              </div>
 
-          </div> 
+            </div> 
+          </div>
+          <div class="edit-player-wrapper col-md-12">
+            <h4>
+              <a href="#" data-target="#PlayerTwo" data-toggle="collapse" class="edit-player dropdown-button">Player Two<span class="pencil"> </span></a>
+            </h4>
+            <div class="col-md-12">
+              <div class="panel-collapse collapse" id="PlayerTwo" style="height: auto;">
+                <div class="image-wrapper col-md-3">
+                  <img src="http://placehold.it/100x100" alt="Player One Icon" class="" />
+                </div>
+                <div class="details-wrapper col-md-9">
+                  <input type="text" class="username" placeholder="Username" value="">
+                  <input type="text" class="favorite-team" placeholder="Favorite team" value="">
+                  <input type="email" class="email" placeholder="Email address" value="">
+                </div>
+                <div class="button-wrapper">
+                  <button type="button" class="remove-player blue-button">Remove player</button>
+                  <button type="button" class="make-master red-button">Make league master</button>
+                  <section class="confirmation-screen col-md-12">
+                    <h3>Are you sure you want to remove <span class="name"></span>?</h3>
+                    <div class="button-wrapper">
+                      <button type="button" class="cancel blue-button">Cancel</button>
+                      <button type="button" class="confirm red-button">Confirm</button>
+                    </div>
+                  </section>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="edit-player-wrapper col-md-12">
+            <h4>
+              <a href="#" data-target="#PlayerThree" data-toggle="collapse" class="edit-player dropdown-button">Player Three<span class="pencil"> </span></a>
+            </h4>
+            <div class="col-md-12">
+              <div class="panel-collapse collapse" id="PlayerThree" style="height: auto;">
+                <div class="image-wrapper col-md-3">
+                  <img src="http://placehold.it/100x100" alt="Player One Icon" class="" />
+                </div>
+                <div class="details-wrapper col-md-9">
+                  <input type="text" class="username" placeholder="Username" value="">
+                  <input type="text" class="favorite-team" placeholder="Favorite team" value="">
+                  <input type="email" class="email" placeholder="Email address" value="">
+                </div>
+                <div class="button-wrapper">
+                  <button type="button" class="remove-player blue-button">Remove player</button>
+                  <button type="button" class="make-master red-button">Make league master</button>
+                  <section class="confirmation-screen col-md-12">
+                    <h3>Are you sure you want to remove <span class="name"></span>?</h3>
+                    <div class="button-wrapper">
+                      <button type="button" class="cancel blue-button">Cancel</button>
+                      <button type="button" class="confirm red-button">Confirm</button>
+                    </div>
+                  </section>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="edit-player-wrapper col-md-12">
+            <h4>
+              <a href="#" data-target="#PlayerFour" data-toggle="collapse" class="edit-player dropdown-button">Player Four<span class="pencil"> </span></a>
+            </h4>
+            <div class="col-md-12">
+              <div class="panel-collapse collapse" id="PlayerFour" style="height: auto;">
+                <div class="image-wrapper col-md-3">
+                  <img src="http://placehold.it/100x100" alt="Player One Icon" class="" />
+                </div>
+                <div class="details-wrapper col-md-9">
+                  <input type="text" class="username" placeholder="Username" value="">
+                  <input type="text" class="favorite-team" placeholder="Favorite team" value="">
+                  <input type="email" class="email" placeholder="Email address" value="">
+                </div>
+                <div class="button-wrapper">
+                  <button type="button" class="remove-player blue-button">Remove player</button>
+                  <button type="button" class="make-master red-button">Make league master</button>
+                  <section class="confirmation-screen col-md-12">
+                    <h3>Are you sure you want to remove <span class="name"></span>?</h3>
+                    <div class="button-wrapper">
+                      <button type="button" class="cancel blue-button">Cancel</button>
+                      <button type="button" class="confirm red-button">Confirm</button>
+                    </div>
+                  </section>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="edit-player-wrapper col-md-12">
+            <h4>
+              <a href="#" data-target="#PlayerFive" data-toggle="collapse" class="edit-player dropdown-button">Player Five<span class="pencil"> </span></a>
+            </h4>
+            <div class="col-md-12">
+              <div class="panel-collapse collapse" id="PlayerFive">
+                <div class="image-wrapper col-md-3">
+                  <img src="http://placehold.it/100x100" alt="Player One Icon"/>
+                </div>
+                <div class="details-wrapper col-md-9">
+                  <input type="text" class="username" placeholder="Username" value="">
+                  <input type="text" class="favorite-team" placeholder="Favorite team" value="">
+                  <input type="email" class="email" placeholder="Email address" value="">
+                </div>
+                <div class="button-wrapper">
+                  <button type="button" class="remove-player blue-button">Remove player</button>
+                  <button type="button" class="make-master red-button">Make league master</button>
+                  <section class="confirmation-screen col-md-12">
+                    <h3>Are you sure you want to remove <span class="name"></span>?</h3>
+                    <div class="button-wrapper">
+                      <button type="button" class="cancel blue-button">Cancel</button>
+                      <button type="button" class="confirm red-button">Confirm</button>
+                    </div>
+                  </section>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="edit-player-wrapper col-md-12">
+            <h4>
+              <a href="#" data-target="#PlayerSix" data-toggle="collapse" class="edit-player dropdown-button">Player Six<span class="pencil"> </span></a>
+            </h4>
+            <div class="col-md-12">
+              <div class="panel-collapse collapse" id="PlayerSix">
+                <div class="image-wrapper col-md-3">
+                  <img src="http://placehold.it/100x100" alt="Player One Icon"/>
+                </div>
+                <div class="details-wrapper col-md-9">
+                  <input type="text" class="username" placeholder="Username" value="">
+                  <input type="text" class="favorite-team" placeholder="Favorite team" value="">
+                  <input type="email" class="email" placeholder="Email address" value="">
+                </div>
+                <div class="button-wrapper">
+                  <button type="button" class="remove-player blue-button">Remove player</button>
+                  <button type="button" class="make-master red-button">Make league master</button>
+                  <section class="confirmation-screen col-md-12">
+                    <h3>Are you sure you want to remove <span class="name"></span>?</h3>
+                    <div class="button-wrapper">
+                      <button type="button" class="cancel blue-button">Cancel</button>
+                      <button type="button" class="confirm red-button">Confirm</button>
+                    </div>
+                  </section>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="edit-player-wrapper col-md-12">
+            <h4>
+              <a href="#" data-target="#PlayerSeven" data-toggle="collapse" class="edit-player dropdown-button">Player Seven<span class="pencil"> </span></a>
+            </h4>
+            <div class="col-md-12">
+              <div class="panel-collapse collapse" id="PlayerSeven" style="height: auto;">
+                <div class="image-wrapper col-md-3">
+                  <img src="http://placehold.it/100x100" alt="Player One Icon" class="" />
+                </div>
+                <div class="details-wrapper col-md-9">
+                  <input type="text" class="username" placeholder="Username" value="">
+                  <input type="text" class="favorite-team" placeholder="Favorite team" value="">
+                  <input type="email" class="email" placeholder="Email address" value="">
+                </div>
+                <div class="button-wrapper">
+                  <button type="button" class="remove-player blue-button">Remove player</button>
+                  <button type="button" class="make-master red-button">Make league master</button>
+                  <section class="confirmation-screen col-md-12">
+                    <h3>Are you sure you want to remove <span class="name"></span>?</h3>
+                    <div class="button-wrapper">
+                      <button type="button" class="cancel blue-button">Cancel</button>
+                      <button type="button" class="confirm red-button">Confirm</button>
+                    </div>
+                  </section>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="edit-player-wrapper col-md-12">
+            <h4>
+              <a href="#" data-target="#PlayerEight" data-toggle="collapse" class="edit-player dropdown-button">Player Eight<span class="pencil"> </span></a>
+            </h4>
+            <div class="col-md-12">
+              <div class="panel-collapse collapse" id="PlayerEight" style="height: auto;">
+                <div class="image-wrapper col-md-3">
+                  <img src="http://placehold.it/100x100" alt="Player One Icon" class="" />
+                </div>
+                <div class="details-wrapper col-md-9">
+                  <input type="text" class="username" placeholder="Username" value="">
+                  <input type="text" class="favorite-team" placeholder="Favorite team" value="">
+                  <input type="email" class="email" placeholder="Email address" value="">
+                </div>
+                <div class="button-wrapper">
+                  <button type="button" class="remove-player blue-button">Remove player</button>
+                  <button type="button" class="make-master red-button">Make league master</button>
+                  <section class="confirmation-screen col-md-12">
+                    <h3>Are you sure you want to remove <span class="name"></span>?</h3>
+                    <div class="button-wrapper">
+                      <button type="button" class="cancel blue-button">Cancel</button>
+                      <button type="button" class="confirm red-button">Confirm</button>
+                    </div>
+                  </section>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </section>
       </div>
     </div>

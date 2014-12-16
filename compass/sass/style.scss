@@ -1,17 +1,17 @@
-
-/*  SASS libraries ------------------------------------ */
+﻿
+/* SASS libraries ------------------------------------ */
 @import 'libraries/variables';
 @import 'libraries/mixins.scss';
 
-/*  CSS and SASS from other project and third party  -- */
+/* CSS and SASS from other project and third party -- */
 @import 'vendor/font-awesome';
 @import 'vendor/bootstrap-multiselect';
 
-/*  Bootstrap styles ---------------------------------- */
+/* Bootstrap styles ---------------------------------- */
 @import 'bootstrap/normalize';
 @import 'bootstrap/bootstrap';
 
-/*  Partials - CSS and SASS for specific elements ----- */
+/* Partials - CSS and SASS for specific elements ----- */
 @import 'partials/generic-grid';
 @import 'partials/header';
 @import 'partials/footer';
@@ -23,15 +23,13 @@
 @import 'partials/league-masters-dashboard';
 @import 'partials/blog';
 
-/*  My custom styles ---------------------------------  */
+/* My custom styles --------------------------------- */
 @import 'main';
 
-/* Responsive ----------------------------------------  */
+/* Responsive ---------------------------------------- */
 @import 'responsive/responsive';
 @import 'responsive/_tablet-landscape';
 @import 'responsive/_tablet-portrait';
 @import 'responsive/_mobile_640_767';
 @import 'responsive/_mobile_639';
 @import 'responsive/_mobile_440';
-
-

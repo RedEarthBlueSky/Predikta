@@ -1,4 +1,14 @@
 ﻿#master-dashboard {
+  .row {
+    .col-md-3 {
+      padding-left:0;
+      padding-right:0;
+      section {
+        padding-left:5px;
+        padding-right:5px;
+      }
+    }
+  }
   text-transform:uppercase;
   .checkSlackers, 
   .checkInvite {
@@ -39,6 +49,18 @@
             }
           }
         }
+  .pencil:after {
+    bottom: 10px;
+    content: "✏";
+    font-family: "Glyphicons Halflings";
+    font-size: 1.2em;
+    right: 15px;
+  }
+  .close-this:after {
+    @include scale(2, 1);
+    content: "x";
+    float: right;
+    margin-right: 20px;  }
   p {
     display:block;
     float:left;
@@ -74,17 +96,14 @@
     @include dashboardH1;
   }
   #edit-league {
+    display:block;
+    float:left;
+    clear:both;
+    width:100%;
     h4 {
       display: block;
       float: left;
       width: 100%;
-      a {
-        background-color: #ececec;
-        display: block;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        padding-top: 10px;
-      }
     }
     .col-md-12 {
       padding:0;
@@ -93,6 +112,7 @@
       border: medium none;
       border-radius: 0;
       padding: 0;
+      float:left;
         .player-wrapper {
           background-color: #ececec;
           border-bottom:1px dotted #d9d9d9;
@@ -116,6 +136,10 @@
     }
   }
   #slacker-list {
+    display:block;
+    float:left;
+    clear:both;
+    width:100%;
     h4 {
       display: block;
       float: left;
@@ -134,6 +158,7 @@
     .panel {
       border: medium none;
       border-radius: 0;
+      float:left;
       height: 200px;
       overflow-y: scroll;
       padding: 0;
@@ -198,13 +223,14 @@
     }
   }
   #auto-banter {
+    display:block;
+    float:left;
+    clear:both;
+    width:100%;
     .new-post-wrapper {
       display: block;
       float: left;
       width: 100%;
-    }
-    #banterSubmit {
-      @include red-button;
     }
     span.glyphicon-comment {
       height: 0;
@@ -315,16 +341,7 @@
       height:82px;
       overflow-y:scroll;
     }
-    .add-more {
-      margin-top:10px;
-      @include blue-button;
-     }
-     .send {
-      margin-top:10px;
-      text-transform:uppercase;
-      @include red-button;
-     }
-     .dropdown-button {
+    .dropdown-button {
        background-color: #ececec;
        display: block;
        float: left;
@@ -335,18 +352,20 @@
      }
     .player-email {
       border: none;
+      border-bottom:dotted 1px #d9d9d9;
       background-color: #ececec;
-      border-color: -moz-use-text-color -moz-use-text-color #d9d9d9;
-      border-image: none;
-      border-radius: 0;
-      border-style: none none dotted;
-      border-width: medium medium 1px;
+      box-shadow:none;
       color: #1888ca;
       cursor: pointer;
       display: block;
       float: left;
       padding: 10px 0 10px 10px;
       width: 100%;
+    }
+    .existing-league-wrapper {
+      p {
+        margin-top:20px;
+      }
     }
     .league-wrapper {
       background-color: #ececec;
@@ -377,6 +396,80 @@
       .panel {
         max-height:380px;
         overflow-y:scroll;
+      }
+    }
+  }
+  #existing-players {
+      background-color: #ececec;
+      margin-top:15px;
+      max-height: 80vh;
+      overflow-y: scroll;
+      padding-left: 0;
+      padding-right: 0;
+    h1 {
+      margin-top:5px;
+      padding-left:10px;
+    }
+    .col-md-12,
+    .col-md-4 {
+      padding-left:0;
+      padding-right:0;
+    }
+    .image-wrapper {
+      margin-bottom:15px;
+      img {
+        border-radius:50px;
+      }
+    }
+    .details-wrapper {
+      input {
+        background-color: rgba(0, 0, 0, 0);
+        border: medium none;
+        color: #808080;
+        display: block;
+        float: left;
+        font-size: 1.2em;
+        margin-top: 5px;
+        padding-left: 10px;
+        text-transform: none;
+        width: 100%;
+      }
+    }
+    .edit-player-wrapper {
+      h4 {
+        border-bottom: 1px dotted #d9d9d9;
+        font-size: 1.6em;
+        margin-bottom:0;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        padding-top:0;
+        span.pencil {
+          float: right;
+          margin-right: 20px;
+        }
+      }
+      .image-wrapper,
+      .details-wrapper {
+        padding-top:15px;
+      }
+      .button-wrapper {
+        background-color: #ffffff;
+        display: block;
+        float: left;
+        padding-bottom: 10px;
+        width: 100%;
+      }
+    }
+    .confirmation-screen {
+      h3 {
+        background: none repeat scroll 0 0 #ececec;
+        color: #808080;
+        display: block;
+        margin: 10px auto 0;
+        padding: 10px 50px;
+        text-align: center;
+        text-transform: none;
+        width: 100%;
       }
     }
   }

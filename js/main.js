@@ -4,8 +4,34 @@ $(document).ready(function () {
   var varbs = {
     buttonGroup:    "aside#bets #banter .new-post-wrapper .btn-group",
     eb: "#emailBanter",
-    newPostButton: '.player-wrapper button'
+    newPostButton: '.player-wrapper button',
+    emailInput: '<input type="email" value="email address" class="player-email" onfocus="this.value = \'\'\" onblur="this.value = \'email address\'\" />'
   }
+
+  $('.add-more').on('click', function () {
+    $('form.email-invite > .input-wrapper').append(varbs.emailInput);
+  });
+  
+  /*  get the player name from the edit player details list and drop it into the cancel confirmation screen */
+  $('.edit-player-wrapper .edit-player').click(function (event) {
+    event.preventDefault();
+    var player_name = $(this).text();
+    $('.remove-player').click(function (e) {
+        e.preventDefault();
+        $('span.name').text(player_name);
+    });
+  });
+
+
+  /*  bring up remove player confirmation panel */
+  $('.confirmation-screen').hide();
+  $('.remove-player').click(function () {
+    $('.confirmation-screen').slideToggle();
+  });
+  $('button.cancel').click(function () {
+    $('.confirmation-screen').hide();
+  });
+  
 
 /*  In edit league panel on the league masters dashboard put the selected league name in the h1 header */
   $('#edit-league .player-wrapper').click(function () {
@@ -55,7 +81,19 @@ $(document).ready(function () {
 
   /*  make the arrow in the league dashboard page change flip up and down */
   $('.dropdown-button').on('click', function () {
-    $(this).find('span').toggleClass('up-arrow down-arrow');
+    if ($(this).find('span').hasClass('up-arrow')) {
+      $(this).find('span').removeClass('up-arrow').addClass('down-arrow');
+    }
+    else if ($(this).find('span').hasClass('down-arrow')) {
+      $(this).find('span').removeClass('down-arrow').addClass('up-arrow');
+    }
+    /*  if we have a pencil rather than an arrow toggle this with an 'x' */
+    else if ($(this).find('span').hasClass('pencil')) {
+      $(this).find('span').removeClass('pencil').addClass('close-this');
+    }
+    else if ($(this).find('span').hasClass('close-this')) {
+      $(this).find('span').removeClass('close-this').addClass('pencil');
+    }
     /*  uncheck names if we close the panel */
     $("input[id*='emailSlacker']").prop('checked', false);
   });
