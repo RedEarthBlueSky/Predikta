@@ -682,25 +682,89 @@
       /*  END BETS SECTION -------------------------- */
     }
   }
- } 
-/*  END  MAX WIDTH 1199PX ---------------------------- */
 
-@media screen and (max-width:1024px) {
+/*  League masters dashboard ---------------- */
   #master-dashboard {
-    .row {
-      .col-md-3 {
-        clear: none;
-        display: inline-block;
-        float: left;
-        padding-left: 0;
-        padding-right: 0;
-        width: 49%;
-        &:nth-child(2n) {
-          float:right;
-        }
-        section {
+    h1 {
+      font-size:1.6em
+    }
+    .checkSlackers, 
+    .checkInvite {
+      label {
+        &:after {
+          height:11px;
+          top:12px;
+          width:22px;
         }
       }
     }
+    .close-this {
+      &:after {
+        font-size:0.8em;
+      }
+    }
+    .pencil {
+      &:after {
+        font-size:1em;
+      }
+    }
+    .row {
+      .col-md-3 {
+        &:last-of-type {
+          padding-right:15px;
+        }
+        &:first-child {
+          padding-left:5px;
+        }
+        &:nth-child(3) {
+          padding-right:5px;
+        }
+      }
+    }
+    #slacker-list {
+      .panel {
+        .checkSlackers {
+          label {
+            &:after {
+              height:12px;
+              width:22px;
+            }
+          }
+        }
+      }
+    }
+    #existing-players {
+      .image-wrapper {
+        img {
+          margin-left:5px;
+          width:100%;
+        }
+      }
+      .edit-player-wrapper {
+        h4 {
+          font-size:1.2em;
+        }
+      }
+      .details-wrapper {
+        input {
+          font-size: 1em;
+          margin-top: 0;
+          padding-left: 0;
+        }
+      }
+      .confirmation-screen {
+        h3 {
+          font-size:16px;
+          
+        }
+      }
+    }
+    #auto-banter {
+      textarea {
+        padding:25px;
+      }
+    }
   }
-} 
+ } 
+/*  END  MAX WIDTH 1199PX ---------------------------- */
+

@@ -80,23 +80,66 @@ $(document).ready(function () {
   togglePoints();
 
   /*  make the arrow in the league dashboard page change flip up and down */
-  $('.dropdown-button').on('click', function () {
-    if ($(this).find('span').hasClass('up-arrow')) {
-      $(this).find('span').removeClass('up-arrow').addClass('down-arrow');
+  function downArrow(target) {
+    $(target).on('click', function () {
+      if ($(this).find('span').hasClass('up-arrow')) {
+        $(this).find('span').removeClass('up-arrow').addClass('down-arrow');
+      }
+      else if ($(this).find('span').hasClass('down-arrow')) {
+        $(this).find('span').removeClass('down-arrow').addClass('up-arrow');
+      }
+        /*  if we have a pencil rather than an arrow toggle this with an 'x' */
+      else if ($(this).find('span').hasClass('pencil')) {
+        $(this).find('span').removeClass('pencil').addClass('close-this');
+      }
+      else if ($(this).find('span').hasClass('close-this')) {
+        $(this).find('span').removeClass('close-this').addClass('pencil');
+      }
+      /*  uncheck names if we close the panel */
+      $("input[id*='emailSlacker']").prop('checked', false);
+    });
+  }
+  downArrow('.dropdown-button');
+  if ($(window).width() < 641) {
+    $('.new-post-wrapper, .existing-league-wrapper, .new-players-wrapper').hide();
+    $('#auto-banter-header').unbind().on('click', function () {
+      $('.new-post-wrapper').slideToggle();
+      $('textarea').focus();
+    });
+    $('#invite-players-header').unbind().on('click', function () {
+      $('.existing-league-wrapper, .new-players-wrapper').slideToggle();
+    });
+    $('#existing-players h1').unbind().on('click', function () {
+      $('.edit-player-wrapper').slideToggle();
+    });
+    downArrow('#auto-banter-header');
+    downArrow('#invite-players-header');
+    downArrow('#existing-players h1');
+
+  }
+
+  $(window).resize(function(){
+    if ($(window).width() < 641) {
+      $('.new-post-wrapper, .existing-league-wrapper, .new-players-wrapper, .edit-player-wrapper').hide();
+      $('#auto-banter-header').unbind().on('click', function () {
+        $('.new-post-wrapper').slideToggle();
+      });
+      $('#invite-players-header').unbind().on('click', function () {
+        $('.existing-league-wrapper, .new-players-wrapper').slideToggle();
+      });
+      $('#existing-players h1').unbind().on('click', function () {
+        $('.edit-player-wrapper').slideToggle();
+      });
+      downArrow('#auto-banter-header');
+      downArrow('#invite-players-header');
+      downArrow('#existing-players h1');
     }
-    else if ($(this).find('span').hasClass('down-arrow')) {
-      $(this).find('span').removeClass('down-arrow').addClass('up-arrow');
+    else if ($(window).width() > 640) {
+      $('.new-post-wrapper, .edit-player-wrapper').show();
+      $('.existing-league-wrapper, .new-players-wrapper').show();
     }
-    /*  if we have a pencil rather than an arrow toggle this with an 'x' */
-    else if ($(this).find('span').hasClass('pencil')) {
-      $(this).find('span').removeClass('pencil').addClass('close-this');
-    }
-    else if ($(this).find('span').hasClass('close-this')) {
-      $(this).find('span').removeClass('close-this').addClass('pencil');
-    }
-    /*  uncheck names if we close the panel */
-    $("input[id*='emailSlacker']").prop('checked', false);
   });
+
 
 /*  move the banner add when we get to below iPad landscape */
   function moveStuff() {
@@ -159,7 +202,7 @@ $(document).ready(function () {
   $('#player-banter-list').multiselect({
     includeSelectAllOption: true,
     selectAllText: 'SELECT ALL PLAYERS!',
-    nonSelectedText: 'Select players to send banter',
+    nonSelectedText: 'Players to banter',
     allSelectedText: 'All players selected',
     maxHeight: 200
   });

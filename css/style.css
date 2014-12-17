@@ -6748,7 +6748,10 @@ button.close {
     bottom: 20px; } }
 /* Partials - CSS and SASS for specific elements ----- */
 .grid-wrapper {
-  height: 81vh; }
+  min-height: 80vh; }
+
+#divFixtures > div {
+  min-height: 0; }
 
 .generic-grid-wrapper {
   background-color: #f5f5f5;
@@ -6773,7 +6776,7 @@ button.close {
     background-color: #1888CA;
     border: none;
     float: right;
-    margin-right: 30px;
+    margin-right: 5px;
     text-transform: uppercase; }
   .generic-grid-wrapper .row.header {
     font-size: 1.4em;
@@ -9138,10 +9141,17 @@ aside#bets {
 
 #master-dashboard {
   text-transform: uppercase;
+  min-height: 81rem;
   min-height: 85vh; }
   #master-dashboard .row .col-md-3 {
     padding-left: 0;
     padding-right: 0; }
+    #master-dashboard .row .col-md-3:last-of-type {
+      padding-right: 20px; }
+    #master-dashboard .row .col-md-3:first-child {
+      padding-left: 10px; }
+    #master-dashboard .row .col-md-3:nth-child(3) {
+      padding-right: 10px; }
     #master-dashboard .row .col-md-3 section {
       padding-left: 5px;
       padding-right: 5px; }
@@ -9181,6 +9191,10 @@ aside#bets {
         opacity: 0;
         position: absolute;
         top: 10px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
         width: 28px; }
   #master-dashboard .pencil:after {
@@ -9263,11 +9277,14 @@ aside#bets {
       width: 100%; }
     #master-dashboard #edit-league .col-md-12 {
       padding: 0; }
+    #master-dashboard #edit-league .panel-group {
+      margin-bottom: 0; }
     #master-dashboard #edit-league .panel {
       border: medium none;
       border-radius: 0;
       padding: 0;
-      float: left; }
+      float: left;
+      width: 100%; }
       #master-dashboard #edit-league .panel .player-wrapper {
         background-color: #ececec;
         border-bottom: 1px dotted #d9d9d9;
@@ -9300,6 +9317,8 @@ aside#bets {
     float: left;
     clear: both;
     width: 100%; }
+    #master-dashboard #slacker-list .panel-group {
+      margin-bottom: 0; }
     #master-dashboard #slacker-list h4 {
       display: block;
       float: left;
@@ -9383,14 +9402,17 @@ aside#bets {
     float: left;
     clear: both;
     width: 100%; }
+    #master-dashboard #auto-banter h1 {
+      padding-left: 7px; }
+      #master-dashboard #auto-banter h1 .down-arrow {
+        display: none; }
     #master-dashboard #auto-banter .new-post-wrapper {
       display: block;
       float: left;
       width: 100%; }
     #master-dashboard #auto-banter span.glyphicon-comment {
-      height: 0;
-      position: relative;
-      width: 0; }
+      float: right;
+      top: 20px; }
       #master-dashboard #auto-banter span.glyphicon-comment:before {
         color: #ffffff;
         content: "";
@@ -9404,9 +9426,11 @@ aside#bets {
       display: block;
       float: left;
       font-size: 1.2em;
+      font-weight: normal;
       height: 300px;
       margin-bottom: 10px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      padding: 60px 40px 40px 60px; }
     #master-dashboard #auto-banter .optionWrapper {
       background-color: #ececec;
       border-bottom: 1px dotted #d9d9d9;
@@ -9452,6 +9476,10 @@ aside#bets {
             opacity: 0;
             position: absolute;
             top: 10px;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
             transform: rotate(-45deg);
             width: 28px; }
     #master-dashboard #auto-banter .btn-group {
@@ -9470,13 +9498,14 @@ aside#bets {
         padding: 5px 0 5px 10px;
         text-transform: uppercase;
         width: 100%; }
+  #master-dashboard #invite-players .down-arrow {
+    display: none; }
   #master-dashboard #invite-players .col-md-12 {
     padding-left: 0;
     padding-right: 0; }
   #master-dashboard #invite-players .input-wrapper {
     display: block;
     float: left;
-    height: 82px;
     overflow-y: scroll; }
   #master-dashboard #invite-players .dropdown-button {
     background-color: #ececec;
@@ -9531,6 +9560,8 @@ aside#bets {
     overflow-y: scroll;
     padding-left: 0;
     padding-right: 0; }
+    #master-dashboard #existing-players .down-arrow {
+      display: none; }
     #master-dashboard #existing-players h1 {
       margin-top: 5px;
       padding-left: 10px; }
@@ -10942,18 +10973,43 @@ a.about-predikta-next {
               #dashboard-wrapper #predikta-dashboard aside#bets #banter #banterWrapper #commets-wrapper ul li .date {
                 width: 47px; }
         #dashboard-wrapper #predikta-dashboard aside#bets #banterForm h1 {
-          font-size: 1.8em; } }
+          font-size: 1.8em; }
+
+  /*  League masters dashboard ---------------- */
+  #master-dashboard h1 {
+    font-size: 1.6em; }
+  #master-dashboard .checkSlackers label:after,
+  #master-dashboard .checkInvite label:after {
+    height: 11px;
+    top: 12px;
+    width: 22px; }
+  #master-dashboard .close-this:after {
+    font-size: 0.8em; }
+  #master-dashboard .pencil:after {
+    font-size: 1em; }
+  #master-dashboard .row .col-md-3:last-of-type {
+    padding-right: 15px; }
+  #master-dashboard .row .col-md-3:first-child {
+    padding-left: 5px; }
+  #master-dashboard .row .col-md-3:nth-child(3) {
+    padding-right: 5px; }
+  #master-dashboard #slacker-list .panel .checkSlackers label:after {
+    height: 12px;
+    width: 22px; }
+  #master-dashboard #existing-players .image-wrapper img {
+    margin-left: 5px;
+    width: 100%; }
+  #master-dashboard #existing-players .edit-player-wrapper h4 {
+    font-size: 1.2em; }
+  #master-dashboard #existing-players .details-wrapper input {
+    font-size: 1em;
+    margin-top: 0;
+    padding-left: 0; }
+  #master-dashboard #existing-players .confirmation-screen h3 {
+    font-size: 16px; }
+  #master-dashboard #auto-banter textarea {
+    padding: 25px; } }
 /*  END  MAX WIDTH 1199PX ---------------------------- */
-@media screen and (max-width: 1024px) {
-  #master-dashboard .row .col-md-3 {
-    clear: none;
-    display: inline-block;
-    float: left;
-    padding-left: 0;
-    padding-right: 0;
-    width: 49%; }
-    #master-dashboard .row .col-md-3:nth-child(2n) {
-      float: right; } }
 /*  this is theoretically for min width of 768px ---  */
 @media screen and (max-width: 1023px) {
   .navbar-wrapper #PrediktaTop .container ul li h3 {
@@ -11021,6 +11077,23 @@ a.about-predikta-next {
         width: 50%; }
         #dashboard-wrapper #predikta-dashboard aside#bets #banter .new-post-wrapper textarea {
           height: 60px; } }
+@media screen and (max-width: 1023px) {
+  #master-dashboard .row .col-md-3 {
+    clear: none;
+    display: inline-block;
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    width: 49%; }
+    #master-dashboard .row .col-md-3:nth-child(2n) {
+      float: right; }
+    #master-dashboard .row .col-md-3:nth-child(2) {
+      padding-right: 7px; }
+  #master-dashboard #auto-banter .new-post-wrapper {
+    padding-left: 0; }
+  #master-dashboard #auto-banter textarea {
+    height: 150px;
+    padding: 20px; } }
 @media only screen and (min-width: 620px) and (max-width: 767px), only screen and (max-device-width: 767px) {
   .navbar-wrapper #PrediktaTop .container ul {
     padding-left: 20px; }
@@ -11582,6 +11655,82 @@ a.about-predikta-next {
 
   /*  dashboard-wrapper closing brace -------  */ }
 /*  640 closing brace ------------------------ */
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+  #master-dashboard form {
+    display: block;
+    float: left;
+    width: 100%; }
+  #master-dashboard h1 {
+    font-size: 1.6em;
+    padding-left: 10px; }
+  #master-dashboard .row .col-md-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%; }
+    #master-dashboard .row .col-md-3:first-child {
+      padding-left: 20px; }
+    #master-dashboard .row .col-md-3:nth-child(2), #master-dashboard .row .col-md-3:nth-child(3), #master-dashboard .row .col-md-3:last-of-type {
+      padding-right: 20px; }
+    #master-dashboard .row .col-md-3 section {
+      display: block;
+      float: left;
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%; }
+  #master-dashboard #auto-banter h1,
+  #master-dashboard #invite-players h1 {
+    background-color: #ececec;
+    color: #1888ca;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 100%; }
+    #master-dashboard #auto-banter h1 .down-arrow,
+    #master-dashboard #auto-banter h1 .up-arrow,
+    #master-dashboard #invite-players h1 .down-arrow,
+    #master-dashboard #invite-players h1 .up-arrow {
+      display: inline;
+      font-size: 1em; }
+  #master-dashboard #invite-players h1 {
+    margin-top: 10px; }
+  #master-dashboard #invite-players .input-wrapper {
+    width: 100%; }
+  #master-dashboard #edit-league h4 {
+    margin-top: 5px; }
+  #master-dashboard #slacker-list header h1 {
+    margin-top: 5px; }
+  #master-dashboard #slacker-list header h4 {
+    margin-top: 5px; }
+  #master-dashboard #existing-players {
+    overflow: hidden; }
+    #master-dashboard #existing-players h1 {
+      background-color: #ececec;
+      color: #1888ca;
+      margin-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-top: 0px;
+      width: 100%; }
+    #master-dashboard #existing-players .down-arrow,
+    #master-dashboard #existing-players .up-arrow {
+      display: inline;
+      font-size: 1em; }
+    #master-dashboard #existing-players .edit-player-wrapper h4 {
+      display: block;
+      float: left;
+      width: 100%; }
+    #master-dashboard #existing-players .image-wrapper {
+      width: 25%; }
+      #master-dashboard #existing-players .image-wrapper img {
+        clear: none;
+        display: inline;
+        float: left;
+        width: 100px; }
+    #master-dashboard #existing-players .details-wrapper {
+      display: inline;
+      float: left;
+      width: 60%; } }
 @media only screen and (min-width: 440px) and (max-width: 619px), only screen and (max-device-width: 619px) {
   #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul {
     padding-left: 20px; }

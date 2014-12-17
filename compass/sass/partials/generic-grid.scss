@@ -1,5 +1,8 @@
 ﻿.grid-wrapper {
-  height:81vh;
+  min-height:80vh;
+}
+#divFixtures > div {
+    min-height:0;
 }
 .generic-grid-wrapper {
   background-color: #f5f5f5;
@@ -25,7 +28,7 @@
     background-color:#1888CA;
     border:none;
     float: right;
-    margin-right: 30px;
+    margin-right: 5px;
     text-transform:uppercase;
   }
   .row.header {
@@ -77,7 +80,6 @@
     }
   }
 }
-
 .geneic-form-wrapper {
   background-color: #f5f5f5;
   color: #000000;

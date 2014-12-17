@@ -99,44 +99,52 @@
                     <div class="name-overflow"></div>
                   </div>
                   <div class="panel-collapse collapse" id="detail-one">
+<!--
                     <ul class="season-results">
                       <li class="result">Result <span class="result-points">10</span></li>
                       <li class="spot-on">Spot on <span class="spot-on-points">6</span></li>
                       <li class="goal-diff">Goal Diff <span class="goal-diff-points">4</span></li>
                     </ul>
+-->
                   </div>
                   <div class="player-wrapper">
                     <div data-target="#detail-two" data-parent="#the-league" data-toggle="collapse"><span class="name">League Two</span></div>
                     <div class="name-overflow"></div>
                   </div>
                   <div class="panel-collapse collapse" id="detail-two">
-                    <ul class="season-results">
-                      <li class="result">Result <span class="result-points">9</span></li>
-                      <li class="spot-on">Spot on <span class="spot-on-points">6</span></li>
-                      <li class="goal-diff">Goal Diff <span class="goal-diff-points">4</span></li>
-                    </ul>
+<!--
+                      <ul class="season-results">
+                        <li class="result">Result <span class="result-points">10</span></li>
+                        <li class="spot-on">Spot on <span class="spot-on-points">6</span></li>
+                        <li class="goal-diff">Goal Diff <span class="goal-diff-points">4</span></li>
+                      </ul>
+-->
                   </div>
                   <div class="player-wrapper">
                     <div data-target="#detail-three" data-parent="#the-league" data-toggle="collapse"><span class="name">League Three</span></div>
                     <div class="name-overflow"></div>
                   </div>
                   <div class="panel-collapse collapse" id="detail-three">
-                    <ul class="season-results">
-                      <li class="result">Result <span class="result-points">9</span></li>
-                      <li class="spot-on">Spot on <span class="spot-on-points">5</span></li>
-                      <li class="goal-diff">Goal Diff <span class="goal-diff-points">4</span></li>
-                    </ul>
+<!--
+                      <ul class="season-results">
+                        <li class="result">Result <span class="result-points">10</span></li>
+                        <li class="spot-on">Spot on <span class="spot-on-points">6</span></li>
+                        <li class="goal-diff">Goal Diff <span class="goal-diff-points">4</span></li>
+                      </ul>
+-->
                   </div>
                   <div class="player-wrapper">
                     <div data-target="#detail-four" data-parent="#the-league" data-toggle="collapse"><span class="name">League Four</span></div>
                     <div class="name-overflow"></div>
                   </div>
                   <div class="panel-collapse collapse" id="detail-four">
-                    <ul class="season-results">
-                      <li class="result">Result <span class="result-points">9</span></li>
-                      <li class="spot-on">Spot on <span class="spot-on-points">5</span></li>
-                      <li class="goal-diff">Goal Diff <span class="goal-diff-points">3</span></li>
-                    </ul>
+<!--
+                      <ul class="season-results">
+                        <li class="result">Result <span class="result-points">10</span></li>
+                        <li class="spot-on">Spot on <span class="spot-on-points">6</span></li>
+                        <li class="goal-diff">Goal Diff <span class="goal-diff-points">4</span></li>
+                      </ul>
+-->
                   </div>
                 </div>
               </div>
@@ -238,12 +246,14 @@
       </div>
       <div class="col-md-3">
         <section id="auto-banter" class="col-md-12">
-          <h1>Auto Banter</h1>
+          <h1 id="auto-banter-header">Auto Banter
+            <span class="down-arrow"> &gt; </span>
+          </h1>
           <section class="new-post-wrapper">
             <article class="panel-collapse collapse in" id="new-post" style="height: auto;">
               <form class="form-group">
                 <span class=" glyphicon-comment glyphicon"></span>
-                <textarea rows="5" class="form-control" placeholder="type your banter message here...">
+                <textarea rows="5" class="form-control" placeholder="type your banter message here..." autofocus>
                 </textarea>
                 <p>Select where to post banter</p>
                 <div class="optionWrapper">
@@ -295,7 +305,9 @@
         <section id="invite-players" class="col-md-12">
           <div class="col-md-12">
             <header>
-              <h1>Invite New Players</h1>
+              <h1 id="invite-players-header">Invite New Players
+                <span class="down-arrow"> &gt; </span>
+              </h1>
             </header>
               <div class="new-players-wrapper">
                 <p>
@@ -317,7 +329,7 @@
           <div class="existing-league-wrapper col-md-12">
             <p>Invite players from an existing Predikta league</p>
             <h4>
-              <a class="dropdown-button" data-toggle="collapse" href="#existingLeagues">Select league to invite from<span class="down-arrow"> &gt; </span></a>
+              <a class="dropdown-button" data-toggle="collapse" href="#existingLeagues">Select league<span class="down-arrow"> &gt; </span></a>
             </h4>
             <form action="">
               <div id="existingLeagues" class="panel-collapse collapse col-md-12">
@@ -439,7 +451,9 @@
       <div class="col-md-3">
         <section id="existing-players" class="col-md-12">
           <header>
-          <h1>Edit existing players</h1>
+          <h1>Edit existing players
+            <span class="down-arrow"> &gt; </span>
+          </h1>
           </header>
           <div class="edit-player-wrapper col-md-12">
             <h4>
