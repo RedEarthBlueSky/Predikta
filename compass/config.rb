@@ -4,7 +4,7 @@
 relative_assets = true      #because we're not working from the root
 css_dir = "../css"          #where the CSS will saved
 sass_dir = "sass"           #where our .scss files are
-images_dir = "../images"    #the folder with your images
+images_dir = "../img"    #the folder with your images
 javascript_dir = "../js"    #folder where js files are
 fonts_dir = "../fonts"      #folder where font files are
 

@@ -32,59 +32,6 @@
     <!--  Dashboard Wrapper -->
     <!-- HEADER ------------------------------------------------------>
     <div class="navbar-wrapper">
-      <div id="PrediktaTop" class="container">
-        <div class="container">
-          <ul class="nav navbar-nav">
-            <li id="logoListItem">
-              <a id="logoLink" href="/">
-                <div class="lologo"></div>
-              </a>
-            </li>
-            <li class="know-football">
-              <h3>
-                Know your football?
-                <span>Put your money where your mouth is</span>
-              </h3>
-            </li>
-            <li class="play-predikta-button">
-              <a id="play-predikta-button" role="button" href="/Prediktions" class="btn btn-lg btn-primary">
-                Play the Predikta Pool
-              </a>
-            </li>
-            <li class="mini-nav one">
-              <a href="/blog">
-                Blog
-              </a>
-            </li>
-            <li class="mini-nav">
-              <a href="#">Nav Two</a>
-            </li>
-            <li class="mini-nav">
-              <a href="#">Nav Three</a>
-            </li>
-            <li class="admin-panel">
-              <div class="btn-group">
-                <button data-toggle="dropdown" class="btn btn-info dropdown-toggle glyphicon glyphicon-cog"></button>
-                <ul class="dropdown-menu">
-                  <li><a href="/">Dashboard</a></li>
-                  <li><a href="/Account/Profile">My Account</a></li>
-                  <li><a href="/League">Search leagues</a></li>
-                  <li><a href="/Anorak">All leagues</a></li>
-                  <li><a href="#">Anorak</a></li>
-                  <li><a href="#">Emailer</a></li>
-                  <li><a href="#">Log off</a></li>
-                  <li><a href="#">Account List Item 4</a></li>
-                  <li><a href="#">Account List Item 4</a></li>
-                </ul>
-              </div>
-              <div class="name-clock-wrapper">
-                <h1 class="navtext">Ian</h1>
-                <span id="clock"></span>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
     <!--  END HEADER ------------------------------------------------------>
     <!--  MAIN DASHBOARD ------------------------------------------------------>
@@ -2135,33 +2082,21 @@
 </div>  <!--  DASHBOARD WRAPPER closing tag ----------->
 
     <!-- FOOTER -->
-    <footer>
-      <ul>
-        <li class="opta-logo"><a href="#"><img src="img/opta-logo.png" alt="Opta logo" /></a></li>
-        <li class="ladbrokes-logo"><a href="#"><img src="img/ladbrokes-logo.png" alt="Ladbrokes logo" /></a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">How to play</a></li>
-        <li><a href="#">Terms and conditions</a></li>
-        <li class="stakes-ladders"><a href="#"><img src="img/stakes-and-ladders-logo.png" alt="Stakes and Ladders logo" /></a></li>
-        <li class="age-rating"><a href="#"><img src="img/18-plus.png" alt="Eighteen years and over image button" /></a></li>
-      </ul>
-      <!-- <p class="pull-right"><a href="#">Back to top</a></p> -->
-      <p class="footer-predikta-info">&copy; 2014 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    <footer id="footer">
     </footer>
   <!-- Bootstrap core JavaScript 
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/vendor/jquery-1.11.1.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script>
     $.fn.modal.Constructor.prototype.enforceFocus = function () { };
+    $('header.navbar-wrapper').load('header.html');
+    $('footer#footer').load('footer.html');
   </script>
   <script src="js/docs.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <script src="js/ie10-viewport-bug-workaround.js"></script>
   <script src="js/main.js"></script>
-  <!--  include the multiselect plugin -->
   <script src="js/vendor/bootstrap-multiselect.js"></script>
 </body>
 </html>

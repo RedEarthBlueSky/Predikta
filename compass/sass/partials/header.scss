@@ -112,20 +112,47 @@
                           color: #1799D6;
                           font-size: 2.6em;
                       }            
-                      .dropdown-menu {
+                      #admin-cog {
                         @include linear-gradient( #232022, 0%,  #1385c7, 100% );
-                        top: 98%;
-                        left: -200px;
-                        min-width: 260px;
                         border-radius: 0;
                         border: none;
+                        right:10px;
                         text-align: left;
                         text-transform: uppercase;
+                        width:400px;
                         li {
+                          height: 32px; 
                           margin-top:5px;
-                          margin-bottom:10px;
+                          margin-bottom:20px; 
+                          &:nth-child(1) {
+                            background: url("../img/cog-sprites.png") no-repeat scroll 95% -2px / 38px auto rgba(0, 0, 0, 0);
+                          }
+                          &:nth-child(2) {
+                            background: url("../img/cog-sprites.png") no-repeat scroll 95% -37px / 38px auto rgba(0, 0, 0, 0);
+                          }
+                          &:nth-child(3) {
+                            background: url("../img/cog-sprites.png") no-repeat scroll 95% -71px / 38px auto rgba(0, 0, 0, 0);
+                          }
+                          &:nth-child(4) {
+                            background: url("../img/cog-sprites.png") no-repeat scroll 95% -107px / 38px auto rgba(0, 0, 0, 0);
+                          }
+                          &:nth-child(5) {
+                            background: url("../img/cog-sprites.png") no-repeat scroll 95% -143px / 38px auto rgba(0, 0, 0, 0);
+                          }
+                          &:nth-child(6) {
+                            background: url("../img/cog-sprites.png") no-repeat scroll 95% -178px / 38px auto rgba(0, 0, 0, 0);
+                          }
+                          &:nth-child(7) {
+                            background: url("../img/cog-sprites.png") no-repeat scroll 95% -212px / 38px auto rgba(0, 0, 0, 0);
+                          }
+                          &:nth-child(8) {
+                            background: url("../img/cog-sprites.png") no-repeat scroll 95% -250px / 38px auto rgba(0, 0, 0, 0);
+                          }
                           a {
-                            color:#fff;
+                            color: #fff;
+                            font-family: helvetica;
+                            font-size: 1.4em;
+                            padding: 4px 20px 0;
                             &:hover {
                               color:#232022;
                             }
