@@ -6,7 +6,6 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="" name="description">
   <meta content="" name="author">
-
   <!--  have set user scale to no but might need to test this for 'yes' -->
   <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width /">
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -28,19 +27,13 @@
 <!-- NAVBAR
 ================================================== -->
 <body>
+  <header class="navbar-wrapper">
+  </header>
   <div id="dashboard-wrapper">
     <!--  Dashboard Wrapper -->
-    <!-- HEADER ------------------------------------------------------>
-    <div class="navbar-wrapper">
-    </div>
-    <!--  END HEADER ------------------------------------------------------>
-    <!--  MAIN DASHBOARD ------------------------------------------------------>
     <div class="container marketing">
       <!-- Three columns of text below the carousel -->
       <div id="predikta-dashboard" class="row">
-
-
-
         <section id="points" class="col-lg-5">
           <header>
             <h1>Points</h1>
@@ -2080,23 +2073,18 @@
       </section>
     </a>
 </div>  <!--  DASHBOARD WRAPPER closing tag ----------->
-
-    <!-- FOOTER -->
     <footer id="footer">
     </footer>
-  <!-- Bootstrap core JavaScript 
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
   <script src="js/vendor/jquery-1.11.1.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
-  <script>
-    $.fn.modal.Constructor.prototype.enforceFocus = function () { };
-    $('header.navbar-wrapper').load('header.html');
-    $('footer#footer').load('footer.html');
-  </script>
   <script src="js/docs.min.js"></script>
   <script src="js/ie10-viewport-bug-workaround.js"></script>
   <script src="js/main.js"></script>
   <script src="js/vendor/bootstrap-multiselect.js"></script>
+  <script>
+  $.fn.modal.Constructor.prototype.enforceFocus = function () { };
+  $('header.navbar-wrapper').load('header.html');
+  $('footer#footer').load('footer.html');
+  </script>
 </body>
 </html>

@@ -207,14 +207,25 @@ $(document).ready(function () {
     maxHeight: 200
   });
 
+
+
+
+
   /*  switch panel content to specific week on select drop down */
   $("select#scoreRounds").change(function () {
     var value = $("select#scoreRounds option:selected").attr("value");
     value = "." + value;
     $("#box-wrapper div[class^=\"week\"]").hide();
-    $(value).show(500);
+
+
+    $(value).show(5000);
+
   }).change();
   
+
+
+
+
   /*  switch panel content to specific league on select drop down */
   $("select#banterLeague").change(function () {
     var value = $("select#banterLeague option:selected").attr("value");

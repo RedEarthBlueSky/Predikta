@@ -133,10 +133,9 @@
   font-family: "tradegothic bold",sans-serif;
   font-size:1.2em;
   margin: 2% auto;
-  max-width: 1170px;
+  max-width: 650px;
   padding-bottom: 1%;
   padding-top: 1%;
-  width:100%;
   .row {
     display:block;
     clear:both;
@@ -201,34 +200,32 @@
   h1 {
     display: block;
     float: left;
-    font-size:4em;
+    font-size:2em;
     margin-bottom:20px;
     margin-top:0;
     text-transform: uppercase;
     width: 100%;
   }
   input {
-    border:none;
-    border-radius:8px;
-    margin-bottom:20px;
-    padding:12px;
-    width:100%;
+    border: medium none;
+    border-radius: 8px;
+    display: block;
+    padding: 5px;
   }
   #prediktion-confirm {
     background-color: #df1a22;
     color: #ffffff;
     float:right;
-    font-size:1.8em;
+    font-size:1.2em;
     text-transform: uppercase;
-    width:70%;
+    width:55%;
   }
   #prediktion-back {
     background-color: #1485c8;
     color: #ffffff;
-    font-size:1.8em;
+    font-size:1.2em;
     text-transform: uppercase;
-    width:70%;
-
+    width:55%;
   }
 }
 
