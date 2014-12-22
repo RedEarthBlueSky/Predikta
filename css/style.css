@@ -10110,6 +10110,49 @@ main#content-wrapper .col-md-8.center-block {
     display: none; }
 
 /*  styles for hiding and displaying content based upon whether or not javascript is enabled --------- */
+@media only screen and (max-width: 1200px), only screen and (max-device-width: 1200px) {
+  main#content-wrapper .col-md-8.center-block {
+    width: 100%; } }
+@media only screen and (max-width: 991px), only screen and (max-device-width: 991px) {
+  main#content-wrapper .col-md-8.center-block .registration-wrapper select#FavouriteTeamID {
+    margin-top: 10px; } }
+@media only screen and (max-width: 619px), only screen and (max-device-width: 619px) {
+  main#content-wrapper .row.col-md-12 {
+    padding-left: 0;
+    padding-right: 0; }
+  main#content-wrapper .col-md-8.center-block .registration-wrapper .tcwrapper {
+    margin-top: 0;
+    margin-bottom: 5px; }
+    main#content-wrapper .col-md-8.center-block .registration-wrapper .tcwrapper .squaredTwo {
+      margin-left: 10px; }
+    main#content-wrapper .col-md-8.center-block .registration-wrapper .tcwrapper span {
+      font-size: 0.6em; }
+  main#content-wrapper .col-md-8.center-block .registration-wrapper .datepick {
+    height: 32px; }
+    main#content-wrapper .col-md-8.center-block .registration-wrapper .datepick #date_Day {
+      left: 25%; }
+    main#content-wrapper .col-md-8.center-block .registration-wrapper .datepick label {
+      font-size: 1em;
+      left: 15px;
+      margin-bottom: 0;
+      top: 5px; }
+  main#content-wrapper .col-md-8.center-block .registration-wrapper h1 {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  main#content-wrapper .col-md-8.center-block .registration-wrapper select,
+  main#content-wrapper .col-md-8.center-block .registration-wrapper input {
+    font-size: 1em;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 5px; }
+    main#content-wrapper .col-md-8.center-block .registration-wrapper select#FavouriteTeamID,
+    main#content-wrapper .col-md-8.center-block .registration-wrapper input#FavouriteTeamID {
+      margin-top: 10px; }
+  main#content-wrapper .col-md-8.center-block .registration-wrapper #confirm-btn {
+    width: 100%; } }
+/* My custom styles --------------------------------- */
 .YesScript {
   display: none; }
 
@@ -10122,52 +10165,6 @@ main#content-wrapper .col-md-8.center-block {
 .jsOn .NoScript {
   display: none; }
 
-::-webkit-input-placeholder {
-  color: #000;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out; }
-
-:-moz-placeholder {
-  color: #000;
-  opacity: 0.5;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out; }
-
-::-moz-placeholder {
-  color: #000;
-  opacity: 0.5;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out; }
-
-:-ms-input-placeholder {
-  color: #000;
-  opacity: 0.5;
-  -ms-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out; }
-
-/* Place Holder CSS for Focus */
-:hover::-webkit-input-placeholder {
-  opacity: 0.75;
-  -webkit-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out; }
-
-:hover:-moz-placeholder {
-  opacity: 0.75;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out; }
-
-:hover::-moz-placeholder {
-  opacity: 0.75;
-  -moz-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out; }
-
-:hover:-ms-input-placeholder {
-  opacity: 0.75;
-  -ms-transition: opacity 0.35s ease-in-out;
-  transition: opacity 0.35s ease-in-out; }
-
-/* My custom styles --------------------------------- */
 .red-button {
   background-color: #df1c22;
   border: medium none;
@@ -11585,8 +11582,7 @@ a.about-predikta-next {
       .navbar-wrapper #PrediktaTop .container ul li.admin-panel .name-clock-wrapper {
         font-size: 1em; }
       .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .dropdown-menu {
-        position: absolute;
-        left: 0; }
+        position: absolute; }
 
   #dashboard-wrapper .minus:after {
     color: #ffffff;

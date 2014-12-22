@@ -1,4 +1,15 @@
-﻿
+﻿.YesScript {
+  display: none;
+}
+.NoScript {
+  display: block;
+}
+.jsOn .YesScript {
+  display: block;
+}
+.jsOn .NoScript {
+  display: none;
+}
 
 .red-button {
   @include red-button;   
