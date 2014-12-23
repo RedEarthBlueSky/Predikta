@@ -10240,6 +10240,232 @@ main#content-wrapper .col-md-8.center-block {
       margin-top: 10px; }
   main#content-wrapper .col-md-8.center-block .registration-wrapper #confirm-btn {
     width: 100%; } }
+#predikt-wrapper {
+  background-color: #f5f5f5;
+  color: #000000;
+  display: block;
+  float: none;
+  font-family: "tradegothic bold",sans-serif;
+  font-size: 1.2em;
+  margin: 2% auto;
+  max-width: 900px;
+  padding-bottom: 1%;
+  padding-top: 1%; }
+  #predikt-wrapper header {
+    border-bottom: 1px dotted #cccccc;
+    display: block;
+    float: left;
+    width: 100%; }
+    #predikt-wrapper header h1 {
+      display: block;
+      float: left;
+      font-size: 2em;
+      margin-bottom: 10px;
+      margin-top: 0;
+      text-transform: uppercase;
+      width: auto; }
+    #predikt-wrapper header #week {
+      display: block;
+      float: right;
+      font-size: 1.6em;
+      width: auto; }
+  #predikt-wrapper .row {
+    display: block;
+    clear: both; }
+    #predikt-wrapper .row p {
+      text-align: center; }
+    #predikt-wrapper .row div {
+      display: block; }
+    #predikt-wrapper .row form div {
+      display: inline-block;
+      float: left; }
+  #predikt-wrapper .prediktions-wrapper {
+    display: block;
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    width: 100%; }
+    #predikt-wrapper .prediktions-wrapper .right {
+      padding-right: 0; }
+      #predikt-wrapper .prediktions-wrapper .right .row {
+        margin-right: 0; }
+  #predikt-wrapper .prediktions {
+    background-color: #ececec;
+    color: #000;
+    display: block;
+    float: left;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0; }
+    #predikt-wrapper .prediktions .home-prediktion,
+    #predikt-wrapper .prediktions .dash,
+    #predikt-wrapper .prediktions .away-prediktion {
+      padding-top: 15px; }
+    #predikt-wrapper .prediktions button.banker {
+      background: none repeat scroll 0 0 transparent;
+      border: medium none;
+      display: inline-block;
+      float: left;
+      height: 31px;
+      width: 31px; }
+      #predikt-wrapper .prediktions button.banker:before {
+        border-right: 40px solid transparent;
+        border-top: 40px solid #cccccc;
+        content: "";
+        display: block;
+        height: 0;
+        left: 0;
+        padding-top: 3px;
+        position: absolute;
+        top: 0;
+        width: 0; }
+      #predikt-wrapper .prediktions button.banker:after {
+        color: #ffffff;
+        content: "B";
+        font-size: 15px;
+        left: 3px;
+        padding: 0 2px 2px;
+        position: absolute;
+        text-shadow: 1px 1px 1px #000000;
+        top: 0; }
+    #predikt-wrapper .prediktions div {
+      display: inline;
+      float: left;
+      padding-left: 0;
+      padding-right: 0;
+      width: 28%; }
+      #predikt-wrapper .prediktions div input {
+        display: block;
+        float: left;
+        height: 100%;
+        width: 100%; }
+    #predikt-wrapper .prediktions .dash {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+      width: 30px; }
+    #predikt-wrapper .prediktions .home-score {
+      height: 58px;
+      padding-right: 0;
+      padding-left: 0;
+      width: 58px; }
+    #predikt-wrapper .prediktions .away-score {
+      height: 58px;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: left;
+      width: 58px; }
+    #predikt-wrapper .prediktions .away-prediktion {
+      padding-left: 10px;
+      text-align: left; }
+  #predikt-wrapper input {
+    background-color: #1485c8;
+    border: none;
+    border-radius: 0;
+    color: #ffffff;
+    display: block;
+    float: left;
+    padding-left: 37%; }
+  #predikt-wrapper #prediktion-submit {
+    background-color: #1485c8;
+    border-radius: 9px;
+    color: #ffffff;
+    float: right;
+    font-size: 1.2em;
+    padding-bottom: 9px;
+    padding-left: 0;
+    padding-top: 9px;
+    text-transform: uppercase;
+    width: 50%; }
+  #predikt-wrapper #prediktion-cancel {
+    background-color: #df1a22;
+    border-radius: 9px;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding-bottom: 9px;
+    padding-left: 0;
+    padding-top: 9px;
+    text-transform: uppercase;
+    width: 50%; }
+
+@media only screen and (max-width: 1342px), only screen and (max-device-width: 1342px) {
+  #predikt-wrapper {
+    width: 100%; }
+    #predikt-wrapper .left,
+    #predikt-wrapper .right {
+      display: block;
+      float: left;
+      width: 50%; } }
+@media only screen and (max-width: 911px), only screen and (max-device-width: 911px) {
+  #predikt-wrapper .prediktions {
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0; }
+    #predikt-wrapper .prediktions .left,
+    #predikt-wrapper .prediktions .right {
+      display: block;
+      float: left;
+      padding-left: 10px;
+      padding-right: 0;
+      width: 50%; }
+    #predikt-wrapper .prediktions div {
+      font-size: 16px; }
+    #predikt-wrapper .prediktions .dash {
+      width: 20px; }
+    #predikt-wrapper .prediktions .home-score,
+    #predikt-wrapper .prediktions .away-score {
+      height: 50px;
+      width: 50px; }
+  #predikt-wrapper .prediktions-wrapper {
+    margin-top: 15px; } }
+@media only screen and (max-width: 752px), only screen and (max-device-width: 752px) {
+  #predikt-wrapper .left,
+  #predikt-wrapper .right {
+    width: 100%; }
+  #predikt-wrapper .prediktions div {
+    width: 34%; }
+  #predikt-wrapper .prediktions .home-prediktion {
+    padding-right: 20px;
+    padding-top: 15px;
+    text-align: right; } }
+@media only screen and (max-width: 530px), only screen and (max-device-width: 530px) {
+  #predikt-wrapper .prediktions div {
+    width: 28%; } }
+@media only screen and (max-width: 404px), only screen and (max-device-width: 404px) {
+  #predikt-wrapper {
+    padding-right: 5px; }
+    #predikt-wrapper .left,
+    #predikt-wrapper .right {
+      padding-left: 5px;
+      padding-right: 0; }
+    #predikt-wrapper header #week {
+      font-size: 1.2em; }
+    #predikt-wrapper header h1 {
+      font-size: 1.6em;
+      margin-bottom: 0; }
+    #predikt-wrapper .prediktions-wrapper {
+      margin-bottom: 5px; }
+    #predikt-wrapper .predikt-wrapper .prediktions .away-prediktion {
+      padding-top: 10px; }
+    #predikt-wrapper .prediktions {
+      width: 103%; }
+      #predikt-wrapper .prediktions div {
+        font-size: 14px; }
+      #predikt-wrapper .prediktions .home-prediktion {
+        padding-right: 5px;
+        padding-top: 10px; }
+      #predikt-wrapper .prediktions .away-prediktion {
+        padding-left: 5px; }
+      #predikt-wrapper .prediktions .dash {
+        padding-top: 10px; }
+      #predikt-wrapper .prediktions .home-score,
+      #predikt-wrapper .prediktions .away-score {
+        height: 40px;
+        width: 40px; }
+    #predikt-wrapper #prediktion-cancel,
+    #predikt-wrapper #prediktion-submit {
+      width: 90%; } }
 /* My custom styles --------------------------------- */
 .YesScript {
   display: none; }
