@@ -83,10 +83,10 @@ $(document).ready(function () {
   function downArrow(target) {
     $(target).on('click', function () {
       if ($(this).find('span').hasClass('up-arrow')) {
-        $(this).find('span').removeClass('up-arrow').addClass('down-arrow');
+        $(this).find('span.up-arrow').removeClass('up-arrow').addClass('down-arrow');
       }
       else if ($(this).find('span').hasClass('down-arrow')) {
-        $(this).find('span').removeClass('down-arrow').addClass('up-arrow');
+        $(this).find('span.down-arrow').removeClass('down-arrow').addClass('up-arrow');
       }
         /*  if we have a pencil rather than an arrow toggle this with an 'x' */
       else if ($(this).find('span').hasClass('pencil')) {
@@ -99,6 +99,7 @@ $(document).ready(function () {
       $("input[id*='emailSlacker']").prop('checked', false);
     });
   }
+  downArrow('.faq-wrapper');
   downArrow('.dropdown-button');
   if ($(window).width() < 641) {
     $('.new-post-wrapper, .existing-league-wrapper, .new-players-wrapper').hide();

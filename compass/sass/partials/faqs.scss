@@ -1,0 +1,52 @@
+﻿.up-arrow {
+  bottom: 4px;
+  color: #1888ca;
+  display: inline-block;
+  float: right;
+  font-size: 1.4em;
+  position: relative;
+  right: 18px;
+  transform: scale(1.6, 1) rotate(272deg);
+}
+#faq-wrapper {
+  float:none;
+  min-height:82vh;
+  #faqs {
+    .panel {
+      border:none;
+      box-shadow:none;
+    }
+    .faq-wrapper {
+      display:block;
+      float:left;
+      width:100%;
+      padding-bottom:5px;
+      padding-top:5px;
+      span.question {
+        color:#000;
+        font-size:1.2em;
+      }
+      .down-arrow {
+        @include scale-rotate(1.6, 1, 90deg);
+        bottom: 4px;
+        color: #1888ca;
+        display: inline-block;
+        float: right;
+        font-size: 1.4em;
+        position: relative;
+        right: 10px;
+      }
+    }
+    .faq-content {
+      display: block;
+      float: left;
+      clear: both;
+      width: 100%;
+    }
+    .panel-collapse {
+      clear:both;
+      float:left;
+      width:100%;
+    }
+  }
+}

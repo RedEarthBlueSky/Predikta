@@ -7073,6 +7073,58 @@ button.close {
                 color: #232022; }
 
 /*  HEADER -----------------------------*/
+.up-arrow {
+  bottom: 4px;
+  color: #1888ca;
+  display: inline-block;
+  float: right;
+  font-size: 1.4em;
+  position: relative;
+  right: 18px;
+  transform: scale(1.6, 1) rotate(272deg); }
+
+#faq-wrapper {
+  float: none;
+  min-height: 82vh; }
+  #faq-wrapper #faqs .panel {
+    border: none;
+    box-shadow: none; }
+  #faq-wrapper #faqs .faq-wrapper {
+    display: block;
+    float: left;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px; }
+    #faq-wrapper #faqs .faq-wrapper span.question {
+      color: #000;
+      font-size: 1.2em; }
+    #faq-wrapper #faqs .faq-wrapper .down-arrow {
+      transform: scale(1.6, 1) rotate(90deg);
+      -webkit-transform: scale(1.6, 1) rotate(90deg);
+      /* Safari and Chrome */
+      -moz-transform: scale(1.6, 1) rotate(90deg);
+      /* Firefox */
+      -ms-transform: scale(1.6, 1) rotate(90deg);
+      /* IE 9+ */
+      -o-transform: scale(1.6, 1) rotate(90deg);
+      /* Opera */
+      bottom: 4px;
+      color: #1888ca;
+      display: inline-block;
+      float: right;
+      font-size: 1.4em;
+      position: relative;
+      right: 10px; }
+  #faq-wrapper #faqs .faq-content {
+    display: block;
+    float: left;
+    clear: both;
+    width: 100%; }
+  #faq-wrapper #faqs .panel-collapse {
+    clear: both;
+    float: left;
+    width: 100%; }
+
 /*  FOOTER ----------------------------------------------------  */
 footer {
   background-color: #000000;
