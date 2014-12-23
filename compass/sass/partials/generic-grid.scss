@@ -231,6 +231,62 @@
 
 
 
+  @media only screen and (max-width: 910px), only screen and (max-device-width: 910px) {
+  .dialog-box-wrapper {
+    display: block;
+    float: left;
+    margin-bottom: 0;
+    margin-left: 1%;
+    margin-top: 2%;
+    max-width: none;
+    width: 98%;
+  }
+}
+  @media only screen and (max-width: 622px), only screen and (max-device-width: 622px) {
+  .dialog-box-wrapper {
+    padding-left:5px;
+    padding-right:5px;
+    width:100%;
+    margin-left: 0;
+    #prediktion-back,
+    #prediktion-confirm {
+      font-size:1em;
+      width:90%;
+    }
+    .prediktions-wrapper {
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+    .prediktions {
+      max-width:none;
+      width:100%;
+    }
+    h1 {
+      font-size:1.6em;
+      margin-bottom:0;
+    }
+    .row {
+      div {
+        width:100%;
+        
+        p {
+          margin-bottom:0;
+        }
+      }
+      .change {
+        font-size:0.6em;
+      }
+      form {
+        div {
+          width:50%;
+        }
+      }
+    }
+  }
+}
+
+
+
   @media only screen and (max-width: 464px), only screen and (max-device-width: 464px) {
     .geneic-grid-wrapper {
       padding-left:5px;
