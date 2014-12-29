@@ -1,0 +1,1170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="" name="description">
+  <meta content="" name="author">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width /">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <link href="favicon.ico" rel="icon">
+  <title>Predikta | Forms </title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <header class="navbar-wrapper">
+  </header>
+  <main id="content-wrapper" class="col-md-12">
+    <div class="row col-md-12">
+      <div class="col-md-8 center-block">
+        <div class="NoScript">
+                <h1>REGISTER</h1>
+            <div class="content ">
+                This site requires JavaScript to be enabled. <a href="http://www.enable-javascript.com/" class="afix">How to enable JavaScript in your browser</a>.
+            </div>
+        </div>
+        <div class="registration-wrapper YesScript">
+                <h1>REGISTER</h1>
+          <form method="post" id="registerForm" enctype="multipart/form-data" action="/Account/Register" novalidate="novalidate">
+            <section class="col-md-6">
+              <input type="text" value="" name="FirstName" id="FirstName" placeholder="Enter your First Name*" >
+              <input type="text" value="" name="LastName" id="LastName" placeholder="Enter your last name*" >
+              <input type="email" value="" name="Email" id="Email" placeholder="Email*">
+              <input type="email" value="" name="ConfirmEmail" id="ConfirmEmail" placeholder="Confirm Email*" >
+              <input type="tel" value="" placeholder="Mobile phone">
+              <select style="width:100%" name="CountryID" id="CountryID" data-val-required="The Country of residence field is required." data-val="true">
+                <option selected disabled>Country of residence*</option>
+                <option value="England">England</option>
+                <option value="Scotland">Scotland</option>
+                <option value="Wales">Wales</option>
+                <option value="">-----------------------------------------</option>
+                <option value="Other">Other</option>
+              </select>
+              <div class="datepick">
+                <label for="DateOfBirth">D.O.B*</label>
+                <select name="Day" id="date_Day" required>
+                  <option selected disabled value="">Day</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+                <select name="Month" id="date_Month" required>
+                  <option selected disabled value="">MTH</option>
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+                <select name="Year" id="date_Year" required>
+                  <option value="">YEAR</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+                  <option value="2011">2011</option>
+                  <option value="2010">2010</option>
+                  <option value="2009">2009</option>
+                  <option value="2008">2008</option>
+                  <option value="2007">2007</option>
+                  <option value="2006">2006</option>
+                  <option value="2005">2005</option>
+                  <option value="2004">2004</option>
+                  <option value="2003">2003</option>
+                  <option value="2002">2002</option>
+                  <option value="2001">2001</option>
+                  <option value="2000">2000</option>
+                  <option value="1999">1999</option>
+                  <option value="1998">1998</option>
+                  <option value="1997">1997</option>
+                  <option value="1996">1996</option>
+                  <option value="1995">1995</option>
+                  <option value="1994">1994</option>
+                  <option value="1993">1993</option>
+                  <option value="1992">1992</option>
+                  <option value="1991">1991</option>
+                  <option value="1990">1990</option>
+                  <option value="1989">1989</option>
+                  <option value="1988">1988</option>
+                  <option value="1987">1987</option>
+                  <option value="1986">1986</option>
+                  <option value="1985">1985</option>
+                  <option value="1984">1984</option>
+                  <option value="1983">1983</option>
+                  <option value="1982">1982</option>
+                  <option value="1981">1981</option>
+                  <option value="1980">1980</option>
+                  <option value="1979">1979</option>
+                  <option value="1978">1978</option>
+                  <option value="1977">1977</option>
+                  <option value="1976">1976</option>
+                  <option value="1975">1975</option>
+                  <option value="1974">1974</option>
+                  <option value="1973">1973</option>
+                  <option value="1972">1972</option>
+                  <option value="1971">1971</option>
+                  <option value="1970">1970</option>
+                  <option value="1969">1969</option>
+                  <option value="1968">1968</option>
+                  <option value="1967">1967</option>
+                  <option value="1966">1966</option>
+                  <option value="1965">1965</option>
+                  <option value="1964">1964</option>
+                  <option value="1963">1963</option>
+                  <option value="1962">1962</option>
+                  <option value="1961">1961</option>
+                  <option value="1960">1960</option>
+                  <option value="1959">1959</option>
+                  <option value="1958">1958</option>
+                  <option value="1957">1957</option>
+                  <option value="1956">1956</option>
+                  <option value="1955">1955</option>
+                  <option value="1954">1954</option>
+                  <option value="1953">1953</option>
+                  <option value="1952">1952</option>
+                  <option value="1951">1951</option>
+                  <option value="1950">1950</option>
+                  <option value="1949">1949</option>
+                  <option value="1948">1948</option>
+                  <option value="1947">1947</option>
+                  <option value="1946">1946</option>
+                  <option value="1945">1945</option>
+                  <option value="1944">1944</option>
+                  <option value="1943">1943</option>
+                  <option value="1942">1942</option>
+                  <option value="1941">1941</option>
+                  <option value="1940">1940</option>
+                  <option value="1939">1939</option>
+                  <option value="1938">1938</option>
+                  <option value="1937">1937</option>
+                  <option value="1936">1936</option>
+                  <option value="1935">1935</option>
+                  <option value="1934">1934</option>
+                  <option value="1933">1933</option>
+                  <option value="1932">1932</option>
+                  <option value="1931">1931</option>
+                  <option value="1930">1930</option>
+                  <option value="1929">1929</option>
+                  <option value="1928">1928</option>
+                  <option value="1927">1927</option>
+                  <option value="1926">1926</option>
+                  <option value="1925">1925</option>
+                  <option value="1924">1924</option>
+                  <option value="1923">1923</option>
+                  <option value="1922">1922</option>
+                  <option value="1921">1921</option>
+                  <option value="1920">1920</option>
+                  <option value="1919">1919</option>
+                  <option value="1918">1918</option>
+                  <option value="1917">1917</option>
+                  <option value="1916">1916</option>
+                  <option value="1915">1915</option>
+                  <option value="1914">1914</option>
+                  <option value="1913">1913</option>
+                  <option value="1912">1912</option>
+                  <option value="1911">1911</option>
+                  <option value="1910">1910</option>
+                  <option value="1909">1909</option>
+                  <option value="1908">1908</option>
+                  <option value="1907">1907</option>
+                  <option value="1906">1906</option>
+                  <option value="1905">1905</option>
+                  <option value="1904">1904</option>
+                  <option value="1903">1903</option>
+                  <option value="1902">1902</option>
+                  <option value="1901">1901</option>
+                </select>
+              </div>
+            </section>
+            <aside class="col-md-6">
+              <select style="width:100%" name="FavouriteTeamID" id="FavouriteTeamID" data-val-required="The Favourite Club Team field is required." data-val="true">
+                <option selected disabled value="">Favorite Club Team*</option>
+                <option value="2829da62-ac7b-4a74-8ecc-af9358304dcb">Accrington</option>
+                <option value="d1816e8d-0276-491e-8c2b-c1a548494fa8">AFC Fylde</option>
+                <option value="21d3624c-de22-4509-a733-924942687c9e">AFC Telford Un</option>
+                <option value="2843bfe6-2d3d-4ec0-bdc5-62ac9c2b7464">AFC Wimbledon</option>
+                <option value="2da97ddc-c297-4e2a-bd29-40a1afc3e686">Aldershot Town</option>
+                <option value="bfeeb996-0fc4-4eea-9645-3f8fe0810868">Altrincham</option>
+                <option value="4251db4f-4cbd-4024-9eaa-c6658920ac3f">Arsenal</option>
+                <option value="5a6e0daa-d16c-404c-b810-d085e8cf8f0b">Aston Villa</option>
+                <option value="62803a73-86bd-4e65-8344-9b174ab7c688">Barnet</option>
+                <option value="6990ad07-426a-4eb9-8f02-bd74668b2679">Barnsley</option>
+                <option value="1953db3b-d767-4622-9241-c7d29ac7e084">Basingstoke To</option>
+                <option value="b177744d-1346-4355-9f5d-8b679f93a218">Birmingham</option>
+                <option value="2add84bd-c378-45de-a877-d8de606bf331">Blackburn</option>
+                <option value="6ad3f228-1664-417a-a324-27b757e13dcf">Blackpool</option>
+                <option value="3d2f2da9-9658-494f-a3a5-c6bfd2feb1ea">Blyth Spartans</option>
+                <option value="28470f70-6791-41cb-a8e2-e7210ff30fef">Bolton</option>
+                <option value="df0a000c-18da-43d7-bd68-b88d6f450ab9">Bournemouth</option>
+                <option value="2bfdfa3b-00b2-4aef-9630-801e94358d9a">Bradford City</option>
+                <option value="ed088c4b-0f87-4772-ac29-14db5242de41">Braintree Town</option>
+                <option value="1c221622-5b16-4a74-96ae-84f8cdf96c8c">Brentford</option>
+                <option value="c4d8e08e-b724-47a7-8bb9-b900debc5cbe">Brighton</option>
+                <option value="de6497de-dcb4-4bab-b86d-b205fb13b893">Bristol City</option>
+                <option value="c9125a2f-f5bf-4de1-8cba-e876ff153412">Bristol Rovers</option>
+                <option value="287e5e45-c2dc-4ff2-8d5e-8142a2139433">Bromley</option>
+                <option value="15ede94a-7d17-44e8-92f7-0af33cca2435">Burnley</option>
+                <option value="2b66b211-a05b-477f-9598-791ebdf24027">Burton Albion</option>
+                <option value="13908935-d634-4aa3-aa61-f849e7e59298">Bury</option>
+                <option value="66f71556-59f9-4d03-a9d4-c319388b8f8d">Cambridge Unit</option>
+                <option value="c9eef3ee-92e3-4874-8466-17e6d873b936">Canada</option>
+                <option value="2b22b5c1-fad5-4a83-8dcf-de0923517a66">Cardiff</option>
+                <option value="04ae5834-bf15-467f-aa19-f329efadc3dc">Carlisle Utd</option>
+                <option value="c4c97b32-a8ae-4290-9879-72989e62297e">Charlton</option>
+                <option value="232aa0a1-f588-4a7f-af9c-78289cf78611">Chelsea</option>
+                <option value="7b9f96d8-7c6d-4bb3-92f4-bcf6592f79ce">Cheltenham</option>
+                <option value="fea600f9-c9ec-4700-9d75-d6f2c591842f">Chester FC</option>
+                <option value="1ffd4cde-f1ca-4953-98d6-c619402a06b3">Chesterfield</option>
+                <option value="429734ef-c1dd-4db4-92f6-7eb1cf03d0b5">Colchester</option>
+                <option value="3329ee94-1e73-4338-bd98-76d859b158c3">Concord Ranger</option>
+                <option value="b308cdb5-900f-4d12-8b50-a6adb6b3a7f5">Costa Rica</option>
+                <option value="83e0a4bf-66f9-4a7a-acfb-39f14ecfc6d6">Coventry City</option>
+                <option value="653f688f-c64e-4800-a52d-cee09e0f31dd">Crawley Town</option>
+                <option value="5e0ace08-fb26-47e4-aa6b-8cbe3316dbc9">Crewe</option>
+                <option value="173e88bb-babd-4652-b242-199f3623cdfa">Crystal Palace</option>
+                <option value="e419f37b-77bd-44bd-bdff-3cc8f5a41aaa">Dagenham</option>
+                <option value="b74ed856-1c6f-4f1c-9713-d8afd945c205">Dartford</option>
+                <option value="43bca773-9377-4d0a-8073-1c20bd46f5f9">Derby</option>
+                <option value="b9dae379-1af7-4dd9-8471-07757e80c73f">Doncaster</option>
+                <option value="1b57e969-9818-47f4-a785-c9242344e24d">Dover Athletic</option>
+                <option value="9522a509-80e5-4577-877b-105245e471e7">East Thurrock </option>
+                <option value="fe9dfc04-91cf-4ae2-8889-bd67933eaf05">Eastleigh</option>
+                <option value="7f50a2f8-bdba-4458-90a6-453541eb2d20">El Salvador</option>
+                <option value="0f95f8aa-ba32-4a2e-89d0-04218cf28e2b">Everton</option>
+                <option value="770b65b5-aae0-438a-b3d9-9a67b311ec49">Exeter City</option>
+                <option value="d2e4308d-134c-435a-b4fd-f65549c08475">FC Halifax Tow</option>
+                <option value="b08ff484-c983-45f2-abfa-ab3cf05eb44f">Fleetwood</option>
+                <option value="013a1a88-6b5f-485b-aae3-b5ed742d642d">Forest Green R</option>
+                <option value="52be132d-751e-426d-a894-c77cea5c5f73">Fulham</option>
+                <option value="a7fa38dd-7af3-4488-aad1-0d2fe0458dae">Gateshead</option>
+                <option value="36b2346d-1557-4b9f-88e3-6d018dbd9087">Gibraltar</option>
+                <option value="93e9a57f-da0c-4e75-aa68-de1eec3268e1">Gillingham</option>
+                <option value="05fff804-87b2-4d42-9910-8b8d92fd10a5">Gosport Boroug</option>
+                <option value="6daf9053-6824-4e83-a7f5-12ad0f499e50">Grimsby Town</option>
+                <option value="5eaa1c2c-2df3-415f-ab5c-e94041e44fa0">Hartlepool</option>
+                <option value="c1e6f081-4585-4bcc-ac27-48fed1456d75">Havant &amp; Water</option>
+                <option value="6aa0d49d-49f5-4578-b565-7bda80bba3cd">Hemel Hempstea</option>
+                <option value="6a8ff420-b17b-441e-bcbc-e0e05ce0d73a">Huddersfield</option>
+                <option value="b51d73c8-5093-4454-9512-f767449d1e5a">Hull</option>
+                <option value="d4c39be3-0ed0-487a-83b2-245f8e89d3d3">Ipswich</option>
+                <option value="abeff8e9-ac04-4ef1-8019-fa743c4e96b7">Jamaica</option>
+                <option value="72d09909-3088-43e3-81da-a4e0ab4a2b66">Leeds</option>
+                <option value="3185f6b5-e6a9-4c81-92d9-7f3b84d1f70f">Leicester</option>
+                <option value="f2c8de90-eae6-4a38-848b-fa0bbba83f8c">Leyton Orient</option>
+                <option value="76d4e3ab-bcc0-42d7-adf8-a9b8be4985fb">Lincoln City</option>
+                <option value="bc464b67-2a25-4927-a4fd-d0c592336094">Liverpool</option>
+                <option value="96b8e42e-f970-4646-9d39-6cef48248628">Luton Town</option>
+                <option value="722bb27c-66be-47bd-aafa-d1b8ae95ae18">Maidstone Unit</option>
+                <option value="189c09d5-4f75-4070-810b-99a5f5c9f262">Man City</option>
+                <option value="020c2cee-d5b2-438f-a774-cdeeebda5ec7">Man Utd</option>
+                <option value="d0514bb8-2b4e-4175-be92-8b74366b466e">Mansfield Town</option>
+                <option value="c9623f65-8960-48fc-bc20-6c91722f6c56">Middlesbrough</option>
+                <option value="c7cdce8b-add8-46bb-aca3-e95d0e063d52">Millwall</option>
+                <option value="ad93aec2-dbb7-4279-82f4-54fe9b840a2e">MK Dons</option>
+                <option value="53b363a8-7751-4d6c-9a2e-ed51e3aa2f57">Morecambe</option>
+                <option value="b976efcb-3e5a-44f7-93a1-dc5cbbbbc604">Newcastle</option>
+                <option value="23c165a3-134b-483f-81d8-33e16b61ba3b">Newport</option>
+                <option value="8d7e0411-b291-4992-a5e3-884ad46ab912">Northampton</option>
+                <option value="f08da1b3-8e57-4615-b235-7f9c6709022e">Norton United</option>
+                <option value="43071165-f0d0-4d45-88f6-c9778548b901">Norwich</option>
+                <option value="35db1eec-bf33-4731-b6d6-d227731b4a28">Nottm Forest</option>
+                <option value="dbdf7ff2-c1fa-4fd9-9728-cd7135e3cff0">Notts County</option>
+                <option value="99e0a49b-4111-4fa0-af61-6a2eb63e19f1">Oldham</option>
+                <option value="1d89547f-7fc4-4f43-b44d-f83a11629fc4">Oxford Utd</option>
+                <option value="f828ae83-83d0-4196-b542-e86829e7adb5">Panama</option>
+                <option value="21f29910-14bc-4b6f-bd5f-3c16b6a37d61">Perú</option>
+                <option value="0962145d-40cb-4f32-b445-099dd3f0f8e9">Peterborough</option>
+                <option value="0f9e4345-6847-4eba-a732-c4a6d1987cdb">Plymouth</option>
+                <option value="5230b7dd-2240-47b5-ab05-e86af15d1e81">Port Vale</option>
+                <option value="64ff057c-67af-4bd7-920f-859f973f300c">Portsmouth</option>
+                <option value="7fd73af8-6c13-4dfe-a212-de4aa0ebf4d4">Preston</option>
+                <option value="5c2a34e6-817a-4ec8-9d8b-bd8fe0787887">QPR</option>
+                <option value="81b9ed7a-abad-42f8-b01a-fd2fab80dfae">Reading</option>
+                <option value="e93f8ffd-b37e-4b92-a9c2-22df6b081cf4">Rochdale</option>
+                <option value="185542e3-deda-4756-83a8-882f086e8282">Rotherham</option>
+                <option value="2b67801a-f5ab-4570-8bfb-82c0f11101d7">Scunthorpe</option>
+                <option value="114dfca0-9c51-480f-ab02-f74464343295">Sheffield Utd</option>
+                <option value="48243a20-6201-4ea6-99f0-c52a59cba566">Sheffield Wed</option>
+                <option value="0d7c9a58-0d24-4b7a-bf89-5a0184441e70">Shrewsbury</option>
+                <option value="a482fd57-5479-41f0-8f11-cadb3420c07f">Southampton</option>
+                <option value="b34fcab0-1ec2-443d-ae92-eae69c4d485a">Southend Utd</option>
+                <option value="aabf9b3c-b403-4d64-b9b6-59a29b453146">Southport</option>
+                <option value="ea04e3c6-27f8-4bc3-92f2-7141ca3a7228">Stevenage</option>
+                <option value="e2e68103-342b-4949-85f6-d344a3abe7a5">Stoke</option>
+                <option value="187965c9-8b5e-4671-be48-11b2d1829266">Sunderland</option>
+                <option value="26588045-7801-4ea0-8076-0bbe51a9da9f">Swansea</option>
+                <option value="a4e472ea-e297-4ccd-b0f0-4dec529ba2b6">Swindon Town</option>
+                <option value="e809d747-304a-4124-a6ce-e566b56ff692">TBC</option>
+                <option value="40185c36-5545-4b41-a738-6f57397bef75">Torquay</option>
+                <option value="eb637468-f74c-4090-83c0-357a8611ad2a">Tottenham</option>
+                <option value="5b4baa37-96a4-4b3d-a70f-5b60fc527b29">Tranmere</option>
+                <option value="d1c51d0a-8f37-49d4-8ad6-4dd220341716">USA</option>
+                <option value="4c353626-08f4-4435-b70c-f42206324363">Venezuela</option>
+                <option value="3b024f16-f1c1-4400-84d5-9d02e979ded0">Walsall</option>
+                <option value="ec677b0e-41a3-4ed1-b2b9-2a2147a5ceac">Warrington Tow</option>
+                <option value="c7dfde49-7a94-4043-8f60-0d4b19de17b3">Watford</option>
+                <option value="6e4afdf2-d9a1-4029-bab3-be998f8fe1a9">West Brom</option>
+                <option value="e2979f53-2731-4330-8d1a-174cff7c2394">West Ham</option>
+                <option value="7ae90e84-0ce0-4270-8d66-8c1cb6ba3757">Weston-Super-M</option>
+                <option value="49e867a9-2e99-4568-b587-2f86889e160f">Wigan</option>
+                <option value="0a826955-e34a-40c6-a945-8e28cd3a5010">Woking</option>
+                <option value="5258a366-a69f-4691-ae89-bf3b0714eeb1">Wolves</option>
+                <option value="e92850c0-6fbd-4265-93a4-367032150498">Worcester City</option>
+                <option value="d8bf0176-9fc3-40a8-a1c2-a3a4000c5559">Wrexham</option>
+                <option value="53ed3dad-f73b-4b3d-9ec3-3e1ea296db83">Wycombe</option>
+                <option value="155e024f-1239-4e4b-a9b7-725d3a1cfd68">Yeovil Town </option>
+                <option value="df1a49f0-4414-4ada-9acb-7b22b72d31e1">York City</option>
+              </select>
+              <select style="width:100%" name="FavouriteCountryTeamID" id="FavouriteCountryTeamID" data-val-required="The Favourite Country Team field is required." data-val="true">
+                <option value="">Favorite Country Team*</option>
+                <option value="35957577-f53f-4dfc-9c0b-7f715c063ce6">Afghanistan</option>
+                <option value="2ff6449e-f0b0-4276-af65-b5feda500be2">Albania</option>
+                <option value="716feeac-6cda-47b0-b05c-1637b1c84e63">Algeria</option>
+                <option value="18cdc073-6ddc-443b-9a7a-427cc73efdbf">American Samoa</option>
+                <option value="da7c72dc-3312-4d52-aac9-3fb79cbf59e4">Andorra</option>
+                <option value="5d84e4ad-d2b3-4e6e-bdf1-39fdff383f70">Angola</option>
+                <option value="66bb067a-0a2b-49ad-8451-828e5eb0647e">Anguilla</option>
+                <option value="5e0d08cc-1c2b-4caf-92d1-405afeb01a01">Antigua and Barbuda</option>
+                <option value="b1aac45b-5d1f-4c7c-b22c-b623e61f98fd">Argentina</option>
+                <option value="bcd4d789-9711-423d-b8f2-d0cd5e9745b3">Armenia</option>
+                <option value="3346b884-2ef1-4036-a308-290a1e02a976">Aruba</option>
+                <option value="606a2be7-6efc-4f61-b55f-3ed963025c17">Australia</option>
+                <option value="74dfc599-55f9-4b0a-9700-eac76faaa3c8">Austria</option>
+                <option value="00e0de83-b6d6-4308-a787-71bcc9a81f4c">Azerbaijan</option>
+                <option value="bffaf706-0932-4e49-869a-64dd9afc8149">Bahamas</option>
+                <option value="0a784885-6c44-4e3d-9bfa-3d86ca296ec8">Bahrain</option>
+                <option value="e1d0121a-4275-455f-8f7d-a501c2d12a8d">Bangladesh</option>
+                <option value="3150be6e-0fb1-466b-8fd4-0432083bd2f3">Barbados</option>
+                <option value="faf11aa9-0beb-4307-9974-b5dd16448db8">Belarus</option>
+                <option value="326a76b4-40bd-4331-bc1b-ba40008dbbaa">Belgium</option>
+                <option value="e06c5d1e-2210-48b5-8d1b-6897d89bdf07">Belize</option>
+                <option value="6f0e5495-fc03-49e3-a350-ad5eda682121">Benin</option>
+                <option value="c5a32430-538a-4e1a-b0cc-c06f5cc8a2b8">Bermuda</option>
+                <option value="68f45bc9-d574-4d2a-a996-67ed555fe00e">Bhutan</option>
+                <option value="4617f5d9-7dfc-40e6-8fb5-4117f5b23172">Bolivia</option>
+                <option value="61a436f7-b048-4169-9dfb-2a3621774ba5">Bosnia and Her</option>
+                <option value="147a94f4-97c2-45c5-899b-3d940886f889">Botswana</option>
+                <option value="193a1c63-1bda-458d-9cea-e4d08fd6acea">Brazil</option>
+                <option value="dbe83161-214d-4414-b6b7-ac9ff88ca282">British Virgin Islands</option>
+                <option value="672883f9-efd8-46fe-b21a-fcb8acdef96b">Brunei</option>
+                <option value="f7336f3d-7e88-482d-b5d5-cad553aeab31">Bulgaria</option>
+                <option value="5052a5b8-f261-4655-8f38-429932a24d53">Burkina Faso</option>
+                <option value="801b1071-db27-4a65-afeb-fb080d3ec134">Burundi</option>
+                <option value="594d6867-9028-43ff-b2b0-4a4e7abb67a6">Cambodia</option>
+                <option value="e91fa5db-a887-4b62-a38d-aabaeef87a55">Cameroon</option>
+                <option value="e0523973-02a7-4738-b793-96151f7637f6">Canada</option>
+                <option value="9fef1435-1ed0-4a3d-9cd7-3c253bf30d9b">Cape Verde</option>
+                <option value="bfecb3db-0cdb-4d4f-8efa-71518fdd8c2e">Cayman Islands</option>
+                <option value="1728fde5-bced-405c-8a6f-7c5e9fdb5a2c">Central African Republic</option>
+                <option value="7205cdbf-1030-4b0b-81cc-a669b240f6c4">Chad</option>
+                <option value="0e9a60f3-99f3-49f1-b188-c5aff60ccfdc">Chile</option>
+                <option value="0c2ec954-f889-49e0-b64a-8f844fa1d5f5">China PR</option>
+                <option value="bb3fbd81-cbe0-4e59-adda-e782ca22b059">Chinese Taipei</option>
+                <option value="d1c1f552-9f44-4d0f-8520-d40a60cd4866">Colombia</option>
+                <option value="1e90f020-0102-44ec-9d54-b86f84f9a9c0">Comoros</option>
+                <option value="b40805b2-5623-4954-bd55-8b1ca8335c46">Congo</option>
+                <option value="9d4b26fa-8b92-40c7-a70d-5b69f53e703c">Cook Islands</option>
+                <option value="7fd92979-06c1-4674-9197-096d0d88e195">Costa Rica</option>
+                <option value="441a1c7d-e45f-403e-ab87-8946859b181b">Côte d'Ivoire&nbsp;(Ivory Coast)</option>
+                <option value="e9567303-0e5c-4680-b588-1ce1dc2f340d">Croatia</option>
+                <option value="c3313d74-d017-4ac3-a366-ddd30ab65218">Cuba</option>
+                <option value="382b0a09-e434-44b6-b7e0-77c9223156cf">Curaçao</option>
+                <option value="24a961e3-81f1-493b-9009-66122eb9a86b">Cyprus</option>
+                <option value="25393aca-47a6-4e3f-84a2-64dd930bc0e0">Czech Republic</option>
+                <option value="cc70a33a-dc4d-4081-825b-24a8e0bc7c3b">Denmark</option>
+                <option value="4c8ad090-72bc-4a39-810a-40ccb95e1866">Djibouti</option>
+                <option value="3c4dc409-3d91-4835-90cc-5759c617bb06">Dominica</option>
+                <option value="95953837-edc5-4320-aac4-e9c668059a45">Dominican Republic</option>
+                <option value="50905fd6-0493-476f-a851-d7327e1fe642">DR Congo</option>
+                <option value="ab3da0e3-00b8-4591-8417-8ace27f60c7a">Ecuador</option>
+                <option value="ad0c2b86-aee5-4b23-80d7-b78ee106c41f">Egypt</option>
+                <option value="a790b37e-4ac4-4814-a65b-f60f20f6965d">El Salvador</option>
+                <option value="6b41a4ca-cf2d-4d47-93a7-c89d60675fe9">England</option>
+                <option value="0de7600a-8e11-4f00-9682-4d89db75809d">Equatorial Guinea</option>
+                <option value="991efb33-c712-4d03-b22f-d395cd175bec">Eritrea</option>
+                <option value="e36cc0e6-710d-4125-b5ad-a85486ae2204">Estonia</option>
+                <option value="c2590cc3-f7d0-4085-811f-c6f63648af06">Ethiopia</option>
+                <option value="c47205d6-82b4-4fdf-ad60-1294ac4ddfa1">Faroe Islands</option>
+                <option value="db922259-0824-492a-b263-e6b82871f0cf">Fiji</option>
+                <option value="9a099f5b-a633-4b7e-a744-d752c14082f5">Finland</option>
+                <option value="6461b54c-9591-4edd-af54-38fa6b3057da">France</option>
+                <option value="02a3c977-8951-4421-a2e6-fb0b453bd677">Gabon</option>
+                <option value="f6db0b7f-57e2-4d2f-8b39-3f06bd6b27dd">Gambia</option>
+                <option value="5405e8ba-dbd0-4f0d-99bc-0cdef98646e5">Georgia</option>
+                <option value="ade9ff09-e905-4d45-bace-4a088d28fa07">Germany</option>
+                <option value="8aab7e05-33f8-405d-92ba-5fd30036aeea">Ghana</option>
+                <option value="41689c52-a764-4670-b5f3-c0c7ea0136f0">Greece</option>
+                <option value="801abd11-83ff-4916-8e40-c3937d3601ec">Grenada</option>
+                <option value="eebd2801-70ee-4a22-8029-add91e0e550a">Guam</option>
+                <option value="5985338b-fc9f-4a9c-9c1d-733495234a8a">Guatemala</option>
+                <option value="a42e53e4-5945-44f8-b488-a53825c3c737">Guinea</option>
+                <option value="0e00cf1f-a61f-4148-924a-c5445c585c9f">Guinea-Bissau</option>
+                <option value="27deb548-e528-4981-9c6d-ad1d896b2533">Guyana</option>
+                <option value="89a40d0e-5e3f-45c5-afac-0d627c2baabf">Haiti</option>
+                <option value="14d89b1d-5816-43de-aa34-748438c7a582">Honduras</option>
+                <option value="a44390b1-a45d-4396-97f0-5049951442df">Hong Kong</option>
+                <option value="bd8d446c-7d94-4fd3-8ac6-7aca71b0f69f">Hungary</option>
+                <option value="598c925b-99d3-4129-8422-103986087680">Iceland</option>
+                <option value="0d4080f8-2f04-4c96-a3bd-59485290aa9b">India</option>
+                <option value="8196a785-4ed1-4e6d-bb3c-d3609c922a2d">Indonesia</option>
+                <option value="f0269381-ccf1-4c1f-960b-549a4fb13f93">Iran</option>
+                <option value="a826a0fa-2118-424a-bf12-ff71481131f8">Iraq</option>
+                <option value="341e206b-1f46-4ada-8d15-562fb8931778">Israel</option>
+                <option value="85432a0a-9757-4ffc-b5e3-c0eb1309c081">Italy</option>
+                <option value="27721fae-2a93-4524-a3b7-f166d63c7e7c">Jamaica</option>
+                <option value="fab867d6-973c-4692-966a-fe9e1f82405b">Japan</option>
+                <option value="6e705211-428f-4724-bd47-ac71790bc528">Jordan</option>
+                <option value="852f240c-0355-4c71-8016-9acf93fc63a7">Kazakhstan</option>
+                <option value="a5c1a86c-b3a1-479b-8006-023f6ffdb886">Kenya</option>
+                <option value="40f3a584-2261-45a5-834e-17be51820c25">Kuwait</option>
+                <option value="2152ec77-542e-4879-90d7-3187ecb149d1">Kyrgyzstan</option>
+                <option value="1d1fd6c9-8b26-4199-b89e-6b51ed134d89">Laos</option>
+                <option value="af5377c3-61ec-4122-9ecc-4602ead81700">Latvia</option>
+                <option value="220cbf89-c947-41b7-b683-3cb2de7414f2">Lebanon</option>
+                <option value="ce84f4a4-c19d-41ca-bc52-b00165af3be6">Lesotho</option>
+                <option value="4413d060-fcd4-48a8-ae6e-c5cb4efac104">Liberia</option>
+                <option value="65596594-e802-4d7e-a819-af39bd5fecb7">Libya</option>
+                <option value="d57e4c6b-4d2b-4825-8fd5-af06e808b40d">Liechtenstein</option>
+                <option value="5cec3f1b-83aa-4589-936f-0ef04046a631">Lithuania</option>
+                <option value="d6fa86d5-1052-4bf0-94d6-1bf376e5f113">Luxembourg</option>
+                <option value="0421c06b-0dd0-4802-a6a3-c2a8010e7ee3">Macau</option>
+                <option value="b1d6fc35-db53-418c-a209-f5a9b4475402">Macedonia</option>
+                <option value="d1904cd2-3a0c-4d18-9043-aa3da2602dc3">Madagascar</option>
+                <option value="38a8dd63-91ca-4a80-9949-7d271b9b6fb3">Malawi</option>
+                <option value="526e59d5-b387-4a08-ade1-21d5dd9ec04f">Malaysia</option>
+                <option value="0360a574-9db0-4527-b845-4de223a0a797">Maldives</option>
+                <option value="223c8c1f-0c64-41e1-972f-1540ac89eb55">Mali</option>
+                <option value="773b4476-fbe4-4b93-b101-56a575562a7f">Malta</option>
+                <option value="23ea9015-cf79-4318-b3b2-1c1105574613">Mauritania</option>
+                <option value="d0de14e3-cbe5-4a59-8765-722b4b0fca74">Mauritius</option>
+                <option value="3cb3c302-4838-441f-9c18-35d6820c05a2">Mexico</option>
+                <option value="bbba353e-8acd-4e2c-a1dc-b30ae22fec18">Moldova</option>
+                <option value="31686634-e179-479d-b939-4388314c1d2c">Mongolia</option>
+                <option value="843bfad4-d539-4760-9548-7a3571482e69">Montenegro</option>
+                <option value="aef62cb6-6eea-4240-9bbd-562ab3eaf02e">Montserrat</option>
+                <option value="acc4ccc5-d49f-49c7-80d9-fea428835e28">Morocco</option>
+                <option value="eca64661-c196-4c64-a0a4-3289c59d576a">Mozambique</option>
+                <option value="f279f320-df7c-42c0-85eb-47a0318623e4">Myanmar</option>
+                <option value="43c0cbaf-293d-4920-8b44-4fbbd1ea0e2d">Namibia</option>
+                <option value="08577a27-5942-40aa-83d6-350671675301">Nepal</option>
+                <option value="81a93dfc-c694-46d0-b4be-10f03b30cf8f">Netherlands</option>
+                <option value="03f9550f-2713-4183-b753-5f931db3803f">New Caledonia</option>
+                <option value="718f464c-62de-4066-bb4e-b724900eed0f">New Zealand</option>
+                <option value="b366046c-eb1c-4d4e-b8ec-4407e7b0f759">Nicaragua</option>
+                <option value="d5be94c1-997e-4c38-ac09-5aeebfc18620">Niger</option>
+                <option value="1ff76358-0c2c-46de-a71f-aa6ccf3eb6b5">Nigeria</option>
+                <option value="a8a67033-a56a-4bdc-9261-f534283b0d18">North Korea</option>
+                <option value="36168339-521b-4934-b83f-ee3370c1149c">Northern Irela</option>
+                <option value="46dcc804-5809-461c-9bc3-06a3d241bd62">Norway</option>
+                <option value="625e321f-9bc1-4772-bbc2-137f56b39377">Oman</option>
+                <option value="c46999d7-4d6e-4f02-9710-5b360fe11804">Pakistan</option>
+                <option value="4204a342-a76d-4f4b-bbc9-d33d6d47ef06">Palestine</option>
+                <option value="f47d4885-8caa-4b9c-af9c-f63216157d61">Panama</option>
+                <option value="196e8f4e-73d5-49e5-aa11-f780c46b14ed">Papua New Guinea</option>
+                <option value="caf310be-b7bc-4f49-8750-e75b939606b3">Paraguay</option>
+                <option value="034ea110-2ff4-4cfc-bbf7-a27c2c1152da">Peru</option>
+                <option value="56b28ba7-ff50-4496-a7d1-26b138d22f17">Philippines</option>
+                <option value="be54b8b7-e8b4-4355-99e8-1833228e8487">Poland</option>
+                <option value="b15b72ed-511d-45f2-b87d-10349e325e60">Portugal</option>
+                <option value="f741ad18-3673-45b5-a25d-1166dae0fa58">Puerto Rico</option>
+                <option value="f45b1924-1868-4e1d-9d44-14b4b91b6e34">Qatar</option>
+                <option value="b66ce4bb-5a00-44e8-bcc3-2db602fcba1b">Rep. of Ireland</option>
+                <option value="2f49ae21-82ea-4e79-ae69-15f96a57f703">Romania</option>
+                <option value="2ec35e98-b7ec-4de9-8dc5-df0d9d7068c8">Russia</option>
+                <option value="bc804eac-554c-4f2c-b566-43b1f4247523">Rwanda</option>
+                <option value="678cdf5c-bea2-4819-923c-cd9049c3fd5f">Saint Kitts and Nevis</option>
+                <option value="7af364db-82b8-44bc-8135-93e24f651b5f">Saint Lucia</option>
+                <option value="b5ff80a6-ef69-41ab-b2ca-fbd70584e6f6">Saint Vincent and the Grenadines</option>
+                <option value="f6cd4c9e-47b5-4ee5-9b05-d00bc3c50fb7">Samoa</option>
+                <option value="ef97814d-8aef-4ad0-8d43-861c69f55434">San Marino</option>
+                <option value="b5b0de3c-eeaa-4750-9124-a88ec20aab24">São Tomé and Príncipe</option>
+                <option value="0a6e1738-1f90-42dd-b3a0-4259938bb582">Saudi Arabia</option>
+                <option value="8980486f-82d0-450a-9efd-dc8363df0e4d">Scotland</option>
+                <option value="29bd90ae-121d-41f7-a755-7eb0c8d1834a">Senegal</option>
+                <option value="70fcab8f-e903-47a5-aa99-512064edaa03">Serbia</option>
+                <option value="1dbc260b-c603-4357-91dd-4134a0f3299f">Seychelles</option>
+                <option value="3e9881e9-d9dc-4deb-b1ba-91d5d780ac5e">Sierra Leone</option>
+                <option value="e153525d-2313-42f7-8a18-ce7aaa48c67e">Singapore</option>
+                <option value="b73021a9-6eb1-41a7-a459-6f94442a34a6">Slovakia</option>
+                <option value="66eed954-7e96-48f5-ab89-76ee9105d4e4">Slovenia</option>
+                <option value="4b00521b-c5cb-4cb0-8ba1-90691c967cc5">Solomon Islands</option>
+                <option value="73061927-99c3-41f4-aaed-ea32654aa25c">Somalia</option>
+                <option value="fd1f80ed-9400-4fa7-8909-774f95014334">South Africa</option>
+                <option value="4be8acdd-a35e-4940-981b-3432b1f32bc2">South Korea</option>
+                <option value="8774f1f5-073f-4d95-8a59-a29e9398fad2">South Sudan</option>
+                <option value="a849ee3b-634c-4eb3-a91d-8aeb71145d6b">Spain</option>
+                <option value="8f633dbf-76ff-44a6-a94e-ea0ea127c9d6">Sri Lanka</option>
+                <option value="1c9e7123-3650-4cc0-a633-45a8d5dd3859">Sudan</option>
+                <option value="7513be3b-eab7-4cf0-ab44-66a4f5a196d1">Suriname</option>
+                <option value="524ee39a-2bbc-43b7-a779-c1b91f4259e5">Swaziland</option>
+                <option value="a74b6803-4c3d-4f4e-9363-e4acfa171948">Sweden</option>
+                <option value="314beb91-b129-46ba-8ad6-66c875b2706f">Switzerland</option>
+                <option value="d9ce238c-9ec8-4f6b-8a58-ee380bf74ede">Syria</option>
+                <option value="7cd3794a-96ab-42bf-a280-498d647e1b13">Tahiti</option>
+                <option value="14c8f84f-8255-498f-9d32-e320114ac788">Tajikistan</option>
+                <option value="e99d2eec-777e-4218-bd9d-31e425c0ee2d">Tanzania</option>
+                <option value="ae806e89-84aa-4b2b-9e74-94828d221c77">Thailand</option>
+                <option value="dc2db6ad-5ec7-49ba-9278-0c9952d95b97">Timor-Leste&nbsp;(East Timor)</option>
+                <option value="863c824f-ba31-4f60-bbc9-a56c9b9625e3">Togo</option>
+                <option value="8c0c3229-c8da-4779-9d5f-913efa7350e6">Tonga</option>
+                <option value="bb68e6fd-ae8b-4a68-be93-1f4fa2bf8673">Trinidad and Tobago</option>
+                <option value="707699cd-ff57-4aab-8bdd-663766026437">Tunisia</option>
+                <option value="9156942b-cffd-4617-9b5f-35de09d55b76">Turkey</option>
+                <option value="1d64c3a4-2e14-43d8-b78a-c0a26ae2df8d">Turkmenistan</option>
+                <option value="3e455ece-76ca-4973-880c-c93ed9e349f4">Turks and Caicos Islands</option>
+                <option value="2aa1ce25-06d1-4022-a067-5f7dc60a4054">U.S. Virgin Islands</option>
+                <option value="d55c2586-cdd4-49d1-a57e-6606b6d89aea">Uganda</option>
+                <option value="5cf63e2c-141d-42fe-b45d-599ff56d6f4d">Ukraine</option>
+                <option value="a4fb0edf-f1ca-43c8-b147-c95c3a098a89">United Arab Em</option>
+                <option value="5c541286-e700-4e41-8ca6-2143cc10f29a">United States</option>
+                <option value="29af98aa-f612-4a42-948b-b58a7b3877c5">Uruguay</option>
+                <option value="0d6284f6-bef5-42b5-ad92-f5686ac50724">Uzbekistan</option>
+                <option value="f9beef8c-8bd0-4234-95df-78084d4cb81d">Vanuatu</option>
+                <option value="31c53648-8934-4c17-a53f-d81b42c58482">Venezuela</option>
+                <option value="aed4512d-2c96-4c13-9d7e-4e2df21033ba">Vietnam</option>
+                <option value="1a50c743-f0dd-40d6-8f86-55beeff30d30">Wales</option>
+                <option value="1474c36d-cb1a-4fb3-bc61-a0a82be5af8f">Yemen</option>
+                <option value="99c43d4a-c3ae-4aae-89c9-22c55bb9bd8f">Zambia</option>
+                <option value="9ef09387-3073-46c3-beb5-5a181e6eeda8">Zimbabwe</option>
+              </select>
+              <input type="text" value="" name="UserName" id="UserName" placeholder="Enter a Username*" required>
+              <input type="password" name="Password" id="Password" placeholder="ENTER a password* min 6 characters" required>
+              <input type="password" name="ConfirmPassword" id="ConfirmPassword" placeholder="Confirm password*" required>
+              <input type="hidden" value="" name="LastInviteID" id="LastInviteID">
+              <div class="tcwrapper">
+                <div class="squaredTwo">
+                  <input type="checkbox" value="" id="tcCbox" name="tc" />
+                  <label for="tcCbox"></label>
+                </div>
+                <span>
+                  I agree to the <a href="#" id="termsandconditionslink" class="afix">Terms &amp; Conditions</a>
+                </span>
+              </div>
+              <div class="tcreminder">
+                <p style="display: none" id="tcMsg" class="field-validation-error">Tick Terms &amp; Conditions tickbox</p>
+                <p style="display: none" id="tc-msg" class="field-validation-error">Please tick the terms and condition checkbox to continue. </p>
+              </div>
+              <div id="tncpartial">
+                <div class="content">
+                  <h2>Terms of Use</h2>
+                  <p>
+
+                  </p><div id="termsuse">
+
+                    <h3>Please Read These Terms and Conditions Carefully Before Using This Site</h3>
+                  </div>
+                  These terms of use (together with the documents referred to in it) tells you the terms on which you may make use of our <a href="http://www.predikta.com/">website -  http://www.predikta.com/ - (our site)</a>, whether as a guest or as a registered user. Use of our site includes accessing, browsing, or registering to use our site.<br>
+                  Please read these terms of use carefully before you start to use our site, as these will apply to your use of our site. We recommend that you print a copy of this for future reference. By using our site, you confirm that you accept these terms of use and that you agree to comply with them.<br>
+                  If you do not agree to these terms of use, you must not use our site.<br><br>
+                  <h3>OTHER APPLICABLE TERMS</h3>
+                  These terms of use refer to the following additional terms, which also apply to your use of our site:<br>
+                  <ul>
+                    <li>
+                      Our <a href="#privacy">Privacy Policy</a>, which sets out the terms on which we process any personal data we collect from you, or that you provide to us. By using our site, you consent to such processing and you warrant that all data provided by you is accurate.<br>
+                    </li>
+                    <li>Our <a href="#cookies">Cookie Policy</a>, which sets out information about the cookies on our site.</li>
+                  </ul>
+                  If you access and/or use your User Account from our site, our <a href="#tsandcs">Business Terms and Conditions</a> will apply to the use of our services.<br><br>
+                  <h3>INFORMATION ABOUT US</h3><br><br>
+                  <a href="http://www.predikta.com/">The site</a> is operated by Predikta Limited We are registered in England and Wales under company number 8963989 and have our registered office at 843 Finchley Road NW11 8NA.<br>
+                  We are a limited company.<br>
+                  “You” or “Your” means any end user accessing, registering and/or using our site. “we” or “us”, “our” means Predikta Limited.<br><br>
+                  <h3>CHANGES TO THESE TERMS</h3>
+                  We may revise these terms of use at any time by amending this page.<br>
+                  Please check this page from time to time to take notice of any changes we made, as they are binding on you.<br><br>
+                  <h3>CHANGES TO OUR SITE</h3>
+                  We may update our site from time to time, and may change the content at any time. However, please note that any of the content on our site may be out of date at any given time, and we are under no obligation to update it.<br>
+                  We do not guarantee that our site, or any content on it, will be free from errors or omissions.<br><br>
+                  <h3>ACCESSING OUR SITE</h3>
+                  Our site is made available free of charge.<br>
+                  We do not guarantee that our site, or any content on it, will always be available or be uninterrupted. Access to our site is permitted on a temporary basis. We may suspend, withdraw, discontinue or change all or any part of our site without notice. We will not be liable to you if for any reason our site is unavailable at any time or for any period.<br>
+                  You are responsible for making all arrangements necessary for you to have access to our site.<br>
+                  You are also responsible for ensuring that all persons who access our site through your internet connection are aware of these terms of use and other applicable terms and conditions, and that they comply with them.<br><br>
+                  <h3>YOUR ACCOUNT AND PASSWORD</h3>
+                  If you choose, or you are provided with, a user identification code, password or any other piece of information as part of our security procedures, you must treat such information as confidential. You must not disclose it to any third party.<br>
+                  We have the right to disable any user identification code or password, whether chosen by you or allocated by us, at any time, if in our reasonable opinion you have failed to comply with any of the provisions of these terms of use.<br>
+                  If you know or suspect that anyone other than you knows your user identification code or password, you must promptly notify us at <a href="mailto:admin@predikta.com">admin@predikta.com</a>.<br><br>
+                  <h3>INTELLECTUAL PROPERTY RIGHTS</h3>
+                  We are the owner or the licensee of all intellectual property rights in our site, including the domain name www.predikta.com and software, and in the material published on it, such as text and images. Those works are protected by copyright laws and treaties and any other law protecting intellectual property rights and all similar or equivalent rights or forms of protection around the world. All such rights are reserved.<br><br>
+                  You may print off one copy, and may download extracts, of any page(s) from our site for your personal use and you may draw the attention of others within your organisation to content posted on our site.<br>
+                  You must not modify the paper or digital copies of any materials you have printed off or downloaded in any way, and you must not use any illustrations, photographs, video or audio sequences or any graphics separately from any accompanying text.<br>
+                  Our status (and that of any identified contributors) as the authors of content on our site must always be acknowledged.<br>
+                  You must not use any part of the content on our site for commercial purposes without obtaining a licence to do so from us or our licensors.<br>
+                  If you print off, copy or download any part of our site in breach of these terms of use, your right to use our site will cease immediately and you must, at our option, return or destroy any copies of the materials you have made.<br><br>
+                  <h3>NO RELIANCE ON INFORMATION</h3>
+                  The content on our site is provided for general information only. It is not intended to amount to advice on which you should rely. You must obtain professional or specialist advice before taking, or refraining from, any action on the basis of the content on our site.<br>
+                  Although we make reasonable efforts to update the information on our site, we make no representations, warranties or guarantees, whether express or implied, that the content on our site is accurate, complete or up-to-date.<br><br>
+                  <h3>LIMITATION OF OUR LIABILITY</h3>
+                  Nothing in these terms of use excludes or limits our liability for death or personal injury arising from our negligence, or our fraud or fraudulent misrepresentation, or any other liability that cannot be excluded or limited by English law.<br>
+                  To the extent permitted by law, we exclude all conditions, warranties, representations or other terms which may apply to our site or any content on it, whether express or implied.<br>
+                  We will not be liable to any user for any loss or damage, whether in contract, tort (including negligence), breach of statutory duty, or otherwise, even if foreseeable, arising under or in connection with:<br>
+                  <ul>
+                    <li>use of, or inability to use, our site; or</li>
+                    <li>use of or reliance on any content displayed on our site.</li>
+                  </ul>
+                  If you are a business user, please note that in particular, we will not be liable for:<br>
+                  <ul>
+                    <li>loss of profits, sales, business, or revenue;</li>
+                    <li>business interruption;</li>
+                    <li>loss of anticipated savings;</li>
+                    <li>loss of business opportunity, goodwill or reputation; or</li>
+                    <li>any indirect or consequential loss or damage.</li>
+                  </ul>
+                  If you are a consumer user, please note that we only provide our site for domestic and private use. You agree not to use our site for any commercial or business purposes, and we have no liability to you for any loss of profit, loss of business, business interruption, or loss of business opportunity.<br>
+                  We will not be liable for any loss or damage caused by a virus, distributed denial-of-service attack, or other technologically harmful material that may infect your computer equipment, computer programs, data or other proprietary material due to your use of our site or to your downloading of any content on it, or on any website linked to it.<br>
+                  We assume no responsibility for the content of websites linked on our site. Such links should not be interpreted as endorsement by us of those linked websites. We will not be liable for any loss or damage that may arise from your use of them.<br>
+                  Different limitations and exclusions of liability will apply to liability arising as a result of the supply of any services to you, which will be set out in our <a href="#tsandcs">Business Terms and Conditions </a>.<br><br>
+                  <h3>VIRUSES</h3>
+                  We do not guarantee that our site will be secure or free from bugs or viruses.<br>
+                  You are responsible for configuring your information technology, computer programmes and platform in order to access our site. You should use your own virus protection software.<br>
+                  You must not misuse our site by knowingly introducing viruses, trojans, worms, logic bombs or other material which is malicious or technologically harmful. You must not attempt to gain unauthorised access to our site, the server on which our site is stored or any server, computer or database connected to our site. You must not attack our site via a denial-of-service attack or a distributed denial-of service attack. By breaching this provision, you would commit a criminal offence under the Computer Misuse Act 1990. We will report any such breach to the relevant law enforcement authorities and we will co-operate with those authorities by disclosing your identity to them. In the event of such a breach, your right to use our site will cease immediately.<br><br>
+                  <h3>LINKING TO OUR SITE</h3>
+                  You may link to our home page, provided you do so in a way that is fair and legal and does not damage our reputation or take advantage of it.<br>
+                  You must not establish a link in such a way as to suggest any form of association, approval or endorsement on our part where none exists.<br>
+                  You must not establish a link to our site in any website that is not owned by you.<br>
+                  Our site must not be framed on any other site, nor may you create a link to any part of our site other than the home page.<br>
+                  We reserve the right to withdraw linking permission without notice.<br>
+                  If you wish to make any use of content on our site other than that set out above, please contact <a href="mailto:admin@predikta.com">admin@predikta.com</a>.<br><br>
+                  <h3>THIRD PARTY LINKS AND RESOURCES IN OUR SITE</h3>
+                  Where our site contains links to other sites and resources provided by third parties, these links are provided for your information only.<br>
+                  We have no control over the contents silvbginv of those sites or resources.<br><br>
+                  <h3>APPLICABLE LAW</h3>
+                  These terms of use, its subject matter and its formation (and any non-contractual disputes or claims), are governed by English law.<br>
+                  If you are a consumer, you and we both agree to that the courts of England and Wales will have non-exclusive jurisdiction to settle any dispute or claim that arises out of or in connection with terms of use (including any non-contractual disputes or claims). If you are a business, we both agree to the exclusive jurisdiction of the courts of England and Wales to settle any dispute or claim that arises out of or in connection with terms of use (including any non-contractual disputes or claims).<br><br>
+                  <h3>TRADEMARKS</h3>
+                  <img src="\Content\Images\logo.png">and <img width="50px" height="50px" src="\Content\Images\icon.png">are trademark applications that have been filed by Predikta Limited.<br><br>
+                  <h3>CONTACT US</h3>
+                  To contact us, please email <a href="mailto:admin@predikta.com">admin@predikta.com</a>.<br><br>
+                  Thank you for visiting our site.<br>
+                  <p></p><br>
+                </div>
+                <div class="content">
+                  <h2>Terms and Conditions</h2>
+                  <div id="tsandcs">
+                    <h3>Predikta Business Terms and Conditions</h3>
+                  </div><p>
+                    This page together with our <a href="#privacy">Privacy Policy</a>, <a href="#termsuse">Website Terms of Use</a>, <a href="#cookies">Cookies Policy</a> and <a href="/League/HowToPlay/">Game Rules</a> tells you information about us and the legal terms and conditions on which we provide our services via our Website to you.
+                    These Terms will apply to the provision of Services to you. Please read these Terms carefully and make sure that you understand them, before using any Services from our Website. Please note that you agree to be bound by these Terms and the other documents expressly referred to in it, from the time that you register as a User up until the time your Account is terminated.
+                    You should print a copy of these Terms or save them to your computer for future reference.
+                    We amend these Terms from time to time as set out in paragraph 12.
+                    Every time you wish to use our Services, please check these Terms to ensure you understand the terms which will apply at that time. These Terms were most recently updated on 31 July 2014.
+                  </p>
+                  <div>
+                    <p>
+                    </p><ol>
+                      <li><h3>DEFINITIONS</h3></li>
+                      <ol>
+                        <li>“Account” means the User’s account created after registration on the Website.</li>
+                        <li>"Account Details" refers to any information held by Predikta about a User, such information having been submitted by the User when registering and creating an Account on the Website.</li>
+                        <li>“Intellectual Property Rights” means patents, rights to inventions, copyright and related rights, trademarks, trade names and domain names, rights in get-up, goodwill and the right to sue for passing off, unfair competition rights, rights in designs, rights in computer software, database rights, topography rights, rights to preserve the confidentiality of information (including know-how and trade secrets) and any other intellectual property rights, in each case whether registered or unregistered and including all applications (or rights to apply) for and be granted, renewals or extensions of, and rights to claim priority from, such rights and all similar or equivalent rights or forms of protection which subsist or will subsist now or in the future in any part of the world; and “Intellectual Property” means any artistic, musical, dramatic or literary work, invention, sign, symbol, logo, sounds, slogan, colour, computer program or other materials on which any person has Intellectual Property Rights.</li>
+                        <li>“League” means a group of Users that will play each other over a period for the maximum score.</li>
+                        <li>"Material" refers to any information, data, content, file, link, text, message, image, sound or Account Details transmitted through the use of the Website.</li>
+                        <li>"Predikta", is the trading name of Predikta Limited.</li>
+                        <li>“Services” the provision of online services through the Website to enable Users to make predictions on football matches, create Accounts, contact other Users, Predikta or its employees and/or its agents, create and participate in Leagues.</li>
+                        <li>"Terms" refers to the terms and conditions set out in this document;</li>
+                        <li>"User" refers to any person who registers their details with the Website to create an Account and thereby agrees to comply with these Terms;</li>
+                        <li>"Website" means the website http://www.predikta.com.</li>
+                        <li>"You" or "Your" means the User using our Services via our Website.</li>
+                      </ol>
+                      <li><h3>INFORMATION ABOUT US</h3></li>
+                      <ol>
+                        <li>We are Predikta Limited, a company registered in England and Wales under company number 8963989 and with our registered office at 843 Finchley Road London NW11 8NA.   We operate the website http://www.predikta.com.</li>
+                        <li>To contact us, please see our <a href="/Home/Contact">Contact Us page</a>. You can also send us a pre-paid post to Predikta Limited at Bedford House, 125-133 Camden High Street, London, NW1 7JR or email us at <a href="mailto:admin@predikta.com">admin@predikta.com</a>.</li>
+                      </ol>
+                      <li><h3>USE OF OUR WEBSITE</h3> </li>
+                      <ol>
+                        <li>
+                          Your use of our Website is governed by our
+                          <a href="#termsuse">Website Terms of Use</a>. Please take the time to read these, as they include important terms which apply to you.
+                        </li>
+                      </ol>
+                      <li><h3>HOW WE USE YOUR PERSONAL INFORMATION</h3>	</li>
+                      <ol>
+                        <li>
+                          We only use your personal information in accordance our
+                          <a href="#privacy">Privacy Policy</a>.  Please take the time to read these, as they include important terms which apply to you.
+                        </li>
+                      </ol>
+                      <li><h3>AGE REQUIREMENT</h3></li>
+                      <ol>
+                        <li>You must be at least 18 years old to create an Account and use our Services. We will not provide these Services to you if you do not satisfy this age requirement. If you are under 18 years old, please do not attempt to use our Services.</li>
+                        <li>	By using our Services you warrant that you have the right, authority and capacity to enter into and be bound by these Terms.</li>
+                      </ol>
+                      <li><h3>REGISTRATION</h3></li>
+                      <ol>
+                        <li>In order to use the Services you must register and create an Account on the Website. Upon completing the registration process you will create an Account and receive a password, a username and an account number. You must not create more than one Account for your own use of the Website.</li>
+                        <li>	Your Account is personal and shall not be transferred to any individual. In the event that another individual accesses the Account due to you having provided any of your Account Details, you shall be liable for this individual's access. You shall compensate us for all and any losses, damages, costs and expenses we may suffer as a result of any failure by you to keep your Account Details confidential.<br><br></li>
+                        <li>You are responsible for:</li>
+                        <ol class="lower-roman">
+                          <li>maintaining the confidentiality of the password and username;</li>
+                          <li> not permitting others to use your Account;</li>
+                          <li>not using the Accounts of other Users;</li>
+                          <li> refraining from selling, trading, or otherwise transferring your Account to another party;</li>
+                          <li>immediately notifying us via email at <a href="mailto:admin@predikta.com">admin@predikta.com</a> if you have any suspicion of unauthorised use of your password or Account or any other breach of security.		</li>
+                        </ol>
+                        <li>You must not provide false Account Details, which include but are not limited to your name, email address, age or location. In the event that we have reasons to believe that you have provided us with false Account Details, we reserve the right to terminate the provision of our Services to you and restrict your access, suspend or cancel your Account without prior notice. You agree to hold us harmless against any falsehood or inaccuracy contained in the information you provide us.</li>
+                        <li>You warrant that the email address with which you register your Account is an active, valid email address controlled by you.</li>
+                      </ol>
+                      <li><h3>USE OF OUR SERVICES</h3></li>
+                      <ol>
+                        <li>You are responsible for providing and paying for any means and equipments necessary to enable your access to the Website.</li>
+                        <li>Our Services are available to Users located in England, Scotland and Wales (“Great Britain”) only. Users must be located in Great Britain in order to use our Services and you agree that you will not attempt to use our Services if you are not located in Great Britain.</li>
+                        <li>The availability of our Website does not constitute an offer or invitation to use our Services if you are not located in Great Britain.</li>
+                        <li>	We reserve the right to restrict access to the Website and to our Services from IP addresses if we believe they indicate the user is not located in Great Britain.</li>
+                        <li>You agree not to disguise, or interfere in any way with, the IP address of the device you are using to access the Website or otherwise take steps to prevent us from correctly identifying the actual IP Address of the device you are using whilst accessing the Website.</li>
+                        <li>You acknowledge that the Services, like other internet applications, may be subject to attacks from third parties that may harm you, such as dissemination of computer viruses, spams, and attempts to gain unauthorised access to our systems (“Attacks”).  Although we implement security measures designed to protect our systems from Attacks, Predikta does not guarantee the prevention or detection of Attacks to the Services.</li>
+                        <li>Predikta reserves the right, but has no obligation, to monitor any dispute between you and another User.</li>
+                        <li>	When using our Services you warrant that you are in compliance with all relevant and applicable laws and regulations of whatever country you are physically located and with all Predikta’s policies.</li>
+                        <li>	Without prejudice to the right of initiating legal proceedings or reporting the fact to the relevant authorities, in the event that Predikta has reasons to believe that you are making any illegal and/or unauthorised use of the Services, Predikta reserves the right to restrict your access, suspend or cancel your Account without prior notice. Illegal and/or unauthorised use of the Services includes but is not limited to:</li>
+                        <ol class="lower-alpha">
+                          <li>using the Services without satisfying the age requirement of at least 18 years old;</li>
+                          <li>	using our Services if you are not located in Great Britain;</li>
+                          <li>	submitting false, inappropriate or inaccurate Account Details;</li>
+                          <li>registering and/or using more than one Account;</li>
+                          <li>engaging in any illegal and/or fraudulent activity;</li>
+                          <li>	acting in a manner that is detrimental to the conduct of our business or which may result in legal liability for you, us or a third party;</li>
+                          <li>	promoting any illegal activities;</li>
+                          <li>	promoting or sending messages which contain statements that we consider abusive, offensive, racist, harassing, threatening, homophobic, bigoted, or hateful;</li>
+                          <li>	collecting information of Users without authorisation for whatever purposes, including the purposes of sending unsolicited email;</li>
+                          <li>	expressing or implying that any statements made by you are endorsed by Predikta;</li>
+                          <li>	impersonating any person connected to our Website or any service provided on it or otherwise misrepresents your association with any such person;</li>
+                          <li>	promoting illegal or unauthorised copying of another person's intellectual property;</li>
+                          <li>	providing information to circumvent manufacturer-installed copy protect devices;</li>
+                          <li>	providing, creating or disseminating computer viruses;</li>
+                          <li>providing instructional information about illegal activities, including but not limited to making or buying illegal weapons or drugs;</li>
+                          <li>	violating a User’s privacy;</li>
+                          <li>soliciting passwords or Account Details;</li>
+                          <li>personally identifying information from other Users for commercial or unlawful purposes;</li>
+                          <li>transmitting "junk mail", "chain letters" or unsolicited mass mailing or "spamming";</li>
+                          <li>	promoting information that you know to be false or misleading;</li>
+                          <li>engaging in commercial activities connected to the Website, including but not limited to sales, promotion or marketing of any kind, without the prior written consent of Predikta;</li>
+                        </ol>
+                        <li>You acknowledge and affirm that you are solely responsible for the contents silvbginv of any Material that you transmit through the use of our Website.</li>
+                        <li>Predikta has no obligation to accept the transmission of any Material whatsoever and will decide at its sole discretion what Material may be transmitted through use of the Website. Predikta reserves the right to remove any Material (or link to Material) that is offensive, immoral, unlawful in whatever jurisdiction, has potential to breach third party’s rights or violates any of Predikta’s policies, which includes but is not limited to:</li>
+                        <ol class="lower-alpha">
+                          <li>pornographic or sexually explicit Material;</li>
+                          <li>	Material that exploits people under the age of 18;</li>
+                          <li>Material that violates third party’s rights, including but not limited to Intellectual Property Rights;</li>
+                          <li>	Material that contains restricted or password only access pages, or hidden pages or images (those not linked to from another accessible page);</li>
+                          <li>	"junk mail", "chain letters" or unsolicited mass mailing or "spamming";</li>
+                        </ol>
+                      </ol>
+                      <li><h3>INVESTIGATIONS</h3></li>
+                      <ol>
+                        <li>	If we restrict your access, suspend or cancel your Account due to suspicion that you have breached these Terms, any law or rights of any third party, we will investigate the situation and inform you of our conclusions and proposed actions as soon as possible.</li>
+                        <li>	We reserve the right to report any fact that we are required by the governing authority, the judge or another public authority under the law and to provide User’s information, Account Details, and any information related to our investigations to the relevant authorities.</li>
+                        <li>	Our investigation will be carried out internally and we will consider mainly data provided to us by our data provider, our transaction log database, data provided by you when registering and using our Services and any other relevant information.</li>
+                      </ol>
+                      <li><h3>COMPLAINTS PROCEDURE AND DISPUTE RESOLUTION</h3></li>
+                      <ol>
+                        <li>If you are unhappy about any actions we take, including the conclusions of any investigations, or have any complaints, concerns or questions regarding our Services, you can contact us via email at <a href="mailto:admin@predikta.com">admin@predikta.com</a>. When contacting us, please include your username and account number in all correspondence.</li>
+                      </ol>
+                      <li><h3>INTELLECTUAL PROPERTY RIGHTS</h3></li>
+                      <ol>
+                        <li>	The Intellectual Property Rights on Intellectual Property related to the provision of Services and the Website, its functionality and appearance, are either owned by or licensed to Predikta.</li>
+                        <li>You are expressly prohibited from:</li>
+                        <ol class="lower-alpha">
+                          <li>	reproducing, copying, sharing, editing, transmitting, uploading, modifying,  altering, incorporating into any other materials, removing, commercialising or using any Intellectual Property related to the provision of Services and the Website, its functionality and appearance;</li>
+                          <li>	doing anything which may be seen to take unfair advantage of the reputation and goodwill of the Website and/or Predikta’s business; and</li>
+                          <li>	doing anything that could be considered an infringement of the Intellectual Property Rights owned and/or licensed to Predikta without first obtaining the written permission of the owner of the Intellectual Property.</li>
+                        </ol>
+                        <li>	As a result of publishing or displaying any Material on any area of the Website, you automatically grant, and you represent and warrant that you have the right to grant, to Predikta an irrevocable, perpetual, non-exclusive, fully paid, worldwide license to use, copy, perform, display and distribute such Material and to prepare derivative works of, or incorporate into other works, such Material and to grant and authorise sublicenses of such Material. In respect of any such dealings by Predikta and its sub-licensees, you hereby unconditionally and irrevocably waive any moral rights which you may have in the Material.</li>
+                      </ol>
+                      <li><h3>TERM AND TERMINATION</h3></li>
+                      <ol>
+                        <li>	These Terms will remain in full force and effect while you are a User of the Services.</li>
+                        <li>	If you wish to cease being a User, you can do so at any time by closing your Account in accordance with the step by step guide available in the relevant Website’s section. Alternatively you can send us an email at <a href="mailto:admin@predikta.com">admin@predikta.com</a>.</li>
+                        <li>	Predikta may, for any reason and at any time, restrict your access, suspend or terminate your Account and remove any Material transmitted by you by sending notice to your email as indicated in your Account Details. Predikta may at any time restrict your access, suspend or terminate your Account without provision of any notice if Predikta has reasons to believe that you are in breach of these Terms, any law or rights of any third party.</li>
+                      </ol>
+                      <li><h3>OUR RIGHT TO VARY THESE TERMS</h3></li>
+                      <ol>
+                        <li>	We may revise these Terms from time to time. Every time you use our Services, the Terms in force at that time will apply to the provision of the Services to you.</li>
+                        <li>	Except as provided in paragraph 12.4, whenever we revise these Terms, we will keep you informed and give you at least one month's written notice before the changes take effect. We will also state that these Terms have been amended and the relevant date at the top of this page.</li>
+                        <li>Upon receipt of the notice specified in paragraph 12.2, if you wish to terminate your Account, you may do so by giving us at least (3) days’ notice before the changes take effect. If after expiry of the notice period you continue to use the Website or Services, you will be deemed to have accepted any changes to these Terms.</li>
+                      </ol>
+                      <li><h3>LIABILITY</h3></li>
+                      <ol>
+                        <li>	Predikta will use reasonable endeavours to operate the Website and provide the Services with the reasonable skill and care of an online service provider based on the relevant industry standard.</li>
+                        <li>	Whenever it is necessary to temporarily suspend the Services for operational or other reasons, Predikta will use its reasonable endeavours to restore the Website and re-establish the provision of the Services.  However, Predikta shall not be liable for any loss, injury or damage caused in whole or part by:</li>
+                        <ol class="lower-alpha">
+                          <li>its provision of the Services (including any suspension of the Services); or</li>
+                          <li> the unavailability of the Website for any reason.</li>
+                        </ol>
+                        <li>	The information available on our Website is strictly for your personal use and is strictly intended as information only.</li>
+                        <li>	Predikta shall not be responsible to you in respect of the Services for any loss or damage that is not foreseeable (including indirect, special or consequential loss).</li>
+                        <li>	Predikta shall not be liable for any direct, consequential, incidental, liquidated or special losses or damages, arising out of, or relating to the use or inability to use, the information provided on the Website or any decision made or action taken in reliance or partial reliance on the information provided on the Website; and any loss of profit, loss of business, business interruption, or loss of business opportunity.  In particular you affirm and acknowledge that:</li>
+                        <ol class="lower-alpha">
+                          <li>the information does not constitute advice;</li>
+                          <li>the Website is aimed at providing the Services to Users only and must not be used for any other purposes; and</li>
+                          <li>the information should not relied on in any matter (including but not limited to any transaction) by you or any other User.</li>
+                        </ol>
+                        <li>	To the maximum extent permitted by law, Predikta expressly excludes all representations, warranties in connection with the Services and the information provided on the Website, including but not limited to warranties of merchantability, non-infringement of intellectual property, accuracy, completeness, fitness for a particular purpose, or otherwise. Any representation, condition or warranty which might be implied or incorporated into these Terms by statute, common law or otherwise is excluded to the fullest extent permitted by law.</li>
+                        <li>	You acknowledge that Predikta is not liable for its Users actions and does not screen its Users. Therefore you must take all appropriate precautions when making contact with other Users via the Website. You are solely responsible for your interactions with other Users.</li>
+                        <li>	Predikta has no responsibility and shall not be liable for the conduct or materials transmitted by Users. Any views, opinions, advice, recommendations or instructions transmitted by the Users are strictly User’s responsibility and are not endorsed by Predikta.</li>
+                        <li>	Predikta has no responsibility for links to third party websites that may appear in the Website and does not endorse the views expressed within them.</li>
+                        <li>	We do not in any way exclude or limit our liability for:</li>
+                        <ol class="lower-alpha">
+                          <li>death or personal injury caused by our negligence;</li>
+                          <li>fraud or fraudulent misrepresentation; and</li>
+                          <li>any other liability which cannot be excluded or limited by applicable law.</li>
+                        </ol>
+                        <li>	You agree to indemnify and hold us harmless from any liabilities, claims, losses or demands made by any third party arising from your misuse of the Website, which includes but is not limited to your breach of these Terms or a breach by you of any law or rights of any third party, including any Intellectual Property Rights. You also agree to fully cooperate in the defence of any claim that Predikta may have to respond as a result of your misuse of the Website and Services.</li>
+                      </ol>
+                      <li><h3>EVENTS OUTSIDE OUR CONTROL</h3></li>
+                      <ol>
+                        <li>We will not be liable or responsible for any failure to perform, or delay in performance of, any of our obligations under these Terms that is caused by any act or event beyond our reasonable control, including without limitation strikes, lock-outs or other industrial action by third parties, civil commotion, riot, invasion, terrorist attack or threat of terrorist attack, war (whether declared or not) or threat or preparation for war, fire, explosion, storm, flood, earthquake, subsidence, epidemic or other natural disaster, or failure of public or private telecommunications networks.</li>
+                        <li>	In case such event takes place that affects the performance of our obligations under these Terms:</li>
+                        <ol class="lower-alpha">
+                          <li>	we will contact you as soon as reasonably possible to inform you; and</li>
+                          <li>our obligations under these Terms will be suspended and the time for performance of our obligations will be extended for the duration of such event.</li>
+                        </ol>
+                      </ol>
+                      <li><h3>COMMUNICATIONS BETWEEN US</h3></li>
+                      <ol>
+                        <li>When we refer, in these Terms, to "in writing", this will include e-mail.</li>
+                        <li>If you wish to contact us in writing for any reason, you can send us a pre-paid post to Predikta Limited at Bedford House, 125-133 Camden High Street, London, NW1 7JR save in respect of a formal notice under this agreement which should be addressed to our registered office at 843 Finchley Road London NW11 8NA; or email us at admin@predikta.com.</li>
+                        <li>	If we have to contact you or give you notice in writing, we will do so by e-mail or by pre-paid post to the address or email you provide to us as in your Account Details.</li>
+                        <li>	The provisions of this paragraph shall not apply to the service of any proceedings or other documents in any legal action.</li>
+                      </ol>
+                      <li><h3>GOVERNING LAW AND JURISDICTION</h3></li>
+                      <ol>
+                        To the maximum extent permitted by the applicable law, these Terms are governed by and construed in accordance with the laws of England. You and we both agree that the courts of England have exclusive jurisdiction to settle any dispute or claim that arises out of or in connection with these Terms (including non-contractual disputes or claims).
+                      </ol>
+                      <li><h3>OTHER IMPORTANT TERMS</h3></li>
+                      <ol>
+                        <li>	We may transfer our rights and obligations under these Terms to another organisation without notice to you, but this will not affect your rights or our obligations under these Terms.</li>
+                        <li>	These terms are between you and us. No other person shall have any rights to enforce any of its terms, whether under the Contracts (Rights of Third Parties Act) 1999 or otherwise.</li>
+                        <li>	If any part of these Terms is held unenforceable, that part shall be enforced to the maximum extent permitted by law so as to give effect to the intent of the parties, and the remaining part of these Terms shall continue in full force and effect.</li>
+                        <li>	If we fail to insist that you perform any of your obligations under these Terms, or if we do not enforce our rights against you, or if we delay in doing so, that will not mean that we have waived our rights against you and will not mean that you do not have to comply with those obligations. If we do waive a default by you, we will only do so in writing, and that will not mean that we will automatically waive any later default by you.</li>
+                      </ol>
+
+                    </ol>
+                    <p></p>
+                  </div>
+                </div>
+                <div class="content">
+                  <h2>Privacy Policy</h2>
+                  <div id="privacy">
+                    <h3>Privacy policy</h3>
+                  </div><p>
+                    Predikta Limited ("we" or “our” or “us”) are committed to protecting and respecting your privacy.  “You” or “your” means you as the user of our site.
+                    This Privacy Policy (together with our <a href="#termsuse">Website Terms of Use</a> , our <a href="#tsandcs">Business Terms and Conditions</a>, and any other documents referred to on it) sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us.  This Privacy Policy also sets out how you can instruct us if you prefer to limit the use of that personal data and the procedures that we have in place to safeguard your privacy.
+                    Please read the following carefully to understand our views and practices regarding your personal data and how we will treat it.
+                    For the purpose of the Data Protection Act 1998 (the "Act"), the data controller is Predikta Limited of 843 Finchley Road, NW11 8NA London England with Company No. 8963989.
+                    By using our website http://www.predikta.com/ (the "site"), by registering through our site or by submitting information to us (through or in connection with our site or our services), you signify your consent to our collection, use and disclosure of your personal information in accordance with this Privacy Policy.  If you do not agree with this Privacy Policy, you must not use our site, access our services or submit information to us.
+                  </p><ol>
+                    <li>
+                      <h3>Information We May Collect From You</h3>
+                      <ol>
+                        <li>We may collect and process information about you when:</li>
+                        <ol>
+                          <li>You contact us, whether through the site or otherwise (for example, by post, fax, phone, text message) as we may keep a record of that correspondence.  For example, if you submit a complaint, report a problem with our service or site, or otherwise liaise with our customer service, technical support or any other department in our company;</li>
+                          <li>You fill in and submit information on the site via your PC, a mobile device or otherwise.  This includes information provided by you when you update a user account, such as your name, e-mail, country, password, etc;</li>
+                          <li>We ask you to complete surveys that we use for research purposes, although you do not have to respond to them;</li>
+                          <li>Enter any competition or promotion promoted by us;</li>
+                          <li>You use and interact with our web pages including your IP address, browser type, operating system, mobile carrier  and your ISP.  We may collect details of your visits to our site (including, but not limited to, traffic data, location data, weblogs and other communication data);</li>
+                          <li>You use your account to log in or you use our platform technology and other features, and functionality (for instance when you interact with other users or our site, update your profile or your contacts, etc.).</li>
+                        </ol>
+                        <li>We use third party payment agents such as PayPal to manage our membership via credit or debit card. If you use this method of payment you will authorise payments to be made for your membership to us. In doing so, you will be asked by the payment agent for your card details and billing address. This information is held by the third party payment agent, and you will be asked to agree to their terms and conditions, including their privacy policy, in completing the payment steps.</li>
+                        <li>We use cookies and other technologies as described below.</li>
+                      </ol>
+                    </li>
+                    <li><h3>How We May Use The Information Collected From You</h3></li>
+                    <ol>
+                      <li>	We may process this information for the purpose of:</li>
+                      <ol>
+                        <li>	Enabling you to share your information and communicate with other users, or provide your personal details to third parties offering combined services with us;</li>
+                        <li>	Dealing with your inquiries and requests, including contacting you where necessary;</li>
+                        <li>	Carrying out our obligations arising from any contracts entered into between you and us;</li>
+                        <li>	Providing and personalising our services;</li>
+                        <li>	Providing you access to all parts or features of the site or our services;</li>
+                        <li>	Checking the information that you provide against third party database to confirm that is accurate;</li>
+                        <li>	Administering, registration and membership or user accounts records;</li>
+                        <li>	Carrying out market research campaigns;</li>
+                        <li>	Prevent, detect and investigate potentially prohibited or illegal activities, and enforce our terms and conditions;</li>
+                        <li>	Improving and developing the site or our services;</li>
+                        <li>	Ensuring that content from our site is presented in the most effective manner for you and for your computer or mobile device; and</li>
+                        <li>	Comply with applicable laws.</li>
+                      </ol>
+                      <li>	If you are an existing member we may contact you with information, products or services that you request from us or which are similar to the services we are providing to you (independently or jointly with others), unless you opt out to be contacted for such purposes at any time.  We may contact you for this purpose by post, telephone, fax, as well as by email.  If you change your mind about being contacted in the future, please let us know at <a href="mailto:admin@predikta.com">admin@predikta.com</a>.</li>
+                      <li>	We may also gather this information and statistics for the purposes of monitoring the usage of our site and our services and may provide such aggregate information to third parties.  These statistics will not include information that can be used to identify you.</li>
+                      <li>	We may use your information to contact you for your views on our services and to notify you occasionally about important changes or developments to the site or to our services.</li>
+                      <li>	You may ask us to provide you with information about our services or about services offered jointly with or on behalf of other organisations by sending us an e-mail to <a href="mailto:admin@predikta.com">admin@predikta.com</a> or writing to us to the following address: 843 Finchley Road, London NW11 8NA</li>
+                      <li>	We will also provide you with the means to control whether or not your contact information is viewable to other users through your profile.</li>
+                      <li>	If you stop using the site or our services or your permission to use the site or our services is terminated, we may continue to use and disclose your personal information in accordance with this Privacy Policy (as amended from time to time) and as permitted by law.  However, if you wish us to stop e-mailing you with information in connection with the site or our services, please send your request to the contact details set out above.</li>
+                    </ol>
+                    <li><h3>Contacts Information</h3></li>
+                    <ol>
+                      <li>	You can change your contact details at any time by updating your profile in your user account and update your contact preferences (if any) by changing your settings related to your notification choices.</li>
+                      <li>	We use information you provide to us, or to third parties offering combined services with us, to customize the services we provide to you.</li>
+                    </ol>
+                    <li><h3>Message Areas</h3></li>
+                    <ol>
+                      <li>If you choose to post messages in any online wall or other message areas that we may make available, we may collect that information.  We may retain the information as necessary to resolve disputes, provide customer support and troubleshoot problems as permitted by law, but we will not monitor any of these message areas unless we say otherwise.</li>
+                      <li>You shall be solely responsible (and we will not be liable) for any information you choose to share through our site or to submit in any posts or in any message area on our site or otherwise.  However, please note that comments you post and information you share may be seen and used by other users.</li>
+                      <li>Some content you post may be public and searchable outside our site on the internet if, for instance, the league master has opened the message area for the public.  For example, when you post content to a group that is open for the public, your content, including your name as the contributor, may be displayed in search engine results.</li>
+                      <li>If you bind your account to an online social network, such as Twitter or Facebook, you may be sharing content into this online social network.</li>
+                    </ol>
+                    <li><h3>Information Security</h3></li>
+                    <ol>
+                      <li>The Internet is not a secure medium.  However, we have put in place a range of security procedures as set out in this Privacy Policy.</li>
+                      <li>	Where relevant, all your credit card details will be passed from your browser to the company that processes the payment on our behalf or on behalf of other members using SSL encryption.</li>
+                      <li>	Where you have been allocated an account, this area is protected by your user name and password, which you should never divulge to anyone else.</li>
+                      <li>	Please be aware that communications over the Internet, such as emails/webmails are not secure unless they have been encrypted.  Your communications may route through a number of countries before being delivered.  This is the nature of the World Wide Web/Internet.</li>
+                      <li>	We cannot accept responsibility for any unauthorised access or loss of personal information that is beyond our control.</li>
+                      <li>	We will use reasonable endeavours to implement appropriate policies, rules and technical measures to protect the personal data that we have under our control (having regard to the type and amount of that data) from unauthorised access, improper use or disclosure, unauthorised modification, unlawful destruction or accidental loss.</li>
+                      <li>	We ensure that your information will not be disclosed to government institutions or authorities except if required by law or when requested to by regulatory bodies or law enforcement organisations.</li>
+                    </ol>
+                    <li>
+                      <h3>To Whom Will Your Information Be Disclosed?</h3>
+                      Your information may, for the purposes set out in this Privacy Policy, be disclosed for processing to:
+                    </li>
+                    <ol>
+                      <li>	Our employees, successors in title to our business, prospective sellers or buyers of our business or any of our third party consultants, contractors or other service providers who may access your personal information when providing services (including but not limited to IT support services) to us;</li>
+                      <li>	Government bodies, law enforcement agencies and other institutions if required by legal or regulatory requests;</li>
+                      <li>	Auditors or contractors or other advisers auditing, assisting with or advising on any of our business purposes;</li>
+                      <li>	To any third party where such disclosure is required in order to enforce or apply our Website Terms, our Terms of Services or other relevant agreements;</li>
+                      <li>	To protect the rights, property, or safety of our company, our customers, or others.  This includes exchanging information with other companies and organisations for the purposes of fraud protection and credit risk reduction; and</li>
+                      <li>	Where you have consented to this, to selected bluegrad third parties that may contact you about products and services which may be of interest to you in any jurisdiction where we operate.</li>
+                    </ol>
+                    <li><h3>Your Rights In Relation To Your Information</h3></li>
+                    <ol>
+                      <li>You can write to us at any time to obtain a copy of your information and to have any inaccuracies corrected.  Where appropriate, you may have your personal information erased, rectified, amended or completed.  Please write to: <a href="mailto:admin@predikta.com">admin@predikta.com</a>. </li>
+                      <li>	Please quote your name and address.  We should be grateful if you would also provide brief details of the information of which you would like a copy or which you would like to be corrected (this helps us to more readily locate your data).</li>
+                      <li>We will require proof of your identity before providing you with details of any personal information we may hold about you.  We may charge a fee of £10 to cover the administration costs involved in providing you with a copy of your information.</li>
+                    </ol>
+                    <li>
+                      <h3>Cookies</h3>
+                      We use cookies to store and collect information about your use of our site.  Cookies are small text files stored by the browser on your equipment's hard drive. They send information stored on them back to our web server when you access our site. These cookies enable us to put in place personal settings and load your personal preferences to improve your experience. You can find out more about cookies at http://www.allaboutcookies.org and more about the cookies we use on our Cookies Policy available
+                      <a href="#cookies">on our site</a>.
+                    </li>
+                    <li><h3>Where We Store And Process Your Information</h3></li>
+
+                    The data we collect from you may be transferred to, and stored at, a destination outside the European Economic Area ("EEA").  It may also be processed by staff operating outside the EEA who work for us or for one of our suppliers.  Such staff may be engaged in, among other things, the fulfillment of your request and the provision of support services.  By submitting your personal data, you agree to this transfer, storing or processing.  We will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and the Act.
+
+                    <li><h3>Your Consent And Changes To This Privacy Policy</h3></li>
+                    We reserve the right to amend or modify this Privacy Policy and if we do so we will post the changes on our site.  It is your responsibility to check the Privacy Policy every time you submit information to us.
+                    In the event that the purposes for processing personal information change, then we will contact you as soon as practicable and seek your consent where such notification relates to a new additional purpose for processing.
+
+                    <li><h3>Use Of Your Personal Information Submitted To Other Website</h3></li>
+                    <ol>
+                      <li>	Except as otherwise expressly included in this Privacy Policy, this document addresses only the use and disclosure of information we collect from you.</li>
+                      <li>	If you disclose your information to others, whether they are other members on our sites or other sites throughout the Internet (including the ones we link to), different rules may apply to their use or disclosure of the information you disclose to them. We are not responsible for the privacy policies and practices of other website even if you accessed the third party website using links from our site.</li>
+                      <li>	We recommend that you check the policy of each website you visit and contact the owner or operator of such website if you have concerns or questions.</li>
+                    </ol>
+                  </ol>
+                  <h3>Further Information</h3>
+                  For further information from us on data protection and privacy or any requests concerning your personal information please write to 843 Finchley Road London NW11 8NA or email us at  admin@predikta.com.
+
+
+                  <p></p>
+                </div>
+                <div class="content">
+                  <h2>Cookie Policy</h2>
+                  <div id="cookies">
+                    <h3>HOW WE USE COOKIES</h3>
+                  </div><p>
+                    Cookies are very small text files that are stored on your equipment when you visit some websites’  browser, which can be used to identify that you have previously visited a site, or to store small bits of information locally with you. If you want to know more about what cookies are and how to control them, http://www.allaboutcookies.org/ is a great resource, or read on to see what we use cookies for.
+                    We use cookies to make our website easier for you to use. You can remove any cookies already stored on your computer, but these may prevent you from using parts of our website.<br><br>
+                  </p><h3>THE COOKIES WE USE</h3>
+                  <ol>
+                    <li>Compliance Cookies</li>
+                    We will use a cookie to count how many times the cookies pop up has been shown to you. Once it has been shown to you a number of times (or if you click in the “yes please” or “no thanks” bottom), the pop up will no longer be displayed (unless you removed the compliance cookies from your device).
+
+                    <li>Cookies for logging in and to remember preferences</li>
+                    We use cookies for remembering your log in details and your preferences (e.g. if you opt out from receiving marketing communications from us).
+                    <li>Functional Cookies</li>
+                    These cookies known as Session IDs are used to enable core site functionality. They do not contain any personal information. These cookies is switched on - You will not be able to use the website without them.
+                    <li>Analytic Cookies measuring web traffic</li>
+                    We make use of a tool from Google called Google analytics which tells us about the way users are using http://www.predikta.com.  This tool uses cookies to detect and let us know that someone has been to the site before, so that we know how often people return to our website, how long they keep using it, and which parts of the website they tend to go. We use this information to try find out how people uses our website so we can improve it.
+                    <li>Third Party Cookies</li>
+                    Other companies offering and advertising their products or services on our website, may also download cookies on to your equipment. These companies will have their own privacy policies which will govern the way they use their cookies.  We accept no responsibility or liability for these sites to the maximum extent permitted by law.
+                    <li>Cookies for Adverts or logos</li>
+                    We may have a number of spots around the site that show advertisements or logos from other companies. We use cookies to track which adverts have been visited or which logos have been clicked.
+                  </ol>
+                  <p></p>
+                  <h3>HOW CAN I MANAGE MY COOKIES?</h3>
+                  You can control how your web browser deals with cookies by changing your browser settings.<br>
+                  AboutCookies.org has a great guide on how to do this for all the major browsers, and a lot of other information about cookies. However, if you use your browser settings to block all cookies (including essential cookies) you may not be able to access all or parts of our site.<br>
+                  Alternatively, you can deactivate Analytic&amp;Marketing-related cookies here and by doing so inform us whether you accept cookies (please note that by having these cookies active, you are helping us make Predikta better). <br><br>Make your selection:
+                  <br>
+                  <div>
+                    Our cookies are switched&nbsp;<br>
+                    <div style="float: left" id="radioselect">
+                      <input type="radio" value="true" name="cookiepref" id="cookiepref-true" checked="checked" placeholder="">ON
+                      &nbsp;&nbsp; | &nbsp;&nbsp;
+                      <input type="radio" value="false" name="cookiepref" id="cookiepref-false" placeholder="">OFF
+                    </div>
+                    <br>
+                    <button disabled="disabled" id="prefs-button">Update Preferences</button><div id="message"></div>
+                  </div>
+                </div>
+
+                <script>
+                      $(function () {
+                        var $prefBtn = $('#prefs-button');
+                        var currentCookiesPref = "true";
+                        var $message = $("#message");
+                        $('input[name="cookiepref"]').on('change', function () {
+                          $prefBtn.prop("disabled", $(this).val() == currentCookiesPref);
+                        });
+
+                        $prefBtn.on('click', function () {
+                          var $this = $(this);
+                          var cookies = $("input[name='cookiepref']:checked").val();
+                          $message.html("");
+                          $prefBtn.attr("disabled", "disabled");
+
+                          $.ajax({
+                            url: '/Account/SetCookiesPreferences',
+                            type: 'POST',
+                            data: { cookiePrefs: cookies },
+                            done: function (data, textStatus, jqXHR) {
+                              if (!checkLogout(jqXHR)) return;
+                              $this.attr("disabled", "disabled");
+                              $message.html("Preferences saved.");
+                              currentCookiesPref = cookies;
+                            },
+                            fail: function () {
+                              $prefBtn.removeAttr("disabled");
+                              $message.html("Failed to save preferences");
+                            }
+                          });
+                        });
+                      });
+                </script>
+              </div>
+              <input type="submit" id="confirm-btn" value="submit">
+            </aside>
+          </form>
+          </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+
+  <footer id="footer">
+  </footer>
+
+  <script>
+  $(function () {
+    var $termsMsg = $("#tcMsg");
+    var $termsCheckBox = $("#tcCbox");
+
+    var $socialList = $("#socialList");
+    var $registerForm = $("#registerForm");
+    var $providerForm = $("#providerForm");
+    var $socialLogins = $socialList.find('.social-login');
+
+    var $confirmBtn = $("#confirm-btn");
+    var $confirmDivs = $confirmBtn.find('div');
+
+    var $inputs = $registerForm.find('input');
+
+    initializeDrops();
+    loadBirthElements();
+    modifyInputs($inputs);
+
+    $confirmBtn.on('click', confirmHandler);
+    $socialLogins.on('click', socialLoginHandler);
+    $("#termsandconditionslink").on('click', showTermsAndConditions);
+
+    function loadBirthElements() {
+    }
+
+    function confirmHandler(e) {
+      e.preventDefault();
+      if ($termsCheckBox.is(":checked")) {
+        $termsMsg.hide();
+        document.cookieprefs = true;
+        $registerForm.trigger('submit');
+        if ($registerForm.valid()) {
+          $confirmDivs.addClass('pending');
+        }
+      } else {
+        $termsMsg.show();
+        document.cookieprefs = false;
+      }
+    }
+
+    function socialLoginHandler(e) {
+      var $social = $(this);
+      var $provider = $providerForm.find("input[name=provider]");
+      $provider.val($social.data('value'));
+      $providerForm.trigger('submit');
+    }
+
+    function showTermsAndConditions(e) {
+      e.preventDefault();
+      $("#tncpartial").toggle();
+    }
+
+  });
+  </script>
+
+
+
+
+
+
+
+  <script src="js/vendor/jquery-1.11.1.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/docs.min.js"></script>
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/vendor/bootstrap-multiselect.js"></script>
+  <script>
+    $.fn.modal.Constructor.prototype.enforceFocus = function () { };
+    $('header.navbar-wrapper').load('header.html');
+    $('footer#footer').load('footer.html');
+  </script>
+  <script>
+    //<![CDATA[
+    document.getElementsByTagName('html')[0].className = 'jsOn';
+    //]]>
+  </script>
+</body>
+</html>
