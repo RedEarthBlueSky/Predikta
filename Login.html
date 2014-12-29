@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="" name="description">
+  <meta content="" name="author">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width /">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <link href="favicon.ico" rel="icon">
+  <title>Predikta | Forms </title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <header class="navbar-wrapper">
+  </header>
+  <main id="content-wrapper" class="col-md-12">
+    <div class="row col-md-12">
+      <div class="col-md-4 center-block">
+        <div class="login-wrapper">
+          <h1>LOG IN</h1>
+          <form method="post" id="login-form" action="/Account/Login" novalidate="novalidate">
+            <input type="text" name="UserName" id="UserName" data-val-required="The Username field is required." data-val="true" autofocus="autofocus" aria-required="true" aria-invalid="false" aria-describedby="UserName-error" placeholder="Enter Username">
+            <span data-valmsg-replace="true" data-valmsg-for="UserName" class="field-validation-valid"></span><br>
+            <input type="password" name="Password" id="Password" data-val-required="The Password field is required." data-val="true" placeholder="Enter Password">
+            <span data-valmsg-replace="true" data-valmsg-for="Password" class="field-validation-valid"></span>
+            <div class="remember-me-wrapper">
+              <div class="check-remember-me">
+                <input type="checkbox" name="RememberMe" id="RememberMe" data-val-required="The Keep me logged in field is required." data-val="true">
+                <label for="RememberMe">
+                </label>
+              </div>
+              <span>Keep me logged in</span>
+              <span data-valmsg-replace="true" data-valmsg-for="RememberMe" class="field-validation-valid"></span>
+              <a href="#myModal" data-toggle="modal" role="button">?</a>
+              <div id="myModal" class="modal fade">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                Ticking ‘Keep me logged in’ will keep your browser logged in to Predikta for the next two weeks.  You can manually log your browser out at any time by clicking the “Log Off” menu option from the Predikta dashboard.
+              </div>
+            </div>
+            <a class="reminder" href="/Account/ForgotUsername">Forgot Username</a><br>
+            <a class="reminder" href="/Account/ForgotPassword">Forgot Password</a><br>
+            <div class="sign-up">
+              Not signed up yet? <a href="/Account/Register">Register</a><br>
+            </div>
+            <input class="login-submit" type="submit" value="submit" />
+          </form>
+          <aside>
+            <span>Or sign-in with</span>
+            <hr />
+            <a class="facebook-login-button" href="#">Facebook</a>
+            <a class="twitter-login-button" href="#">Twitter</a>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+  </footer>
+  <script src="js/vendor/jquery-1.11.1.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/docs.min.js"></script>
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/vendor/bootstrap-multiselect.js"></script>
+  <script>
+    $.fn.modal.Constructor.prototype.enforceFocus = function () { };
+    $('header.navbar-wrapper').load('header.html');
+    $('footer#footer').load('footer.html');
+  </script>
+</body>
+</html>
