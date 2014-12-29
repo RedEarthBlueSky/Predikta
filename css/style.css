@@ -10476,7 +10476,8 @@ main#content-wrapper .col-md-8.center-block {
   margin: 2% auto;
   max-width: 900px;
   padding-bottom: 5%;
-  padding-top: 1%; }
+  padding-top: 1%;
+  width: 100%; }
   #akka-offer .tandcs {
     color: #999;
     font-size: 0.7em;
@@ -10679,7 +10680,7 @@ main#content-wrapper .col-md-8.center-block {
       padding-bottom: 10px; }
     #akka-offer .prediktions .odd {
       padding-right: 0;
-      width: 15%; }
+      width: 12%; }
     #akka-offer .prediktions .dash {
       padding-left: 0;
       padding-right: 0;
@@ -10689,10 +10690,9 @@ main#content-wrapper .col-md-8.center-block {
       padding-left: 10px;
       text-align: left; }
 
-@media only screen and (max-width: 992px), only screen and (max-device-width: 992px) {
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
   #akka-offer {
-    margin: 2% 0 2% 1%;
-    width: 97%; }
+    width: 100%; }
     #akka-offer header {
       padding-left: 2%; }
       #akka-offer header .prediktions {
@@ -10817,6 +10817,63 @@ main#content-wrapper .col-md-8.center-block {
       padding-left: 20px;
       padding-right: 20px;
       width: 100%; } }
+body.theme .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink .lologo {
+  background-image: url("../img/b2b-logo.png");
+  height: 57px;
+  width: 73%; }
+body.theme #dashboard-wrapper {
+  background-color: #fff; }
+  body.theme #dashboard-wrapper #predikta-dashboard section#points header .leaguedrop {
+    background: #000; }
+    body.theme #dashboard-wrapper #predikta-dashboard section#points header .leaguedrop select, body.theme #dashboard-wrapper #predikta-dashboard section#points header .leaguedrop:after {
+      background: #000; }
+  body.theme #dashboard-wrapper #predikta-dashboard section#league header #myTab li.active a {
+    background-color: #000; }
+  body.theme #dashboard-wrapper #predikta-dashboard section#league .overall-predikta {
+    background-color: transparent;
+    color: #000; }
+  body.theme #dashboard-wrapper #predikta-dashboard #bets #bets-table-wrapper header,
+  body.theme #dashboard-wrapper #predikta-dashboard #bets #bets-table-wrapper .table-responsive {
+    display: none; }
+  body.theme #dashboard-wrapper #predikta-dashboard #bets #banter #banterLeague {
+    background-color: #000; }
+  body.theme #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues h4 a,
+  body.theme #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails h4 a,
+  body.theme #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues h4 a,
+  body.theme #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails h4 a {
+    color: #000; }
+  body.theme #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .overall-predikta .result-wrapper .result,
+  body.theme #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .overall-predikta .result-wrapper .result,
+  body.theme #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .overall-predikta .result-wrapper .result,
+  body.theme #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .overall-predikta .result-wrapper .result {
+    color: #000; }
+
+body.red-theme .navbar-wrapper {
+  border-bottom-color: #df1c22; }
+  body.red-theme .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .glyphicon-cog:before,
+  body.red-theme .navbar-wrapper #PrediktaTop .container ul li.admin-panel h1,
+  body.red-theme .navbar-wrapper #PrediktaTop .container ul li.admin-panel span {
+    color: #df1c22; }
+body.red-theme #dashboard-wrapper #predikta-dashboard section#points .table-responsive tr .points span {
+  background: #df1c22; }
+body.red-theme #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues [data-toggle="modal"],
+body.red-theme #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues [data-parent="#details"],
+body.red-theme #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails [data-toggle="modal"],
+body.red-theme #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails [data-parent="#details"],
+body.red-theme #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues [data-toggle="modal"],
+body.red-theme #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues [data-parent="#details"],
+body.red-theme #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails [data-toggle="modal"],
+body.red-theme #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails [data-parent="#details"] {
+  background-color: #df1c22; }
+body.red-theme aside#bets #banter .new-post-wrapper button {
+  background-color: #df1c22; }
+body.red-theme aside#bets #banter #banterForm #commets-wrapper ul li:nth-child(2n),
+body.red-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-child(2n) {
+  background-color: #df1c22; }
+  body.red-theme aside#bets #banter #banterForm #commets-wrapper ul li:nth-child(2n):after,
+  body.red-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-child(2n):after {
+    border-color: transparent #df1c22; }
+
 /* My custom styles --------------------------------- */
 .YesScript {
   display: none; }

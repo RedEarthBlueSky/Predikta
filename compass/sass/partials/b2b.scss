@@ -1,0 +1,158 @@
+﻿body.theme {
+   .navbar-wrapper {
+    #PrediktaTop {
+      .container {
+        ul {
+          li#logoListItem {
+            a#logoLink {
+              .lologo {
+                background-image:url("../img/b2b-logo.png");
+                height:57px;
+                width:73%;
+              }
+            }
+          }
+        }
+      }
+    }
+   } 
+    #dashboard-wrapper {
+        background-color:#fff;
+        #predikta-dashboard {
+          section#points {
+            header {
+              .leaguedrop {
+                background:#000;
+                select,
+                &:after {
+                  background:#000;
+                }
+              }
+            }
+          }
+          section#league {
+              header {
+                #myTab {
+                  li.active {
+                    a {
+                      background-color:#000;
+                    }
+                  }
+                }
+              }
+              .overall-predikta {
+                background-color:transparent;
+                color:#000;
+              }
+            }
+          #bets {
+            #bets-table-wrapper {
+              header,
+              .table-responsive {
+                display:none;
+              }
+            }
+            #banter {
+              #banterLeague {
+                background-color:#000;
+              }
+            }
+          }
+          #myTabContent {
+            #week, 
+            #season {
+              #leagues,
+              #seasonDetails {
+                h4 {
+                  a {
+                    color:#000;
+                  }
+                }
+                .overall-predikta {
+                  .result-wrapper {
+                    .result {
+                      color:#000;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }   
+
+    } 
+}
+
+
+
+
+
+
+
+body.red-theme {
+   .navbar-wrapper {
+      border-bottom-color:$prediktaRed;
+    #PrediktaTop {
+      .container {
+        ul {
+          li.admin-panel {
+            .btn-group .glyphicon-cog:before,
+            h1,
+            span {
+              color:$prediktaRed;
+            }
+          }
+        }
+      }
+    }
+   }  
+    #dashboard-wrapper {
+      #predikta-dashboard {
+        section#points {
+          .table-responsive {
+            tr {
+              .points {
+                span {
+                  background:$prediktaRed;
+                }
+              }
+            }
+          }
+        }
+        #myTabContent {
+          #week,
+          #season {
+            #leagues,
+            #seasonDetails {
+              [data-toggle="modal"],
+              [data-parent="#details"] {
+                background-color: $prediktaRed;
+              }
+            }
+          }
+      }  
+      }
+    }
+    aside#bets {
+      #banter {
+        .new-post-wrapper {
+          button {
+            background-color:$prediktaRed;
+          }
+        }
+        #banterForm, 
+        #banterWrapper {
+          #commets-wrapper {
+            ul {
+              li:nth-child(2n) {
+                background-color: $prediktaRed;
+                &:after {
+                  border-color: rgba(0, 0, 0, 0) $prediktaRed;
+                }
+              }
+            }
+          }
+        }
+    }
+  }
+} 

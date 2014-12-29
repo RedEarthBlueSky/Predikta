@@ -1,0 +1,429 @@
+﻿#akka-offer {
+  background-color: #f5f5f5;
+  color: #000000;
+  display: block;
+  float: none;
+  font-family: "tradegothic bold",sans-serif;
+  font-size:1.2em;
+  margin: 2% auto;
+  max-width: 900px;
+  padding-bottom: 5%;
+  padding-top: 1%;
+  width:100%;
+  .tandcs {
+    color:#999;
+    font-size:0.7em;
+    margin-top:25px;
+  }
+  #prediktion-submit {
+    @include linear-gradient(#9a1815, 0%, #fc0101, 100%);
+    border: 4px solid #1382c4;
+    border-radius: 15px;
+    clear: both;
+    color: #ffffff;
+    display: block;
+    float:right;
+    font-size:1.2em;
+    padding: 10px 16px;
+    position: relative;
+    text-transform: uppercase;
+    width: 215px;
+    &:before {
+      border: 4px solid #ffffff;
+      border-radius: 10px;
+      bottom: 0;
+      content: "";
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    } 
+  }
+  #prediktion-cancel {
+    background-color: #1485c8;
+    border:none;
+    border-radius:9px;
+    color: #ffffff;
+    font-size:1.2em;
+    padding-bottom:9px;
+    padding-left:0;
+    padding-top:9px;
+    text-transform: uppercase;
+    width:70%;
+  }
+  h2.return {
+    padding-left:10px;
+    text-align:right;
+  }
+  input[type=checkbox] {
+	  visibility: hidden;
+  }
+   div[class*="rounded"] {
+	    width: 28px;
+	    height: 28px;
+      @include linear-gradient( #0256a0, 0%, #168acb,100% );
+	    margin: 0 auto;
+	    -webkit-border-radius: 50px;
+	    -moz-border-radius: 50px;
+	    border-radius: 50px;
+	    position: relative;
+      label {
+          background-color:#fff;
+	        cursor: pointer;
+	        position: absolute;
+	        width: 20px;
+	        height: 20px;
+	        -webkit-border-radius: 50px;
+	        -moz-border-radius: 50px;
+	        border-radius: 50px;
+	        left: 4px;
+	        top: 4px;
+          &:after {
+              @include linear-gradient(#9f1f1b, 0%, #d93941, 100%);
+	            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	            filter: alpha(opacity=0);
+	            opacity: 0;
+	            content: '';
+	            position: absolute;
+	            width: 16px;
+	            height: 16px;
+              -webkit-border-radius: 50px;
+	            -moz-border-radius: 50px;
+	            border-radius: 50px;
+	            top: 2px;
+	            left: 2px;
+         }
+      }
+      label:hover::after {
+	      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	      filter: alpha(opacity=30);
+	      opacity: 0.3;
+      }
+      input[type=checkbox]:checked + label:after {
+	      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	      filter: alpha(opacity=100);
+	      opacity: 1;
+      }
+    }
+  .row.col-md-12.header.prediktions {
+    color:#999999;
+    font-size:0.8em;
+  }
+  .header.prediktions {
+    div {
+      padding-bottom:10px;
+      padding-top:10px;
+    }
+    .home-prediktion,
+    .away-prediktion {
+      padding-top:10px
+    }
+  }
+  .home-prediktion {
+    text-align:right;
+    padding-right:5px;
+  }
+  header {
+    display: block;
+    float: left;
+    width: 100%;
+    h1 {
+      border-bottom: 1px dotted #cccccc;
+      display: block;
+      float: left;
+      font-size: 2em;
+      margin-bottom: 10px;
+      margin-top: 0;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      width: 100%;
+    }
+    h2 {
+      color: #1888ca;
+      display: block;
+      float: left;
+      margin-top: 0;
+      width: 100%;
+    }
+    h3 {
+      span {
+        color:#df1a22;
+      }
+    }
+    p {
+      color: #999999;
+      font-size: 0.8em;
+      font-style: italic;
+    }
+  }
+  .row {
+    display:block;
+    clear:both;
+    p {
+      text-align:center;
+    }
+    h2 {
+      margin-bottom:40px;
+      margin-top:30px;
+    }
+    div {
+      display: block;
+    }
+    form {
+      div {
+        display:inline-block;
+        float:left;
+      }
+    }
+  }
+   .stake {
+      border: medium none;
+      color: #1888ca;
+      margin-left: 10px;
+      padding-left: 5px;
+      width: 25%;
+    }
+  .prediktions-wrapper {
+    display: block;
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+    .right {
+      padding-right:0;
+      .row {
+        margin-right:0;
+      }
+    }
+    .button {
+      display: inline-block;
+      float: right;
+      padding-left: 0;
+      padding-top: 9px;
+      width: auto;
+    }
+  }
+  .prediktions {
+    background-color:#ececec;
+    color: #000;
+    display: block;
+    float: left;
+    font-size: 18px;
+    margin-bottom:10px;
+    padding-left:0;
+    padding-right:0;
+    .home-prediktion,
+    .dash,
+    .away-prediktion, 
+    .i-said,
+    .odd {
+      padding-top:11px;
+    }
+    div {
+      display: inline;
+      float: left;
+      padding-bottom:10px;
+    }
+    .odd {
+      padding-right:0;
+      width:12%;
+    }
+    .dash {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+      width: 30px;
+    }
+    .away-prediktion {
+      padding-left: 10px;
+      text-align: left;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  #akka-offer {
+      width:100%;
+      header {
+        padding-left:2%;
+        .prediktions {
+           width:100%;
+          .away-prediktion,
+          .home-prediktion {
+            width:75px;
+          }
+        }   
+        h2 {
+          font-size:1.4em;
+        }
+      }
+      .prediktions-wrapper {
+        .left,
+        .right {
+          display: block;
+          float: left;
+          padding-right: 0;
+          width: 48%;
+          .prediktions {
+            display:block;
+            float:left;
+            font-size:16px;
+            width:100%;
+            div {
+              padding-left:5px;
+              padding-right:5px;
+            }
+          }
+        }
+        .right {
+          float:right;
+        }
+      }
+      .row {
+        h2 {
+          font-size: 1.6em;
+          margin-bottom: 15px;
+          margin-top: 15px;
+        }
+        .col-md-4 {
+          display:inline;
+          float:left;
+          width:32%;
+          padding-left:5px;
+          padding-right:5px;
+        }
+      }
+      #prediktion-cancel {
+        width:98%;
+      }
+    }
+}
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+    #akka-offer  {
+      margin-top:1%;
+      header {
+        h1 {
+          font-size:1.6em;
+          margin-bottom:5px;
+          padding-bottom:5px;
+        }
+        h2,
+        h3 {
+          font-size:1em;
+        }
+      }
+      .prediktions {
+        margin-bottom:5px;
+        div {
+          padding-bottom:5px;
+        }
+      }
+      .header.prediktions {
+          div {
+            padding-bottom:5px;
+            padding-top:5px;
+          }
+          .home-prediktion {
+            padding-top:5px;
+            width:63px;
+          }
+          .away-prediktion {
+            padding-top:5px;
+            width:88px;
+          }
+        }
+      .prediktions-wrapper {
+        margin-top:0;
+        .button {
+          padding-top:5px;
+        }
+        .left,
+        .right {
+          float:none;
+          margin:0 auto;
+          max-width:360px;  
+          padding-right:inherit;
+          width:100%;
+        }
+        .right {
+          .header {
+            display:none;
+          }
+        }
+      }
+      .row {
+        .col-md-4 {
+          display: block;
+          float: none;
+          margin: 0 auto;
+          max-width: 360px;
+          width: 100%;
+        }
+        h2 {
+          font-size:1.2em;
+          margin-bottom:10px;
+          margin-top:10px;
+        }
+        .return {
+          text-align:left;
+        }
+      }
+      #prediktion-cancel {
+        font-size:1em;
+        margin-bottom:5px;
+        margin-top:0;
+        padding-bottom:5px;
+        padding-top:5px;
+      }
+      .tandcs {
+        font-size: 0.4em;
+        margin-top: 0;
+      }
+      #prediktion-submit {
+        width:100%;
+      }
+    }  
+  }
+@media only screen and (max-width: 639px), only screen and (max-device-width: 639px) {
+  #akka-offer  {
+    padding:0;
+    width:100%;
+    header {
+      h1 {
+        font-size:1em;
+      }
+      h2,
+      h3 {
+        font-size:0.7em;
+      }
+    }
+    .prediktions {
+      .odd {
+        width:12%;
+      }
+      div {
+      }
+    }
+    .prediktions-wrapper {
+      .left,
+      .right {
+        float: left;
+        margin: 0;
+        max-width: none;
+        padding-right: 0;
+        width: 100%;
+      }
+    }
+    .row {
+      .col-md-4 {
+        display: block;
+        float: left;
+        margin: 0;
+        max-width: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+      }
+    }
+  }
+}
