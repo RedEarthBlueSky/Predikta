@@ -10719,48 +10719,104 @@ main#content-wrapper .col-md-8.center-block {
           padding-left: 5px;
           padding-right: 5px; }
     #akka-offer .prediktions-wrapper .right {
-      float: right; } }
-@media only screen and (max-width: 752px), only screen and (max-device-width: 752px) {
-  #akka-offer .left,
-  #akka-offer .right {
-    width: 100%; }
-  #akka-offer .prediktions div {
-    width: 34%; }
-  #akka-offer .prediktions .home-prediktion {
-    padding-right: 20px;
-    padding-top: 15px;
-    text-align: right; } }
-@media only screen and (max-width: 530px), only screen and (max-device-width: 530px) {
-  #akka-offer .prediktions div {
-    width: 28%; } }
-@media only screen and (max-width: 404px), only screen and (max-device-width: 404px) {
-  #akka-offer {
-    padding-right: 5px; }
-    #akka-offer .left,
-    #akka-offer .right {
+      float: right; }
+    #akka-offer .row h2 {
+      font-size: 1.6em;
+      margin-bottom: 15px;
+      margin-top: 15px; }
+    #akka-offer .row .col-md-4 {
+      display: inline;
+      float: left;
+      width: 32%;
       padding-left: 5px;
-      padding-right: 0; }
+      padding-right: 5px; }
+    #akka-offer #prediktion-cancel {
+      width: 98%; } }
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+  #akka-offer {
+    margin-top: 1%; }
     #akka-offer header h1 {
       font-size: 1.6em;
-      margin-bottom: 0; }
-    #akka-offer .prediktions-wrapper {
-      margin-bottom: 5px; }
-    #akka-offer .predikt-wrapper .prediktions .away-prediktion {
-      padding-top: 10px; }
+      margin-bottom: 5px;
+      padding-bottom: 5px; }
+    #akka-offer header h2,
+    #akka-offer header h3 {
+      font-size: 1em; }
     #akka-offer .prediktions {
-      width: 103%; }
+      margin-bottom: 5px; }
       #akka-offer .prediktions div {
-        font-size: 14px; }
-      #akka-offer .prediktions .home-prediktion {
-        padding-right: 5px;
-        padding-top: 10px; }
-      #akka-offer .prediktions .away-prediktion {
-        padding-left: 5px; }
-      #akka-offer .prediktions .dash {
-        padding-top: 10px; }
-    #akka-offer #prediktion-cancel,
+        padding-bottom: 5px; }
+    #akka-offer .header.prediktions div {
+      padding-bottom: 5px;
+      padding-top: 5px; }
+    #akka-offer .header.prediktions .home-prediktion {
+      padding-top: 5px;
+      width: 63px; }
+    #akka-offer .header.prediktions .away-prediktion {
+      padding-top: 5px;
+      width: 88px; }
+    #akka-offer .prediktions-wrapper {
+      margin-top: 0; }
+      #akka-offer .prediktions-wrapper .button {
+        padding-top: 5px; }
+      #akka-offer .prediktions-wrapper .left,
+      #akka-offer .prediktions-wrapper .right {
+        float: none;
+        margin: 0 auto;
+        max-width: 360px;
+        padding-right: inherit;
+        width: 100%; }
+      #akka-offer .prediktions-wrapper .right .header {
+        display: none; }
+    #akka-offer .row .col-md-4 {
+      display: block;
+      float: none;
+      margin: 0 auto;
+      max-width: 360px;
+      width: 100%; }
+    #akka-offer .row h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      margin-top: 10px; }
+    #akka-offer .row .return {
+      text-align: left; }
+    #akka-offer #prediktion-cancel {
+      font-size: 1em;
+      margin-bottom: 5px;
+      margin-top: 0;
+      padding-bottom: 5px;
+      padding-top: 5px; }
+    #akka-offer .tandcs {
+      font-size: 0.4em;
+      margin-top: 0; }
     #akka-offer #prediktion-submit {
-      width: 90%; } }
+      width: 100%; } }
+@media only screen and (max-width: 639px), only screen and (max-device-width: 639px) {
+  #akka-offer {
+    padding: 0;
+    width: 100%; }
+    #akka-offer header h1 {
+      font-size: 1em; }
+    #akka-offer header h2,
+    #akka-offer header h3 {
+      font-size: 0.7em; }
+    #akka-offer .prediktions .odd {
+      width: 12%; }
+    #akka-offer .prediktions-wrapper .left,
+    #akka-offer .prediktions-wrapper .right {
+      float: left;
+      margin: 0;
+      max-width: none;
+      padding-right: 0;
+      width: 100%; }
+    #akka-offer .row .col-md-4 {
+      display: block;
+      float: left;
+      margin: 0;
+      max-width: none;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 100%; } }
 /* My custom styles --------------------------------- */
 .YesScript {
   display: none; }
