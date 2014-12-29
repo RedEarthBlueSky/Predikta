@@ -83,6 +83,92 @@
 
 
 /*  MIXINS for general styles -------------------------------- */
+
+@mixin theme-color($theme-color){
+   .navbar-wrapper {
+      border-bottom-color:$theme-color;
+    #PrediktaTop {
+      .container {
+        ul {
+          li.admin-panel {
+            .btn-group .glyphicon-cog:before,
+            h1,
+            span {
+              color:$theme-color;
+            }
+          }
+        }
+      }
+    }
+   }  
+    #dashboard-wrapper {
+    a.where-anorak-next {
+      .where-anorak-wrapper {
+        background:$theme-color;
+      }
+    }
+      #predikta-dashboard {
+        section#points {
+          a.first-time-notification {
+            .conditional {
+              background:$theme-color;
+              &:before {
+                border-bottom-color:$theme-color;
+              }
+              &:after {
+                background-color:$theme-color;
+              }
+            }
+          }
+          .table-responsive {
+            tr {
+              .points {
+                span {
+                  background:$theme-color;
+                }
+              }
+            }
+          }
+        }
+        #myTabContent {
+          #week,
+          #season {
+            #leagues,
+            #seasonDetails {
+              [data-toggle="modal"],
+              [data-parent="#details"] {
+                background-color: $theme-color;
+              }
+            }
+          }
+      }  
+      }
+    }
+    aside#bets {
+      #banter {
+        .new-post-wrapper {
+          button {
+            background-color:$theme-color;
+          }
+        }
+        #banterForm, 
+        #banterWrapper {
+          #commets-wrapper {
+            ul {
+              li:nth-child(2n) {
+                background-color: $theme-color;
+                &:after {
+                  border-color: rgba(0, 0, 0, 0) $theme-color;
+                }
+              }
+            }
+          }
+        }
+    }
+  }
+}
+
+
 @mixin list-item-grey-blue {
   background-color: #ececec;
   display: block;

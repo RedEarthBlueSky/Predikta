@@ -9,6 +9,13 @@
           Lorem ipsum dolor sit amet, consectetur adipicing elit.
         </h3>
       </li>
+      <li class="theme-button">
+        <button type="button" id="default" autofocus="autofocus">Default</button>
+        <button type="button" id="red-theme">Red Theme</button>
+        <button type="button" id="blue-theme">Blue Theme</button>
+        <button type="button" id="green-theme">Green Theme</button>
+        <button type="button" id="orange-theme">Orange Theme</button>
+      </li>
       <li id="logoListItem">
         <a id="logoLink" href="/">
           <div class="lologo"></div>
@@ -37,4 +44,28 @@
       </li>
     </ul>
   </div>
+<script>
+  /*  basically need to include this script here or it will not fire */
+  $(document).ready(function () {
+    $('li.theme-button button').on('click', function () {
+      if ($(this).attr('id') == 'red-theme') {
+        $('body').removeClass().addClass('red-theme');
+      }
+      else if ($(this).attr('id') == 'blue-theme') {
+        $('body').removeClass().addClass('blue-theme');
+      }
+      else if ($(this).attr('id') == 'green-theme') {
+        $('body').removeClass().addClass('green-theme');
+      }
+      else if ($(this).attr('id') == 'orange-theme') {
+        $('body').removeClass().addClass('orange-theme');
+      }
+      else if ($(this).attr('id') == 'default') {
+        $('body').removeClass();
+      }
+    });
+  });
+</script>
+
+
 </div>

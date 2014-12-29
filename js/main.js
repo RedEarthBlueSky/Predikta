@@ -319,7 +319,6 @@ $(document).ready(function () {
         now = now.getHours() + ':' + now.getMinutes().zeroPad();
     $('#clock').html(now);
   }
-  setInterval(function(){date()}, 1000);
-
+  setInterval(function () { date() }, 1000);
 });
 

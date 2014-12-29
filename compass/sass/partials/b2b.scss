@@ -1,4 +1,4 @@
-﻿body.theme {
+﻿body#theme {
    .navbar-wrapper {
     #PrediktaTop {
       .container {
@@ -45,7 +45,7 @@
                 color:#000;
               }
             }
-          #bets {
+          aside#bets {
             #bets-table-wrapper {
               header,
               .table-responsive {
@@ -55,6 +55,12 @@
             #banter {
               #banterLeague {
                 background-color:#000;
+              }
+            }
+            .play-predikta-button {
+              #play-predikta-button {
+                font-size:1.6em;
+                padding:12px 16px;
               }
             }
           }
@@ -82,77 +88,15 @@
 
     } 
 }
-
-
-
-
-
-
-
 body.red-theme {
-   .navbar-wrapper {
-      border-bottom-color:$prediktaRed;
-    #PrediktaTop {
-      .container {
-        ul {
-          li.admin-panel {
-            .btn-group .glyphicon-cog:before,
-            h1,
-            span {
-              color:$prediktaRed;
-            }
-          }
-        }
-      }
-    }
-   }  
-    #dashboard-wrapper {
-      #predikta-dashboard {
-        section#points {
-          .table-responsive {
-            tr {
-              .points {
-                span {
-                  background:$prediktaRed;
-                }
-              }
-            }
-          }
-        }
-        #myTabContent {
-          #week,
-          #season {
-            #leagues,
-            #seasonDetails {
-              [data-toggle="modal"],
-              [data-parent="#details"] {
-                background-color: $prediktaRed;
-              }
-            }
-          }
-      }  
-      }
-    }
-    aside#bets {
-      #banter {
-        .new-post-wrapper {
-          button {
-            background-color:$prediktaRed;
-          }
-        }
-        #banterForm, 
-        #banterWrapper {
-          #commets-wrapper {
-            ul {
-              li:nth-child(2n) {
-                background-color: $prediktaRed;
-                &:after {
-                  border-color: rgba(0, 0, 0, 0) $prediktaRed;
-                }
-              }
-            }
-          }
-        }
-    }
-  }
+  @include theme-color($prediktaRed);
+} 
+body.blue-theme {
+  @include theme-color($blue-theme);
+} 
+body.green-theme {
+  @include theme-color($green-theme);
+} 
+body.orange-theme {
+  @include theme-color($orange-theme);
 } 
