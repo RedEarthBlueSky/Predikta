@@ -8900,6 +8900,8 @@ aside#bets {
   float: left;
   max-width: 387px;
   padding-right: 0; }
+  aside#bets #message {
+    background: #1888ca; }
   aside#bets #banterWrapper div[class^="league"] {
     display: none; }
   aside#bets header h1 {
@@ -10817,10 +10819,25 @@ main#content-wrapper .col-md-8.center-block {
       padding-left: 20px;
       padding-right: 20px;
       width: 100%; } }
-body#theme .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink .lologo {
-  background-image: url("../img/b2b-logo.png");
-  height: 57px;
-  width: 73%; }
+body#theme .navbar-wrapper #PrediktaTop .container ul li#logoListItem {
+  top: 8px; }
+  body#theme .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink .lologo {
+    background-image: url("../img/b2b-logo.png");
+    height: 57px;
+    width: 205px; }
+body#theme .navbar-wrapper #PrediktaTop .container ul li.slug-line {
+  display: inline-block;
+  float: left;
+  position: relative;
+  top: 30px;
+  width: 35%; }
+  body#theme .navbar-wrapper #PrediktaTop .container ul li.slug-line h3 {
+    font-size: 1.4em;
+    margin-right: 0;
+    max-width: none;
+    transform: none; }
+body#theme .navbar-wrapper #PrediktaTop .container ul li.theme-button {
+  width: 280px; }
 body#theme #dashboard-wrapper {
   background-color: #fff; }
   body#theme #dashboard-wrapper #predikta-dashboard section#points header .leaguedrop {
@@ -10832,6 +10849,18 @@ body#theme #dashboard-wrapper {
   body#theme #dashboard-wrapper #predikta-dashboard section#league .overall-predikta {
     background-color: transparent;
     color: #000; }
+  body#theme #dashboard-wrapper #predikta-dashboard aside#bets #message {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 19px;
+    color: #fff; }
+    body#theme #dashboard-wrapper #predikta-dashboard aside#bets #message h4 {
+      margin-top: 0; }
+    body#theme #dashboard-wrapper #predikta-dashboard aside#bets #message img {
+      border-radius: 70px;
+      display: inline;
+      float: left;
+      margin-right: 20px; }
   body#theme #dashboard-wrapper #predikta-dashboard aside#bets #bets-table-wrapper header,
   body#theme #dashboard-wrapper #predikta-dashboard aside#bets #bets-table-wrapper .table-responsive {
     display: none; }
@@ -10851,6 +10880,8 @@ body#theme #dashboard-wrapper {
   body#theme #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .overall-predikta .result-wrapper .result {
     color: #000; }
 
+body.red-theme #dashboard-wrapper #predikta-dashboard aside#bets #message {
+  background: #df1c22; }
 body.red-theme .navbar-wrapper {
   border-bottom-color: #df1c22; }
   body.red-theme .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .glyphicon-cog:before,
@@ -10885,6 +10916,8 @@ body.red-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-chil
   body.red-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-child(2n):after {
     border-color: transparent #df1c22; }
 
+body.blue-theme #dashboard-wrapper #predikta-dashboard aside#bets #message {
+  background: #0d5982; }
 body.blue-theme .navbar-wrapper {
   border-bottom-color: #0d5982; }
   body.blue-theme .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .glyphicon-cog:before,
@@ -10919,6 +10952,8 @@ body.blue-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-chi
   body.blue-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-child(2n):after {
     border-color: transparent #0d5982; }
 
+body.green-theme #dashboard-wrapper #predikta-dashboard aside#bets #message {
+  background: #379036; }
 body.green-theme .navbar-wrapper {
   border-bottom-color: #379036; }
   body.green-theme .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .glyphicon-cog:before,
@@ -10953,6 +10988,8 @@ body.green-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-ch
   body.green-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-child(2n):after {
     border-color: transparent #379036; }
 
+body.orange-theme #dashboard-wrapper #predikta-dashboard aside#bets #message {
+  background: #f26c1f; }
 body.orange-theme .navbar-wrapper {
   border-bottom-color: #f26c1f; }
   body.orange-theme .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .glyphicon-cog:before,

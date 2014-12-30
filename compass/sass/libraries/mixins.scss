@@ -85,6 +85,9 @@
 /*  MIXINS for general styles -------------------------------- */
 
 @mixin theme-color($theme-color){
+    #dashboard-wrapper #predikta-dashboard aside#bets #message {
+        background:$theme-color;
+    }
    .navbar-wrapper {
       border-bottom-color:$theme-color;
     #PrediktaTop {

@@ -4,13 +4,30 @@
       .container {
         ul {
           li#logoListItem {
+            top: 8px;
             a#logoLink {
               .lologo {
                 background-image:url("../img/b2b-logo.png");
                 height:57px;
-                width:73%;
+                width:205px;
               }
             }
+          }
+          li.slug-line {
+            display: inline-block;
+            float: left;
+            position: relative;
+            top: 30px;
+            width: 35%;
+            h3 {
+              font-size:1.4em;
+              margin-right:0;
+              max-width:none;
+              transform:none;
+            }
+          }
+          li.theme-button {
+            width:280px;
           }
         }
       }
@@ -46,6 +63,21 @@
               }
             }
           aside#bets {
+            #message {
+              padding-top: 15px;
+              padding-bottom: 15px;
+              padding-left: 19px;
+              color: #fff;
+              h4 {
+                margin-top:0;
+              }
+              img {
+                border-radius:70px;
+                display:inline;
+                float:left;
+                margin-right:20px;
+              }
+            }
             #bets-table-wrapper {
               header,
               .table-responsive {

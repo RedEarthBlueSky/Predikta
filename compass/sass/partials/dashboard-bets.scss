@@ -6,6 +6,9 @@ aside#bets {
   float:left;
   max-width:387px;
   padding-right:0;
+  #message {
+        background:#1888ca;
+    }
   #banterWrapper div[class^="league"] {
     display:none;
   }
