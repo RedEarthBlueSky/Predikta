@@ -8692,9 +8692,13 @@ section.goTop
       #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails panel-body {
         padding-bottom: 0; }
       #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues #players,
+      #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues #details,
       #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails #players,
+      #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails #details,
       #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues #players,
-      #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails #players {
+      #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues #details,
+      #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails #players,
+      #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails #details {
         margin-bottom: 0;
         overflow-x: hidden;
         overflow-y: scroll; }

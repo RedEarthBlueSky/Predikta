@@ -250,11 +250,11 @@ $(document).ready(function () {
           windowHeight = ($(window).innerHeight() - 400);
           viewportHeight = ($("body").innerHeight()-295);
           $('.modal-body').css("height", viewportHeight);
-          $('#players').css('max-height', windowHeight);
+          $('#players,#details').css('max-height', windowHeight);
         }
         else {
           windowHeight = ($(window).innerHeight() - 400);
-          $('#players').css('max-height', windowHeight);
+          $('#players,#details').css('max-height', windowHeight);
           $('.modal-body').css("height", "463");
         }
     };
