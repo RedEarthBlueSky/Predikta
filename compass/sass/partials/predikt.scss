@@ -82,7 +82,6 @@
       width: 31px;
       &:before {
         border-right: 40px solid rgba(0, 0, 0, 0);
-        border-top: 40px solid #cccccc;
         content: "";
         display: block;
         height: 0;
@@ -101,6 +100,16 @@
         position: absolute;
         text-shadow: 1px 1px 1px #000000;
         top: 0;
+      }
+    }
+    button.grey {
+      &:before {
+        border-top: 40px solid #cccccc;
+      }
+    }
+    button.red {
+      &:before {
+        border-top: 40px solid #df1a22;
       }
     }
     div {

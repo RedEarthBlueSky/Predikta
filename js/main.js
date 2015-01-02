@@ -8,6 +8,12 @@ $(document).ready(function () {
     emailInput: '<input type="email" value="email address" class="player-email" onfocus="this.value = \'\'\" onblur="this.value = \'email address\'\" />'
   }
 
+  /*  Predikt page the banker button add and remove the red effect */
+  $('button.banker').on('click', function () {
+    $('button.banker').removeClass('red');
+    $(this).addClass('red');
+  });
+
   $('.add-more').on('click', function () {
     $('form.email-invite > .input-wrapper').append(varbs.emailInput);
   });
@@ -102,9 +108,9 @@ $(document).ready(function () {
   downArrow('.faq-wrapper');
   downArrow('.dropdown-button');
   if ($(window).width() < 641) {
-    $('.new-post-wrapper, .existing-league-wrapper, .new-players-wrapper').hide();
+    $('.existing-league-wrapper, .new-players-wrapper').hide();
     $('#auto-banter-header').unbind().on('click', function () {
-      $('.new-post-wrapper').slideToggle();
+
       $('textarea').focus();
     });
     $('#invite-players-header').unbind().on('click', function () {
@@ -121,9 +127,8 @@ $(document).ready(function () {
 
   $(window).resize(function(){
     if ($(window).width() < 641) {
-      $('.new-post-wrapper, .existing-league-wrapper, .new-players-wrapper, .edit-player-wrapper').hide();
+      $('.existing-league-wrapper, .new-players-wrapper, .edit-player-wrapper').hide();
       $('#auto-banter-header').unbind().on('click', function () {
-        $('.new-post-wrapper').slideToggle();
       });
       $('#invite-players-header').unbind().on('click', function () {
         $('.existing-league-wrapper, .new-players-wrapper').slideToggle();
@@ -136,7 +141,7 @@ $(document).ready(function () {
       downArrow('#existing-players h1');
     }
     else if ($(window).width() > 640) {
-      $('.new-post-wrapper, .edit-player-wrapper').show();
+      $('.edit-player-wrapper').show();
       $('.existing-league-wrapper, .new-players-wrapper').show();
     }
   });

@@ -17,7 +17,7 @@
             display: inline-block;
             float: left;
             position: relative;
-            top: 30px;
+            top: 20px;
             width: 35%;
             h3 {
               font-size:1.4em;
@@ -27,7 +27,11 @@
             }
           }
           li.theme-button {
-            width:280px;
+            width:170px;
+            button {
+              color:#000;
+              font-size:10px;
+            }
           }
         }
       }
@@ -68,14 +72,19 @@
               padding-bottom: 15px;
               padding-left: 19px;
               color: #fff;
+              .message-content {
+                line-height:14px;
+                font-size:12px;
+              }
               h4 {
                 margin-top:0;
+                margin-bottom:0;
               }
               img {
                 border-radius:70px;
                 display:inline;
                 float:left;
-                margin-right:20px;
+                margin-right:10px;
               }
             }
             #bets-table-wrapper {
@@ -132,3 +141,238 @@ body.green-theme {
 body.orange-theme {
   @include theme-color($orange-theme);
 } 
+@media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
+  body#theme {
+  .navbar-wrapper {
+      #PrediktaTop {
+        .container {
+          ul {
+            li.client-logo {
+              img {
+                width:200px;
+              }
+            }
+            li.slug-line {
+              top:-7px;
+              width:26%;
+            }
+            li.theme-button {
+              button {
+                font-size:8px;
+                padding-left:0;
+                padding-right:0;
+              }
+            }
+            li#logoListItem {
+              top:0;
+              #logoLink {
+                width:60%;
+              }
+            }
+          }
+        }
+      }
+    }
+    #dashboard-wrapper {
+      #predikta-dashboard {
+        aside#bets {
+          .play-predikta-button {
+            #play-predikta-button {
+              font-size:1.2em;
+              padding: 8px 16px;
+            }
+          }
+          #message {
+            img {
+              width:60px;
+            }
+            .message-content {
+              font-size:10px;
+            }
+            h4 {
+              font-size:14px;
+            }
+          }
+          .new-post-wrapper {
+            .newPostCheckbox {
+              div.col-lg-6 {
+                display:inline;
+                float:left;
+                width:48%;
+                span {
+                  font-size:12px;
+                  width:100%;
+                }
+              }
+            }
+          }
+          #banter {
+            #banterWrapper {
+              #comments-wrapper {
+                ul {
+                  li {
+                    font-size:0.6em;
+                    margin-bottom:5px;
+                    margin-top:5px;
+                  }
+                }
+              }
+            }  
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1023px), only screen and (max-device-width: 1023px) {
+  body#theme {
+  .navbar-wrapper {
+      #PrediktaTop {
+        .container {
+          ul {
+            li.client-logo {
+              img {
+                width:170px;
+              }
+            }
+            li.slug-line {
+              display:none;
+            }
+            li.theme-button {
+              display:none;
+            }
+            li#logoListItem {
+              display: block;
+              margin-bottom: 10px;
+              position: absolute;
+              right: 112px;
+              top: 0;
+              #logoLink {
+                .lologo {
+                  background-size:70% 75%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #dashboard-wrapper {
+      #predikta-dashboard {
+        aside#bets {
+          .play-predikta-button {
+            #play-predikta-button {
+            }
+          }
+          #message {
+            display:block;
+            float:right;
+            width:50%;
+            img {
+            }
+            .message-content {
+            }
+            h4 {
+            }
+          }
+          .new-post-wrapper {
+            .newPostCheckbox {
+              div.col-lg-6 {
+                span {
+                }
+              }
+            }
+          }
+          #banter {
+            #banterWrapper {
+              #comments-wrapper {
+                ul {
+                  li {
+                  }
+                }
+              }
+            }  
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+  body#theme {
+  .navbar-wrapper {
+      #PrediktaTop {
+        .container {
+          ul {
+            li.client-logo {
+              display: inline-block;
+              float: left;
+              img {
+              }
+            }
+            li#logoListItem {
+              margin-bottom:0;
+              width:50%;
+              #logoLink {
+                float:none;
+                .lologo {
+                }
+              }
+            }
+            li.admin-panel {
+              width:100px;
+            }
+          }
+        }
+      }
+    }
+    #dashboard-wrapper {
+      #predikta-dashboard {
+        aside#bets {
+          .play-predikta-button {
+            #play-predikta-button {
+            }
+          }
+          #message {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            width: 100%;           
+          }
+          #banter {
+            .new-post-wrapper {
+              display:block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+  body#theme {
+  .navbar-wrapper {
+      #PrediktaTop {
+        .container {
+          ul {
+            li.client-logo {
+              img {
+                width:100px;
+              }
+            }
+            li#logoListItem {
+              width:40%;
+              #logoLink {
+                .lologo {
+                  height:45px;
+                  width:165px;                   
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

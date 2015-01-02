@@ -10313,7 +10313,6 @@ main#content-wrapper .col-md-8.center-block {
       width: 31px; }
       #predikt-wrapper .prediktions button.banker:before {
         border-right: 40px solid transparent;
-        border-top: 40px solid #cccccc;
         content: "";
         display: block;
         height: 0;
@@ -10331,6 +10330,10 @@ main#content-wrapper .col-md-8.center-block {
         position: absolute;
         text-shadow: 1px 1px 1px #000000;
         top: 0; }
+    #predikt-wrapper .prediktions button.grey:before {
+      border-top: 40px solid #cccccc; }
+    #predikt-wrapper .prediktions button.red:before {
+      border-top: 40px solid #df1a22; }
     #predikt-wrapper .prediktions div {
       display: inline;
       float: left;
@@ -10829,7 +10832,7 @@ body#theme .navbar-wrapper #PrediktaTop .container ul li.slug-line {
   display: inline-block;
   float: left;
   position: relative;
-  top: 30px;
+  top: 20px;
   width: 35%; }
   body#theme .navbar-wrapper #PrediktaTop .container ul li.slug-line h3 {
     font-size: 1.4em;
@@ -10837,7 +10840,10 @@ body#theme .navbar-wrapper #PrediktaTop .container ul li.slug-line {
     max-width: none;
     transform: none; }
 body#theme .navbar-wrapper #PrediktaTop .container ul li.theme-button {
-  width: 280px; }
+  width: 170px; }
+  body#theme .navbar-wrapper #PrediktaTop .container ul li.theme-button button {
+    color: #000;
+    font-size: 10px; }
 body#theme #dashboard-wrapper {
   background-color: #fff; }
   body#theme #dashboard-wrapper #predikta-dashboard section#points header .leaguedrop {
@@ -10854,13 +10860,17 @@ body#theme #dashboard-wrapper {
     padding-bottom: 15px;
     padding-left: 19px;
     color: #fff; }
+    body#theme #dashboard-wrapper #predikta-dashboard aside#bets #message .message-content {
+      line-height: 14px;
+      font-size: 12px; }
     body#theme #dashboard-wrapper #predikta-dashboard aside#bets #message h4 {
-      margin-top: 0; }
+      margin-top: 0;
+      margin-bottom: 0; }
     body#theme #dashboard-wrapper #predikta-dashboard aside#bets #message img {
       border-radius: 70px;
       display: inline;
       float: left;
-      margin-right: 20px; }
+      margin-right: 10px; }
   body#theme #dashboard-wrapper #predikta-dashboard aside#bets #bets-table-wrapper header,
   body#theme #dashboard-wrapper #predikta-dashboard aside#bets #bets-table-wrapper .table-responsive {
     display: none; }
@@ -11024,6 +11034,84 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
   body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-child(2n):after {
     border-color: transparent #f26c1f; }
 
+@media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
+  body#theme .navbar-wrapper #PrediktaTop .container ul li.client-logo img {
+    width: 200px; }
+  body#theme .navbar-wrapper #PrediktaTop .container ul li.slug-line {
+    top: -7px;
+    width: 26%; }
+  body#theme .navbar-wrapper #PrediktaTop .container ul li.theme-button button {
+    font-size: 8px;
+    padding-left: 0;
+    padding-right: 0; }
+  body#theme .navbar-wrapper #PrediktaTop .container ul li#logoListItem {
+    top: 0; }
+    body#theme .navbar-wrapper #PrediktaTop .container ul li#logoListItem #logoLink {
+      width: 60%; }
+  body#theme #dashboard-wrapper #predikta-dashboard aside#bets .play-predikta-button #play-predikta-button {
+    font-size: 1.2em;
+    padding: 8px 16px; }
+  body#theme #dashboard-wrapper #predikta-dashboard aside#bets #message img {
+    width: 60px; }
+  body#theme #dashboard-wrapper #predikta-dashboard aside#bets #message .message-content {
+    font-size: 10px; }
+  body#theme #dashboard-wrapper #predikta-dashboard aside#bets #message h4 {
+    font-size: 14px; }
+  body#theme #dashboard-wrapper #predikta-dashboard aside#bets .new-post-wrapper .newPostCheckbox div.col-lg-6 {
+    display: inline;
+    float: left;
+    width: 48%; }
+    body#theme #dashboard-wrapper #predikta-dashboard aside#bets .new-post-wrapper .newPostCheckbox div.col-lg-6 span {
+      font-size: 12px;
+      width: 100%; }
+  body#theme #dashboard-wrapper #predikta-dashboard aside#bets #banter #banterWrapper #comments-wrapper ul li {
+    font-size: 0.6em;
+    margin-bottom: 5px;
+    margin-top: 5px; } }
+@media only screen and (max-width: 1023px), only screen and (max-device-width: 1023px) {
+  body#theme .navbar-wrapper #PrediktaTop .container ul li.client-logo img {
+    width: 170px; }
+  body#theme .navbar-wrapper #PrediktaTop .container ul li.slug-line {
+    display: none; }
+  body#theme .navbar-wrapper #PrediktaTop .container ul li.theme-button {
+    display: none; }
+  body#theme .navbar-wrapper #PrediktaTop .container ul li#logoListItem {
+    display: block;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 112px;
+    top: 0; }
+    body#theme .navbar-wrapper #PrediktaTop .container ul li#logoListItem #logoLink .lologo {
+      background-size: 70% 75%; }
+  body#theme #dashboard-wrapper #predikta-dashboard aside#bets #message {
+    display: block;
+    float: right;
+    width: 50%; } }
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+  body#theme .navbar-wrapper #PrediktaTop .container ul li.client-logo {
+    display: inline-block;
+    float: left; }
+  body#theme .navbar-wrapper #PrediktaTop .container ul li#logoListItem {
+    margin-bottom: 0;
+    width: 50%; }
+    body#theme .navbar-wrapper #PrediktaTop .container ul li#logoListItem #logoLink {
+      float: none; }
+  body#theme .navbar-wrapper #PrediktaTop .container ul li.admin-panel {
+    width: 100px; }
+  body#theme #dashboard-wrapper #predikta-dashboard aside#bets #message {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%; }
+  body#theme #dashboard-wrapper #predikta-dashboard aside#bets #banter .new-post-wrapper {
+    display: block; } }
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+  body#theme .navbar-wrapper #PrediktaTop .container ul li.client-logo img {
+    width: 100px; }
+  body#theme .navbar-wrapper #PrediktaTop .container ul li#logoListItem {
+    width: 40%; }
+    body#theme .navbar-wrapper #PrediktaTop .container ul li#logoListItem #logoLink .lologo {
+      height: 45px;
+      width: 165px; } }
 /* My custom styles --------------------------------- */
 .YesScript {
   display: none; }
