@@ -53,6 +53,14 @@ section#points {
                   }
                }         
             }
+    #box-wrapper {
+      display: block;
+      float: left;
+      max-height: 470px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      width: 100%;
+    }
     a.first-time-notification {
                 position: absolute;
                 top: 14%;

@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="author">
+  <!--  have set user scale to no but might need to test this for 'yes' -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width /">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <link href="favicon.ico" rel="icon">
+  <title>Predikta | Setup your League </title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+</head>
+<body>
+    <header class="navbar-wrapper"></header>
+    <div class="grid-wrapper">
+      <section id="configuration-wrapper" class="col-xs-8">
+        <header>
+          <h1>League Setup</h1>
+        </header>
+        <div class="configuration-wrapper">
+          <div class="col-md-6 left">
+            <input type="text" class="league-name" role="textbox" value="Name your league" />
+              <ul>
+  
+              </ul>
+            <section class="upload company-logo col-md-12">
+            </section>
+            <textarea role="textbox" class="welcome-message col-md-12"></textarea>
+            <textarea role="textbox" class="slogan col-md-12"></textarea>
+          </div>
+
+          <div class="col-md-6 right">
+            <section class="select-theme">
+              <ul>
+                <li><input type="checkbox" role="checkbox" class="theme-check" /><div class="red-theme"><span class="primary"></span><span class="secondary"></span></div></li>
+                <li><input type="checkbox" role="checkbox" class="theme-check" /><div class="green-theme"><span class="primary"></span><span class="secondary"></span></div></li>
+                <li><input type="checkbox" role="checkbox" class="theme-check" /><div class="blue-theme"><span class="primary"></span><span class="secondary"></span></div></li>
+                <li><input type="checkbox" role="checkbox" class="theme-check" /><div class="yellow-theme"><span class="primary"></span><span class="secondary"></span></div></li>
+              </ul>
+            </section>
+            <section class="upload your-picture col-md-12">
+
+            </section>
+            <section class="upload banner col-md-12">
+
+            </section>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-xs-6 col-sm-6">
+            <input id="configuration-back" type="submit" value="Back" />
+          </div>
+          <div class="col-xs-6 col-sm-6">
+            <input id="configuration-next" type="submit" value="Next" />
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer id="footer"></footer>
+    <script src="js/vendor/jquery-1.11.1.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor/bootstrap-multiselect.js"></script>
+    <script>
+      $.fn.modal.Constructor.prototype.enforceFocus = function () { };
+      $('header.navbar-wrapper').load('header.html');
+      $('footer#footer').load('footer.html');
+    </script>
+</body>
+</html>

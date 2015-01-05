@@ -7482,6 +7482,13 @@ section#points {
         margin-top: 4px;
         padding-bottom: 5px;
         padding-right: 10px; }
+  section#points #box-wrapper {
+    display: block;
+    float: left;
+    max-height: 470px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%; }
   section#points a.first-time-notification {
     position: absolute;
     top: 14%;
@@ -11116,6 +11123,89 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
     body#theme .navbar-wrapper #PrediktaTop .container ul li#logoListItem #logoLink .lologo {
       height: 45px;
       width: 165px; } }
+#configuration-wrapper {
+  background-color: #f5f5f5;
+  color: #000000;
+  display: block;
+  float: none;
+  font-family: "tradegothic bold",sans-serif;
+  font-size: 1.2em;
+  margin: 2% auto;
+  max-width: 900px;
+  padding-bottom: 1%;
+  padding-top: 1%; }
+  #configuration-wrapper header {
+    display: block;
+    float: left;
+    width: 100%; }
+    #configuration-wrapper header h1 {
+      display: block;
+      float: left;
+      font-size: 2em;
+      margin-bottom: 10px;
+      margin-top: 0;
+      text-transform: uppercase;
+      width: auto; }
+  #configuration-wrapper .configuration-wrapper {
+    display: block;
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    width: 100%; }
+    #configuration-wrapper .configuration-wrapper .right {
+      padding-right: 0; }
+      #configuration-wrapper .configuration-wrapper .right .row {
+        margin-right: 0; }
+  #configuration-wrapper #configuration-next {
+    background-color: #1485c8;
+    border-radius: 9px;
+    color: #ffffff;
+    float: right;
+    font-size: 1.2em;
+    padding-bottom: 9px;
+    padding-left: 0;
+    padding-top: 9px;
+    text-transform: uppercase;
+    width: 50%; }
+  #configuration-wrapper #configuration-back {
+    background-color: #df1a22;
+    border-radius: 9px;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding-bottom: 9px;
+    padding-left: 0;
+    padding-top: 9px;
+    text-transform: uppercase;
+    width: 50%; }
+
+@media only screen and (max-width: 1342px), only screen and (max-device-width: 1342px) {
+  #configuration-wrapper {
+    width: 100%; }
+    #configuration-wrapper .left,
+    #configuration-wrapper .right {
+      display: block;
+      float: left;
+      width: 50%; } }
+@media only screen and (max-width: 911px), only screen and (max-device-width: 911px) {
+  #configuration-wrapper .configuration-wrapper {
+    margin-top: 15px; } }
+@media only screen and (max-width: 752px), only screen and (max-device-width: 752px) {
+  #configuration-wrapper .left,
+  #configuration-wrapper .right {
+    width: 100%; } }
+@media only screen and (max-width: 404px), only screen and (max-device-width: 404px) {
+  #configuration-wrapper {
+    padding-right: 5px; }
+    #configuration-wrapper .left,
+    #configuration-wrapper .right {
+      padding-left: 5px;
+      padding-right: 0; }
+    #configuration-wrapper header h1 {
+      font-size: 1.6em;
+      margin-bottom: 0; }
+    #configuration-wrapper #configuration-back,
+    #configuration-wrapper #configuration-next {
+      width: 90%; } }
 /* My custom styles --------------------------------- */
 .YesScript {
   display: none; }
