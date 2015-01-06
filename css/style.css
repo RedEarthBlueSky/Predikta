@@ -8305,7 +8305,8 @@ section.goTop
           bottom: 10px;
           display: block;
           float: left;
-          max-height: 400px;
+          margin-top: 5px;
+          max-height: 470px;
           overflow-y: scroll;
           padding: 0 0 100px;
           position: relative;
