@@ -11207,6 +11207,76 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
     #configuration-wrapper #configuration-back,
     #configuration-wrapper #configuration-next {
       width: 90%; } }
+#post-registration .col-md-12 {
+  padding-left: 0;
+  padding-right: 0; }
+#post-registration main {
+  background-image: url("../img/predikta-stadium-1900.jpg");
+  background-size: 100% 100%;
+  clear: both;
+  display: block;
+  float: left;
+  height: 93vh;
+  width: 100%; }
+  #post-registration main h1 {
+    color: #ffffff;
+    font-size: 4em;
+    margin-bottom: 0;
+    margin-top: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000000; }
+  #post-registration main .carousel-caption {
+    float: none;
+    left: 0;
+    position: relative;
+    right: 0; }
+    #post-registration main .carousel-caption ul.caption-list li {
+      background: #eee;
+      background: -webkit-gradient(linear, left top, left bottom, from(#FFEEEEEE), to(#FFF9F9F9));
+      background: -moz-linear-gradient(center top, #eee 0%, #f9f9f9 100%);
+      background: -moz-gradient(center top, #eee 0%, #f9f9f9 100%);
+      background: -webkit-linear-gradient(top, #eee 0%, #f9f9f9 100%);
+      background: -o-linear-gradient(top, #eee 0%, #f9f9f9 100%);
+      background: -ms-linear-gradient(top, #eee 0%, #f9f9f9 100%);
+      background: linear-gradient(to bottom, #eee 0%, #f9f9f9 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFEEEEEE', endColorstr='#FFF9F9F9',GradientType=0 );
+      border-radius: 0 20px;
+      border: 5px solid #fff;
+      padding-top: 3%;
+      padding-bottom: 4%; }
+      #post-registration main .carousel-caption ul.caption-list li h3 {
+        font-size: 3.4em;
+        line-height: 50px; }
+
+@media only screen and (max-width: 1222px), only screen and (max-device-width: 1222px) {
+  #post-registration main .carousel-caption ul.caption-list li {
+    margin-right: 2%;
+    width: 31%; }
+    #post-registration main .carousel-caption ul.caption-list li h3 {
+      font-size: 2.8em; } }
+@media only screen and (max-width: 1023px), only screen and (max-device-width: 1023px) {
+  #post-registration main .carousel-caption {
+    top: 10%; }
+    #post-registration main .carousel-caption ul.caption-list {
+      width: 100%; }
+      #post-registration main .carousel-caption ul.caption-list li {
+        display: block;
+        float: none;
+        margin-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 420px; } }
+@media only screen and (max-width: 464px), only screen and (max-device-width: 464px) {
+  #post-registration main h1 {
+    font-size: 1.8em;
+    margin-top: 10px; }
+  #post-registration main .carousel-caption {
+    top: 6%; }
+    #post-registration main .carousel-caption ul.caption-list li {
+      width: 305px; }
+      #post-registration main .carousel-caption ul.caption-list li h3 {
+        font-size: 1.8em;
+        line-height: 30px; } }
 /* My custom styles --------------------------------- */
 .YesScript {
   display: none; }
@@ -11553,7 +11623,6 @@ h1#about-predikta-heading {
 .carousel-inner {
   float: left;
   height: 100%;
-  overflow: hidden;
   position: relative;
   width: 100%; }
 
