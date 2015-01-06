@@ -249,11 +249,12 @@ section.goTop
                   }
                 }
               .modal-body {
-                bottom:10px;
+                bottom: 10px;
                 display: block;
                 float: left;
-                padding:0;
-                padding-bottom:100px;
+                max-height: 400px;
+                overflow-y: scroll;
+                padding: 0 0 100px;
                 position: relative;
                 width: 100%;
               }
