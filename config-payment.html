@@ -10,7 +10,7 @@
   <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width /">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <link href="favicon.ico" rel="icon">
-  <title>Predikta | Generic Form </title>
+  <title>Predikta | Predkita Setup Payment </title>
   <link rel="stylesheet" href="css/style.css">
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -24,28 +24,36 @@
     <!--  END HEADER ------------------------------------------------------>
 
 <div class="grid-wrapper">
-  <section class="geneic-form-wrapper col-xs-4">
-    <h2>Edit a competition</h2>
+  <section class="geneic-form-wrapper config-payment col-xs-4">
+    <h3>Thank you for setting up your league.  Your players have now been invited and you are ready to play.</h3>
+    <h2 class="cost">Total Cost = £<span>160</span></h2>
+    <h3>Please select method of payment</h3>
     <form action="">
       <div class="row">
         <div class="col-xs-12 col-sm-12">
-          <input id="competition-name" type="text" name="competition-name" placeholder="Enter a name" />
+          <input id="competition-name" class="card" type="text" name="Credit-debit-card" placeholder="Credit/Debit Card" />
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-6 col-sm-6">
-          <input id="start-date" type="date" name="start-date" placeholder="Start date" />
-        </div>
-        <div class="col-xs-6 col-sm-6">
-          <input id="end-date" type="date" name="end-date" placeholder="End date" />
+        <div class="col-xs-12 col-sm-12">
+          <input id="start-date" type="text" class="bank" name="bank-transfer" placeholder="Bank Transfer" />
         </div>
       </div>
+      <div id="paypal-wrapper" class="row">
+        <img class="paypal-logo" alt="Paypal Logo" src="img/paypal-logo.jpg" />
+        <script src="paypal-button.min.js?merchant=YOUR_MERCHANT_ID"
+                data-button="buynow"
+                data-name="My product"
+                data-amount="1.00"
+                async></script>
+      </div>
+      <img class="payment-logos" alt="Payment types accepted Logos" src="img/payment.jpg" />
       <div class="row">
         <div class="col-xs-6 col-sm-6">
-          <input id="competition-cancel" type="submit" value="Cancel" />
+          <input id="competition-cancel" type="submit" value="Back" />
         </div>
         <div class="col-xs-6 col-sm-6">
-          <input id="competition-save" type="submit" value="Save" />
+          <input id="competition-save" type="submit" value="Continue" />
         </div>
       </div>
     </form>
@@ -62,6 +70,7 @@
   <script src="js/ie10-viewport-bug-workaround.js"></script>
   <script src="js/main.js"></script>
   <script src="js/vendor/bootstrap-multiselect.js"></script>
+  <script src="js/vendor/paypal-button.min.js"></script>
   <script>
   $.fn.modal.Constructor.prototype.enforceFocus = function () { };
   $('header.navbar-wrapper').load('header.html');

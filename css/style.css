@@ -6929,6 +6929,26 @@ button.close {
     text-transform: uppercase;
     width: 55%; }
 
+.config-payment h3 {
+  display: block;
+  margin: 0 auto 30px;
+  text-align: center;
+  width: 70%; }
+.config-payment .paypal-logo,
+.config-payment .paypal-button {
+  display: block;
+  float: none;
+  margin: 0 auto;
+  max-width: 169px; }
+.config-payment .paypal-button {
+  font-size: 1.1em !important;
+  width: 140px; }
+.config-payment .payment-logos {
+  display: block;
+  float: none;
+  margin: 10px auto 20px;
+  max-width: 339px; }
+
 @media only screen and (max-width: 910px), only screen and (max-device-width: 910px) {
   .dialog-box-wrapper {
     display: block;
