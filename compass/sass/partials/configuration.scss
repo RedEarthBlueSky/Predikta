@@ -9,6 +9,50 @@
   max-width: 900px;
   padding-bottom: 1%;
   padding-top: 1%;
+  textarea {
+    background-color: #1888ca;
+    border:none;
+    border-radius: 0;
+    color: #ffffff;
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px 10px;
+  }
+  .upload {
+    border: dashed #a1a1a1 3px;
+    border-radius: 5px;
+    color:#606060;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    p {
+      display: block;
+      float: none;
+      margin: 35px auto 12px;
+      text-align: center;
+      width: 70%;
+      span {
+        display: block;
+        font-size: 0.8em;
+      }
+    }
+    ul {
+      li {
+        background-color: #ececec;
+        display: inline-block;
+        float: left;
+        list-style: outside none none;
+        margin-bottom: 30px;
+        margin-right: 10px;
+        margin-top: 20px;
+        padding: 5px 20px;
+        text-transform: uppercase;
+      }
+    }
+  }
   header {
     display: block;
     float: left;
@@ -29,6 +73,16 @@
     margin-bottom: 30px;
     margin-top: 15px;
     width: 100%;
+    .league-name {
+      background-color: #ececec;
+      border: medium none;
+      color: #1888ca;
+      display: block;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-top: 10px;
+      width: 100%;
+    }
     .right {
       padding-right:0;
       .row {
@@ -58,6 +112,63 @@
     padding-top:9px;
     text-transform: uppercase;
     width:50%;
+  }
+  .select-theme {
+    ul {
+      li {
+          list-style: none;
+          display: inline-block;
+          float: left;
+          text-align:center;
+          margin-right:8%;
+          width:16%;
+          div {
+            display: block;
+            float: left;
+            width: 100%;
+            height: 100px;
+            margin-bottom: 15px;
+            span {
+              display: block;
+              float: left;
+              height: 50px;
+              width: 100%;
+            }
+          }
+      }
+    }
+    .red-theme {
+      .primary {
+        background-color:#fe0900;
+      }
+      .secondary {
+        background-color:#7f0100;
+      }
+    }
+    .green-theme {
+      .primary {
+        background-color:#00fd00;
+      }
+      .secondary {
+        background-color:#007e00;
+      }
+    }
+    .blue-theme {
+      .primary {
+        background-color:#0055ff;
+      }
+      .secondary {
+        background-color:#002a7f;
+      }
+    }
+    .yellow-theme {
+      .primary {
+        background-color:#fcd400;
+      }
+      .secondary {
+        background-color:#7e6700;
+      }
+    }
   }
 }
 @media only screen and (max-width: 1342px), only screen and (max-device-width: 1342px) {

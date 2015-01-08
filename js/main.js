@@ -17,6 +17,16 @@ $(document).ready(function () {
   $('.add-more').on('click', function () {
     $('form.email-invite > .input-wrapper').append(varbs.emailInput);
   });
+
+  /*  close the leage list when modal appears */
+  $('#players .player-wrapper').on('click', function () {
+    $('#players .player-wrapper').css('display', 'none');
+  });
+  $('button.close, aside.overall-predikta h4 a').on('click', function () {
+    $('#players .player-wrapper').css('display', 'block');
+  });
+
+
   
   /*  get the player name from the edit player details list and drop it into the cancel confirmation screen */
   $('.edit-player-wrapper .edit-player').click(function (event) {

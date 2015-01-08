@@ -11137,6 +11137,43 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
   max-width: 900px;
   padding-bottom: 1%;
   padding-top: 1%; }
+  #configuration-wrapper textarea {
+    background-color: #1888ca;
+    border: none;
+    border-radius: 0;
+    color: #ffffff;
+    display: block;
+    float: left;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px 10px; }
+  #configuration-wrapper .upload {
+    border: dashed #a1a1a1 3px;
+    border-radius: 5px;
+    color: #606060;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    #configuration-wrapper .upload p {
+      display: block;
+      float: none;
+      margin: 35px auto 12px;
+      text-align: center;
+      width: 70%; }
+      #configuration-wrapper .upload p span {
+        display: block;
+        font-size: 0.8em; }
+    #configuration-wrapper .upload ul li {
+      background-color: #ececec;
+      display: inline-block;
+      float: left;
+      list-style: outside none none;
+      margin-bottom: 30px;
+      margin-right: 10px;
+      margin-top: 20px;
+      padding: 5px 20px;
+      text-transform: uppercase; }
   #configuration-wrapper header {
     display: block;
     float: left;
@@ -11155,6 +11192,15 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
     margin-bottom: 30px;
     margin-top: 15px;
     width: 100%; }
+    #configuration-wrapper .configuration-wrapper .league-name {
+      background-color: #ececec;
+      border: medium none;
+      color: #1888ca;
+      display: block;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-top: 10px;
+      width: 100%; }
     #configuration-wrapper .configuration-wrapper .right {
       padding-right: 0; }
       #configuration-wrapper .configuration-wrapper .right .row {
@@ -11180,6 +11226,40 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
     padding-top: 9px;
     text-transform: uppercase;
     width: 50%; }
+  #configuration-wrapper .select-theme ul li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    margin-right: 8%;
+    width: 16%; }
+    #configuration-wrapper .select-theme ul li div {
+      display: block;
+      float: left;
+      width: 100%;
+      height: 100px;
+      margin-bottom: 15px; }
+      #configuration-wrapper .select-theme ul li div span {
+        display: block;
+        float: left;
+        height: 50px;
+        width: 100%; }
+  #configuration-wrapper .select-theme .red-theme .primary {
+    background-color: #fe0900; }
+  #configuration-wrapper .select-theme .red-theme .secondary {
+    background-color: #7f0100; }
+  #configuration-wrapper .select-theme .green-theme .primary {
+    background-color: #00fd00; }
+  #configuration-wrapper .select-theme .green-theme .secondary {
+    background-color: #007e00; }
+  #configuration-wrapper .select-theme .blue-theme .primary {
+    background-color: #0055ff; }
+  #configuration-wrapper .select-theme .blue-theme .secondary {
+    background-color: #002a7f; }
+  #configuration-wrapper .select-theme .yellow-theme .primary {
+    background-color: #fcd400; }
+  #configuration-wrapper .select-theme .yellow-theme .secondary {
+    background-color: #7e6700; }
 
 @media only screen and (max-width: 1342px), only screen and (max-device-width: 1342px) {
   #configuration-wrapper {
