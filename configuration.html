@@ -45,13 +45,51 @@
 
           <div class="col-md-6 right">
             <section class="select-theme">
+              <h3>Select a theme</h3>
               <ul>
-                <li><input type="checkbox" role="checkbox" class="theme-check" /><div class="red-theme"><span class="primary"></span><span class="secondary"></span></div></li>
-                <li><input type="checkbox" role="checkbox" class="theme-check" /><div class="green-theme"><span class="primary"></span><span class="secondary"></span></div></li>
-                <li><input type="checkbox" role="checkbox" class="theme-check" /><div class="blue-theme"><span class="primary"></span><span class="secondary"></span></div></li>
-                <li><input type="checkbox" role="checkbox" class="theme-check" /><div class="yellow-theme"><span class="primary"></span><span class="secondary"></span></div></li>
+                <li>
+                  <div class="theme">
+                    <input id="red-theme" type="checkbox" role="checkbox" class="theme-check" value="none" />
+                    <label for="red-theme"></label>
+                  </div>
+                    <div class="red-theme">
+                      <span class="primary"></span>
+                      <span class="secondary"></span>
+                    </div>
+                </li>
+                <li>
+                  <div class="theme">
+                    <input id="green-theme" type="checkbox" role="checkbox" class="theme-check" value="none" />
+                    <label for="green-theme"></label>
+                  </div>
+                    <div class="green-theme">
+                      <span class="primary"></span>
+                      <span class="secondary"></span>
+                    </div>
+                  </li>
+                <li>
+                  <div class="theme">
+                    <input id="blue-theme" type="checkbox" role="checkbox" class="theme-check" value="none" />
+                    <label for="blue-theme"></label>
+                  </div>
+                    <div class="blue-theme">
+                      <span class="primary"></span>
+                      <span class="secondary"></span>
+                    </div>
+                </li>
+                <li>
+                  <div class="theme">
+                    <input id="yellow-theme" type="checkbox" role="checkbox" class="theme-check" value="none" />
+                    <label for="yellow-theme"></label>
+                  </div>
+                    <div class="yellow-theme">
+                      <span class="primary"></span>
+                      <span class="secondary"></span>
+                    </div>
+                </li>
               </ul>
             </section>
+
             <section class="upload your-picture col-md-12">
               <p>Click here to add your picture<span> optimum size 180x140 pixels</span></p>
               <ul>
@@ -61,6 +99,7 @@
                 <li>svg</li>
               </ul>
             </section>
+
             <section class="upload banner col-md-12">
               <p>Click here to add your banner<span> optimum size 180x140 pixels</span></p>
               <ul>
@@ -69,8 +108,8 @@
                 <li>gif</li>
                 <li>svg</li>
               </ul>
-
             </section>
+
           </div>
         </div>
         <div class="row ">
@@ -94,6 +133,9 @@
       $.fn.modal.Constructor.prototype.enforceFocus = function () { };
       $('header.navbar-wrapper').load('header.html');
       $('footer#footer').load('footer.html');
+      $('input[type="checkbox"]').on('change', function () {
+        $('input[type="checkbox"]').not(this).prop('checked', false);
+      });
     </script>
 </body>
 </html>
