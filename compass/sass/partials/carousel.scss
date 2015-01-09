@@ -3,7 +3,7 @@
   color: #5a5a5a;
 }
 .carousel-indicators {
-  bottom: 5%;
+  bottom:0;
   height: 9px;
   left: 50%;
   list-style: outside none none;
@@ -78,19 +78,6 @@
 .marketing .col-lg-4 p {
   margin-right: 10px;
   margin-left: 10px;
-}
-#blogSlide.carousel-caption {
-  top:14%;
-  text-align: left;
-}
-#blogSlide.carousel-caption h1 {
-  color: #1788ca;
-  font-size: 3em;
-  text-transform: uppercase;
-  margin-top: 0;
-}
-#blogSlide.carousel-caption h1 span {
-  color: #df1c22;
 }
 ul.caption-list {
   clear: both;
@@ -170,24 +157,6 @@ h4.prediktion-header {
   width: 37%;
   margin: 0 auto;
 }
-#blogSlide.carousel-caption h3 {
-  color: #fff;
-  display: block;
-  float: left;
-  font-size: 5em;
-  line-height: 1.2em;
-  margin-top: 51px;
-  text-transform: none;
-  width: 48%;
-  height: 374px;
-  overflow: hidden;
-}
-#blogSlide.carousel-caption .btn-primary {
-  display: block;
-  float: left;
-  margin: 0;
-  top: 20px;
-}
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
@@ -237,7 +206,7 @@ a.about-predikta-next {
   position: absolute;
   text-align: center;
   width: 100%;
-  top: 88vh;
+  top: 88.5vh;
   .about-predikta-wrapper {
     background-color: $prediktaDarkBlue;
     font-size: 1.6em;
@@ -255,6 +224,82 @@ a.about-predikta-next {
     }
   }
 }
-/*  Carosel buttons ------------------------------ */
-
-/*  END Carosel buttons -------------------------- */
+.pool-size-guarantee {
+  background-image: url("../img/red-chevron.png");
+  background-size: 100% 100%;
+  color: #fff;
+  display: block;
+  font-size: 1.4em;
+  height: 210px;
+  line-height: 20px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  margin:40px auto 0 auto;
+  padding-top:1px;
+  width: 210px;
+  span {
+    @include transform(-4deg, 1, 1, -7deg, 0px);
+    display: block;
+    font-size: 2.2em;
+    height: 34px;
+    margin-top: 54px;
+  }
+  p {
+    @include transform(-4deg, 1, 1, -7deg, 0px);
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    font-size: 1.2em;
+    line-height: 1.1em;
+  }
+}
+ul.caption-list.slide-two {
+  width:38%;
+  li {
+    margin-top:80px;
+    max-width:650px;
+    width:100%;
+    h3 {
+      font-size:4em;
+    }
+    p {
+      font-size:22px;
+      width:50%;
+    }
+  }
+}
+ul.caption-list.slide-three {
+  li {
+    width:auto;
+    h2 {
+    color: #4d4d4d;
+    font-size: 5em;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 526px;
+    float: left;
+    display: block;
+    }
+    h3 {
+      font-size:3.2em;
+      margin-left:20px;
+      margin-right:20px;
+      span {
+        display:inline;
+        font-size:1em;
+      }
+    }
+    &:first-child {
+      @include box-shadow(15px, 15px, 25px, #9fa8b0);
+    }
+  }
+}
+.container.third-slide {
+  margin-top:0;
+  .carousel-caption {
+    top:0;
+  }
+}
