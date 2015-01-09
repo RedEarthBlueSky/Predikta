@@ -352,48 +352,24 @@ a.predikta-sign-up,
 a.have-a-go-next,
 a.make-money-next,
 a.this-game-next,
-a.about-predikta-next,
 a.where-predikta-next {
   @include nextLink;
 }
 .sign-up-wrapper,
-.about-predikta-wrapper,
 .this-game-wrapper,
 .make-money-wrapper,
 .have-a-go-wrapper,
 .where-predikta-wrapper {
   @include nextLinkWrapper;
 }
-.about-predikta-wrapper {
-  background-color: #000;
-  border-width: 3px;
-  font-size: 1.6em;
-  height: 60px;
-  padding: 12px 0 0;
-  width: 220px;
-  color: $prediktaDarkBlue;
-}
+
 element.style {
   bottom: 10%;
 }
 .btn.btn-lg.btn-primary {
   font-size: 1.1em;
 }
-.about-predikta-next .arrow-down-2:before {
-  bottom: 42px;
-  color: $prediktaDarkBlue;
-  left: 25px;
-}
-.about-predikta-next .arrow-down-2:after {
-  bottom: 46px;
-  color: #000;
-  right: 13px;
-}
-a.about-predikta-next {
-  bottom: 15%;
-  z-index: 2147483647;
-  width: auto;
-}
+
 .arrow-down,
 .arrow-down-2 {
   clear: both;

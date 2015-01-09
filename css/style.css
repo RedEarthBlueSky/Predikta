@@ -7482,6 +7482,30 @@ h4.prediktion-header {
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px; } }
+a.about-predikta-next {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 88vh; }
+  a.about-predikta-next .about-predikta-wrapper {
+    background-color: #1799D6;
+    font-size: 1.6em;
+    height: 35px;
+    padding: 12px 0 0;
+    width: 100%;
+    color: #fff; }
+    a.about-predikta-next .about-predikta-wrapper:before {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+      bottom: 10px;
+      content: "\e029";
+      display: inline-block;
+      font-family: 'Glyphicons Halflings';
+      position: relative; }
+
 /*  Carosel buttons ------------------------------ */
 /*  END Carosel buttons -------------------------- */
 /*  POINTS SECTION -------------------- */
@@ -7817,315 +7841,6 @@ section#points {
     display: block;
     float: left; }
     section#points #table-banner-add a img {
-      width: 100%;
-      max-width: 616px; }
-
-/*  END POINTS SECTION ---------------- */
-#dashboard-wrapper #predikta-dashboard.row.new-dashboard {
-  max-width: 1920px; }
-
-/*  POINTS SECTION -------------------- */
-section#points-new {
-  background-color: #f7f7f7;
-  max-width: 720px;
-  width: 38%;
-  /*  table styles ----------------------------  */ }
-  section#points-new header {
-    clear: both;
-    display: block;
-    float: left;
-    width: 100%; }
-    section#points-new header h1 {
-      color: #000;
-      display: inline;
-      float: left;
-      font-size: 2em;
-      margin-bottom: 0;
-      margin-top: 20px;
-      text-transform: uppercase; }
-    section#points-new header .leaguedrop {
-      background-color: #898989;
-      border-radius: 5px;
-      float: right;
-      height: 30px;
-      line-height: 30px;
-      margin-top: 10px;
-      overflow: hidden;
-      position: relative;
-      width: 280px; }
-      section#points-new header .leaguedrop:after {
-        background-color: #898989;
-        color: #fff;
-        content: ">";
-        float: right;
-        font-size: 24px;
-        font-style: normal;
-        height: 30px;
-        line-height: 30px;
-        pointer-events: none;
-        position: absolute;
-        right: 0;
-        text-align: center;
-        top: 0;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg);
-        width: 30px; }
-      section#points-new header .leaguedrop select {
-        background: none repeat scroll 0 0 #898989;
-        border: 0 solid transparent;
-        color: #fff;
-        font-size: 1em;
-        font-weight: 700;
-        height: 30px;
-        line-height: 30px;
-        width: 280px;
-        cursor: pointer;
-        margin-top: 4px;
-        padding-bottom: 5px;
-        padding-right: 10px; }
-  section#points-new a.first-time-notification {
-    position: absolute;
-    top: 14%;
-    width: 300px;
-    left: 17%; }
-    section#points-new a.first-time-notification .conditional {
-      background-clip: padding-box;
-      background: #009fe3;
-      background: -webkit-gradient(linear, left top, left bottom, from(#FF009FE3), to(#FF01519E));
-      background: -moz-linear-gradient(center top, #009fe3 0%, #01519e 100%);
-      background: -moz-gradient(center top, #009fe3 0%, #01519e 100%);
-      background: -webkit-linear-gradient(top, #009fe3 0%, #01519e 100%);
-      background: -o-linear-gradient(top, #009fe3 0%, #01519e 100%);
-      background: -ms-linear-gradient(top, #009fe3 0%, #01519e 100%);
-      background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF009FE3', endColorstr='#FF01519E',GradientType=0 );
-      border-radius: 22px;
-      box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.6);
-      color: #ffffff;
-      display: block;
-      margin-top: 0;
-      padding: 10px 10px 10px 20px;
-      position: relative;
-      z-index: 99999; }
-      section#points-new a.first-time-notification .conditional:before {
-        border-bottom: 28px solid #009fe3;
-        border-left: 12px solid transparent;
-        border-right: 12px solid transparent;
-        bottom: 75px;
-        content: "";
-        height: 0;
-        left: 59px;
-        position: absolute;
-        width: 0; }
-      section#points-new a.first-time-notification .conditional:after {
-        background-color: #1888ca;
-        border-radius: 14px;
-        bottom: 59px;
-        box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5) inset;
-        content: "x";
-        display: inline-block;
-        font-size: 1.4em;
-        height: 26px;
-        left: 280px;
-        line-height: 20px;
-        position: absolute;
-        text-align: center;
-        width: 27px; }
-  section#points-new .table-responsive {
-    clear: both;
-    display: table;
-    float: left;
-    /*  try and set element to sit within any device view */
-    width: 100%; }
-    section#points-new .table-responsive table {
-      color: #000;
-      margin-bottom: 0;
-      text-transform: uppercase; }
-      section#points-new .table-responsive table tbody tr {
-        width: 100%; }
-        section#points-new .table-responsive table tbody tr td {
-          float: left;
-          padding-top: 12px; }
-      section#points-new .table-responsive table thead tr {
-        width: 100%; }
-        section#points-new .table-responsive table thead tr th {
-          border-bottom: none;
-          float: left;
-          color: #bdbdbd; }
-        section#points-new .table-responsive table thead tr .points {
-          padding-top: 9px; }
-        section#points-new .table-responsive table thead tr th.actual {
-          padding-top: 8px; }
-        section#points-new .table-responsive table thead tr th.away {
-          padding-top: 9px; }
-      section#points-new .table-responsive table tr {
-        display: block;
-        clear: both;
-        float: left;
-        position: relative; }
-        section#points-new .table-responsive table tr .actual {
-          padding-right: 0;
-          padding-top: 0;
-          text-align: center; }
-          section#points-new .table-responsive table tr .actual table {
-            margin: 0 auto;
-            display: block;
-            float: none; }
-            section#points-new .table-responsive table tr .actual table tbody {
-              float: left;
-              width: 100%; }
-            section#points-new .table-responsive table tr .actual table tr {
-              display: block;
-              float: none;
-              margin: 0 auto;
-              width: 35px; }
-              section#points-new .table-responsive table tr .actual table tr .actual-home {
-                padding-right: 5px; }
-              section#points-new .table-responsive table tr .actual table tr .actual-away {
-                padding-left: 5px; }
-        section#points-new .table-responsive table tr .away {
-          padding-top: 0; }
-          section#points-new .table-responsive table tr .away table {
-            margin: 0 auto;
-            display: block;
-            float: none; }
-            section#points-new .table-responsive table tr .away table tr {
-              width: 35px; }
-              section#points-new .table-responsive table tr .away table tr .client-home {
-                padding-right: 5px; }
-              section#points-new .table-responsive table tr .away table tr .client-away {
-                padding-left: 5px; }
-        section#points-new .table-responsive table tr .home-team {
-          text-align: right; }
-        section#points-new .table-responsive table tr .game-state {
-          border-top: none;
-          text-align: center; }
-          section#points-new .table-responsive table tr .game-state span {
-            display: block;
-            float: left;
-            font-size: 10px;
-            line-height: 10px;
-            text-align: center;
-            width: 100%; }
-          section#points-new .table-responsive table tr .game-state .time {
-            display: block;
-            float: left;
-            width: 1px;
-            font-size: 14px; }
-          section#points-new .table-responsive table tr .game-state .day {
-            clear: both;
-            display: block;
-            font-size: 14px;
-            text-align: center;
-            text-transform: uppercase;
-            margin-bottom: 3px; }
-        section#points-new .table-responsive table tr .points {
-          padding-bottom: 0;
-          padding-top: 0;
-          text-align: center; }
-          section#points-new .table-responsive table tr .points span {
-            background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%) repeat scroll 0 0 transparent;
-            background: #009fe3;
-            background: -webkit-gradient(linear, left top, left bottom, from(#FF009FE3), to(#FF01519E));
-            background: -moz-linear-gradient(center top, #009fe3 0%, #01519e 100%);
-            background: -moz-gradient(center top, #009fe3 0%, #01519e 100%);
-            background: -webkit-linear-gradient(top, #009fe3 0%, #01519e 100%);
-            background: -o-linear-gradient(top, #009fe3 0%, #01519e 100%);
-            background: -ms-linear-gradient(top, #009fe3 0%, #01519e 100%);
-            background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF009FE3', endColorstr='#FF01519E',GradientType=0 );
-            color: #ffffff;
-            display: block;
-            height: 35px;
-            padding-top: 7px;
-            margin-bottom: 3px;
-            margin-top: 3px; }
-        section#points-new .table-responsive table tr .game-state.bet-in-play {
-          padding: 0; }
-          section#points-new .table-responsive table tr .game-state.bet-in-play span {
-            background: linear-gradient(to bottom, #e7444a 0%, #941913 100%) repeat scroll 0 0 transparent;
-            background: #e7444a;
-            background: -webkit-gradient(linear, left top, left bottom, from(#FFE7444A), to(#FF941913));
-            background: -moz-linear-gradient(center top, #e7444a 0%, #941913 100%);
-            background: -moz-gradient(center top, #e7444a 0%, #941913 100%);
-            background: -webkit-linear-gradient(top, #e7444a 0%, #941913 100%);
-            background: -o-linear-gradient(top, #e7444a 0%, #941913 100%);
-            background: -ms-linear-gradient(top, #e7444a 0%, #941913 100%);
-            background: linear-gradient(to bottom, #e7444a 0%, #941913 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFE7444A', endColorstr='#FF941913',GradientType=0 );
-            border: 2px solid #1382c4;
-            border-radius: 10px;
-            color: #ffffff;
-            display: block;
-            float: left;
-            padding: 10px 0;
-            position: relative;
-            width: 110%; }
-            section#points-new .table-responsive table tr .game-state.bet-in-play span:before {
-              border: 2px solid #ffffff;
-              border-radius: 6px;
-              bottom: 0;
-              content: "";
-              display: block;
-              left: 0;
-              position: absolute;
-              right: 0;
-              top: 0; }
-        section#points-new .table-responsive table tr .AKKA span {
-          border-radius: 20px;
-          display: block;
-          float: none;
-          height: 10px;
-          margin: 10% auto 0;
-          width: 10px; }
-        section#points-new .table-responsive table tr .AKKA .red-circle {
-          background-color: #df1a22; }
-        section#points-new .table-responsive table tr .AKKA .yellow-circle {
-          background-color: #fbb03b; }
-        section#points-new .table-responsive table tr .AKKA .green-circle {
-          background-color: #39b54a; }
-      section#points-new .table-responsive table tr.pending {
-        color: #bdbdbd; }
-        section#points-new .table-responsive table tr.pending .red-circle,
-        section#points-new .table-responsive table tr.pending .yellow-circle,
-        section#points-new .table-responsive table tr.pending .green-circle {
-          background-color: #bdbdbd; }
-        section#points-new .table-responsive table tr.pending .points span {
-          background: none;
-          color: #bdbdbd; }
-      section#points-new .table-responsive table tr.pending td.actual table,
-      section#points-new .table-responsive table tr.pending td.away table {
-        color: #bdbdbd; }
-      section#points-new .table-responsive table tr.in-play {
-        background-color: #deeaf0;
-        border: medium none;
-        border-radius: 9px;
-        display: block;
-        float: left;
-        padding: 0;
-        margin-top: 2px;
-        margin-bottom: 3px; }
-        section#points-new .table-responsive table tr.in-play td {
-          border-top: none; }
-      section#points-new .table-responsive table tfoot {
-        float: right;
-        margin-right: 10%;
-        width: 70%; }
-        section#points-new .table-responsive table tfoot tr {
-          margin-top: 0;
-          width: 100%; }
-          section#points-new .table-responsive table tfoot tr td {
-            border: medium none;
-            float: left;
-            text-align: center; }
-  section#points-new #table-banner-add {
-    margin-top: 10px;
-    display: block;
-    float: left; }
-    section#points-new #table-banner-add a img {
       width: 100%;
       max-width: 616px; }
 
@@ -12063,7 +11778,6 @@ a.predikta-sign-up,
 a.have-a-go-next,
 a.make-money-next,
 a.this-game-next,
-a.about-predikta-next,
 a.where-predikta-next {
   bottom: 0;
   left: 0;
@@ -12075,7 +11789,6 @@ a.where-predikta-next {
   z-index: 9999999999; }
 
 .sign-up-wrapper,
-.about-predikta-wrapper,
 .this-game-wrapper,
 .make-money-wrapper,
 .have-a-go-wrapper,
@@ -12092,35 +11805,11 @@ a.where-predikta-next {
   padding: 6px 22px 0px 20px;
   text-transform: uppercase; }
 
-.about-predikta-wrapper {
-  background-color: #000;
-  border-width: 3px;
-  font-size: 1.6em;
-  height: 60px;
-  padding: 12px 0 0;
-  width: 220px;
-  color: #1799D6; }
-
 element.style {
   bottom: 10%; }
 
 .btn.btn-lg.btn-primary {
   font-size: 1.1em; }
-
-.about-predikta-next .arrow-down-2:before {
-  bottom: 42px;
-  color: #1799D6;
-  left: 25px; }
-
-.about-predikta-next .arrow-down-2:after {
-  bottom: 46px;
-  color: #000;
-  right: 13px; }
-
-a.about-predikta-next {
-  bottom: 15%;
-  z-index: 2147483647;
-  width: auto; }
 
 .arrow-down,
 .arrow-down-2 {

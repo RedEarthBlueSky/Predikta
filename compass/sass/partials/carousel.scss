@@ -233,6 +233,28 @@ h4.prediktion-header {
     margin-top: 120px;
   }
 }
+a.about-predikta-next {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 88vh;
+  .about-predikta-wrapper {
+    background-color: $prediktaDarkBlue;
+    font-size: 1.6em;
+    height: 35px;
+    padding: 12px 0 0;
+    width: 100%;
+    color: #fff;
+    &:before {
+      @include rotate(90deg);
+      bottom:10px;
+      content: "\e029";
+      display: inline-block;
+      font-family: 'Glyphicons Halflings';
+      position:relative;
+    }
+  }
+}
 /*  Carosel buttons ------------------------------ */
 
 /*  END Carosel buttons -------------------------- */
