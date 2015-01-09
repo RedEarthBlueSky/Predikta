@@ -101,6 +101,7 @@ ul.caption-list {
 }
 div.container div.carousel-caption h3,
 ul.caption-list li h3 {
+  @include transform(0deg, 1, 1, -3deg, 0px);
   color: $prediktaRed;
   font-size: 2.6em;
   line-height:1.1em;
@@ -115,7 +116,11 @@ ul.caption-list li h3 span {
   display: block;
   font-size: 1.4em;
 }
+.carousel-control .glyphicon-chevron-left {
+  margin-left:-69px;
+}
 ul.caption-list li p {
+  @include transform(0deg, 1, 1, -3deg, 0px);
   color: #848484;
   font-size: 12px;
   margin: 0 auto;
@@ -135,7 +140,7 @@ ul.caption-list li {
   padding-top: 25px;
   padding-bottom: 30px;
   width: 29%;
-
+  @include transform(-7deg, 1, 1, -8deg, 0px);
   @include backface-visibility(hidden);
 }
 .carousel-caption {
@@ -229,31 +234,5 @@ h4.prediktion-header {
   }
 }
 /*  Carosel buttons ------------------------------ */
-.carousel-indicators {
-  bottom: 5px;
-  height: auto;
-  left: 0;
-  list-style: outside none none;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  z-index: 15;
-  padding:0;
-  margin:0;
-  li {
-    margin: 0;
-    width: 33%;
-    height: 50px;
-    border-radius: 0;
-    height:89px;
-    text-indent:0;
-  }
-  .active {
-    background-color:rgba(255, 255, 255, 0.7);
-    margin: 0;
-    width: 33%;
-    height: 89px;
-    border-radius: 0;
-  }
-}
+
 /*  END Carosel buttons -------------------------- */

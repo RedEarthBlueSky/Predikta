@@ -116,9 +116,10 @@
                         @include linear-gradient( #232022, 0%,  #1385c7, 100% );
                         border-radius: 0;
                         border: none;
-                        right:10px;
+                        right:0;
                         text-align: left;
                         text-transform: uppercase;
+                        margin-top:0;
                         width:400px;
                         li {
                           height: 32px; 

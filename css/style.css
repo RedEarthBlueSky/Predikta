@@ -6413,7 +6413,6 @@ button.close {
 .carousel-control {
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0;
   width: 15%;
   opacity: .5;
@@ -6422,18 +6421,6 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-  .carousel-control .left {
-    background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
-  .carousel-control .right {
-    left: auto;
-    right: 0;
-    background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
   .carousel-control:hover, .carousel-control:focus {
     outline: 0;
     color: #fff;
@@ -6465,6 +6452,20 @@ button.close {
     content: '\2039'; }
   .carousel-control .icon-next:before {
     content: '\203a'; }
+
+.carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); }
+
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); }
 
 .carousel-indicators li {
   display: inline-block;
@@ -7096,9 +7097,10 @@ button.close {
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF232022', endColorstr='#FF1385C7',GradientType=0 );
           border-radius: 0;
           border: none;
-          right: 10px;
+          right: 0;
           text-align: left;
           text-transform: uppercase;
+          margin-top: 0;
           width: 400px; }
           .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group #admin-cog li {
             height: 32px;
@@ -7342,6 +7344,11 @@ ul.caption-list {
 
 div.container div.carousel-caption h3,
 ul.caption-list li h3 {
+  transform: rotate(0deg) scale(1, 1) skew(-3deg) translate(0px);
+  -webkit-transform: rotate(0deg) scale(1, 1) skew(-3deg) translate(0px);
+  -moz-transform: rotate(0deg) scale(1, 1) skew(-3deg) translate(0px);
+  -o-transform: rotate(0deg) scale(1, 1) skew(-3deg) translate(0px);
+  -ms-transform: rotate(0deg) scale(1, 1) skew(-3deg) translate(0px);
   color: #df1c22;
   font-size: 2.6em;
   line-height: 1.1em;
@@ -7356,7 +7363,15 @@ ul.caption-list li h3 span {
   display: block;
   font-size: 1.4em; }
 
+.carousel-control .glyphicon-chevron-left {
+  margin-left: -69px; }
+
 ul.caption-list li p {
+  transform: rotate(0deg) scale(1, 1) skew(-3deg) translate(0px);
+  -webkit-transform: rotate(0deg) scale(1, 1) skew(-3deg) translate(0px);
+  -moz-transform: rotate(0deg) scale(1, 1) skew(-3deg) translate(0px);
+  -o-transform: rotate(0deg) scale(1, 1) skew(-3deg) translate(0px);
+  -ms-transform: rotate(0deg) scale(1, 1) skew(-3deg) translate(0px);
   color: #848484;
   font-size: 12px;
   margin: 0 auto;
@@ -7376,6 +7391,11 @@ ul.caption-list li {
   padding-top: 25px;
   padding-bottom: 30px;
   width: 29%;
+  transform: rotate(-7deg) scale(1, 1) skew(-8deg) translate(0px);
+  -webkit-transform: rotate(-7deg) scale(1, 1) skew(-8deg) translate(0px);
+  -moz-transform: rotate(-7deg) scale(1, 1) skew(-8deg) translate(0px);
+  -o-transform: rotate(-7deg) scale(1, 1) skew(-8deg) translate(0px);
+  -ms-transform: rotate(-7deg) scale(1, 1) skew(-8deg) translate(0px);
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
@@ -7463,31 +7483,6 @@ h4.prediktion-header {
   .featurette-heading {
     margin-top: 120px; } }
 /*  Carosel buttons ------------------------------ */
-.carousel-indicators {
-  bottom: 5px;
-  height: auto;
-  left: 0;
-  list-style: outside none none;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  z-index: 15;
-  padding: 0;
-  margin: 0; }
-  .carousel-indicators li {
-    margin: 0;
-    width: 33%;
-    height: 50px;
-    border-radius: 0;
-    height: 89px;
-    text-indent: 0; }
-  .carousel-indicators .active {
-    background-color: rgba(255, 255, 255, 0.7);
-    margin: 0;
-    width: 33%;
-    height: 89px;
-    border-radius: 0; }
-
 /*  END Carosel buttons -------------------------- */
 /*  POINTS SECTION -------------------- */
 section#points {
@@ -8138,6 +8133,35 @@ section#points-new {
 @-moz-document url-prefix() {
   fieldset {
     display: table-cell; } }
+a.where-anorak-next {
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 2147483647; }
+  a.where-anorak-next .where-anorak-wrapper {
+    background-color: #1888CA;
+    clear: both;
+    color: #fff;
+    display: block;
+    font-size: 1em;
+    height: 20px;
+    padding: 0;
+    text-transform: uppercase;
+    width: 100%; }
+    a.where-anorak-next .where-anorak-wrapper:before {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+      content: "\e029";
+      display: inline-block;
+      font-family: 'Glyphicons Halflings'; }
+
 section.goTop
 .modal-backdrop {
   display: none; }
@@ -8187,34 +8211,6 @@ section.goTop
         left: 15px;
         position: relative;
         top: 14px; }
-  #dashboard-wrapper a.where-anorak-next {
-    bottom: 0;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 100%;
-    z-index: 2147483647; }
-    #dashboard-wrapper a.where-anorak-next .where-anorak-wrapper {
-      background-color: #1888CA;
-      clear: both;
-      color: #fff;
-      display: block;
-      font-size: 1em;
-      height: 20px;
-      padding: 0;
-      text-transform: uppercase;
-      width: 100%; }
-      #dashboard-wrapper a.where-anorak-next .where-anorak-wrapper:before {
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg);
-        content: "\e029";
-        display: inline-block;
-        font-family: 'Glyphicons Halflings'; }
   #dashboard-wrapper #predikta-dashboard {
     width: 98%;
     display: block;
