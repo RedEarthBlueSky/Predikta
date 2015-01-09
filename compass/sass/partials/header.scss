@@ -167,3 +167,24 @@
        }
     } 
 /*  HEADER -----------------------------*/
+
+#home-page {
+  .navbar-wrapper {
+    #PrediktaTop {
+      .container {
+        ul {
+          li#logoListItem {
+            width:73%;
+            a#logoLink {
+              .lologo {
+                width:200px;
+                float:none;
+                margin:0 auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

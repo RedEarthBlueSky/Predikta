@@ -7129,6 +7129,13 @@ button.close {
                 color: #232022; }
 
 /*  HEADER -----------------------------*/
+#home-page .navbar-wrapper #PrediktaTop .container ul li#logoListItem {
+  width: 73%; }
+  #home-page .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink .lologo {
+    width: 200px;
+    float: none;
+    margin: 0 auto; }
+
 .up-arrow {
   bottom: 4px;
   color: #1888ca;
@@ -7235,9 +7242,6 @@ footer {
     text-align: center; }
 
 /*  END FOOTER ------------------------------------------------  */
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 body {
   padding-bottom: 40px;
   color: #5a5a5a; }
@@ -7263,37 +7267,25 @@ body {
   text-align: center;
   width: 100%; }
 
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0; }
-
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px; }
+  .navbar-wrapper .navbar .container {
+    width: auto;
+    padding-right: 0;
+    padding-left: 0; }
 
-.navbar-wrapper .navbar .container {
-  width: auto; }
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-/* Carousel base class */
 .carousel {
   height: 96%;
   max-height: 815px;
   position: relative;
   width: 100%; }
 
-/* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10; }
 
-/* Declare heights because of positioning of img element */
 .carousel-inner {
-  height: 637px;
+  height: 93vh;
   position: relative;
   width: 100%; }
 
@@ -7317,9 +7309,6 @@ body {
   height: 99%;
   width: 100%; }
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-/* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center; }
@@ -7344,14 +7333,81 @@ body {
 #blogSlide.carousel-caption h1 span {
   color: #df1c22; }
 
+ul.caption-list {
+  clear: both;
+  display: block;
+  float: none;
+  width: 91%;
+  margin: 0 auto; }
+
+div.container div.carousel-caption h3,
+ul.caption-list li h3 {
+  color: #df1c22;
+  font-size: 2.6em;
+  line-height: 1.1em;
+  margin-bottom: 5px;
+  margin-top: 0;
+  text-transform: uppercase; }
+
+div.boocarousel-caption h3 span,
+ul.caption-list li h3 span {
+  clear: both;
+  color: #1888CA;
+  display: block;
+  font-size: 1.4em; }
+
+ul.caption-list li p {
+  color: #848484;
+  font-size: 12px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 70%; }
+
+ul.caption-list li {
+  background-color: #f5f5f5;
+  border: 7px solid #fff;
+  border-radius: 0 30px;
+  display: inline;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  width: 29%;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.carousel-caption {
+  width: 100%;
+  display: block;
+  float: left;
+  left: 0;
+  margin-top: 80px;
+  right: 0; }
+
 h1.prediktion-header {
   color: #fff;
-  font-size: 3em;
+  font-size: 4em;
   position: relative;
   text-align: center;
   text-transform: uppercase;
   top: 50px;
   width: 100%; }
+
+h4.prediktion-header {
+  color: #fff;
+  font-size: 2em;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50px;
+  width: 37%;
+  margin: 0 auto; }
 
 #blogSlide.carousel-caption h3 {
   color: #fff;
@@ -7371,20 +7427,15 @@ h1.prediktion-header {
   margin: 0;
   top: 20px; }
 
-/* Featurettes
-------------------------- */
 .featurette-divider {
   margin: 80px 0;
   /* Space out the Bootstrap <hr> more */ }
 
-/* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px; }
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper .container {
@@ -11839,61 +11890,6 @@ a#signUpButton {
   text-align: center;
   text-transform: uppercase;
   width: 80px; }
-
-ul.caption-list {
-  clear: both;
-  display: block;
-  float: left; }
-
-div.container div.carousel-caption h3,
-ul.caption-list li h3 {
-  color: #df1c22;
-  font-size: 1.6em;
-  margin-bottom: 5px;
-  margin-top: 0;
-  text-transform: uppercase; }
-
-div.boocarousel-caption h3 span,
-ul.caption-list li h3 span {
-  clear: both;
-  color: #1888CA;
-  display: block;
-  font-size: 1.4em; }
-
-ul.caption-list li p {
-  color: #595959;
-  font-size: 14px;
-  margin: 0 auto;
-  width: 70%; }
-
-ul.caption-list li {
-  background-color: #ffffff;
-  display: inline;
-  float: left;
-  margin-right: 5%;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  transform: perspective(600px) rotateY(20deg);
-  width: 28%; }
-
-ul.caption-list li {
-  background-color: #fff;
-  display: inline;
-  float: left;
-  width: 28%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-right: 5%;
-  -webkit-transform: perspective(600px) rotateY(20deg);
-  -moz-transform: perspective(600px) rotateY(20deg);
-  -ms-transform: perspective(600px) rotateY(20deg);
-  -o-transform: perspective(600px) rotateY(20deg);
-  transform: perspective(600px) rotateY(20deg);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden; }
 
 .moreOne span:before {
   bottom: 6px;
