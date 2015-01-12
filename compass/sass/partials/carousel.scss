@@ -271,6 +271,7 @@ ul.caption-list.slide-two {
   }
 }
 ul.caption-list.slide-three {
+  width:100%;
   li {
     width:auto;
     h2 {
@@ -294,6 +295,19 @@ ul.caption-list.slide-three {
     }
     &:first-child {
       @include box-shadow(15px, 15px, 25px, #9fa8b0);
+      position:relative;
+      z-index:9999;
+    }
+    &:nth-child(2) {
+      position:relative;
+      right:120px;
+      z-index:0;
+    }
+    &:nth-child(3) {
+      width: 500px;
+      height: 300px;
+      overflow: hidden;
+      padding-top:0;
     }
   }
 }

@@ -2021,7 +2021,1317 @@
 
                   <div id="LeagueTwo" class="panel-collapse collapse">
                     <div class="panel-body">
-                      <p>Twitter Bootstrap is a powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="http://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                      <div class="panel-group" id="players">
+                        <div class="panel panel-default">
+
+
+
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#playerOneLeagueTwo"><span class="rank">01</span><span class="name">Player One</span><span class="points">20</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <!--  modal -->
+                          <div class="modal fade" id="playerOneLeagueTwo" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="myModalLabel"><span class="player-name">Player One</span>'s Points</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Back</button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="table-responsive">
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <th class="home-team">HOME</th>
+                                          <th class="actual" colspan="3">ACTUAL</th>
+                                          <th class="away-team">AWAY</th>
+                                          <th class="away" colspan="3">THEM</th>
+                                          <th class="points">PTS</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr class="banker">
+                                          <td class="home-team">Newcastle1</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam1</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>3</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Arsenal2</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam2</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>1</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Chelsea3</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam3</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>2</span></td>
+                                        </tr>
+                                        <tr class="in-play banker">
+                                          <td class="home-team">Everton4</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam4</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>0</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Hull5</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam5</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>3</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Leicester6</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam6</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>2</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Stoke7</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam7</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>3</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Watford8</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam8</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Man City9</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam9</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Aston Villa</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>-</span></td>
+                                        </tr>
+                                        <tr class="banker">
+                                          <td class="home-team">Newcastle1</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam1</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>3</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Arsenal2</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam2</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>1</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Chelsea3</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam3</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>2</span></td>
+                                        </tr>
+                                        <tr class="in-play banker">
+                                          <td class="home-team">Everton4</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam4</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>0</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Hull5</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam5</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>3</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Leicester6</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam6</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>2</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Stoke7</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam7</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>3</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Watford8</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam8</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Man City9</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam9</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Aston Villa</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>-</span></td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr class="tfoot-header">
+                                          <td>Result</td>
+                                          <td>Spot On</td>
+                                          <td>Goal Diff</td>
+                                          <td>Total</td>
+                                        </tr>
+                                        <tr class="results">
+                                          <td class="result">3</td>
+                                          <td class="spot-on">1</td>
+                                          <td class="goal-diff">2</td>
+                                          <td class="total">6</td>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--  end modal -->
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-twoLeagueTwo"><span class="rank">02</span><span class="name">Player Two</span><span class="points">19</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <!--  modal -->
+                          <div class="modal fade" id="player-twoLeagueTwo" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="myModalLabel"><span class="player-name">Player Two</span>'s Points</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">back</button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="table-responsive">
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <th class="home-team">HOME</th>
+                                          <th class="actual" colspan="3">ACTUAL</th>
+                                          <th class="away-team">AWAY</th>
+                                          <th class="away" colspan="3">THEM</th>
+                                          <th class="points">PTS</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr class="banker">
+                                          <td class="home-team">Newcastle1</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam1</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Arsenal2</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam2</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">3</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Chelsea3</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam3</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Everton4</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam4</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Hull5</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam5</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">2</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Leicester6</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam6</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Stoke7</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam7</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">4</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Watford8</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam8</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Man City9</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam9</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Aston Villa10</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam10</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr class="tfoot-header">
+                                          <td>Result</td>
+                                          <td>Spot On</td>
+                                          <td>Goal Diff</td>
+                                          <td>Total</td>
+                                        </tr>
+                                        <tr class="results">
+                                          <td class="result">3</td>
+                                          <td class="spot-on">1</td>
+                                          <td class="goal-diff">2</td>
+                                          <td class="total">6</td>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--  end modal -->
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-threeLeagueTwo"><span class="rank">03</span><span class="name">Player Three</span><span class="points">18</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <!--  modal -->
+                          <div class="modal fade" id="player-threeLeagueTwo" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="myModalLabel"><span class="player-name">Player Three</span>'s Points</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Back</button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="table-responsive">
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <th class="home-team">HOME</th>
+                                          <th class="actual" colspan="3">ACTUAL</th>
+                                          <th class="away-team">AWAY</th>
+                                          <th class="away" colspan="3">THEM</th>
+                                          <th class="points">PTS</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr class="banker">
+                                          <td class="home-team">Newcastle1</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam1</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Arsenal2</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam2</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">3</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Chelsea3</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam3</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Everton4</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam4</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Hull5</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam5</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">2</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Leicester6</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam6</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Stoke7</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam7</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">4</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Watford8</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam8</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Man City9</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam9</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Aston Villa10</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam10</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr class="tfoot-header">
+                                          <td>Result</td>
+                                          <td>Spot On</td>
+                                          <td>Goal Diff</td>
+                                          <td>Total</td>
+                                        </tr>
+                                        <tr class="results">
+                                          <td class="result">3</td>
+                                          <td class="spot-on">1</td>
+                                          <td class="goal-diff">2</td>
+                                          <td class="total">6</td>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--  end modal -->
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-fourLeagueTwo"><span class="rank">04</span><span class="name">Player Four</span><span class="points">16</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <!--  modal -->
+                          <div class="modal fade" id="player-fourLeagueTwo" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="myModalLabel"><span class="player-name">Player Three</span>'s Points</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Back</button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="table-responsive">
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <th class="home-team">HOME</th>
+                                          <th class="actual" colspan="3">ACTUAL</th>
+                                          <th class="away-team">AWAY</th>
+                                          <th class="away" colspan="3">THEM</th>
+                                          <th class="points">PTS</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr class="banker">
+                                          <td class="home-team">Newcastle1</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam1</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Arsenal2</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam2</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">3</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Chelsea3</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam3</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Everton4</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam4</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Hull5</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam5</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">2</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Leicester6</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam6</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Stoke7</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam7</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">4</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Watford8</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam8</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Man City9</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam9</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Aston Villa10</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam10</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr class="tfoot-header">
+                                          <td>Result</td>
+                                          <td>Spot On</td>
+                                          <td>Goal Diff</td>
+                                          <td>Total</td>
+                                        </tr>
+                                        <tr class="results">
+                                          <td class="result">3</td>
+                                          <td class="spot-on">1</td>
+                                          <td class="goal-diff">2</td>
+                                          <td class="total">6</td>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--  end modal -->
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-fiveLeagueTwo"><span class="rank">05</span><span class="name">Player Five</span><span class="points">15</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <!--  modal -->
+                          <div class="modal fade" id="player-fiveLeagueTwo" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="myModalLabel"><span class="player-name">Player Five</span>'s Points</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Back</button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="table-responsive">
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <th class="home-team">HOME</th>
+                                          <th class="actual" colspan="3">ACTUAL</th>
+                                          <th class="away-team">AWAY</th>
+                                          <th class="away" colspan="3">THEM</th>
+                                          <th class="points">PTS</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr class="banker">
+                                          <td class="home-team">Newcastle1</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam1</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Arsenal2</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam2</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">3</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Chelsea3</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam3</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Everton4</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam4</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Hull5</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam5</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">2</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Leicester6</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam6</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Stoke7</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam7</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">4</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Watford8</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam8</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Man City9</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam9</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Aston Villa10</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam10</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr class="tfoot-header">
+                                          <td>Result</td>
+                                          <td>Spot On</td>
+                                          <td>Goal Diff</td>
+                                          <td>Total</td>
+                                        </tr>
+                                        <tr class="results">
+                                          <td class="result">3</td>
+                                          <td class="spot-on">1</td>
+                                          <td class="goal-diff">2</td>
+                                          <td class="total">6</td>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--  end modal -->
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-sixLeagueTwo"><span class="rank">06</span><span class="name">Player Six</span><span class="points">12</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-sixLeagueTwo" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-sevenLeagueTwo"><span class="rank">07</span><span class="name">Player Seven</span><span class="points">12</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-sevenLeagueTwo" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-eightLeagueTwo"><span class="rank">08</span><span class="name">Player eight</span><span class="points">11</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-eightLeagueTwo" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-nineLeagueTwo"><span class="rank">09</span><span class="name">Player Nine</span><span class="points">10</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-nineLeagueTwo" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-tenLeagueTwo"><span class="rank">10</span><span class="name">Player Ten</span><span class="points">09</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-tenLeagueTwo" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-elevenLeagueTwo"><span class="rank">11</span><span class="name">Player Eleven</span><span class="points">08</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-elevenLeagueTwo" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-twelveLeagueTwo"><span class="rank">12</span><span class="name">Player Twelve</span><span class="points">07</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-twelveLeagueTwo" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-thirteenLeagueTwo"><span class="rank">13</span><span class="name">Player Thirteen</span><span class="points">06</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-thirteenLeagueTwo" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-fourteenLeagueTwo"><span class="rank">14</span><span class="name">Player Fourteen</span><span class="points">06</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-fourteenLeagueTwo" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-fifteenLeagueTwo"><span class="rank">15</span><span class="name">Player Fifteen</span><span class="points">04</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-fifteenLeagueTwo" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-sixteenLeagueTwo"><span class="rank">16</span><span class="name">Player Sixteen</span><span class="points">03</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-sixteenLeagueTwo" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-seventeenLeagueTwo"><span class="rank">17</span><span class="name">Player Seventeen</span><span class="points">03</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-seventeenLeagueTwo" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-eighteenLeagueTwo"><span class="rank">18</span><span class="name">Player Eighteen</span><span class="points">02</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-eighteenLeagueTwo" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div style="width:20%" data-toggle="modal" data-target="#player-nineteenLeagueTwo"><span class="rank">19</span><span class="name"></span><span class="points">02</span></div>
+                            <div class="name-overflow">Player Nineteen</div>
+                          </div>
+                          <div id="player-nineteenLeagueTwo" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -2036,7 +3346,1314 @@
                   </aside>
                   <div id="LeagueThree" class="panel-collapse collapse">
                     <div class="panel-body">
-                      <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="http://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                      <div class="panel-group" id="players">
+                        <div class="panel panel-default">
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#playerOneLeagueThree"><span class="rank">01</span><span class="name">Player One</span><span class="points">20</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <!--  modal -->
+                          <div class="modal fade" id="playerOneLeagueThree" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="myModalLabel"><span class="player-name">Player One</span>'s Points</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Back</button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="table-responsive">
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <th class="home-team">HOME</th>
+                                          <th class="actual" colspan="3">ACTUAL</th>
+                                          <th class="away-team">AWAY</th>
+                                          <th class="away" colspan="3">THEM</th>
+                                          <th class="points">PTS</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr class="banker">
+                                          <td class="home-team">Newcastle1</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam1</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>3</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Arsenal2</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam2</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>1</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Chelsea3</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam3</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>2</span></td>
+                                        </tr>
+                                        <tr class="in-play banker">
+                                          <td class="home-team">Everton4</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam4</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>0</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Hull5</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam5</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>3</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Leicester6</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam6</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>2</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Stoke7</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam7</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>3</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Watford8</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam8</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Man City9</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam9</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Aston Villa</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>-</span></td>
+                                        </tr>
+                                        <tr class="banker">
+                                          <td class="home-team">Newcastle1</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam1</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>3</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Arsenal2</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam2</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>1</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Chelsea3</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam3</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>2</span></td>
+                                        </tr>
+                                        <tr class="in-play banker">
+                                          <td class="home-team">Everton4</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam4</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>0</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Hull5</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam5</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>3</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Leicester6</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam6</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>2</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Stoke7</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam7</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>3</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Watford8</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam8</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Man City9</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam9</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Aston Villa</td>
+                                          <td class="actual">
+                                            <table>
+                                              <tr>
+                                                <td class="actual-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="actual-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="away-team">AwayTeam</td>
+                                          <td class="away">
+                                            <table>
+                                              <tr>
+                                                <td class="client-home">1</td>
+                                                <td class="dash">-</td>
+                                                <td class="client-away">2</td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                          <td class="points"><span>-</span></td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr class="tfoot-header">
+                                          <td>Result</td>
+                                          <td>Spot On</td>
+                                          <td>Goal Diff</td>
+                                          <td>Total</td>
+                                        </tr>
+                                        <tr class="results">
+                                          <td class="result">3</td>
+                                          <td class="spot-on">1</td>
+                                          <td class="goal-diff">2</td>
+                                          <td class="total">6</td>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--  end modal -->
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-twoLeagueThree"><span class="rank">02</span><span class="name">Player Two</span><span class="points">19</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <!--  modal -->
+                          <div class="modal fade" id="player-twoLeagueThree" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="myModalLabel"><span class="player-name">Player Two</span>'s Points</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">back</button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="table-responsive">
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <th class="home-team">HOME</th>
+                                          <th class="actual" colspan="3">ACTUAL</th>
+                                          <th class="away-team">AWAY</th>
+                                          <th class="away" colspan="3">THEM</th>
+                                          <th class="points">PTS</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr class="banker">
+                                          <td class="home-team">Newcastle1</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam1</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Arsenal2</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam2</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">3</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Chelsea3</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam3</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Everton4</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam4</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Hull5</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam5</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">2</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Leicester6</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam6</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Stoke7</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam7</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">4</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Watford8</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam8</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Man City9</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam9</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Aston Villa10</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam10</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr class="tfoot-header">
+                                          <td>Result</td>
+                                          <td>Spot On</td>
+                                          <td>Goal Diff</td>
+                                          <td>Total</td>
+                                        </tr>
+                                        <tr class="results">
+                                          <td class="result">3</td>
+                                          <td class="spot-on">1</td>
+                                          <td class="goal-diff">2</td>
+                                          <td class="total">6</td>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--  end modal -->
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-threeLeagueThree"><span class="rank">03</span><span class="name">Player Three</span><span class="points">18</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <!--  modal -->
+                          <div class="modal fade" id="player-threeLeagueThree" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="myModalLabel"><span class="player-name">Player Three</span>'s Points</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Back</button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="table-responsive">
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <th class="home-team">HOME</th>
+                                          <th class="actual" colspan="3">ACTUAL</th>
+                                          <th class="away-team">AWAY</th>
+                                          <th class="away" colspan="3">THEM</th>
+                                          <th class="points">PTS</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr class="banker">
+                                          <td class="home-team">Newcastle1</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam1</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Arsenal2</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam2</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">3</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Chelsea3</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam3</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Everton4</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam4</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Hull5</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam5</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">2</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Leicester6</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam6</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Stoke7</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam7</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">4</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Watford8</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam8</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Man City9</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam9</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Aston Villa10</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam10</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr class="tfoot-header">
+                                          <td>Result</td>
+                                          <td>Spot On</td>
+                                          <td>Goal Diff</td>
+                                          <td>Total</td>
+                                        </tr>
+                                        <tr class="results">
+                                          <td class="result">3</td>
+                                          <td class="spot-on">1</td>
+                                          <td class="goal-diff">2</td>
+                                          <td class="total">6</td>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--  end modal -->
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-fourLeagueThree"><span class="rank">04</span><span class="name">Player Four</span><span class="points">16</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <!--  modal -->
+                          <div class="modal fade" id="player-fourLeagueThree" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="myModalLabel"><span class="player-name">Player Three</span>'s Points</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Back</button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="table-responsive">
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <th class="home-team">HOME</th>
+                                          <th class="actual" colspan="3">ACTUAL</th>
+                                          <th class="away-team">AWAY</th>
+                                          <th class="away" colspan="3">THEM</th>
+                                          <th class="points">PTS</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr class="banker">
+                                          <td class="home-team">Newcastle1</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam1</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Arsenal2</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam2</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">3</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Chelsea3</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam3</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Everton4</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam4</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Hull5</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam5</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">2</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Leicester6</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam6</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Stoke7</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam7</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">4</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Watford8</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam8</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Man City9</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam9</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Aston Villa10</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam10</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr class="tfoot-header">
+                                          <td>Result</td>
+                                          <td>Spot On</td>
+                                          <td>Goal Diff</td>
+                                          <td>Total</td>
+                                        </tr>
+                                        <tr class="results">
+                                          <td class="result">3</td>
+                                          <td class="spot-on">1</td>
+                                          <td class="goal-diff">2</td>
+                                          <td class="total">6</td>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--  end modal -->
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-fiveLeagueThree"><span class="rank">05</span><span class="name">Player Five</span><span class="points">15</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <!--  modal -->
+                          <div class="modal fade" id="player-fiveLeagueThree" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h4 class="modal-title" id="myModalLabel"><span class="player-name">Player Five</span>'s Points</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Back</button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="table-responsive">
+                                    <table>
+                                      <thead>
+                                        <tr>
+                                          <th class="home-team">HOME</th>
+                                          <th class="actual" colspan="3">ACTUAL</th>
+                                          <th class="away-team">AWAY</th>
+                                          <th class="away" colspan="3">THEM</th>
+                                          <th class="points">PTS</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr class="banker">
+                                          <td class="home-team">Newcastle1</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam1</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Arsenal2</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam2</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">3</span></td>
+                                        </tr>
+                                        <tr>
+                                          <td class="home-team">Chelsea3</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam3</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">0</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Everton4</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam4</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Hull5</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam5</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">2</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Leicester6</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam6</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">1</span></td>
+                                        </tr>
+                                        <tr class="in-play">
+                                          <td class="home-team">Stoke7</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam7</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">4</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Watford8</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam8</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Man City9</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam9</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                        <tr class="pending">
+                                          <td class="home-team">Aston Villa10</td>
+                                          <td class="actual-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="actual-away">2</td>
+                                          <td class="away-team">AwayTeam10</td>
+                                          <td class="client-home">1</td>
+                                          <td class="dash">-</td>
+                                          <td class="client-away">2</td>
+                                          <td class="points"><span class="rank">-</span></td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr class="tfoot-header">
+                                          <td>Result</td>
+                                          <td>Spot On</td>
+                                          <td>Goal Diff</td>
+                                          <td>Total</td>
+                                        </tr>
+                                        <tr class="results">
+                                          <td class="result">3</td>
+                                          <td class="spot-on">1</td>
+                                          <td class="goal-diff">2</td>
+                                          <td class="total">6</td>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--  end modal -->
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-sixLeagueThree"><span class="rank">06</span><span class="name">Player Six</span><span class="points">12</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-sixLeagueThree" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-sevenLeagueThree"><span class="rank">07</span><span class="name">Player Seven</span><span class="points">12</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-sevenLeagueThree" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-eightLeagueThree"><span class="rank">08</span><span class="name">Player eight</span><span class="points">11</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-eightLeagueThree" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-nineLeagueThree"><span class="rank">09</span><span class="name">Player Nine</span><span class="points">10</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-nineLeagueThree" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-tenLeagueThree"><span class="rank">10</span><span class="name">Player Ten</span><span class="points">09</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-tenLeagueThree" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-elevenLeagueThree"><span class="rank">11</span><span class="name">Player Eleven</span><span class="points">08</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-elevenLeagueThree" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-twelveLeagueThree"><span class="rank">12</span><span class="name">Player Twelve</span><span class="points">07</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-twelveLeagueThree" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-thirteenLeagueThree"><span class="rank">13</span><span class="name">Player Thirteen</span><span class="points">06</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-thirteenLeagueThree" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-fourteenLeagueThree"><span class="rank">14</span><span class="name">Player Fourteen</span><span class="points">06</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-fourteenLeagueThree" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-fifteenLeagueThree"><span class="rank">15</span><span class="name">Player Fifteen</span><span class="points">04</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-fifteenLeagueThree" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-sixteenLeagueThree"><span class="rank">16</span><span class="name">Player Sixteen</span><span class="points">03</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-sixteenLeagueThree" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-seventeenLeagueThree"><span class="rank">17</span><span class="name">Player Seventeen</span><span class="points">03</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-seventeenLeagueThree" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div data-toggle="modal" data-target="#player-eighteenLeagueThree"><span class="rank">18</span><span class="name">Player Eighteen</span><span class="points">02</span></div>
+                            <div class="name-overflow"></div>
+                          </div>
+                          <div id="player-eighteenLeagueThree" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                          <div class="player-wrapper">
+                            <div style="width:20%" data-toggle="modal" data-target="#player-nineteenLeagueThree"><span class="rank">19</span><span class="name"></span><span class="points">02</span></div>
+                            <div class="name-overflow">Player Nineteen</div>
+                          </div>
+                          <div id="player-nineteenLeagueThree" class="panel-collapse collapse">
+                            <ul>
+                              <li class="result">Result <span></span></li>
+                              <li class="spot-on">Spot on <span></span></li>
+                              <li class="goal-diff">Goal Diff <span></span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
