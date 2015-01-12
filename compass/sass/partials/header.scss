@@ -189,3 +189,28 @@
     }
   }
 }
+
+@media only screen and (max-width:1790px), only screen and (max-device-width: 1790px) {
+
+  #home-page {
+    .navbar-wrapper {
+      #PrediktaTop {
+        .container {
+          ul {
+            li.socialListItem {
+              margin-left:10px;
+            }
+            li#logoListItem {
+              width:55%;
+              a#logoLink {
+                .lologo {
+                  height:55px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
