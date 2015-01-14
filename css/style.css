@@ -7145,6 +7145,31 @@ button.close {
     width: 55%; }
     #home-page .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink .lologo {
       height: 55px; } }
+@media only screen and (max-width: 1023px), only screen and (max-device-width: 1023px) {
+  #home-page .navbar-wrapper #PrediktaTop .container ul li#logoListItem {
+    width: 37%; } }
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+  #home-page .navbar-wrapper #PrediktaTop .container #navbar {
+    display: block; }
+    #home-page .navbar-wrapper #PrediktaTop .container #navbar ul li.socialListItem {
+      height: 45px;
+      float: left;
+      margin-left: 0;
+      padding-bottom: 0;
+      width: 10%; }
+      #home-page .navbar-wrapper #PrediktaTop .container #navbar ul li.socialListItem a {
+        font-size: 2em; }
+    #home-page .navbar-wrapper #PrediktaTop .container #navbar ul li#logoListItem {
+      width: 50%; }
+    #home-page .navbar-wrapper #PrediktaTop .container #navbar ul li#loginbtncon {
+      display: block;
+      float: left;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      text-align: center;
+      width: 50%; }
+      #home-page .navbar-wrapper #PrediktaTop .container #navbar ul li#loginbtncon a {
+        margin: 0 auto; } }
 .up-arrow {
   bottom: 4px;
   color: #1888ca;
@@ -7358,7 +7383,9 @@ ul.caption-list li h3 span {
   font-size: 1.4em; }
 
 .carousel-control .glyphicon-chevron-left {
-  margin-left: -69px; }
+  margin-left: -125px; }
+.carousel-control .glyphicon-chevron-right {
+  right: 25px; }
 
 ul.caption-list li p {
   transform: rotate(0deg) scale(1, 1) skew(-3deg) translate(0px);
@@ -7555,7 +7582,24 @@ ul.caption-list.slide-three {
   .container.third-slide .carousel-caption {
     top: 0; }
 
+.container.fourth-slide ul.caption-list {
+  padding-left: 2%;
+  width: 100%; }
+  .container.fourth-slide ul.caption-list li {
+    width: 16%; }
+    .container.fourth-slide ul.caption-list li p {
+      font-size: 16px;
+      height: 20px; }
+    .container.fourth-slide ul.caption-list li h3 {
+      font-size: 1.8em; }
+    .container.fourth-slide ul.caption-list li h3.ladbrokes {
+      font-size: 2.8em;
+      margin-bottom: 0; }
+
 @media only screen and (max-width: 1600px), only screen and (max-device-width: 1600px) {
+  .carousel-control .glyphicon-chevron-left {
+    margin-left: -90px; }
+
   ul.caption-list.slide-three {
     bottom: 40px;
     float: left;
@@ -7580,8 +7624,30 @@ ul.caption-list.slide-three {
       top: 170px;
       width: 250px; }
       ul.caption-list.slide-three li:nth-child(3) img {
-        width: 230px; } }
+        width: 230px; }
+
+  .container.fourth-slide ul.caption-list li {
+    width: 17%; }
+    .container.fourth-slide ul.caption-list li p {
+      font-size: 12px;
+      line-height: 12px; }
+    .container.fourth-slide ul.caption-list li h3 {
+      font-size: 1.2em; }
+    .container.fourth-slide ul.caption-list li h3.ladbrokes {
+      font-size: 2em; } }
 @media only screen and (max-width: 1280px), only screen and (max-device-width: 1280px) {
+  h1.prediktion-header {
+    margin-bottom: 0;
+    margin-top: 0; }
+
+  h4.prediktion-header {
+    width: 100%; }
+
+  .carousel-caption.slide-one {
+    margin-top: 0; }
+    .carousel-caption.slide-one ul.caption-list li {
+      width: 31%; }
+
   ul.caption-list.slide-three li {
     padding-bottom: 15px;
     padding-top: 15px; }
@@ -7599,8 +7665,23 @@ ul.caption-list.slide-three {
     ul.caption-list.slide-three li:nth-child(3) {
       height: 200px;
       top: 135px;
-      width: 244px; } }
+      width: 244px; }
+
+  ul.caption-list.slide-two {
+    width: 70%; }
+
+  .carousel-control .glyphicon-chevron-left {
+    margin-left: -77px; }
+
+  .container.fourth-slide ul.caption-list li {
+    padding-bottom: 20px;
+    padding-top: 17px; }
+    .container.fourth-slide ul.caption-list li p {
+      font-size: 10px; } }
 @media only screen and (max-width: 1020px), only screen and (max-device-width: 1020px) {
+  a.about-predikta-next {
+    top: 81.5vh; }
+
   ul.caption-list.slide-three li {
     padding-bottom: 15px;
     padding-top: 15px; }
@@ -7623,10 +7704,44 @@ ul.caption-list.slide-three {
       ul.caption-list.slide-three li:nth-child(3) img {
         width: 200px; }
 
+  ul.caption-list.slide-two {
+    float: left;
+    width: 90%; }
+
   .carousel-inner {
-    height: 85vh; } }
-@media (min-width: 768px) {
-  /* Navbar positioning foo */
+    height: 85vh; }
+
+  .carousel-control .glyphicon-chevron-left {
+    margin-left: -60px; }
+
+  .container.fourth-slide ul.caption-list li {
+    width: 17%; }
+    .container.fourth-slide ul.caption-list li p {
+      font-size: 8px; }
+    .container.fourth-slide ul.caption-list li h3 {
+      font-size: 0.8em; }
+    .container.fourth-slide ul.caption-list li h3.ladbrokes {
+      font-size: 1.5em; }
+
+  h1.prediktion-header {
+    font-size: 3em; }
+
+  h4.prediktion-header {
+    font-size: 1.4em; }
+
+  .carousel-caption.slide-one {
+    margin-top: 0; }
+    .carousel-caption.slide-one ul.caption-list {
+      width: 100%; }
+      .carousel-caption.slide-one ul.caption-list li {
+        width: 31%; }
+        .carousel-caption.slide-one ul.caption-list li h3 {
+          font-size: 2em; }
+        .carousel-caption.slide-one ul.caption-list li p {
+          width: 100%; }
+          .carousel-caption.slide-one ul.caption-list li p br {
+            display: none; } }
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px; }
@@ -7635,22 +7750,201 @@ ul.caption-list.slide-three {
     padding-right: 0;
     padding-left: 0; }
 
-  /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 0;
     background-color: transparent; }
 
-  /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4; }
 
   .featurette-heading {
-    font-size: 50px; } }
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px; } }
+    font-size: 50px; }
+
+  .carousel-caption {
+    margin-top: -30px;
+    top: 20%; }
+
+  .carousel-control .glyphicon-chevron-left {
+    margin-left: -30px; }
+
+  .container.fourth-slide ul.caption-list li {
+    clear: both;
+    display: block;
+    float: none;
+    margin: 10px auto;
+    width: 85%;
+    padding-bottom: 5px;
+    padding-top: 5px; }
+    .container.fourth-slide ul.caption-list li p {
+      font-size: 8px; }
+    .container.fourth-slide ul.caption-list li h3 {
+      font-size: 1.8em;
+      margin-bottom: 0;
+      padding-top: 5px; }
+      .container.fourth-slide ul.caption-list li h3 span {
+        display: inline; }
+    .container.fourth-slide ul.caption-list li h3.ladbrokes {
+      font-size: 2.5em; }
+
+  h1.prediktion-header {
+    font-size: 3em;
+    margin-bottom: 0;
+    margin-top: -30px; }
+
+  .pool-size-guarantee {
+    font-size: 1em;
+    height: 150px;
+    width: 150px; }
+    .pool-size-guarantee span {
+      margin-top: 30px; }
+
+  ul.caption-list.slide-two li {
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 15px;
+    padding-top: 10px; }
+    ul.caption-list.slide-two li h3 {
+      font-size: 3em; }
+    ul.caption-list.slide-two li p {
+      font-size: 18px;
+      width: 90%; } }
+@media only screen and (max-width: 639px), only screen and (max-device-width: 639px) {
+  .carousel-control .glyphicon-chevron-left {
+    margin-left: -30px; }
+
+  .container.fourth-slide {
+    padding-left: 0;
+    padding-right: 0; }
+    .container.fourth-slide h1.prediktion-header {
+      font-size: 1.4em;
+      line-height: 18px;
+      margin-bottom: 0;
+      margin-top: -50px;
+      padding-bottom: 0;
+      padding-top: 3px; }
+    .container.fourth-slide #play-predikta-button {
+      font-size: 0.8em;
+      top: 0;
+      margin-top: 15px;
+      padding: 5px 15px; }
+    .container.fourth-slide ul.caption-list li {
+      border-width: 2px;
+      margin: 5px auto;
+      padding-bottom: 0;
+      padding-top: 3px;
+      width: 96%; }
+      .container.fourth-slide ul.caption-list li h3 {
+        font-size: 1em; }
+      .container.fourth-slide ul.caption-list li h3.ladbrokes {
+        font-size: 1.2em;
+        margin-bottom: 10px; }
+
+  h1.prediktion-header {
+    font-size: 1.6em;
+    margin-top: -40px; }
+
+  h4.prediktion-header {
+    font-size: .6em; }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0; }
+
+  .carousel-caption.slide-one #play-predikta-button {
+    font-size: 0.8em;
+    top: 5px;
+    margin-top: 15px;
+    padding: 5px 15px; }
+  .carousel-caption.slide-one ul.caption-list {
+    float: left;
+    padding-left: 0;
+    margin-top: -18px;
+    width: 100%; }
+    .carousel-caption.slide-one ul.caption-list li {
+      border-width: 4px;
+      margin-bottom: 10px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      width: 100%; }
+      .carousel-caption.slide-one ul.caption-list li h3 {
+        font-size: 1.2em;
+        line-height: 1em; }
+      .carousel-caption.slide-one ul.caption-list li p {
+        font-size: 7px; }
+
+  .pool-size-guarantee {
+    font-size: 0.8em;
+    height: 130px;
+    margin-top: 50px;
+    width: 130px; }
+    .pool-size-guarantee span {
+      height: 25px;
+      margin-top: 30px; }
+
+  .play-predikta-button {
+    display: block;
+    font-size: 0.8em;
+    padding: 5px 15px;
+    position: relative;
+    top: -60px; }
+
+  ul.caption-list.slide-two {
+    padding-left: 0;
+    width: 100%; }
+    ul.caption-list.slide-two li {
+      border-width: 4px;
+      margin-top: 140px;
+      padding-bottom: 5px;
+      padding-top: 5px; }
+      ul.caption-list.slide-two li h3 {
+        font-size: 2em; }
+      ul.caption-list.slide-two li p {
+        font-size: 12px;
+        line-height: 16px;
+        width: 100%; }
+
+  .container.third-slide .carousel-caption {
+    margin-top: 20px; }
+  .container.third-slide .play-predikta-button {
+    top: -85px; }
+
+  ul.caption-list.slide-three li {
+    border-width: 3px;
+    padding-bottom: 5px; }
+    ul.caption-list.slide-three li h2 {
+      font-size: 2em;
+      line-height: 1em;
+      margin-left: 15px;
+      margin-right: 10px;
+      margin-top: 0;
+      text-align: center;
+      width: 95%; }
+    ul.caption-list.slide-three li:first-child {
+      display: block;
+      float: none;
+      left: 0;
+      margin-top: 0;
+      padding-bottom: 0;
+      padding-top: 5px; }
+    ul.caption-list.slide-three li:nth-child(2) {
+      right: 0;
+      top: 0;
+      padding-top: 0;
+      width: 98%; }
+    ul.caption-list.slide-three li:nth-child(3) {
+      display: block;
+      float: none;
+      height: 160px;
+      margin: 0 auto;
+      right: 0;
+      top: -20px;
+      width: 210px; }
+      ul.caption-list.slide-three li:nth-child(3) img {
+        width: 195px; } }
 /*  POINTS SECTION -------------------- */
 section#points {
   background-color: #f7f7f7;

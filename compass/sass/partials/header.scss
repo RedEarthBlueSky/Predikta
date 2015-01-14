@@ -191,7 +191,6 @@
 }
 
 @media only screen and (max-width:1790px), only screen and (max-device-width: 1790px) {
-
   #home-page {
     .navbar-wrapper {
       #PrediktaTop {
@@ -208,6 +207,63 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:1023px), only screen and (max-device-width: 1023px) {
+  #home-page {
+    .navbar-wrapper {
+      #PrediktaTop {
+        .container {
+          ul {
+            li#logoListItem {
+              width:37%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width:767px), only screen and (max-device-width: 767px) {
+  #home-page {
+    .navbar-wrapper {
+      #PrediktaTop {
+        .container {
+          #navbar {
+            display:block;
+            ul {
+              li.socialListItem {
+                height:45px;
+                float: left;
+                margin-left: 0;
+                padding-bottom:0;
+                width: 10%;
+                a {
+                  font-size:2em;
+                }
+              }
+              li#logoListItem {
+                width:50%;
+              }
+              li#loginbtncon {
+                display: block;
+                float: left;
+                margin-bottom:5px;
+                margin-top: 5px;
+                text-align: center;
+                width: 50%;
+                a {
+                  margin:0 auto;
+                }
+              }
+            }           
           }
         }
       }

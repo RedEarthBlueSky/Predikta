@@ -103,8 +103,13 @@ ul.caption-list li h3 span {
   display: block;
   font-size: 1.4em;
 }
-.carousel-control .glyphicon-chevron-left {
-  margin-left:-69px;
+.carousel-control {
+.glyphicon-chevron-left {
+    margin-left:-125px;
+  }
+  .glyphicon-chevron-right {
+    right:25px;
+  }
 }
 ul.caption-list li p {
   @include transform(0deg, 1, 1, -3deg, 0px);
@@ -288,7 +293,33 @@ ul.caption-list.slide-three {
     top:0;
   }
 }
+.container.fourth-slide {
+  ul.caption-list {
+    padding-left:2%;
+    width:100%;
+    li {
+      width:16%;
+      p {
+        font-size:16px;
+        height:20px;
+      }
+      h3 {
+        font-size:1.8em;
+      }
+      h3.ladbrokes {
+        font-size: 2.8em;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+
 @media only screen and (max-width: 1600px), only screen and (max-device-width: 1600px) {
+  .carousel-control .glyphicon-chevron-left {
+    margin-left: -90px;
+  }
   ul.caption-list.slide-three {
     bottom:40px;
     float: left;
@@ -323,8 +354,41 @@ ul.caption-list.slide-three {
       }
     }
   }
+  .container.fourth-slide {
+    ul.caption-list {
+      li {
+        width:17%;
+        p {
+          font-size:12px;
+          line-height:12px;
+        }
+        h3 {
+          font-size:1.2em;
+        }
+        h3.ladbrokes {
+          font-size:2em;
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 1280px), only screen and (max-device-width: 1280px) {
+  h1.prediktion-header {
+    margin-bottom:0;
+    margin-top:0;
+  }
+  h4.prediktion-header {
+    width:100%;
+  }
+  .carousel-caption.slide-one {
+    margin-top:0;
+    ul.caption-list {
+      li {
+        width:31%;
+      }
+    }
+  }
+
   ul.caption-list.slide-three {
     li {
       padding-bottom:15px;
@@ -353,8 +417,28 @@ ul.caption-list.slide-three {
       }
     }
   }
+  ul.caption-list.slide-two {
+    width:70%;
+  }
+  .carousel-control .glyphicon-chevron-left {
+    margin-left: -77px;
+  }
+  .container.fourth-slide {
+    ul.caption-list {
+      li {
+        padding-bottom:20px;
+        padding-top:17px;
+        p {
+          font-size:10px;
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 1020px), only screen and (max-device-width: 1020px) {
+  a.about-predikta-next {
+    top: 81.5vh;
+  }
   ul.caption-list.slide-three {
     li {
       padding-bottom:15px;
@@ -385,15 +469,59 @@ ul.caption-list.slide-three {
       }
     }
   }
+  ul.caption-list.slide-two {
+    float:left;
+    width:90%;
+  }
   .carousel-inner {
     height:85vh;
   }
+  .carousel-control .glyphicon-chevron-left {
+    margin-left: -60px;
+  }
+  .container.fourth-slide {
+    ul.caption-list {
+      li {
+        width:17%;
+        p {
+          font-size:8px;
+        }
+        h3 {
+          font-size:0.8em;
+        }
+        h3.ladbrokes {
+          font-size:1.5em;
+        }
+      }
+    }
+  }
+
+  h1.prediktion-header {
+    font-size:3em;
+  }
+  h4.prediktion-header {
+    font-size:1.4em;
+  }
+  .carousel-caption.slide-one {
+    margin-top:0;
+    ul.caption-list {
+      width:100%;
+      li {
+        width:31%;
+        h3 {
+          font-size:2em;
+        }
+        p {
+          width:100%;
+          br {
+            display:none;
+          }
+        }
+      }
+    }
+  }
 }
-
-
-
-@media (min-width: 768px) {
-  /* Navbar positioning foo */
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   .navbar-wrapper {
     
   }
@@ -405,14 +533,10 @@ ul.caption-list.slide-three {
     padding-right: 0;
     padding-left: 0;
   }
-
-  /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 0;
   background-color:transparent;
   }
-
-  /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
@@ -421,9 +545,241 @@ ul.caption-list.slide-three {
   .featurette-heading {
     font-size: 50px;
   }
-}
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
+  .carousel-caption {
+      margin-top:-30px;
+      top:20%;
+    }
+  .carousel-control .glyphicon-chevron-left {
+      margin-left: -30px;
+    }
+  .container.fourth-slide {
+      ul.caption-list {
+          li {
+            clear: both;
+            display: block;
+            float: none;
+            margin: 10px auto;
+            width: 85%;
+            padding-bottom:5px;
+            padding-top:5px;
+            p {
+              font-size:8px;
+            }
+            h3 {
+              font-size:1.8em;
+              margin-bottom:0;
+              padding-top:5px;
+              span {
+                display:inline;
+              }
+            }
+            h3.ladbrokes {
+              font-size:2.5em;
+            }
+          }
+        }
+    }
+  h1.prediktion-header {
+    font-size: 3em;
+    margin-bottom:0;
+    margin-top:-30px;
+  }
+  .pool-size-guarantee {
+      font-size:1em;
+      height:150px;
+      width:150px; 
+      span {
+        margin-top:30px;
+    }
+  }
+  ul.caption-list.slide-two {
+    li {
+      margin-left:0;
+      margin-right:0;
+      padding-bottom:15px;
+      padding-top:10px;
+      h3 {
+        font-size:3em;
+      }
+      p {
+        font-size: 18px;
+        width: 90%;
+      }
+    }
   }
 }
+@media only screen and (max-width: 639px), only screen and (max-device-width: 639px) {
+    .carousel-control .glyphicon-chevron-left {
+      margin-left: -30px;
+    }
+    .container.fourth-slide {
+      padding-left:0;
+      padding-right:0;
+      h1.prediktion-header {
+        font-size: 1.4em;
+        line-height: 18px;
+        margin-bottom: 0;
+        margin-top: -50px;
+        padding-bottom:0;
+        padding-top:3px;
+      }
+      #play-predikta-button {
+        font-size:0.8em;
+        top:0;
+        margin-top:15px;
+        padding:5px 15px;
+      }
+      ul.caption-list {
+          li {
+            border-width:2px;
+            margin:5px auto;
+            padding-bottom:0;
+            padding-top:3px;
+            width:96%;
+            p {
+            }
+            h3 {
+              font-size:1em;
+              span {
+              }
+            }
+            h3.ladbrokes {
+              font-size:1.2em;
+              margin-bottom:10px;
+            }
+          }
+        }
+    }
+
+  h1.prediktion-header {
+    font-size:1.6em;
+    margin-top:-40px;
+  }
+  h4.prediktion-header {
+    font-size:.6em;
+  }
+  .container {
+    padding-left:0;
+    padding-right:0;
+  }
+  .carousel-caption.slide-one {
+    #play-predikta-button {
+      font-size:0.8em;
+      top:5px;
+      margin-top:15px;
+      padding:5px 15px;
+    }
+    ul.caption-list {
+      float:left;
+      padding-left:0;
+      margin-top:-18px;
+      width:100%;
+      li {
+        border-width:4px;
+        margin-bottom:10px;
+        margin-left:0;
+        margin-right:0;
+        padding-bottom:5px;
+        padding-top:5px;
+        width:100%;
+        h3 {
+          font-size:1.2em;
+          line-height:1em;
+        }
+        p {
+          font-size:7px;
+          br {
+          }
+        }
+      }
+    }
+  }
+  .pool-size-guarantee {
+      font-size:0.8em;
+      height:130px;
+      margin-top:50px;
+      width:130px; 
+      span {
+        height:25px;
+        margin-top:30px;
+    }
+  }
+  .play-predikta-button {
+
+  }
+  .play-predikta-button {
+    display: block;
+    font-size: 0.8em;
+    padding: 5px 15px;
+    position: relative;
+    top: -60px;
+  }
+   ul.caption-list.slide-two {
+    padding-left:0;
+    width:100%;
+    li {
+      border-width: 4px;
+      margin-top:140px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      h3 {
+        font-size:2em;
+      }
+      p {
+        font-size: 12px;
+        line-height:16px;
+        width: 100%;
+      }
+    }
+  }
+   .container.third-slide {
+    .carousel-caption {
+      margin-top:20px;
+    }
+    .play-predikta-button {
+      top:-85px;
+    }
+   }
+   ul.caption-list.slide-three {
+      li {
+        border-width:3px;
+        padding-bottom:5px;
+        h2 {
+          font-size: 2em;
+          line-height:1em;
+          margin-left: 15px;
+          margin-right: 10px;
+          margin-top:0;
+          text-align: center;
+          width: 95%;
+        }
+        &:first-child {
+          display: block;
+          float: none;
+          left: 0;
+          margin-top: 0;
+          padding-bottom: 0;
+          padding-top: 5px;
+        }
+        &:nth-child(2) {
+          right: 0;
+          top: 0;
+          padding-top:0;
+          width: 98%;
+        }
+        &:nth-child(3) {
+          display: block;
+          float: none;
+          height: 160px;
+          margin: 0 auto;
+          right: 0;
+          top: -20px;
+          width: 210px;
+          img {
+            width:195px;
+          }
+        }
+      }
+    }
+}
+
