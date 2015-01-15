@@ -189,7 +189,8 @@ section.goTop
           position: absolute;
           top: -22px;
           .modal-dialog {
-            .modal-content {
+            [class*=modal-content]
+             {
               background-clip: padding-box;
               background-color: #f7f7f7;
               border: medium none;

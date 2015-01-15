@@ -8552,7 +8552,7 @@ section.goTop
       position: absolute;
       top: -22px;
       overflow: visible; }
-      #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog .modal-content {
+      #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog [class*=modal-content] {
         background-clip: padding-box;
         background-color: #f7f7f7;
         border: medium none;
@@ -8565,7 +8565,7 @@ section.goTop
         border-top: none;
         max-width: 480px;
         width: 100%; }
-        #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog .modal-content .modal-header {
+        #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog [class*=modal-content] .modal-header {
           background-color: #f7f7f7;
           border-bottom: medium none;
           border-top: medium none;
@@ -8575,14 +8575,14 @@ section.goTop
           min-height: 0;
           padding: 0;
           width: 100%; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog .modal-content .modal-header h4#myModalLabel {
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog [class*=modal-content] .modal-header h4#myModalLabel {
             color: #000;
             display: inline;
             float: left;
             font-size: 2.2em;
             margin-bottom: 7px;
             text-transform: uppercase; }
-          #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog .modal-content .modal-header button.close {
+          #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog [class*=modal-content] .modal-header button.close {
             color: #1888ca;
             display: block;
             float: left;
@@ -8593,7 +8593,7 @@ section.goTop
             text-align: left;
             width: 100%;
             z-index: 99999; }
-            #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog .modal-content .modal-header button.close:before {
+            #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog [class*=modal-content] .modal-header button.close:before {
               -webkit-transform: rotate(180deg);
               -moz-transform: rotate(180deg);
               -ms-transform: rotate(180deg);
@@ -8612,7 +8612,7 @@ section.goTop
               padding: 3px 4px 8px 6px;
               position: absolute;
               top: -4px; }
-        #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog .modal-content .modal-body {
+        #dashboard-wrapper #predikta-dashboard #myTabContent #week .modal .modal-dialog [class*=modal-content] .modal-body {
           bottom: 10px;
           display: block;
           float: left;
