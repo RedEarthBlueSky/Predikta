@@ -3,16 +3,15 @@
   color: #5a5a5a;
 }
 .carousel-indicators {
-  bottom:0;
   height: 9px;
-  left: 50%;
+  left: 0;
   list-style: outside none none;
-  margin-left: -30%;
   padding-left: 0;
   position: absolute;
   text-align: center;
-  width: 60%;
   z-index: 15;
+  right: 0;
+  top: 81vh;
 }
 .moreOne {
   background-color: #1888ca;
@@ -149,7 +148,7 @@ h1.prediktion-header {
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  top: 50px;
+  top: 25px;
   width: 100%;
 }
 h4.prediktion-header {
@@ -313,12 +312,22 @@ ul.caption-list.slide-three {
     }
   }
 }
-
-
+.item #play-predikta-button {
+  top:55px;
+}
 
 @media only screen and (max-width: 1600px), only screen and (max-device-width: 1600px) {
   .carousel-control .glyphicon-chevron-left {
     margin-left: -90px;
+  }
+  ul.caption-list.slide-two {
+    width:100%;
+    li {
+      display:block;
+      float:none;
+      margin-left:auto;
+      margin-right:auto;
+    }
   }
   ul.caption-list.slide-three {
     bottom:40px;
@@ -371,14 +380,29 @@ ul.caption-list.slide-three {
       }
     }
   }
+  a.about-predikta-next {
+    top:87.5vh;
+  }
 }
-@media only screen and (max-width: 1280px), only screen and (max-device-width: 1280px) {
+@media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
   h1.prediktion-header {
     margin-bottom:0;
     margin-top:0;
   }
+  a.about-predikta-next {
+    top:85.5vh;
+  }
   h4.prediktion-header {
     width:100%;
+  }
+  .pool-size-guarantee {
+    font-size:1em;
+    height:170px;
+    margin-top:30px;
+    width:170px;
+    span {
+      margin-top:40px;
+    }
   }
   .carousel-caption.slide-one {
     margin-top:0;
@@ -418,7 +442,20 @@ ul.caption-list.slide-three {
     }
   }
   ul.caption-list.slide-two {
+    margin-top:30px;
     width:70%;
+    li {
+      margin-top:0;
+      padding-bottom:10px;
+      padding-top:10px;
+      p {
+        font-size:20px;
+        width:90%;
+      }
+      h3 {
+        font-size:3em;
+      }
+    }
   }
   .carousel-control .glyphicon-chevron-left {
     margin-left: -77px;
@@ -436,9 +473,36 @@ ul.caption-list.slide-three {
   }
 }
 @media only screen and (max-width: 1020px), only screen and (max-device-width: 1020px) {
+  .carousel-indicators {
+    top:76vh;
+  }
   a.about-predikta-next {
     top: 81.5vh;
   }
+  .carousel-caption.slide-one {
+    margin-top:135px;
+    ul.caption-list {
+      width:100%;
+      li {
+        width:31%;
+        h3 {
+          font-size:2em;
+        }
+        p {
+          width:100%;
+          br {
+            display:none;
+          }
+        }
+      }
+    }
+  }
+  ul.caption-list.slide-two {
+    float:left;
+    margin-top:0;
+    width:90%;
+  }
+
   ul.caption-list.slide-three {
     li {
       padding-bottom:15px;
@@ -456,11 +520,16 @@ ul.caption-list.slide-three {
         left:0;
       }
       &:nth-child(2) {
-        right:80px;
+        margin-left:-80px;
         top:20px;
+        h2 {
+          width:320px;
+        }
       }
       &:nth-child(3) {
         height: 200px;
+        right:0;
+        margin-left:-70px;
         top: 110px;
         width: 170px;
         img {
@@ -468,10 +537,6 @@ ul.caption-list.slide-three {
         }
       }
     }
-  }
-  ul.caption-list.slide-two {
-    float:left;
-    width:90%;
   }
   .carousel-inner {
     height:85vh;
@@ -481,6 +546,7 @@ ul.caption-list.slide-three {
   }
   .container.fourth-slide {
     ul.caption-list {
+      margin-top:60px;
       li {
         width:17%;
         p {
@@ -502,26 +568,8 @@ ul.caption-list.slide-three {
   h4.prediktion-header {
     font-size:1.4em;
   }
-  .carousel-caption.slide-one {
-    margin-top:0;
-    ul.caption-list {
-      width:100%;
-      li {
-        width:31%;
-        h3 {
-          font-size:2em;
-        }
-        p {
-          width:100%;
-          br {
-            display:none;
-          }
-        }
-      }
-    }
-  }
 }
-@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+@media only screen and (max-width:  767px), only screen and (max-device-width:  767px) {
   .navbar-wrapper {
     
   }
@@ -546,8 +594,7 @@ ul.caption-list.slide-three {
     font-size: 50px;
   }
   .carousel-caption {
-      margin-top:-30px;
-      top:20%;
+      top:0;
     }
   .carousel-control .glyphicon-chevron-left {
       margin-left: -30px;
@@ -584,6 +631,9 @@ ul.caption-list.slide-three {
     margin-bottom:0;
     margin-top:-30px;
   }
+  h1.prediktion-header.second {
+    margin-top:-15px;
+  }
   .pool-size-guarantee {
       font-size:1em;
       height:150px;
@@ -593,6 +643,7 @@ ul.caption-list.slide-three {
     }
   }
   ul.caption-list.slide-two {
+    margin-top:140px;
     li {
       margin-left:0;
       margin-right:0;
@@ -607,8 +658,50 @@ ul.caption-list.slide-three {
       }
     }
   }
+   ul.caption-list.slide-three {
+      li {
+        border-width:3px;
+        padding-bottom:5px;
+        h2 {
+          font-size: 2em;
+          line-height:1em;
+          margin-left: 15px;
+          margin-right: 10px;
+          margin-top:0;
+          text-align: center;
+          width: 95%;
+        }
+        &:first-child {
+          display: block;
+          float: none;
+          left: 0;
+          margin-top: 0;
+          padding-bottom: 0;
+          padding-top: 5px;
+        }
+        &:nth-child(2) {
+          right: 0;
+          top: 0;
+          margin-left:0;
+          padding-top:0;
+          width: 98%;
+        }
+        &:nth-child(3) {
+          display: block;
+          float: none;
+          height: 160px;
+          margin: 0 auto;
+          right: 0;
+          top: -20px;
+          width: 210px;
+          img {
+            width:195px;
+          }
+        }
+      }
+    }
 }
-@media only screen and (max-width: 639px), only screen and (max-device-width: 639px) {
+@media only screen and (max-width:  639px), only screen and (max-device-width:  639px) {
     .carousel-control .glyphicon-chevron-left {
       margin-left: -30px;
     }
@@ -655,6 +748,9 @@ ul.caption-list.slide-three {
     font-size:1.6em;
     margin-top:-40px;
   }
+  h1.prediktion-header.second {
+    margin-top:0;
+  }
   h4.prediktion-header {
     font-size:.6em;
   }
@@ -672,7 +768,7 @@ ul.caption-list.slide-three {
     ul.caption-list {
       float:left;
       padding-left:0;
-      margin-top:-18px;
+      margin-top:70px;
       width:100%;
       li {
         border-width:4px;
@@ -704,9 +800,12 @@ ul.caption-list.slide-three {
         margin-top:30px;
     }
   }
-  .play-predikta-button {
-
+  .item.two {
+    .play-predikta-button {
+      top:0;
+    }
   }
+
   .play-predikta-button {
     display: block;
     font-size: 0.8em;
@@ -715,11 +814,12 @@ ul.caption-list.slide-three {
     top: -60px;
   }
    ul.caption-list.slide-two {
+    margin-top:140px;
     padding-left:0;
     width:100%;
     li {
       border-width: 4px;
-      margin-top:140px;
+      margin-top:100px;
       padding-bottom: 5px;
       padding-top: 5px;
       h3 {
@@ -734,7 +834,7 @@ ul.caption-list.slide-three {
   }
    .container.third-slide {
     .carousel-caption {
-      margin-top:20px;
+      margin-top:40px;
     }
     .play-predikta-button {
       top:-85px;
@@ -742,43 +842,59 @@ ul.caption-list.slide-three {
    }
    ul.caption-list.slide-three {
       li {
-        border-width:3px;
-        padding-bottom:5px;
-        h2 {
-          font-size: 2em;
-          line-height:1em;
-          margin-left: 15px;
-          margin-right: 10px;
-          margin-top:0;
-          text-align: center;
-          width: 95%;
-        }
-        &:first-child {
-          display: block;
-          float: none;
-          left: 0;
-          margin-top: 0;
-          padding-bottom: 0;
-          padding-top: 5px;
-        }
         &:nth-child(2) {
-          right: 0;
-          top: 0;
-          padding-top:0;
-          width: 98%;
-        }
-        &:nth-child(3) {
-          display: block;
-          float: none;
-          height: 160px;
-          margin: 0 auto;
-          right: 0;
-          top: -20px;
-          width: 210px;
-          img {
-            width:195px;
+          h2 {
+            width:270px;
           }
         }
+      }
+   }
+   .carousel-indicators {
+      display:none;
+   }
+   .container.fourth-slide {
+      .carousel-caption {
+        margin-top:50px;
+      }
+   }
+    .item.one {
+      h1.prediktion-header {
+        margin-top:-10px;
+      }
+      h4.prediktion-header {
+        margin-top:-20px;
+      }
+      .carousel-caption.slide-one {
+        margin-top:5px;
+      }
+    }
+    .item.four {
+      h1.prediktion-header {
+        margin-top:-20px;
+      }
+      h4.prediktion-header {
+        margin-top:-20px;
+      }
+      .carousel-caption.slide-one {
+        margin-top:5px;
+      }
+      .container.fourth-slide {
+        ul.caption-list {
+          margin-top:10px;
+        }
+      }
+    }
+}
+@media only screen and (max-width:  479px), only screen and (max-device-width:  479px) { 
+    .pool-size-guarantee {
+      margin-top:30px;
+    }
+    .carousel-caption.second-slide {
+      margin-top:-45px;
+    }
+    .item.two {
+      .play-predikta-button {
+        top:-25px;
       }
     }
 }

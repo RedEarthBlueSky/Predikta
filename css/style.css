@@ -7142,9 +7142,11 @@ button.close {
   #home-page .navbar-wrapper #PrediktaTop .container ul li.socialListItem {
     margin-left: 10px; }
   #home-page .navbar-wrapper #PrediktaTop .container ul li#logoListItem {
-    width: 55%; }
+    width: 40%; }
     #home-page .navbar-wrapper #PrediktaTop .container ul li#logoListItem a#logoLink .lologo {
-      height: 55px; } }
+      height: 55px;
+      padding-left: 0;
+      padding-right: 0; } }
 @media only screen and (max-width: 1023px), only screen and (max-device-width: 1023px) {
   #home-page .navbar-wrapper #PrediktaTop .container ul li#logoListItem {
     width: 37%; } }
@@ -7156,11 +7158,14 @@ button.close {
       float: left;
       margin-left: 0;
       padding-bottom: 0;
-      width: 10%; }
+      width: 8%; }
       #home-page .navbar-wrapper #PrediktaTop .container #navbar ul li.socialListItem a {
         font-size: 2em; }
     #home-page .navbar-wrapper #PrediktaTop .container #navbar ul li#logoListItem {
-      width: 50%; }
+      width: 68%; }
+      #home-page .navbar-wrapper #PrediktaTop .container #navbar ul li#logoListItem #logoLink .lologo {
+        float: right;
+        margin-right: 0; }
     #home-page .navbar-wrapper #PrediktaTop .container #navbar ul li#loginbtncon {
       display: block;
       float: left;
@@ -7281,16 +7286,15 @@ body {
   color: #5a5a5a; }
 
 .carousel-indicators {
-  bottom: 0;
   height: 9px;
-  left: 50%;
+  left: 0;
   list-style: outside none none;
-  margin-left: -30%;
   padding-left: 0;
   position: absolute;
   text-align: center;
-  width: 60%;
-  z-index: 15; }
+  z-index: 15;
+  right: 0;
+  top: 81vh; }
 
 .moreOne {
   background-color: #1888ca;
@@ -7437,7 +7441,7 @@ h1.prediktion-header {
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  top: 50px;
+  top: 25px;
   width: 100%; }
 
 h4.prediktion-header {
@@ -7596,9 +7600,20 @@ ul.caption-list.slide-three {
       font-size: 2.8em;
       margin-bottom: 0; }
 
+.item #play-predikta-button {
+  top: 55px; }
+
 @media only screen and (max-width: 1600px), only screen and (max-device-width: 1600px) {
   .carousel-control .glyphicon-chevron-left {
     margin-left: -90px; }
+
+  ul.caption-list.slide-two {
+    width: 100%; }
+    ul.caption-list.slide-two li {
+      display: block;
+      float: none;
+      margin-left: auto;
+      margin-right: auto; }
 
   ul.caption-list.slide-three {
     bottom: 40px;
@@ -7634,14 +7649,28 @@ ul.caption-list.slide-three {
     .container.fourth-slide ul.caption-list li h3 {
       font-size: 1.2em; }
     .container.fourth-slide ul.caption-list li h3.ladbrokes {
-      font-size: 2em; } }
-@media only screen and (max-width: 1280px), only screen and (max-device-width: 1280px) {
+      font-size: 2em; }
+
+  a.about-predikta-next {
+    top: 87.5vh; } }
+@media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
   h1.prediktion-header {
     margin-bottom: 0;
     margin-top: 0; }
 
+  a.about-predikta-next {
+    top: 85.5vh; }
+
   h4.prediktion-header {
     width: 100%; }
+
+  .pool-size-guarantee {
+    font-size: 1em;
+    height: 170px;
+    margin-top: 30px;
+    width: 170px; }
+    .pool-size-guarantee span {
+      margin-top: 40px; }
 
   .carousel-caption.slide-one {
     margin-top: 0; }
@@ -7668,7 +7697,17 @@ ul.caption-list.slide-three {
       width: 244px; }
 
   ul.caption-list.slide-two {
+    margin-top: 30px;
     width: 70%; }
+    ul.caption-list.slide-two li {
+      margin-top: 0;
+      padding-bottom: 10px;
+      padding-top: 10px; }
+      ul.caption-list.slide-two li p {
+        font-size: 20px;
+        width: 90%; }
+      ul.caption-list.slide-two li h3 {
+        font-size: 3em; }
 
   .carousel-control .glyphicon-chevron-left {
     margin-left: -77px; }
@@ -7679,8 +7718,29 @@ ul.caption-list.slide-three {
     .container.fourth-slide ul.caption-list li p {
       font-size: 10px; } }
 @media only screen and (max-width: 1020px), only screen and (max-device-width: 1020px) {
+  .carousel-indicators {
+    top: 76vh; }
+
   a.about-predikta-next {
     top: 81.5vh; }
+
+  .carousel-caption.slide-one {
+    margin-top: 135px; }
+    .carousel-caption.slide-one ul.caption-list {
+      width: 100%; }
+      .carousel-caption.slide-one ul.caption-list li {
+        width: 31%; }
+        .carousel-caption.slide-one ul.caption-list li h3 {
+          font-size: 2em; }
+        .carousel-caption.slide-one ul.caption-list li p {
+          width: 100%; }
+          .carousel-caption.slide-one ul.caption-list li p br {
+            display: none; }
+
+  ul.caption-list.slide-two {
+    float: left;
+    margin-top: 0;
+    width: 90%; }
 
   ul.caption-list.slide-three li {
     padding-bottom: 15px;
@@ -7695,18 +7755,18 @@ ul.caption-list.slide-three {
     ul.caption-list.slide-three li:first-child {
       left: 0; }
     ul.caption-list.slide-three li:nth-child(2) {
-      right: 80px;
+      margin-left: -80px;
       top: 20px; }
+      ul.caption-list.slide-three li:nth-child(2) h2 {
+        width: 320px; }
     ul.caption-list.slide-three li:nth-child(3) {
       height: 200px;
+      right: 0;
+      margin-left: -70px;
       top: 110px;
       width: 170px; }
       ul.caption-list.slide-three li:nth-child(3) img {
         width: 200px; }
-
-  ul.caption-list.slide-two {
-    float: left;
-    width: 90%; }
 
   .carousel-inner {
     height: 85vh; }
@@ -7714,33 +7774,22 @@ ul.caption-list.slide-three {
   .carousel-control .glyphicon-chevron-left {
     margin-left: -60px; }
 
-  .container.fourth-slide ul.caption-list li {
-    width: 17%; }
-    .container.fourth-slide ul.caption-list li p {
-      font-size: 8px; }
-    .container.fourth-slide ul.caption-list li h3 {
-      font-size: 0.8em; }
-    .container.fourth-slide ul.caption-list li h3.ladbrokes {
-      font-size: 1.5em; }
+  .container.fourth-slide ul.caption-list {
+    margin-top: 60px; }
+    .container.fourth-slide ul.caption-list li {
+      width: 17%; }
+      .container.fourth-slide ul.caption-list li p {
+        font-size: 8px; }
+      .container.fourth-slide ul.caption-list li h3 {
+        font-size: 0.8em; }
+      .container.fourth-slide ul.caption-list li h3.ladbrokes {
+        font-size: 1.5em; }
 
   h1.prediktion-header {
     font-size: 3em; }
 
   h4.prediktion-header {
-    font-size: 1.4em; }
-
-  .carousel-caption.slide-one {
-    margin-top: 0; }
-    .carousel-caption.slide-one ul.caption-list {
-      width: 100%; }
-      .carousel-caption.slide-one ul.caption-list li {
-        width: 31%; }
-        .carousel-caption.slide-one ul.caption-list li h3 {
-          font-size: 2em; }
-        .carousel-caption.slide-one ul.caption-list li p {
-          width: 100%; }
-          .carousel-caption.slide-one ul.caption-list li p br {
-            display: none; } }
+    font-size: 1.4em; } }
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   .navbar-wrapper .container {
     padding-right: 15px;
@@ -7763,8 +7812,7 @@ ul.caption-list.slide-three {
     font-size: 50px; }
 
   .carousel-caption {
-    margin-top: -30px;
-    top: 20%; }
+    top: 0; }
 
   .carousel-control .glyphicon-chevron-left {
     margin-left: -30px; }
@@ -7793,6 +7841,9 @@ ul.caption-list.slide-three {
     margin-bottom: 0;
     margin-top: -30px; }
 
+  h1.prediktion-header.second {
+    margin-top: -15px; }
+
   .pool-size-guarantee {
     font-size: 1em;
     height: 150px;
@@ -7800,16 +7851,53 @@ ul.caption-list.slide-three {
     .pool-size-guarantee span {
       margin-top: 30px; }
 
-  ul.caption-list.slide-two li {
-    margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 15px;
-    padding-top: 10px; }
-    ul.caption-list.slide-two li h3 {
-      font-size: 3em; }
-    ul.caption-list.slide-two li p {
-      font-size: 18px;
-      width: 90%; } }
+  ul.caption-list.slide-two {
+    margin-top: 140px; }
+    ul.caption-list.slide-two li {
+      margin-left: 0;
+      margin-right: 0;
+      padding-bottom: 15px;
+      padding-top: 10px; }
+      ul.caption-list.slide-two li h3 {
+        font-size: 3em; }
+      ul.caption-list.slide-two li p {
+        font-size: 18px;
+        width: 90%; }
+
+  ul.caption-list.slide-three li {
+    border-width: 3px;
+    padding-bottom: 5px; }
+    ul.caption-list.slide-three li h2 {
+      font-size: 2em;
+      line-height: 1em;
+      margin-left: 15px;
+      margin-right: 10px;
+      margin-top: 0;
+      text-align: center;
+      width: 95%; }
+    ul.caption-list.slide-three li:first-child {
+      display: block;
+      float: none;
+      left: 0;
+      margin-top: 0;
+      padding-bottom: 0;
+      padding-top: 5px; }
+    ul.caption-list.slide-three li:nth-child(2) {
+      right: 0;
+      top: 0;
+      margin-left: 0;
+      padding-top: 0;
+      width: 98%; }
+    ul.caption-list.slide-three li:nth-child(3) {
+      display: block;
+      float: none;
+      height: 160px;
+      margin: 0 auto;
+      right: 0;
+      top: -20px;
+      width: 210px; }
+      ul.caption-list.slide-three li:nth-child(3) img {
+        width: 195px; } }
 @media only screen and (max-width: 639px), only screen and (max-device-width: 639px) {
   .carousel-control .glyphicon-chevron-left {
     margin-left: -30px; }
@@ -7845,6 +7933,9 @@ ul.caption-list.slide-three {
     font-size: 1.6em;
     margin-top: -40px; }
 
+  h1.prediktion-header.second {
+    margin-top: 0; }
+
   h4.prediktion-header {
     font-size: .6em; }
 
@@ -7860,7 +7951,7 @@ ul.caption-list.slide-three {
   .carousel-caption.slide-one ul.caption-list {
     float: left;
     padding-left: 0;
-    margin-top: -18px;
+    margin-top: 70px;
     width: 100%; }
     .carousel-caption.slide-one ul.caption-list li {
       border-width: 4px;
@@ -7885,6 +7976,9 @@ ul.caption-list.slide-three {
       height: 25px;
       margin-top: 30px; }
 
+  .item.two .play-predikta-button {
+    top: 0; }
+
   .play-predikta-button {
     display: block;
     font-size: 0.8em;
@@ -7893,11 +7987,12 @@ ul.caption-list.slide-three {
     top: -60px; }
 
   ul.caption-list.slide-two {
+    margin-top: 140px;
     padding-left: 0;
     width: 100%; }
     ul.caption-list.slide-two li {
       border-width: 4px;
-      margin-top: 140px;
+      margin-top: 100px;
       padding-bottom: 5px;
       padding-top: 5px; }
       ul.caption-list.slide-two li h3 {
@@ -7908,43 +8003,43 @@ ul.caption-list.slide-three {
         width: 100%; }
 
   .container.third-slide .carousel-caption {
-    margin-top: 20px; }
+    margin-top: 40px; }
   .container.third-slide .play-predikta-button {
     top: -85px; }
 
-  ul.caption-list.slide-three li {
-    border-width: 3px;
-    padding-bottom: 5px; }
-    ul.caption-list.slide-three li h2 {
-      font-size: 2em;
-      line-height: 1em;
-      margin-left: 15px;
-      margin-right: 10px;
-      margin-top: 0;
-      text-align: center;
-      width: 95%; }
-    ul.caption-list.slide-three li:first-child {
-      display: block;
-      float: none;
-      left: 0;
-      margin-top: 0;
-      padding-bottom: 0;
-      padding-top: 5px; }
-    ul.caption-list.slide-three li:nth-child(2) {
-      right: 0;
-      top: 0;
-      padding-top: 0;
-      width: 98%; }
-    ul.caption-list.slide-three li:nth-child(3) {
-      display: block;
-      float: none;
-      height: 160px;
-      margin: 0 auto;
-      right: 0;
-      top: -20px;
-      width: 210px; }
-      ul.caption-list.slide-three li:nth-child(3) img {
-        width: 195px; } }
+  ul.caption-list.slide-three li:nth-child(2) h2 {
+    width: 270px; }
+
+  .carousel-indicators {
+    display: none; }
+
+  .container.fourth-slide .carousel-caption {
+    margin-top: 50px; }
+
+  .item.one h1.prediktion-header {
+    margin-top: -10px; }
+  .item.one h4.prediktion-header {
+    margin-top: -20px; }
+  .item.one .carousel-caption.slide-one {
+    margin-top: 5px; }
+
+  .item.four h1.prediktion-header {
+    margin-top: -20px; }
+  .item.four h4.prediktion-header {
+    margin-top: -20px; }
+  .item.four .carousel-caption.slide-one {
+    margin-top: 5px; }
+  .item.four .container.fourth-slide ul.caption-list {
+    margin-top: 10px; } }
+@media only screen and (max-width: 479px), only screen and (max-device-width: 479px) {
+  .pool-size-guarantee {
+    margin-top: 30px; }
+
+  .carousel-caption.second-slide {
+    margin-top: -45px; }
+
+  .item.two .play-predikta-button {
+    top: -25px; } }
 /*  POINTS SECTION -------------------- */
 section#points {
   background-color: #f7f7f7;

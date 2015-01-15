@@ -200,10 +200,12 @@
               margin-left:10px;
             }
             li#logoListItem {
-              width:55%;
+              width:40%;
               a#logoLink {
                 .lologo {
                   height:55px;
+                  padding-left:0;
+                  padding-right:0;
                 }
               }
             }
@@ -213,7 +215,6 @@
     }
   }
 }
-
 @media only screen and (max-width:1023px), only screen and (max-device-width: 1023px) {
   #home-page {
     .navbar-wrapper {
@@ -229,8 +230,6 @@
     }
   }
 }
-
-
 @media only screen and (max-width:767px), only screen and (max-device-width: 767px) {
   #home-page {
     .navbar-wrapper {
@@ -244,13 +243,19 @@
                 float: left;
                 margin-left: 0;
                 padding-bottom:0;
-                width: 10%;
+                width: 8%;
                 a {
                   font-size:2em;
                 }
               }
               li#logoListItem {
-                width:50%;
+                width:68%;
+                #logoLink {
+                  .lologo {
+                    float:right;
+                    margin-right:0;
+                  }
+                }
               }
               li#loginbtncon {
                 display: block;
