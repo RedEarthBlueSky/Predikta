@@ -1,0 +1,36 @@
+﻿.container.marketing .row.predikta-row0 {
+  display: block;
+  float: left;
+  height:100vh;
+  clear: both;
+  width: 100%;
+  h1#about-predikta-heading {
+    margin-bottom:0;
+  }
+  #video-wrapper {
+    display: block;
+    margin: 0 auto;
+    height: 653px;
+    max-width: 1190px;
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    video {
+      bottom: 45px;
+      clear: both;
+      display: block;
+      float: left;
+      position: relative;
+    }
+  }
+  .have-a-go-next {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 2147483647;
+    display: block;
+    height: 35px;
+    float: left;
+    clear: both;
+  }
+}

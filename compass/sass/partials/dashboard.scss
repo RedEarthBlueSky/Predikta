@@ -35,6 +35,9 @@ section.goTop
   display:none;
 }
 #dashboard-wrapper {
+    section .table-responsive table tbody tr td {
+      white-space:nowrap;
+    }
     .banker {
                &:before {
                 border-right: 30px solid rgba(0, 0, 0, 0);

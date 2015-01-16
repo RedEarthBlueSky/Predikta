@@ -7294,7 +7294,7 @@ body {
   text-align: center;
   z-index: 15;
   right: 0;
-  top: 81vh; }
+  top: 74vh; }
 
 .moreOne {
   background-color: #1888ca;
@@ -7654,6 +7654,9 @@ ul.caption-list.slide-three {
   a.about-predikta-next {
     top: 87.5vh; } }
 @media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
+  .carousel-indicators {
+    top: 79vh; }
+
   h1.prediktion-header {
     margin-bottom: 0;
     margin-top: 0; }
@@ -8040,6 +8043,39 @@ ul.caption-list.slide-three {
 
   .item.two .play-predikta-button {
     top: -25px; } }
+@media screen and (max-width: 1367px) and (max-height: 769px) {
+  h1.prediktion-header {
+    margin-bottom: 0;
+    margin-top: 0; }
+
+  .carousel-caption {
+    margin-top: 20px; }
+
+  div.container div.carousel-caption h3 {
+    font-size: 2em; }
+
+  ul.caption-list li h3 {
+    font-size: 2em; }
+  ul.caption-list li p br {
+    display: none; }
+
+  a.about-predikta-next {
+    top: 83.5vh; }
+
+  h4.prediktion-header {
+    width: 80%; }
+
+  .pool-size-guarantee {
+    font-size: 1em;
+    height: 160px;
+    width: 160px; }
+    .pool-size-guarantee span {
+      margin-top: 35px; }
+
+  ul.caption-list.slide-two li {
+    margin-top: 70px;
+    padding-top: 10px;
+    padding-bottom: 7px; } }
 /*  POINTS SECTION -------------------- */
 section#points {
   background-color: #f7f7f7;
@@ -8223,7 +8259,7 @@ section#points {
           text-align: right;
           padding-left: 0;
           padding-right: 0;
-          width: 130px; }
+          width: 140px; }
         section#points .table-responsive table tr .away-team {
           width: 130px;
           padding-left: 0;
@@ -8416,6 +8452,8 @@ section.goTop
 #dashboard-wrapper {
   background-color: #f7f7f7;
   /*  END LEAGUE SECTION ------------------------ */ }
+  #dashboard-wrapper section .table-responsive table tbody tr td {
+    white-space: nowrap; }
   #dashboard-wrapper .banker:before {
     border-right: 30px solid transparent;
     border-top: 30px solid #ed1c24;
@@ -11974,6 +12012,38 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
     display: inline;
     float: left;
     margin-right: 3%; } }
+.container.marketing .row.predikta-row0 {
+  display: block;
+  float: left;
+  height: 100vh;
+  clear: both;
+  width: 100%; }
+  .container.marketing .row.predikta-row0 h1#about-predikta-heading {
+    margin-bottom: 0; }
+  .container.marketing .row.predikta-row0 #video-wrapper {
+    display: block;
+    margin: 0 auto;
+    height: 653px;
+    max-width: 1190px;
+    margin-top: 50px;
+    position: relative;
+    width: 100%; }
+    .container.marketing .row.predikta-row0 #video-wrapper video {
+      bottom: 45px;
+      clear: both;
+      display: block;
+      float: left;
+      position: relative; }
+  .container.marketing .row.predikta-row0 .have-a-go-next {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 2147483647;
+    display: block;
+    height: 35px;
+    float: left;
+    clear: both; }
+
 /* My custom styles --------------------------------- */
 .YesScript {
   display: none; }

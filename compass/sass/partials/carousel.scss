@@ -11,7 +11,7 @@
   text-align: center;
   z-index: 15;
   right: 0;
-  top: 81vh;
+  top: 74vh;
 }
 .moreOne {
   background-color: #1888ca;
@@ -385,6 +385,9 @@ ul.caption-list.slide-three {
   }
 }
 @media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
+  .carousel-indicators {
+      top:79vh;
+  }
   h1.prediktion-header {
     margin-bottom:0;
     margin-top:0;
@@ -897,5 +900,48 @@ ul.caption-list.slide-three {
         top:-25px;
       }
     }
+}
+@media screen and ( max-width:1367px ) and ( max-height: 769px ) {
+  h1.prediktion-header {
+    margin-bottom:0;
+    margin-top:0;
+  } 
+  .carousel-caption {
+    margin-top:20px;
+  }
+  div.container div.carousel-caption h3 {
+    font-size:2em;
+  }
+  ul.caption-list {
+    li {
+      h3 {
+        font-size:2em;
+      }
+      p {
+        br {
+          display:none;
+        }
+      }
+    }
+  }
+  a.about-predikta-next {
+    top: 83.5vh;
+  }
+  h4.prediktion-header {
+    width:80%;
+  }
+  .pool-size-guarantee {
+    font-size:1em;
+    height:160px;
+    width:160px;
+    span {
+      margin-top:35px;
+    }
+  }
+  ul.caption-list.slide-two li {
+  margin-top: 70px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  }
 }
 
