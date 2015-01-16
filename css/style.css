@@ -8765,7 +8765,7 @@ section.goTop
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .home-team {
               text-align: right;
               padding-left: 0;
-              width: 120px; }
+              width: 140px; }
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr th.home-team,
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr th.home-team,
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr th.home-team,
@@ -8776,9 +8776,10 @@ section.goTop
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #seasonDetails .table-responsive table tr .away-team,
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #leagues .table-responsive table tr .away-team,
             #dashboard-wrapper #predikta-dashboard #myTabContent #season #seasonDetails .table-responsive table tr .away-team {
-              padding-left: 28px;
+              padding-left: 7px;
               padding-right: 0;
-              width: 120px; }
+              width: 130px;
+              text-align: left; }
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .actual-home,
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .actual-away,
             #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .table-responsive table tr .client-home,
