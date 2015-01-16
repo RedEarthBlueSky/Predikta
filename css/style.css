@@ -12783,7 +12783,6 @@ element.style {
   section#points .table-responsive,
   section#points header,
   section#points #table-banner-add {
-    width: 620px;
     float: right; } }
 @media only screen and (min-width: 1200px) and (max-width: 1600px), only screen and (max-device-width: 1600px) {
   .navbar-wrapper #PrediktaTop .container ul li.know-football {
