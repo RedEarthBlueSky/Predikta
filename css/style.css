@@ -7294,7 +7294,7 @@ body {
   text-align: center;
   z-index: 15;
   right: 0;
-  top: 74vh; }
+  top: 80vh; }
 
 .moreOne {
   background-color: #1888ca;
@@ -7560,11 +7560,11 @@ ul.caption-list.slide-three {
       -webkit-box-shadow: 15px 15px 25px #9fa8b0;
       -moz-box-shadow: 15px 15px 25px #9fa8b0;
       box-shadow: 15px 15px 25px #9fa8b0;
-      left: 70px;
+      left: 260px;
       position: relative;
       z-index: 9999; }
     ul.caption-list.slide-three li:nth-child(2) {
-      left: 0;
+      left: 60px;
       position: relative;
       top: 40px; }
     ul.caption-list.slide-three li:nth-child(3) {
@@ -7575,7 +7575,7 @@ ul.caption-list.slide-three {
       overflow: hidden;
       padding-top: 0;
       position: relative;
-      right: 160px;
+      right: 100px;
       top: 280px;
       width: 350px; }
       ul.caption-list.slide-three li:nth-child(3) img {
@@ -7600,8 +7600,14 @@ ul.caption-list.slide-three {
       font-size: 2.8em;
       margin-bottom: 0; }
 
-.item #play-predikta-button {
-  top: 55px; }
+.item .play-predikta-button {
+  clear: both;
+  display: block;
+  top: 55px;
+  float: none;
+  position: relative; }
+  .item .play-predikta-button #play-predikta-button {
+    float: none; }
 
 @media only screen and (max-width: 1600px), only screen and (max-device-width: 1600px) {
   .carousel-control .glyphicon-chevron-left {
@@ -7654,6 +7660,9 @@ ul.caption-list.slide-three {
   a.about-predikta-next {
     top: 87.5vh; } }
 @media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
+  a.about-predikta-next {
+    top: 85.5vh; }
+
   .carousel-indicators {
     top: 79vh; }
 
@@ -7887,17 +7896,17 @@ ul.caption-list.slide-three {
       padding-top: 5px; }
     ul.caption-list.slide-three li:nth-child(2) {
       right: 0;
-      top: 0;
+      top: 23px;
       margin-left: 0;
       padding-top: 0;
-      width: 98%; }
+      width: 100%; }
     ul.caption-list.slide-three li:nth-child(3) {
       display: block;
       float: none;
       height: 160px;
       margin: 0 auto;
       right: 0;
-      top: -20px;
+      top: 25px;
       width: 210px; }
       ul.caption-list.slide-three li:nth-child(3) img {
         width: 195px; } }
@@ -8008,7 +8017,7 @@ ul.caption-list.slide-three {
   .container.third-slide .carousel-caption {
     margin-top: 40px; }
   .container.third-slide .play-predikta-button {
-    top: -85px; }
+    top: -114px; }
 
   ul.caption-list.slide-three li:nth-child(2) h2 {
     width: 270px; }
@@ -8042,8 +8051,20 @@ ul.caption-list.slide-three {
     margin-top: -45px; }
 
   .item.two .play-predikta-button {
-    top: -25px; } }
-@media screen and (max-width: 1367px) and (max-height: 769px) {
+    top: -25px; }
+
+  ul.caption-list.slide-three li:first-child {
+    bottom: 20px;
+    left: 0;
+    top: inherit; }
+  ul.caption-list.slide-three li:nth-child(2) {
+    bottom: 20px;
+    right: 0;
+    top: inherit; }
+  ul.caption-list.slide-three li:nth-child(3) {
+    top: inherit;
+    bottom: 20px; } }
+@media screen and (min-width: 480px) and (max-width: 1367px) and (max-height: 769px) {
   h1.prediktion-header {
     margin-bottom: 0;
     margin-top: 0; }
@@ -8075,7 +8096,13 @@ ul.caption-list.slide-three {
   ul.caption-list.slide-two li {
     margin-top: 70px;
     padding-top: 10px;
-    padding-bottom: 7px; } }
+    padding-bottom: 7px; }
+
+  ul.caption-list.slide-three li:first-child {
+    left: 220px;
+    top: 19px; }
+  ul.caption-list.slide-three li:nth-child(2) {
+    right: -45px; } }
 /*  POINTS SECTION -------------------- */
 section#points {
   background-color: #f7f7f7;
@@ -12024,7 +12051,6 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
   .container.marketing .row.predikta-row0 #video-wrapper {
     display: block;
     margin: 0 auto;
-    height: 653px;
     max-width: 1190px;
     margin-top: 50px;
     position: relative;
@@ -12045,6 +12071,34 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
     float: left;
     clear: both; }
 
+@media screen and (min-width: 480px) and (max-width: 1367px) and (max-height: 769px) {
+  .container.marketing .row.predikta-row0 .have-a-go-next {
+    bottom: 34vh; }
+  .container.marketing .row.predikta-row0 #video-wrapper video {
+    height: 450px; } }
+@media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
+  .container.marketing .row.predikta-row0 .have-a-go-next {
+    bottom: 5vh; }
+  .container.marketing .row.predikta-row0 #video-wrapper video {
+    height: 560px;
+    width: 100%; } }
+@media only screen and (max-width: 1023px), only screen and (max-device-width: 1023px) {
+  .container.marketing .row.predikta-row0 .have-a-go-next {
+    bottom: 0; }
+  .container.marketing .row.predikta-row0 #video-wrapper {
+    width: 103%; }
+    .container.marketing .row.predikta-row0 #video-wrapper video {
+      float: none;
+      margin: 0 auto;
+      width: 90%; } }
+@media only screen and (max-width: 639px), only screen and (max-device-width: 639px) {
+  .container.marketing .row.predikta-row0 #video-wrapper video {
+    height: 300px; } }
+@media only screen and (max-width: 479px), only screen and (max-device-width: 479px) {
+  .container.marketing .row.predikta-row0 #video-wrapper video {
+    height: 220px;
+    padding-left: 1%;
+    width: 102%; } }
 /* My custom styles --------------------------------- */
 .YesScript {
   display: none; }
