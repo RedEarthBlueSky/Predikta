@@ -8020,7 +8020,8 @@ ul.caption-list.slide-three {
     top: -114px; }
 
   ul.caption-list.slide-three li:nth-child(2) h2 {
-    width: 270px; }
+    font-size: 1.8em;
+    width: 90%; }
 
   .carousel-indicators {
     display: none; }
@@ -8043,27 +8044,6 @@ ul.caption-list.slide-three {
     margin-top: 5px; }
   .item.four .container.fourth-slide ul.caption-list {
     margin-top: 10px; } }
-@media only screen and (max-width: 479px), only screen and (max-device-width: 479px) {
-  .pool-size-guarantee {
-    margin-top: 30px; }
-
-  .carousel-caption.second-slide {
-    margin-top: -45px; }
-
-  .item.two .play-predikta-button {
-    top: -25px; }
-
-  ul.caption-list.slide-three li:first-child {
-    bottom: 20px;
-    left: 0;
-    top: inherit; }
-  ul.caption-list.slide-three li:nth-child(2) {
-    bottom: 20px;
-    right: 0;
-    top: inherit; }
-  ul.caption-list.slide-three li:nth-child(3) {
-    top: inherit;
-    bottom: 20px; } }
 @media screen and (min-width: 480px) and (max-width: 1367px) and (max-height: 769px) {
   h1.prediktion-header {
     margin-bottom: 0;
@@ -8103,6 +8083,40 @@ ul.caption-list.slide-three {
     top: 19px; }
   ul.caption-list.slide-three li:nth-child(2) {
     right: -45px; } }
+@media only screen and (max-width: 479px), only screen and (max-device-width: 479px) {
+  .pool-size-guarantee {
+    margin-top: 30px; }
+
+  a.about-predikta-next {
+    top: 72vh;
+    z-index: 99999999; }
+
+  .carousel-caption.second-slide {
+    margin-top: -45px; }
+
+  .container.third-slide .play-predikta-button {
+    top: -120px; }
+    .container.third-slide .play-predikta-button #play-predikta-button {
+      margin-top: 7px;
+      width: 100%; }
+
+  ul.caption-list.slide-three li h3 {
+    font-size: 1.6em; }
+  ul.caption-list.slide-three li:first-child {
+    bottom: 20px;
+    left: 0;
+    top: inherit; }
+  ul.caption-list.slide-three li:nth-child(2) {
+    bottom: 20px;
+    right: 0;
+    top: inherit; }
+  ul.caption-list.slide-three li:nth-child(3) {
+    bottom: 30px;
+    height: 140px;
+    top: inherit;
+    width: 150px; }
+    ul.caption-list.slide-three li:nth-child(3) img {
+      width: 150px; } }
 /*  POINTS SECTION -------------------- */
 section#points {
   background-color: #f7f7f7;
@@ -12051,7 +12065,7 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
   .container.marketing .row.predikta-row0 #video-wrapper {
     display: block;
     margin: 0 auto;
-    max-width: 1190px;
+    max-width: 1000px;
     margin-top: 50px;
     position: relative;
     width: 100%; }
@@ -12071,16 +12085,26 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
     float: left;
     clear: both; }
 
+@media only screen and (max-width: 1700px), only screen and (max-device-width: 1700px) {
+  .container.marketing .row.predikta-row0 #video-wrapper video {
+    height: 530px; } }
 @media screen and (min-width: 480px) and (max-width: 1367px) and (max-height: 769px) {
   .container.marketing .row.predikta-row0 .have-a-go-next {
-    bottom: 34vh; }
+    bottom: 2vh; }
   .container.marketing .row.predikta-row0 #video-wrapper video {
     height: 450px; } }
+@media screen and (max-width: 1281px) and (max-height: 801px) {
+  .container.marketing .row.predikta-row0 h1#about-predikta-heading {
+    line-height: 40px;
+    margin-top: 5px; }
+  .container.marketing .row.predikta-row0 #video-wrapper video {
+    height: 520px; } }
 @media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
   .container.marketing .row.predikta-row0 .have-a-go-next {
-    bottom: 5vh; }
+    bottom: inherit;
+    top: 2vh; }
   .container.marketing .row.predikta-row0 #video-wrapper video {
-    height: 560px;
+    height: 460px;
     width: 100%; } }
 @media only screen and (max-width: 1023px), only screen and (max-device-width: 1023px) {
   .container.marketing .row.predikta-row0 .have-a-go-next {
@@ -12099,6 +12123,244 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
     height: 220px;
     padding-left: 1%;
     width: 102%; } }
+/* TOP Feature row 3 elements ------------------------------  */
+#about-predikta-row {
+  height: 100vh;
+  width: 100vw;
+  position: relative; }
+  #about-predikta-row .about-predikta.col-lg-4 {
+    clear: none;
+    display: inline-block;
+    width: 32%; }
+  #about-predikta-row #play-predikta-button {
+    top: 79%;
+    top: 80vh;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 200px;
+    z-index: 2147483647; }
+  #about-predikta-row img {
+    max-height: 200px; }
+  #about-predikta-row h2 {
+    color: #595959;
+    font-size: 1.8em;
+    font-weight: normal;
+    margin: 30px auto 0;
+    width: 55%; }
+
+/* END TOP Feature row 3 elements ---------------------------  */
+@media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
+  #about-predikta-row h2 {
+    width: 95%; }
+  #about-predikta-row .about-predikta.col-lg-4:last-of-type {
+    bottom: 20px; } }
+@media only screen and (max-width: 1023px), only screen and (max-device-width: 1023px) {
+  #about-predikta-row img {
+    max-height: 150px; }
+  #about-predikta-row h1#about-predikta-heading {
+    margin-top: 5px; }
+  #about-predikta-row h2 {
+    margin-top: 10px;
+    width: 95%; }
+  #about-predikta-row .about-predikta.col-lg-4 {
+    width: 100%; }
+    #about-predikta-row .about-predikta.col-lg-4:last-of-type {
+      bottom: 20px; } }
+@media only screen and (max-width: 767px), only screen and (max-device-width: 768px) {
+  #about-predikta-row img {
+    max-height: 110px; }
+  #about-predikta-row h1#about-predikta-heading {
+    margin-bottom: 1%; }
+  #about-predikta-row h2 {
+    font-size: 1.4em; } }
+@media only screen and (max-width: 479px) and (max-height: 481px), only screen and (max-device-width: 479px) {
+  #about-predikta-row #play-predikta-button {
+    top: 73vh; }
+  #about-predikta-row img {
+    max-height: 55px; }
+  #about-predikta-row h1#about-predikta-heading {
+    font-size: 1.4em;
+    line-height: 1.2em; }
+  #about-predikta-row h2 {
+    font-size: 1em;
+    margin-top: 5px;
+    width: 100%; } }
+/*  ROW ONE Reward Skill Feature section ----------------------  */
+.predikta-row1.row.featurette {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw; }
+  .predikta-row1.row.featurette a.have-a-go-next {
+    top: 89vh; }
+  .predikta-row1.row.featurette #play-predikta-button {
+    top: 84vh;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 200px;
+    z-index: 2147483647; }
+  .predikta-row1.row.featurette h1 {
+    color: #e31c21;
+    float: left;
+    font-family: helvetica;
+    font-size: 5.4em;
+    font-weight: bold;
+    left: 5%;
+    letter-spacing: 0;
+    max-height: 140px;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transform: rotate(-9deg);
+    -moz-transform: rotate(-9deg);
+    -ms-transform: rotate(-9deg);
+    -o-transform: rotate(-9deg);
+    transform: rotate(-9deg); }
+    .predikta-row1.row.featurette h1 span {
+      bottom: 40px;
+      clear: both;
+      display: inline-block;
+      float: left;
+      font-size: 1.4em;
+      position: relative;
+      text-indent: 100px; }
+  .predikta-row1.row.featurette .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    bottom: 26px; }
+  .predikta-row1.row.featurette .col-md-9 {
+    display: block;
+    float: right;
+    margin-top: 5%; }
+  .predikta-row1.row.featurette .col-md-5 {
+    padding-left: 0;
+    padding-right: 0;
+    bottom: 99px; }
+  .predikta-row1.row.featurette img.blue-arrows-both {
+    transform: rotate(12deg) scale(1.2, 1) skew(0) translate(0);
+    -webkit-transform: rotate(12deg) scale(1.2, 1) skew(0) translate(0);
+    -moz-transform: rotate(12deg) scale(1.2, 1) skew(0) translate(0);
+    -o-transform: rotate(12deg) scale(1.2, 1) skew(0) translate(0);
+    -ms-transform: rotate(12deg) scale(1.2, 1) skew(0) translate(0);
+    top: 25px; }
+  .predikta-row1.row.featurette img.down-arrows {
+    bottom: 51px;
+    max-width: 74px;
+    position: relative;
+    transform: rotate(6deg); }
+  .predikta-row1.row.featurette img.arrow-copy {
+    bottom: 5vh;
+    display: inline;
+    float: right;
+    max-width: 440px;
+    position: relative;
+    right: 26%; }
+
+/*  END ROW ONE Reward Skill Feature section ------------------  */
+@media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
+  .predikta-row1.row.featurette .col-md-9 {
+    margin-top: 9%; }
+  .predikta-row1.row.featurette #play-predikta-button {
+    top: 58vh; }
+  .predikta-row1.row.featurette a.have-a-go-next {
+    top: 62vh; }
+  .predikta-row1.row.featurette img.arrow-copy {
+    width: 380px; }
+  .predikta-row1.row.featurette img.down-arrow {
+    bottom: 35px;
+    max-width: 60px; } }
+/*  ROW TWO HAVE A GO Feature section -------------------------  */
+.predikta-row2.row.featurette {
+  height: 100vh;
+  width: 100vw;
+  background-size: 100% 100%;
+  position: relative; }
+  .predikta-row2.row.featurette #play-predikta-button {
+    top: 79%;
+    top: 80vh;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 200px;
+    z-index: 2147483647; }
+  .predikta-row2.row.featurette h1 {
+    color: #1799D6;
+    display: block;
+    font-family: helvetica;
+    font-size: 9em;
+    font-size: 6.5vw;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 0.8em;
+    margin-top: 66px;
+    position: relative;
+    right: 4%;
+    text-transform: uppercase;
+    transform: scale(0.9, 1.2);
+    width: 100%; }
+  .predikta-row2.row.featurette h2 {
+    background-image: url("../img/hand.png");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    color: #ec1c22;
+    display: inline-block;
+    float: right;
+    font-size: 3.6em;
+    padding-bottom: 34px;
+    padding-right: 152px;
+    padding-top: 96px;
+    position: absolute;
+    right: 86px;
+    text-transform: uppercase;
+    top: 107px;
+    transform: rotate(-9deg); }
+  .predikta-row2.row.featurette h3 {
+    background-image: url("../img/target.png");
+    background-position: 99% 78px;
+    background-repeat: no-repeat;
+    background-size: 33% auto;
+    bottom: 10%;
+    bottom: 10vh;
+    color: #838383;
+    float: right;
+    font-size: 4em;
+    margin-top: 0;
+    padding-bottom: 137px;
+    padding-top: 10%;
+    position: relative;
+    text-transform: uppercase;
+    transform: rotate(17deg);
+    width: 57%; }
+    .predikta-row2.row.featurette h3 .lead {
+      color: #838383;
+      display: block;
+      font-size: 1.9vw;
+      height: 30px;
+      margin: 0;
+      padding: 0;
+      position: relative; }
+    .predikta-row2.row.featurette h3:after {
+      bottom: 100px;
+      clear: none;
+      color: #898989;
+      content: "";
+      display: inline;
+      font-family: "Glyphicons Halflings";
+      font-size: 2.5em;
+      position: absolute;
+      right: 300px; }
+
+/*  END ROW TWO  HAVE A GO Feature section --------------------  */
 /* My custom styles --------------------------------- */
 .YesScript {
   display: none; }
@@ -12287,7 +12549,8 @@ a#signUpButton {
   text-align: left;
   top: 94%;
   width: 5%;
-  position: fixed; }
+  position: fixed;
+  z-index: 999999999999; }
   .goTop a:before {
     bottom: -20px;
     color: #fff;
@@ -12381,31 +12644,6 @@ h1#about-predikta-heading {
   text-align: center;
   width: 100%; }
 
-/* TOP Feature row 3 elements ------------------------------  */
-#about-predikta-row {
-  height: 100vh;
-  width: 100vw;
-  position: relative; }
-  #about-predikta-row #play-predikta-button {
-    top: 79%;
-    top: 80vh;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 200px;
-    z-index: 2147483647; }
-  #about-predikta-row img {
-    max-height: 200px; }
-  #about-predikta-row h2 {
-    color: #595959;
-    font-size: 1.8em;
-    font-weight: normal;
-    margin: 30px auto 0;
-    width: 55%; }
-
-/* END TOP Feature row 3 elements ---------------------------  */
 a.predikta-sign-up,
 a.have-a-go-next,
 a.make-money-next,
@@ -12514,11 +12752,6 @@ element.style {
 #PrediktaTop {
   max-width: 1200px; }
 
-.about-predikta.col-lg-4 {
-  clear: none;
-  display: inline-block;
-  width: 32%; }
-
 .predikta-row.row.featurette,
 .predikta-row1.row.featurette,
 .predikta-row2.row.featurette {
@@ -12527,166 +12760,6 @@ element.style {
   float: left;
   width: 100%; }
 
-/*  ROW ONE Reward Skill Feature section ----------------------  */
-.predikta-row1.row.featurette {
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  width: 100vw; }
-  .predikta-row1.row.featurette #play-predikta-button {
-    top: 79%;
-    top: 80vh;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 200px;
-    z-index: 2147483647; }
-  .predikta-row1.row.featurette h1 {
-    color: #e31c21;
-    float: left;
-    font-family: helvetica;
-    font-size: 5.4em;
-    font-size: 4vw;
-    font-weight: bold;
-    left: 5%;
-    letter-spacing: 0;
-    max-height: 140px;
-    position: relative;
-    text-transform: uppercase;
-    -webkit-transform: rotate(-9deg);
-    -moz-transform: rotate(-9deg);
-    -ms-transform: rotate(-9deg);
-    -o-transform: rotate(-9deg);
-    transform: rotate(-9deg); }
-    .predikta-row1.row.featurette h1 span {
-      bottom: 60px;
-      clear: both;
-      display: inline-block;
-      float: left;
-      font-size: 1.4em;
-      position: relative;
-      text-indent: 100px; }
-  .predikta-row1.row.featurette .col-md-12 {
-    padding-left: 0;
-    padding-right: 0;
-    position: relative;
-    bottom: 26px; }
-  .predikta-row1.row.featurette .col-md-9 {
-    display: block;
-    float: right;
-    margin-top: 5%; }
-  .predikta-row1.row.featurette .col-md-5 {
-    padding-left: 0;
-    padding-right: 0;
-    bottom: 99px; }
-  .predikta-row1.row.featurette img.blue-arrows-both {
-    position: relative;
-    right: 8%;
-    transform: rotate(13deg);
-    top: 31px; }
-  .predikta-row1.row.featurette img.down-arrows {
-    bottom: 51px;
-    max-width: 74px;
-    position: relative;
-    transform: rotate(6deg); }
-  .predikta-row1.row.featurette img.arrow-copy {
-    bottom: 172px;
-    bottom: 22vh;
-    display: inline;
-    float: right;
-    max-width: 440px;
-    position: relative;
-    right: 26%; }
-
-/*  END ROW ONE Reward Skill Feature section ------------------  */
-/*  ROW TWO HAVE A GO Feature section -------------------------  */
-.predikta-row2.row.featurette {
-  height: 100vh;
-  width: 100vw;
-  background-size: 100% 100%;
-  position: relative; }
-  .predikta-row2.row.featurette #play-predikta-button {
-    top: 79%;
-    top: 80vh;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 200px;
-    z-index: 2147483647; }
-  .predikta-row2.row.featurette h1 {
-    color: #1799D6;
-    display: block;
-    font-family: helvetica;
-    font-size: 9em;
-    font-size: 6.5vw;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 0.8em;
-    margin-top: 66px;
-    position: relative;
-    right: 4%;
-    text-transform: uppercase;
-    transform: scale(0.9, 1.2);
-    width: 100%; }
-  .predikta-row2.row.featurette h2 {
-    background-image: url("../img/hand.png");
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    color: #ec1c22;
-    display: inline-block;
-    float: right;
-    font-size: 3.6em;
-    padding-bottom: 34px;
-    padding-right: 152px;
-    padding-top: 96px;
-    position: absolute;
-    right: 86px;
-    text-transform: uppercase;
-    top: 107px;
-    transform: rotate(-9deg); }
-  .predikta-row2.row.featurette h3 {
-    background-image: url("../img/target.png");
-    background-position: 99% 78px;
-    background-repeat: no-repeat;
-    background-size: 33% auto;
-    bottom: 10%;
-    bottom: 10vh;
-    color: #838383;
-    float: right;
-    font-size: 4em;
-    margin-top: 0;
-    padding-bottom: 137px;
-    padding-top: 10%;
-    position: relative;
-    text-transform: uppercase;
-    transform: rotate(17deg);
-    width: 57%; }
-    .predikta-row2.row.featurette h3 .lead {
-      color: #838383;
-      display: block;
-      font-size: 1.9vw;
-      height: 30px;
-      margin: 0;
-      padding: 0;
-      position: relative; }
-    .predikta-row2.row.featurette h3:after {
-      bottom: 100px;
-      clear: none;
-      color: #898989;
-      content: "";
-      display: inline;
-      font-family: "Glyphicons Halflings";
-      font-size: 2.5em;
-      position: absolute;
-      right: 300px; }
-
-/*  END ROW TWO  HAVE A GO Feature section --------------------  */
 /*  Feature row THREE make money ------------------------------  */
 .predikta-row3.row.featurette {
   height: 100vh;

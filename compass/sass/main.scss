@@ -179,6 +179,7 @@ a#signUpButton {
   top: 94%;
   width: 5%;
   position: fixed;
+  z-index:999999999999;
 
   a:before {
     bottom: -20px;
@@ -287,35 +288,6 @@ h1#about-predikta-heading {
   text-align: center;
   width: 100%;
 }
-/* TOP Feature row 3 elements ------------------------------  */
-#about-predikta-row {
-  height: 100vh;
-  width: 100vw;
-  position:relative;
-  #play-predikta-button {
-    top:79%;
-    top:80vh;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 200px;
-    z-index: 2147483647;
-  }
-  img {
-    max-height: 200px;
-  }
-  h2 {
-    color: #595959;
-    font-size: 1.8em;
-    font-weight: normal;
-    margin: 30px auto 0;
-    width: 55%;
-  }
-}
-/* END TOP Feature row 3 elements ---------------------------  */
-
 
 a.predikta-sign-up,
 a.have-a-go-next,
@@ -382,11 +354,6 @@ element.style {
 #PrediktaTop {
   max-width: 1200px;
 }
-.about-predikta.col-lg-4 {
-  clear: none;
-  display: inline-block;
-  width: 32%;
-}
 .predikta-row.row.featurette,
 .predikta-row1.row.featurette,
 .predikta-row2.row.featurette {
@@ -395,181 +362,6 @@ element.style {
   float:left;
   width:100%;
 }
-/*  ROW ONE Reward Skill Feature section ----------------------  */
-.predikta-row1.row.featurette {
-  // background-image: url("../img/first-feature-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height:100vh;
-  margin: 0;
-  padding: 0;
-  width:100vw;
-  #play-predikta-button {
-    top:79%;
-    top:80vh;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 200px;
-    z-index: 2147483647;
-  }
-  h1 {
-    color: #e31c21;
-    float: left;
-    font-family: helvetica;
-    font-size: 5.4em;
-    font-size:4vw;
-    font-weight: bold;
-    left: 5%;
-    letter-spacing: 0;
-    max-height: 140px;
-    position: relative;
-    text-transform: uppercase;
-    @include rotate(-9deg);
-      span {
-        bottom: 60px;
-        clear: both;
-        display: inline-block;
-        float: left;
-        font-size: 1.4em;
-        position: relative;
-        text-indent: 100px;
-      }
-  }
-  .col-md-12 {
-    padding-left: 0;
-    padding-right: 0;
-    position: relative;
-    bottom:26px;
-  }
-  .col-md-9 {
-    display: block;
-    float: right;
-    margin-top: 5%;
-  }
-  .col-md-5 {
-    padding-left:0;
-    padding-right:0;
-    bottom:99px;
-  }
-  img.blue-arrows-both {
-    position: relative;
-    right: 8%;
-    transform: rotate(13deg);
-    top:31px;
-  }
-  img.down-arrows {
-    bottom: 51px;
-    max-width: 74px;
-    position: relative;
-    transform: rotate(6deg);
-  }
-  img.arrow-copy {
-    bottom: 172px;
-    bottom: 22vh;
-    display: inline;
-    float: right;
-    max-width: 440px;
-    position: relative;
-    right: 26%;
-  }
-}
-/*  END ROW ONE Reward Skill Feature section ------------------  */
-
-/*  ROW TWO HAVE A GO Feature section -------------------------  */
-.predikta-row2.row.featurette {
-  //  background-image: url("../img/second-feature-background.jpg");
-  height:100vh;
-  width:100vw;
-  background-size:100% 100%;
-  position:relative;
-  #play-predikta-button {
-    top:79%;
-    top:80vh;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    width: 200px;
-    z-index: 2147483647;
-  }
-  h1 {
-    color: $prediktaDarkBlue;
-    display: block;
-    font-family: helvetica;
-    font-size: 9em;
-    font-size:6.5vw;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 0.8em;
-    margin-top: 66px;
-    position: relative;
-    right: 4%;
-    text-transform: uppercase;
-    transform: scale(0.9, 1.2);
-    width: 100%;
-  }
-  h2 {
-    background-image: url("../img/hand.png");
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    color: #ec1c22;
-    display: inline-block;
-    float: right;
-    font-size: 3.6em;
-    padding-bottom: 34px;
-    padding-right: 152px;
-    padding-top: 96px;
-    position: absolute;
-    right: 86px;
-    text-transform: uppercase;
-    top: 107px;
-    transform: rotate(-9deg);
-  }
-      h3 {
-        background-image: url("../img/target.png");
-        background-position: 99% 78px;
-        background-repeat: no-repeat;
-        background-size: 33% auto;
-        bottom: 10%;
-        bottom:10vh;
-        color: #838383;
-        float: right;
-        font-size: 4em;
-        margin-top: 0;
-        padding-bottom: 137px;
-        padding-top: 10%;
-        position: relative;
-        text-transform: uppercase;
-        transform: rotate(17deg);
-        width: 57%;
-        .lead {
-          color: #838383;
-          display: block;
-          font-size: 1.9vw;
-          height: 30px;
-          margin: 0;
-          padding: 0;
-          position: relative;
-        }
-        &:after {
-          bottom: 100px;
-          clear: none;
-          color: #898989;
-          content: "";
-          display: inline;
-          font-family: "Glyphicons Halflings";
-          font-size: 2.5em;
-          position: absolute;
-          right: 300px;
-        }
-      }
-}
-/*  END ROW TWO  HAVE A GO Feature section --------------------  */
-
 /*  Feature row THREE make money ------------------------------  */
 .predikta-row3.row.featurette {
   // background-image: url("../img/third-feature-background.jpg");

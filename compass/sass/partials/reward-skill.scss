@@ -1,0 +1,101 @@
+﻿/*  ROW ONE Reward Skill Feature section ----------------------  */
+.predikta-row1.row.featurette {
+  // background-image: url("../img/first-feature-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height:100vh;
+  margin: 0;
+  padding: 0;
+  width:100vw;
+  a.have-a-go-next {
+    top:89vh;
+  }
+  #play-predikta-button {
+    top:84vh;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 200px;
+    z-index: 2147483647;
+  }
+  h1 {
+    color: #e31c21;
+    float: left;
+    font-family: helvetica;
+    font-size: 5.4em;
+    font-weight: bold;
+    left: 5%;
+    letter-spacing: 0;
+    max-height: 140px;
+    position: relative;
+    text-transform: uppercase;
+    @include rotate(-9deg);
+      span {
+        bottom: 40px;
+        clear: both;
+        display: inline-block;
+        float: left;
+        font-size: 1.4em;
+        position: relative;
+        text-indent: 100px;
+      }
+  }
+  .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    bottom:26px;
+  }
+  .col-md-9 {
+    display: block;
+    float: right;
+    margin-top: 5%;
+  }
+  .col-md-5 {
+    padding-left:0;
+    padding-right:0;
+    bottom:99px;
+  }
+  img.blue-arrows-both {
+    @include transform(12deg, 1.2, 1, 0, 0);
+    top:25px;
+  }
+  img.down-arrows {
+    bottom: 51px;
+    max-width: 74px;
+    position: relative;
+    transform: rotate(6deg);
+  }
+  img.arrow-copy {
+    bottom: 5vh;
+    display: inline;
+    float: right;
+    max-width: 440px;
+    position: relative;
+    right: 26%;
+  }
+}
+/*  END ROW ONE Reward Skill Feature section ------------------  */
+@media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
+  .predikta-row1.row.featurette {
+    .col-md-9 {
+      margin-top:9%;
+    }
+    #play-predikta-button {
+      top:58vh;
+    }
+    a.have-a-go-next {
+      top:62vh;
+    }
+    img.arrow-copy {
+      width:380px;
+    }
+    img.down-arrow {
+      bottom: 35px;
+      max-width: 60px;
+    }
+  }
+}
+
