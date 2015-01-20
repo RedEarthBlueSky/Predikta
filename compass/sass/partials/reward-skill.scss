@@ -1,5 +1,4 @@
-﻿/*  ROW ONE Reward Skill Feature section ----------------------  */
-.predikta-row1.row.featurette {
+﻿.container.marketing .predikta-row1.row.featurette {
   // background-image: url("../img/first-feature-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -8,10 +7,10 @@
   padding: 0;
   width:100vw;
   a.have-a-go-next {
-    top:89vh;
+    top:80vh;
   }
   #play-predikta-button {
-    top:84vh;
+    top:70vh;
     left: 0;
     margin: 0 auto;
     position: absolute;
@@ -77,7 +76,7 @@
     right: 26%;
   }
 }
-/*  END ROW ONE Reward Skill Feature section ------------------  */
+
 @media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
   .predikta-row1.row.featurette {
     .col-md-9 {
@@ -98,4 +97,192 @@
     }
   }
 }
+@media only screen and (max-width: 1600px), only screen and (max-device-width: 1600px) {
+  .container.marketing .predikta-row1.row.featurette {
+    height:95vh;
+    .col-md-9 {
+      margin-top: 8%;
+      margin-bottom: 1%;
+      width: 81%;
+    }
+    img.blue-arrows-both {
+      @include transform(12deg, 1.2, 1.4, 0, 0);
+    }
+    #play-predikta-button {
+      top:80vh;
+    }
+    a.have-a-go-next {
+      top:93vh;
+    }
+    img.arrow-copy {
+      bottom:3vh;
+    }
+  }
+}
+@media screen and (min-width:480px) and ( max-width:1367px ) and ( max-height: 769px ) {
+  .container.marketing .predikta-row1.row.featurette {
+    h1 {
+      bottom:6vh;
+      font-size:4em;
+      left:15%;
+    }
+    img.blue-arrows-both {
+      bottom:9vh;
+      top:inherit;
+    }
+    #play-predikta-button {
+    }
+    a.have-a-go-next {
+      top:90vh;
+    }
+    img.arrow-copy {
+      bottom:16vh;
+      max-width:400px;
+    }
+  }
+}
+@media screen and (min-width:480px) and ( max-width:1281px ) and ( max-height: 801px ) {
+  .container.marketing .predikta-row1.row.featurette {
+    h1 {
+      font-size:3.8em
+    }
+    .col-md-9 {
+    }
+    img.arrow-copy {
+      bottom:17vh;
+    }
+    img.down-arrows {
+      bottom:40px;
+      max-width:70px;
+    }
+  }
+}
+@media only screen and (max-width:1200px), only screen and (max-device-width: 1200px) {
+  .container.marketing .predikta-row1.row.featurette {
+    h1 {
+      bottom:0;
+      left:10%;
+    }
+    img.blue-arrows-both {
+      bottom:0;
+      @include transform(12deg, 1.2, 1.8, 0, 0);
+    }
+    img.arrow-copy {
+      bottom:5vh;
+    }
+  }
+}
+@media only screen and (max-width:1023px), only screen and (max-device-width: 1000px) {
+  .container.marketing .predikta-row1.row.featurette {
+    h1 {
+      bottom:inherit;
+      font-size:3.4em;
+      top:6vh;
+    }
+    .col-md-9 {
+      width:95%;
+    }
+    img.blue-arrows-both {
+      bottom:inherit;
+      top:7vh;
+      width:100%;
+    }
+    #play-predikta-button {
+    }
+    a.have-a-go-next {
+      top:85vh;
+    }
+    img.arrow-copy {
+      top:0;
+    }
+  }
+}
+@media only screen and (max-width:767px), only screen and (max-device-width: 767px) {
+  .container.marketing .predikta-row1.row.featurette {
+    h1 {
+      bottom:inherit;
+      font-size:2.7em;
+      top:9vh;
+    }
+    .col-md-9 {
+      width:95%;
+    }
+    img.blue-arrows-both {
+      bottom:inherit;
+      top:7vh;
+      width:100%;
+    }
+    #play-predikta-button {
+    }
+    a.have-a-go-next {
+    }
+    img.arrow-copy {
+      top: 5vh;
+      right: 4vh;
+    }
+  }
+}
+@media only screen and (max-width:639px), only screen and (max-device-width: 639px) {
+  .container.marketing .predikta-row1.row.featurette {
+    h1 {
+      font-size:2.1em;
+      left:0;
+      span {
+        bottom:29px;
+      }
+    }
+    .col-md-9 {
+      width:97%;
+    }
+    img.blue-arrows-both {
+    }
+    #play-predikta-button {
+    }
+    a.have-a-go-next {
+    }
+    img.arrow-copy {
+    }
+    img.down-arrows {
+      max-width:50px;
+    }
+  }
+}
+@media only screen and (max-width:479px), only screen and (max-device-width: 479px) {
+  .container.marketing .predikta-row1.row.featurette {
+    h1 {
+      font-size:1.8em;
+      top:6vh;
+      img {
+        bottom:30px;
+        max-width:40px;
+      }
+      span {
+        bottom:24px;
+        text-indent:20px;
+      }
+    }
+    .col-md-9 {
+      padding-left:0;
+      padding-right:0;
+      width:98%;
+    }
+    img.blue-arrows-both {
+    }
+    #play-predikta-button {
+      top:77vh;
+    }
+    a.have-a-go-next {
+    }
+    img.arrow-copy {
+      right:0;
+      width:220px;
+    }
+    img.down-arrows {
+    }
+  }
+}
+
+
+
+
 

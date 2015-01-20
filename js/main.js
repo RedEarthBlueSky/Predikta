@@ -8,6 +8,11 @@ $(document).ready(function () {
     emailInput: '<input type="email" value="email address" class="player-email" onfocus="this.value = \'\'\" onblur="this.value = \'email address\'\" />'
   }
 
+  $('[data-toggle="modal"],[data-parent="#details"]').on('click', function () {
+    $('[data-toggle="modal"],[data-parent="#details"]').removeClass('background-red');
+    $(this).addClass('background-red');
+  });
+
   /*  Predikt page the banker button add and remove the red effect */
   $('button.banker').on('click', function () {
     $('button.banker').removeClass('red');

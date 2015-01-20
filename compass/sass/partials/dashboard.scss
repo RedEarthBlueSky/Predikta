@@ -28,6 +28,9 @@
         }
       }
     }
+  .background-red {
+    background-color:$prediktaRed !important;
+  }
 
 section.goTop
 /*  Dash board SASS -------------------------- */
@@ -586,6 +589,9 @@ section.goTop
                 text-align: left;
                 width: 100%;
                 clear:both;
+                &:hover{
+                  background-color:$prediktaRed;
+                 }
                 span.rank {
                   display: inline-block;
                   width: 20px;
