@@ -10659,6 +10659,9 @@ main#content-wrapper .col-md-8.center-block {
       margin-top: 10px; }
   main#content-wrapper .col-md-8.center-block .registration-wrapper #confirm-btn {
     width: 100%; } }
+button:focus {
+  outline: 0; }
+
 #predikt-wrapper {
   background-color: #f5f5f5;
   color: #000000;
