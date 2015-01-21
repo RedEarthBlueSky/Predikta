@@ -215,6 +215,33 @@
     }
   }
 }
+
+@media only screen and (max-width:1279px), only screen and (max-device-width: 1279px) {
+
+.navbar-wrapper {
+      #PrediktaTop {
+        .container {
+          ul {
+            li.admin-panel {
+              .btn-group {
+                #admin-cog {
+                  width:300px;
+                  li {
+                    margin-bottom:10px;
+                    a {
+                      font-size:1.2em;
+                      padding-top:2px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
 @media only screen and (max-width:1023px), only screen and (max-device-width: 1023px) {
   #home-page {
     .navbar-wrapper {
@@ -231,6 +258,7 @@
   }
 }
 @media only screen and (max-width:767px), only screen and (max-device-width: 767px) {
+  
   #home-page {
     .navbar-wrapper {
       #PrediktaTop {
@@ -274,4 +302,58 @@
       }
     }
   }
+  .navbar-wrapper {
+      #PrediktaTop {
+        .container {
+          ul {
+          padding-left:20px;
+          li.know-football {
+            display:none;
+          }
+          li.mini-nav {
+            display:none;
+          }
+          li.play-predikta-button {
+            display:none;
+            #play-predikta-button {
+              display:none;
+            }
+          }
+          li.admin-panel {
+            width:50%;
+            .name-clock-wrapper {
+              font-size:1em;
+            }
+            .btn-group {
+              .dropdown-menu {
+                position:absolute;
+              }
+            }
+          }
+        }
+        }
+      }
+    }
 }
+@media only screen and (max-width:1279px), only screen and (max-device-width: 1279px) {
+.navbar-wrapper {
+      #PrediktaTop {
+        .container {
+          ul {
+            li.admin-panel {
+              .btn-group {
+                #admin-cog {
+                  width:260px;
+                  li {
+                    height:28px;
+                    a {
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

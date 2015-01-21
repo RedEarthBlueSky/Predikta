@@ -7147,6 +7147,14 @@ button.close {
       height: 55px;
       padding-left: 0;
       padding-right: 0; } }
+@media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
+  .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group #admin-cog {
+    width: 300px; }
+    .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group #admin-cog li {
+      margin-bottom: 10px; }
+      .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group #admin-cog li a {
+        font-size: 1.2em;
+        padding-top: 2px; } }
 @media only screen and (max-width: 1023px), only screen and (max-device-width: 1023px) {
   #home-page .navbar-wrapper #PrediktaTop .container ul li#logoListItem {
     width: 37%; } }
@@ -7174,7 +7182,29 @@ button.close {
       text-align: center;
       width: 50%; }
       #home-page .navbar-wrapper #PrediktaTop .container #navbar ul li#loginbtncon a {
-        margin: 0 auto; } }
+        margin: 0 auto; }
+
+  .navbar-wrapper #PrediktaTop .container ul {
+    padding-left: 20px; }
+    .navbar-wrapper #PrediktaTop .container ul li.know-football {
+      display: none; }
+    .navbar-wrapper #PrediktaTop .container ul li.mini-nav {
+      display: none; }
+    .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button {
+      display: none; }
+      .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button #play-predikta-button {
+        display: none; }
+    .navbar-wrapper #PrediktaTop .container ul li.admin-panel {
+      width: 50%; }
+      .navbar-wrapper #PrediktaTop .container ul li.admin-panel .name-clock-wrapper {
+        font-size: 1em; }
+      .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .dropdown-menu {
+        position: absolute; } }
+@media only screen and (max-width: 1279px), only screen and (max-device-width: 1279px) {
+  .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group #admin-cog {
+    width: 260px; }
+    .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group #admin-cog li {
+      height: 28px; } }
 .up-arrow {
   bottom: 4px;
   color: #1888ca;
@@ -10763,7 +10793,10 @@ button:focus {
       #predikt-wrapper .prediktions div input {
         display: block;
         float: left;
+        font-size: 2em;
         height: 100%;
+        text-align: center;
+        padding-left: 0;
         width: 100%; }
     #predikt-wrapper .prediktions .dash {
       padding-left: 0;
@@ -10858,39 +10891,35 @@ button:focus {
   #predikt-wrapper .prediktions div {
     width: 28%; } }
 @media only screen and (max-width: 404px), only screen and (max-device-width: 404px) {
-  #predikt-wrapper {
-    padding-right: 5px; }
-    #predikt-wrapper .left,
-    #predikt-wrapper .right {
-      padding-left: 5px;
-      padding-right: 0; }
-    #predikt-wrapper header #week {
-      font-size: 1.2em; }
-    #predikt-wrapper header h1 {
-      font-size: 1.6em;
-      margin-bottom: 0; }
-    #predikt-wrapper .prediktions-wrapper {
-      margin-bottom: 5px; }
-    #predikt-wrapper .predikt-wrapper .prediktions .away-prediktion {
+  #predikt-wrapper .left {
+    padding-right: 0; }
+  #predikt-wrapper header #week {
+    font-size: 1.2em; }
+  #predikt-wrapper header h1 {
+    font-size: 1.6em;
+    margin-bottom: 0; }
+  #predikt-wrapper .prediktions-wrapper {
+    margin-bottom: 5px; }
+  #predikt-wrapper .predikt-wrapper .prediktions .away-prediktion {
+    padding-top: 10px; }
+  #predikt-wrapper .prediktions {
+    width: 103%; }
+    #predikt-wrapper .prediktions div {
+      font-size: 14px; }
+    #predikt-wrapper .prediktions .home-prediktion {
+      padding-right: 5px;
       padding-top: 10px; }
-    #predikt-wrapper .prediktions {
-      width: 103%; }
-      #predikt-wrapper .prediktions div {
-        font-size: 14px; }
-      #predikt-wrapper .prediktions .home-prediktion {
-        padding-right: 5px;
-        padding-top: 10px; }
-      #predikt-wrapper .prediktions .away-prediktion {
-        padding-left: 5px; }
-      #predikt-wrapper .prediktions .dash {
-        padding-top: 10px; }
-      #predikt-wrapper .prediktions .home-score,
-      #predikt-wrapper .prediktions .away-score {
-        height: 40px;
-        width: 40px; }
-    #predikt-wrapper #prediktion-cancel,
-    #predikt-wrapper #prediktion-submit {
-      width: 90%; } }
+    #predikt-wrapper .prediktions .away-prediktion {
+      padding-left: 5px; }
+    #predikt-wrapper .prediktions .dash {
+      padding-top: 10px; }
+    #predikt-wrapper .prediktions .home-score,
+    #predikt-wrapper .prediktions .away-score {
+      height: 40px;
+      width: 40px; }
+  #predikt-wrapper #prediktion-cancel,
+  #predikt-wrapper #prediktion-submit {
+    width: 90%; } }
 #akka-offer {
   background-color: #f5f5f5;
   color: #000000;
@@ -13592,29 +13621,6 @@ element.style {
     height: 150px;
     padding: 20px; } }
 @media only screen and (min-width: 620px) and (max-width: 767px), only screen and (max-device-width: 767px) {
-  .navbar-wrapper #PrediktaTop .container ul {
-    padding-left: 20px; }
-    .navbar-wrapper #PrediktaTop .container ul li.know-football {
-      display: none; }
-    .navbar-wrapper #PrediktaTop .container ul li.mini-nav {
-      display: none; }
-    .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button {
-      clear: both;
-      display: block;
-      float: left;
-      width: 100%;
-      display: none; }
-      .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button #play-predikta-button {
-        width: 100%;
-        transform: none;
-        display: none; }
-    .navbar-wrapper #PrediktaTop .container ul li.admin-panel {
-      width: 50%; }
-      .navbar-wrapper #PrediktaTop .container ul li.admin-panel .name-clock-wrapper {
-        font-size: 1em; }
-      .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .dropdown-menu {
-        position: absolute; }
-
   #dashboard-wrapper .minus:after {
     color: #ffffff;
     content: "-";
