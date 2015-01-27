@@ -1,4 +1,7 @@
 ﻿#anorak {
+  .hide {
+    display:none;
+  }
   #prediktion-submit {
   background: linear-gradient(to bottom, #e7444a 0%, #941913 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
   border: 4px solid #1382c4;
@@ -7,8 +10,8 @@
   color: #ffffff;
   display: block;
   font-size: 1.4em;
-  margin: 35px auto 0;
-  padding: 15px 16px;
+  margin: 20px auto 0;
+  padding: 10px 16px;
   position: relative;
   text-transform: uppercase;
   top: 0;
@@ -32,19 +35,19 @@
   #league-one {
     clear: none;
     float: left;
-    left: 99px;
+    left: 80px;
     max-height: 300px;
     overflow-y: scroll;
     position: absolute;
-    top: 85px;
+    top: 57px;
     width: 409px;
     z-index: 999999;
   }
   h1 {
     color: #1888ca;
-    font-size: 9em;
-    line-height: 111px;
-    margin-bottom: 45px;
+    font-size: 7em;
+    line-height: 90px;
+    margin-bottom: 25px;
     margin-top: 30px;
     text-transform: uppercase;
     span {
@@ -121,14 +124,16 @@
     display: block;
     float: left;
     font-size: 1.4em;
-    left: 102px;
-    top: 25px;
+    left: 80px;
+    top:0;
     width: 400px;
   }  
   h2 {
     color:$prediktaRed;
     font-size:2.4em;
     text-transform:uppercase;
+    margin-bottom:0;
+    margin-top:0;
   }
   .gainers, 
   .fallers {
@@ -136,16 +141,17 @@
       display: block;
       float: left;
       padding-left: 0;
+      margin-bottom:0;
       li {
         border-top: 1px dotted #ececec;
         color: #000000;
         display: block;
         float: left;
-        font-size: 1.4em;
+        font-size: 1.2em;
         list-style: outside none none;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
         padding-left: 10px;
-        padding-top: 10px;
+        padding-top: 5px;
         text-transform: uppercase;
         width: 100%;
         span {
@@ -155,9 +161,10 @@
     }
   }
   img {
-    width:100%;
+    width:98%;
     &.placeholder {
-      max-height:500px;
+      max-height:380px;
+      width:90%;
     }
   }
   ul#myTab {
@@ -223,7 +230,7 @@
       font-size:6em;
       line-height:70px;
       margin-bottom:30px;
-      margin-top:25px;
+      margin-top:20px;
     }
     .league-wrapper {
       left:50px;
@@ -243,7 +250,7 @@
       padding-left:0;
       padding-right:0;
     #prediktion-submit {
-      margin-top:20px;
+      margin-top:10px;
       padding:10px 16px;
       font-size:1.2em;
     }

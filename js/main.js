@@ -8,6 +8,37 @@ $(document).ready(function () {
     emailInput: '<input type="email" value="email address" class="player-email" onfocus="this.value = \'\'\" onblur="this.value = \'email address\'\" />'
   }
 
+  function prediktaButtons() {
+    $('.bankers #season-tab').click(function () {
+
+      $('#anorak .bankers #week').addClass('hide');
+
+    });
+    $('.bankers #week-tab').click(function () {
+
+      $('#anorak .bankers #week').removeClass('hide');
+
+    });
+
+    $('.judas-index #season-tab').click(function () {
+
+      $('#anorak #judas-week').addClass('hide');
+
+    });
+    $('.judas-index #week-tab').click(function () {
+
+      $('#anorak #judas-week').removeClass('hide');
+
+    });
+  }
+  prediktaButtons();
+
+
+
+  $('#prediktion-submit').on("click", function () {
+    $('#predikt-wrapper input').attr('disabled', 'disabled').css('background-color', '#a9b9c3');
+  });
+
   $('[data-toggle="modal"],[data-parent="#details"]').on('click', function () {
     $('[data-toggle="modal"],[data-parent="#details"]').removeClass('background-red');
     $(this).addClass('background-red');
