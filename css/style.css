@@ -12529,6 +12529,9 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
 
 /*  END ROW TWO  HAVE A GO Feature section --------------------  */
 /* My custom styles --------------------------------- */
+.disabled-score {
+  background-color: #a9b9c3; }
+
 .YesScript {
   display: none; }
 
