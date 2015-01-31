@@ -407,3 +407,24 @@ section#points {
             }
 }
 /*  END POINTS SECTION ---------------- */
+
+
+@media only screen and (max-width: 1560px), only screen and (max-device-width: 1560px) {
+  section#points .table-responsive {
+    padding-right:0;
+    table {
+      tr {
+        .game-state.bet-in-play {
+          span {
+            width:50px;
+          }
+        }
+        .AKKA {
+        }
+        .actual {
+          
+        }
+      }
+    }
+  } 
+}

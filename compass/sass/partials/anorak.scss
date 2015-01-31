@@ -2,6 +2,14 @@
   .hide {
     display:none;
   }
+  #judas-season {
+    display: block;
+    float: left;
+    height: 230px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+  }
   #prediktion-submit {
   background: linear-gradient(to bottom, #e7444a 0%, #941913 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
   border: 4px solid #1382c4;

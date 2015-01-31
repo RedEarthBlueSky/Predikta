@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 
   $('#prediktion-submit').on("click", function () {
-    $('#predikt-wrapper input').attr('disabled', 'disabled').css('background-color', '#a9b9c3');
+    $('#predikt-wrapper input').attr('disabled', 'disabled').addClass('disabled-score');
   });
 
   $('[data-toggle="modal"],[data-parent="#details"]').on('click', function () {

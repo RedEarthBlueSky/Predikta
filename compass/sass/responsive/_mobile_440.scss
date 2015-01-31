@@ -2,6 +2,12 @@
 /*  HGV older iPhones and Android devices with screen size 320 x 480px */
 
 @media only screen and (max-width: 439px), only screen and (max-device-width: 439px) {
+  a.where-anorak-next {
+    display:none;
+  }
+  section#points #box-wrapper {
+    max-height:none;
+  }
   .navbar-wrapper {
       border-bottom-width:4px;
       #PrediktaTop {
@@ -67,8 +73,12 @@
         }
     }
     #predikta-dashboard {
-      width:310px;
+      padding-left:0;
+      width:100%;
       section#points {
+        #box-wrapper {
+          max-height:none;
+        }
         header {
           h1#points-header {
             float: left;
@@ -94,54 +104,119 @@
             padding-left:3px;
             padding-right:3px;
             table {
-              font-size:8px;
+              font-size:10px;
+              tr {
+                .AKKA {
+                  width:30px;
+
+                }
+              }
               thead {
                 tr {
                   th.home-team {
-                    width:60px;
+                    width:23%;
                   }
                   th.actual {
-                    width:50px;
+                    width:15%;
                   }
                   th.away-team {
-                    width:50px;
+                    width:24%;
                   }
                   th.away {
                     padding-left:0;
                     padding-right:0;
-                    width:45px;
+                    width:6%;
                   }
                   th.points {
-                    padding-left:0;  
+                    padding-left:5px;  
                     padding-right:0;
-                    width:40px;
+                    width:11%;
                   }
-                  th.akka {
+                  th.AKKA {
                     padding-left:0;
                   }
                 }
               }
               tbody {
                 tr {
+                  td {
+                    padding-top:7px;
+                  }
+                  td.game-state.bet-in-play {
+                    width:14%;
+                    span {
+                      width:  100%;
+                    }
+                  }
                   td.home-team {
-                    width:65px;
+                    width:25%;
+                  }
+                  td.away-team {
+                    width:24%;
+                  }
+                  td.AKKA {
+                    padding-left: 10px;
+                    padding-right: 0;
+                    width: 8%;
+                  }
+                  td.points {
+                    span {
+                      font-size:10px;
+                      height: 24px;
+                      margin-bottom: 1px;
+                      margin-top: 3px;
+                      padding-top: 5px;
+                      width: 23px;
+                    }
                   }
                   .actual {
-                    width:50px;
+                    width:11%;
+                    padding-left:1%;
+                    padding-top:3px;
                     table {
+                      width:100%;
                       tr {
+                        .actual-home {
+                          padding-right:1px;
+                        }
+                        .dash {
+                          padding-left:0;
+                          padding-right:0;
+                        }
+                        .actual-away {
+                          padding-left:1px;
+                        }
                         td {
                           padding-top:3px;
                         }
                       }
                     }
                   }
-                  td.away-team {
-                    width:50px;
+                  .away {
+                    width:7%;
+                    
+                    table {
+                      tr {
+                        .client-home {
+                          padding-right:1px;
+                        }
+                        .dash {
+                          padding-left:0;
+                          padding-right:0;
+                        }
+                        .client-away {
+                          padding-left:1px;
+                        }
+                        td {
+                          padding-top:3px;
+                        }
+                      }
+                    }
                   }
                   td.away {
                     padding-left:0;
                     padding-right:0;
+                    padding-top:4px;
                     table {
                       tbody {
                         tr {
@@ -204,7 +279,9 @@
                     }
                   }
                   td.akka {
-
+                    padding-left:5px;
+                    padding-right:5px;
+                    width:15px;
                   }
                 }
             }

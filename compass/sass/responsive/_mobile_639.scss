@@ -1,208 +1,254 @@
 ﻿
 @media only screen and (min-width:440px) and (max-width: 619px), only screen and (max-device-width: 619px) {
   #dashboard-wrapper {
-    .navbar-wrapper {
-      #PrediktaTop {
-        .container {
-          ul {
-          padding-left:20px;
-          li.know-football {
-            display:none;
-          }
-          li.mini-nav {
-            display:none;
-          }
-          li.play-predikta-button {
-            clear: both;
-            display: block;
-            float: left;
-            width: 100%;
-            display:none;
-            #play-predikta-button {
-              width:100%;
-              transform:none;
-              display:none;
-            }
-          }
-          li.admin-panel {
-            width:50%;
-            .name-clock-wrapper {
-              font-size:1em;
-            }
-            .btn-group {
-              .dropdown-menu {
-                position:absolute;
-                left:0;
-              }
-            }
-          }
-        }
-        }
+    .container.marketing {
+      section.goTop {
+        display:none;
       }
     }
-     .minus:after {
-      color: #ffffff;
-      content: "-";
-      display: block;
-      font-size: 1.7em;
-      height: 0;
-      position: absolute;
-      right: 27px;
-      top: -10px;
-      width: 0;
-     }
-     .plus:after {
-      color: #ffffff;
-      content: "+";
-      display: block;
-      font-size: 1.4em;
-      height: 0;
-      position: absolute;
-      right: 27px;
-      top: -2px;
-      width: 0;
-     }
-     a.where-anorak-next {
-        display:none;
-     }
-     #predikta-dashboard {
-      padding-left:0;
-      width:440px;
-      #myTabContent {
-        #week {
-          #leagues {
-            .panel.panel-default {
-              border-radius: 4px;
-              clear: both;
-              display: block;
-              float: left;
-              margin-bottom: 0;
-              overflow: visible;
-              width: 100%;
-            }
-            #players {
-              height:auto;
-              overflow:visible;
-            }
-          }
-        }
+    .banker {
+      &:before {
+        border-right-width:20px;
+        border-top-width:21px;
       }
+      &:after {
+        font-size:10px;
+        left:-1px;
+        top:-1px;
+      }
+    }
+    .minus {
+        &:after {
+          left: 100px;
+          top: -7px;
+        }
+    }
+    #predikta-dashboard {
+      padding-left:0;
+      width:100%;
       section#points {
-        width:100%;
+        #box-wrapper {
+          max-height:none;
+        }
         header {
-            h1#points-header {
-              @include linear-gradient( #009fe3, 0%, #01519e, 100% );
-              color: #ffffff;
-              cursor:pointer;
-              display: block;
-              float: right;
-              height: 36px;
-              margin-bottom: 0;
-              margin-top: 3px;
-              padding-left: 20px;
-              padding-top: 4px;
-              width: 100%;
-            }
-          .leaguedrop {
-            clear: both;
-            display: block;
+          h1#points-header {
             float: left;
-            width: 100%;
+            font-size: 1.6em;
+            height: 32px;
+            padding-left: 10px;
+            padding-top: 3px;
+            width: 40%;    
+          }
+          .leaguedrop {
+            clear: none;
+            display: inline;
+            float: right;
+            margin-top: 4px;
+            width: 55%;
             select {
-              width:100%;
+              margin-top:0;
+              padding-bottom:0;
             }
           }
         }
         .table-responsive {
-          border:none;
-          font-size:10px;
-          margin-bottom:0;
-        }
-      }
-      section#league {
-        padding-left:0;
-        padding-right:0;
-        width:100%;
-        header {
-          h1 {
-            margin-top:0;
-          }
-          ul#myTab {
-            clear:both;
-            display:block;
-            float:left;
-            width:100%;
-            li,
-            li.active {
-              a {
-                margin-top:0;
+            padding-left:3px;
+            padding-right:3px;
+            table {
+              font-size:12px;
+              tr {
+                .AKKA {
+                  width:30px;
+
+                }
               }
-            }
-          }
-        }
-        #myTabContent {
-          #week {
-            .modal {
-              left: 0;
-              max-width: none;
-              top: 20px;
-              width: 100%;   
-              .modal-dialog {
-                margin-left:0;
-                width:420px;
-                .modal-content {
-                  width:440px;
-                  .modal-body {
-                    width:390px;
+              thead {
+                tr {
+                  th.home-team {
+                    width:23%;
+                  }
+                  th.actual {
+                    width:15%;
+                  }
+                  th.away-team {
+                    width:24%;
+                  }
+                  th.away {
+                    padding-left:0;
+                    padding-right:0;
+                    width:6%;
+                  }
+                  th.points {
+                    padding-left:5px;  
+                    padding-right:0;
+                    width:11%;
+                  }
+                  th.AKKA {
+                    padding-left:0;
                   }
                 }
-              }      
-            }
-          }
-        }
-        .table-responsive {
-          border:none;
-          font-size:10px;
-        }
-      }
-      aside#bets {
-      #bets-table-wrapper {
-          width:100%;
-          .table-responsive {
-            border:none;
-          }
-          #table-banner-add {
-            a {
-              img {
-                width:100%;
               }
-            }
-          }
-        }
-      #banter {
-          margin-left:0;
-          width:100%;
-          #banterWrapper {
-            #commets-wrapper {
-              height:auto;
-              ul {
-                li {
-                  &:nth-child(2n) {
-                    min-height:45px;
-                    &:after {
-                    top:9px;
+              tbody {
+                tr {
+                  td.game-state.bet-in-play {
+                    width:14%;
+                    span {
+                      width:  100%;
+                    }
+                  }
+                  td.home-team {
+                    width:23%;
+                  }
+                  td.away-team {
+                    width:23%;
+                  }
+                  td.AKKA {
+                    padding-left: 10px;
+                    padding-right: 0;
+                    width: 8%;
+                  }
+                  td.points {
+                    span {
+                      font-size:10px;
+                      height: 24px;
+                      margin-bottom: 1px;
+                      margin-top: 3px;
+                      padding-top: 5px;
+                      width: 23px;
+                    }
+                  }
+                  .actual {
+                    padding-left: 4%;
+                    width: 14%;
+                    table {
+                      width:100%;
+                      tr {
+                        .actual-home {
+                          padding-right:4px;
+                        }
+                        .dash {
+                          padding-left:2px;
+                          padding-right:2px;
+                        }
+                        .actual-away {
+                          padding-left:4px;
+                        }
+                        td {
+                          padding-top:3px;
+                        }
+                      }
+                    }
+                  }
+                  .away {
+                    width:12%;
+                    table {
+                      tr {
+                        .client-home {
+                          padding-right:4px;
+                        }
+                        .dash {
+                          padding-left:2px;
+                          padding-right:2px;
+                        }
+                        .client-away {
+                          padding-left:4px;
+                        }
+                        td {
+                          padding-top:3px;
+                        }
+                      }
+                    }
+                  }
+                  td.away {
+                    padding-left:0;
+                    padding-right:0;
+                    table {
+                      tbody {
+                        tr {
+                          td {
+                            padding-top:3px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .points {
+                    padding-left:0;
+                    padding-right:0;
+                    width:31px;
+                    span {
+                      height:25px;
+                      margin-bottom:1px;
+                      margin-top:1px;
+                      padding-top:6px;
+                      width:25px;
+                    }
+                  }
+                  .game-state {
+                    font-family: trade gothic lt std;
+                    padding-left: 0;
+                    padding-right:0;
+                    padding-top: 5px;
+                    width: 14%;  
+                  }
+                  .game-state.bet-in-play {
+                    padding-top:0;
+                    width:15%;
+                    span {
+                      bottom:3px;
+                      padding-top:4px;
+                      position:relative;
+                      font-size:12px;
+                      height:33px;
+                      width:45px;
+                      font-family:'Trade Gothic LT Std';
                     }
                   }
                 }
-              }
+                tr.pending {
+                  td.game-state {
+                    .time,
+                    .day {
+                      font-size:10px;
+                    }
+                    .time {
+                      display: block;
+                      width: 100%;    
+                    }
+                  }
+                }
+                tr.in-play {
+                  height:28px;
+                  .points {
+                    span {
+                      height:25px;
+                    }
+                  }
+                  td.akka {
+                    padding-left:5px;
+                    padding-right:5px;
+                    width:15px;
+                  }
+                }
             }
           }
-          .new-post-wrapper {
-            margin-bottom:60px;
+      }
+        a.first-time-notification {
+          display:none;
+        }
+      }
+      aside#bets {
+        .table-responsive {
+          overflow:hidden;
+          table {
+            thead {
+              width:98%;
+            }
           }
         }
       }
     }
-  }  /*  dashboard-wrapper closing brace -------  */
+  }
+ /*  dashboard-wrapper closing brace -------  */
 }  /*  640 closing brace ------------------------ */
 

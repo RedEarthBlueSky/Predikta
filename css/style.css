@@ -7315,6 +7315,9 @@ footer {
     text-align: center; }
 
 /*  END FOOTER ------------------------------------------------  */
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+  footer#footer {
+    position: relative; } }
 body {
   padding-bottom: 40px;
   color: #5a5a5a; }
@@ -8488,6 +8491,11 @@ section#points {
       max-width: 616px; }
 
 /*  END POINTS SECTION ---------------- */
+@media only screen and (max-width: 1560px), only screen and (max-device-width: 1560px) {
+  section#points .table-responsive {
+    padding-right: 0; }
+    section#points .table-responsive table tr .game-state.bet-in-play span {
+      width: 50px; } }
 @-moz-document url-prefix() {
   fieldset {
     display: table-cell; } }
@@ -11838,6 +11846,13 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
         line-height: 30px; } }
 #anorak .hide {
   display: none; }
+#anorak #judas-season {
+  display: block;
+  float: left;
+  height: 230px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%; }
 #anorak #prediktion-submit {
   background: linear-gradient(to bottom, #e7444a 0%, #941913 100%) repeat scroll 0 0 transparent;
   border: 4px solid #1382c4;
@@ -12530,7 +12545,7 @@ body.orange-theme aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-c
 /*  END ROW TWO  HAVE A GO Feature section --------------------  */
 /* My custom styles --------------------------------- */
 .disabled-score {
-  background-color: #a9b9c3; }
+  background-color: #a9b9c3 !important; }
 
 .YesScript {
   display: none; }
@@ -13134,7 +13149,7 @@ element.style {
   section#points .table-responsive table tr .game-state.bet-in-play {
     width: 40px; }
     section#points .table-responsive table tr .game-state.bet-in-play span {
-      width: 60px; }
+      width: 50px; }
   section#points .table-responsive table tr .home-team {
     width: 120px; }
   section#points .table-responsive table tr .away-team {
@@ -13258,15 +13273,20 @@ element.style {
           float: left;
           width: 100%; }
           #dashboard-wrapper section#points .table-responsive table thead tr th.away {
-            width: 50px; }
+            padding-left: 52px;
+            padding-right: 0;
+            width: 10px; }
           #dashboard-wrapper section#points .table-responsive table thead tr th.home-team {
-            width: 93px; }
+            width: 100px; }
           #dashboard-wrapper section#points .table-responsive table thead tr th.actual {
-            width: 85px; }
+            width: 85px;
+            padding-left: 10px; }
           #dashboard-wrapper section#points .table-responsive table thead tr th.away-team {
-            width: 60px; }
+            width: 20px;
+            padding-left: 5px; }
           #dashboard-wrapper section#points .table-responsive table thead tr th.points {
-            width: 53px; }
+            padding-left: 20px;
+            width: 20px; }
         #dashboard-wrapper section#points .table-responsive table tbody {
           display: block;
           float: left;
@@ -13326,6 +13346,13 @@ element.style {
           padding-left: 24px; }
           #dashboard-wrapper section#points .table-responsive table tfoot tr td {
             width: 78px; }
+        #dashboard-wrapper section#points .table-responsive table tr .AKKA {
+          width: 25px; }
+        #dashboard-wrapper section#points .table-responsive table tr .points {
+          padding-left: 0;
+          padding-right: 5px; }
+          #dashboard-wrapper section#points .table-responsive table tr .points span {
+            width: 29px; }
     #dashboard-wrapper #predikta-dashboard {
       width: 1024px;
       width: 100%;
@@ -13690,6 +13717,10 @@ element.style {
         width: 55%; }
         #dashboard-wrapper #predikta-dashboard section#points header .leaguedrop select {
           width: 100%; }
+      #dashboard-wrapper #predikta-dashboard section#points #box-wrapper {
+        max-height: inherit;
+        overflow-x: visible;
+        overflow-y: visible; }
       #dashboard-wrapper #predikta-dashboard section#points .table-responsive {
         border: none;
         clear: both;
@@ -13713,7 +13744,7 @@ element.style {
             margin-bottom: 0; }
             #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td {
               padding-bottom: 0;
-              padding-top: 8px; }
+              padding-top: 10px; }
           #dashboard-wrapper #predikta-dashboard section#points .table-responsive table thead th {
             border-bottom: none;
             color: #bdbdbd; }
@@ -13733,7 +13764,7 @@ element.style {
             #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tr .actual {
               padding-left: 0;
               padding-right: 0;
-              padding-top: 5px;
+              padding-top: 1px;
               text-align: center;
               width: 80px; }
               #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tr .actual table {
@@ -13758,7 +13789,7 @@ element.style {
               text-align: right;
               padding-left: 0;
               padding-right: 0;
-              width: 130px; }
+              width: 140px; }
             #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tr .away-team {
               width: 130px;
               padding-left: 0;
@@ -14247,151 +14278,174 @@ element.style {
     #master-dashboard #existing-players .details-wrapper {
       display: inline;
       float: left;
-      width: 60%; } }
+      width: 60%; }
+
+  #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual {
+    width: 90px; } }
 @media only screen and (min-width: 440px) and (max-width: 619px), only screen and (max-device-width: 619px) {
-  #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul {
-    padding-left: 20px; }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.know-football {
-      display: none; }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.mini-nav {
-      display: none; }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button {
-      clear: both;
-      display: block;
-      float: left;
-      width: 100%;
-      display: none; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.play-predikta-button #play-predikta-button {
-        width: 100%;
-        transform: none;
-        display: none; }
-    #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel {
-      width: 50%; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .name-clock-wrapper {
-        font-size: 1em; }
-      #dashboard-wrapper .navbar-wrapper #PrediktaTop .container ul li.admin-panel .btn-group .dropdown-menu {
-        position: absolute;
-        left: 0; }
-  #dashboard-wrapper .minus:after {
-    color: #ffffff;
-    content: "-";
-    display: block;
-    font-size: 1.7em;
-    height: 0;
-    position: absolute;
-    right: 27px;
-    top: -10px;
-    width: 0; }
-  #dashboard-wrapper .plus:after {
-    color: #ffffff;
-    content: "+";
-    display: block;
-    font-size: 1.4em;
-    height: 0;
-    position: absolute;
-    right: 27px;
-    top: -2px;
-    width: 0; }
-  #dashboard-wrapper a.where-anorak-next {
+  #dashboard-wrapper .container.marketing section.goTop {
     display: none; }
+  #dashboard-wrapper .banker:before {
+    border-right-width: 20px;
+    border-top-width: 21px; }
+  #dashboard-wrapper .banker:after {
+    font-size: 10px;
+    left: -1px;
+    top: -1px; }
+  #dashboard-wrapper .minus:after {
+    left: 100px;
+    top: -7px; }
   #dashboard-wrapper #predikta-dashboard {
     padding-left: 0;
-    width: 440px; }
-    #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues .panel.panel-default {
-      border-radius: 4px;
-      clear: both;
-      display: block;
+    width: 100%; }
+    #dashboard-wrapper #predikta-dashboard section#points #box-wrapper {
+      max-height: none; }
+    #dashboard-wrapper #predikta-dashboard section#points header h1#points-header {
       float: left;
-      margin-bottom: 0;
-      overflow: visible;
-      width: 100%; }
-    #dashboard-wrapper #predikta-dashboard #myTabContent #week #leagues #players {
-      height: auto;
-      overflow: visible; }
-    #dashboard-wrapper #predikta-dashboard section#points {
-      width: 100%; }
-      #dashboard-wrapper #predikta-dashboard section#points header h1#points-header {
-        background: #009fe3;
-        background: -webkit-gradient(linear, left top, left bottom, from(#FF009FE3), to(#FF01519E));
-        background: -moz-linear-gradient(center top, #009fe3 0%, #01519e 100%);
-        background: -moz-gradient(center top, #009fe3 0%, #01519e 100%);
-        background: -webkit-linear-gradient(top, #009fe3 0%, #01519e 100%);
-        background: -o-linear-gradient(top, #009fe3 0%, #01519e 100%);
-        background: -ms-linear-gradient(top, #009fe3 0%, #01519e 100%);
-        background: linear-gradient(to bottom, #009fe3 0%, #01519e 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF009FE3', endColorstr='#FF01519E',GradientType=0 );
-        color: #ffffff;
-        cursor: pointer;
-        display: block;
-        float: right;
-        height: 36px;
-        margin-bottom: 0;
-        margin-top: 3px;
-        padding-left: 20px;
-        padding-top: 4px;
-        width: 100%; }
-      #dashboard-wrapper #predikta-dashboard section#points header .leaguedrop {
-        clear: both;
-        display: block;
-        float: left;
-        width: 100%; }
-        #dashboard-wrapper #predikta-dashboard section#points header .leaguedrop select {
+      font-size: 1.6em;
+      height: 32px;
+      padding-left: 10px;
+      padding-top: 3px;
+      width: 40%; }
+    #dashboard-wrapper #predikta-dashboard section#points header .leaguedrop {
+      clear: none;
+      display: inline;
+      float: right;
+      margin-top: 4px;
+      width: 55%; }
+      #dashboard-wrapper #predikta-dashboard section#points header .leaguedrop select {
+        margin-top: 0;
+        padding-bottom: 0; }
+    #dashboard-wrapper #predikta-dashboard section#points .table-responsive {
+      padding-left: 3px;
+      padding-right: 3px; }
+      #dashboard-wrapper #predikta-dashboard section#points .table-responsive table {
+        font-size: 12px; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tr .AKKA {
+          width: 30px; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table thead tr th.home-team {
+          width: 23%; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table thead tr th.actual {
+          width: 15%; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table thead tr th.away-team {
+          width: 24%; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table thead tr th.away {
+          padding-left: 0;
+          padding-right: 0;
+          width: 6%; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table thead tr th.points {
+          padding-left: 5px;
+          padding-right: 0;
+          width: 11%; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table thead tr th.AKKA {
+          padding-left: 0; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.game-state.bet-in-play {
+          width: 14%; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.game-state.bet-in-play span {
+            width: 100%; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.home-team {
+          width: 23%; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.away-team {
+          width: 23%; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.AKKA {
+          padding-left: 10px;
+          padding-right: 0;
+          width: 8%; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.points span {
+          font-size: 10px;
+          height: 24px;
+          margin-bottom: 1px;
+          margin-top: 3px;
+          padding-top: 5px;
+          width: 23px; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual {
+          padding-left: 4%;
+          width: 14%; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual table {
+            width: 100%; }
+            #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual table tr .actual-home {
+              padding-right: 4px; }
+            #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual table tr .dash {
+              padding-left: 2px;
+              padding-right: 2px; }
+            #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual table tr .actual-away {
+              padding-left: 4px; }
+            #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual table tr td {
+              padding-top: 3px; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .away {
+          width: 12%; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .away table tr .client-home {
+            padding-right: 4px; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .away table tr .dash {
+            padding-left: 2px;
+            padding-right: 2px; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .away table tr .client-away {
+            padding-left: 4px; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .away table tr td {
+            padding-top: 3px; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.away {
+          padding-left: 0;
+          padding-right: 0; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.away table tbody tr td {
+            padding-top: 3px; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .points {
+          padding-left: 0;
+          padding-right: 0;
+          width: 31px; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .points span {
+            height: 25px;
+            margin-bottom: 1px;
+            margin-top: 1px;
+            padding-top: 6px;
+            width: 25px; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .game-state {
+          font-family: trade gothic lt std;
+          padding-left: 0;
+          padding-right: 0;
+          padding-top: 5px;
+          width: 14%; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .game-state.bet-in-play {
+          padding-top: 0;
+          width: 15%; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .game-state.bet-in-play span {
+            bottom: 3px;
+            padding-top: 4px;
+            position: relative;
+            font-size: 12px;
+            height: 33px;
+            width: 45px;
+            font-family: 'Trade Gothic LT Std'; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr.pending td.game-state .time,
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr.pending td.game-state .day {
+          font-size: 10px; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr.pending td.game-state .time {
+          display: block;
           width: 100%; }
-      #dashboard-wrapper #predikta-dashboard section#points .table-responsive {
-        border: none;
-        font-size: 10px;
-        margin-bottom: 0; }
-    #dashboard-wrapper #predikta-dashboard section#league {
-      padding-left: 0;
-      padding-right: 0;
-      width: 100%; }
-      #dashboard-wrapper #predikta-dashboard section#league header h1 {
-        margin-top: 0; }
-      #dashboard-wrapper #predikta-dashboard section#league header ul#myTab {
-        clear: both;
-        display: block;
-        float: left;
-        width: 100%; }
-        #dashboard-wrapper #predikta-dashboard section#league header ul#myTab li a,
-        #dashboard-wrapper #predikta-dashboard section#league header ul#myTab li.active a {
-          margin-top: 0; }
-      #dashboard-wrapper #predikta-dashboard section#league #myTabContent #week .modal {
-        left: 0;
-        max-width: none;
-        top: 20px;
-        width: 100%; }
-        #dashboard-wrapper #predikta-dashboard section#league #myTabContent #week .modal .modal-dialog {
-          margin-left: 0;
-          width: 420px; }
-          #dashboard-wrapper #predikta-dashboard section#league #myTabContent #week .modal .modal-dialog .modal-content {
-            width: 440px; }
-            #dashboard-wrapper #predikta-dashboard section#league #myTabContent #week .modal .modal-dialog .modal-content .modal-body {
-              width: 390px; }
-      #dashboard-wrapper #predikta-dashboard section#league .table-responsive {
-        border: none;
-        font-size: 10px; }
-    #dashboard-wrapper #predikta-dashboard aside#bets #bets-table-wrapper {
-      width: 100%; }
-      #dashboard-wrapper #predikta-dashboard aside#bets #bets-table-wrapper .table-responsive {
-        border: none; }
-      #dashboard-wrapper #predikta-dashboard aside#bets #bets-table-wrapper #table-banner-add a img {
-        width: 100%; }
-    #dashboard-wrapper #predikta-dashboard aside#bets #banter {
-      margin-left: 0;
-      width: 100%; }
-      #dashboard-wrapper #predikta-dashboard aside#bets #banter #banterWrapper #commets-wrapper {
-        height: auto; }
-        #dashboard-wrapper #predikta-dashboard aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-child(2n) {
-          min-height: 45px; }
-          #dashboard-wrapper #predikta-dashboard aside#bets #banter #banterWrapper #commets-wrapper ul li:nth-child(2n):after {
-            top: 9px; }
-      #dashboard-wrapper #predikta-dashboard aside#bets #banter .new-post-wrapper {
-        margin-bottom: 60px; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr.in-play {
+          height: 28px; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr.in-play .points span {
+            height: 25px; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr.in-play td.akka {
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 15px; }
+    #dashboard-wrapper #predikta-dashboard section#points a.first-time-notification {
+      display: none; }
+    #dashboard-wrapper #predikta-dashboard aside#bets .table-responsive {
+      overflow: hidden; }
+      #dashboard-wrapper #predikta-dashboard aside#bets .table-responsive table thead {
+        width: 98%; }
 
   /*  dashboard-wrapper closing brace -------  */ }
 /*  640 closing brace ------------------------ */
 /*  HGV older iPhones and Android devices with screen size 320 x 480px */
 @media only screen and (max-width: 439px), only screen and (max-device-width: 439px) {
+  a.where-anorak-next {
+    display: none; }
+
+  section#points #box-wrapper {
+    max-height: none; }
+
   .navbar-wrapper {
     border-bottom-width: 4px; }
     .navbar-wrapper #PrediktaTop .container ul {
@@ -14433,7 +14487,10 @@ element.style {
     left: 100px;
     top: -7px; }
   #dashboard-wrapper #predikta-dashboard {
-    width: 310px; }
+    padding-left: 0;
+    width: 100%; }
+    #dashboard-wrapper #predikta-dashboard section#points #box-wrapper {
+      max-height: none; }
     #dashboard-wrapper #predikta-dashboard section#points header h1#points-header {
       float: left;
       font-size: 1.6em;
@@ -14454,34 +14511,76 @@ element.style {
       padding-left: 3px;
       padding-right: 3px; }
       #dashboard-wrapper #predikta-dashboard section#points .table-responsive table {
-        font-size: 8px; }
+        font-size: 10px; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tr .AKKA {
+          width: 30px; }
         #dashboard-wrapper #predikta-dashboard section#points .table-responsive table thead tr th.home-team {
-          width: 60px; }
+          width: 23%; }
         #dashboard-wrapper #predikta-dashboard section#points .table-responsive table thead tr th.actual {
-          width: 50px; }
+          width: 15%; }
         #dashboard-wrapper #predikta-dashboard section#points .table-responsive table thead tr th.away-team {
-          width: 50px; }
+          width: 24%; }
         #dashboard-wrapper #predikta-dashboard section#points .table-responsive table thead tr th.away {
           padding-left: 0;
           padding-right: 0;
-          width: 45px; }
+          width: 6%; }
         #dashboard-wrapper #predikta-dashboard section#points .table-responsive table thead tr th.points {
-          padding-left: 0;
+          padding-left: 5px;
           padding-right: 0;
-          width: 40px; }
-        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table thead tr th.akka {
+          width: 11%; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table thead tr th.AKKA {
           padding-left: 0; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td {
+          padding-top: 7px; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.game-state.bet-in-play {
+          width: 14%; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.game-state.bet-in-play span {
+            width: 100%; }
         #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.home-team {
-          width: 65px; }
-        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual {
-          width: 50px; }
-          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual table tr td {
-            padding-top: 3px; }
+          width: 25%; }
         #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.away-team {
-          width: 50px; }
+          width: 24%; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.AKKA {
+          padding-left: 10px;
+          padding-right: 0;
+          width: 8%; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.points span {
+          font-size: 10px;
+          height: 24px;
+          margin-bottom: 1px;
+          margin-top: 3px;
+          padding-top: 5px;
+          width: 23px; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual {
+          width: 11%;
+          padding-left: 1%;
+          padding-top: 3px; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual table {
+            width: 100%; }
+            #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual table tr .actual-home {
+              padding-right: 1px; }
+            #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual table tr .dash {
+              padding-left: 0;
+              padding-right: 0; }
+            #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual table tr .actual-away {
+              padding-left: 1px; }
+            #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .actual table tr td {
+              padding-top: 3px; }
+        #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .away {
+          width: 7%; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .away table tr .client-home {
+            padding-right: 1px; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .away table tr .dash {
+            padding-left: 0;
+            padding-right: 0; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .away table tr .client-away {
+            padding-left: 1px; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .away table tr td {
+            padding-top: 3px; }
         #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.away {
           padding-left: 0;
-          padding-right: 0; }
+          padding-right: 0;
+          padding-top: 4px; }
           #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr td.away table tbody tr td {
             padding-top: 3px; }
         #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr .points {
@@ -14520,6 +14619,10 @@ element.style {
           height: 28px; }
           #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr.in-play .points span {
             height: 25px; }
+          #dashboard-wrapper #predikta-dashboard section#points .table-responsive table tbody tr.in-play td.akka {
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 15px; }
     #dashboard-wrapper #predikta-dashboard section#points a.first-time-notification {
       display: none; }
     #dashboard-wrapper #predikta-dashboard aside#bets .table-responsive {

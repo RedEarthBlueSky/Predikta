@@ -110,14 +110,16 @@
     }
   }
 
-  .navbar-wrapper {
-    #PrediktaTop {
-      .container {
-        ul {
-          li.admin-panel {
-            .btn-group {
-              .dropdown-menu {
-                
+  #dashboard-wrapper {
+    #predikta-dashboard {
+      section#points {
+        .table-responsive {
+          table {
+            tbody {
+              tr {
+                .actual {
+                  width:90px;
+                }
               }
             }
           }
@@ -125,6 +127,7 @@
       }
     }
   }
+
 }
 
 

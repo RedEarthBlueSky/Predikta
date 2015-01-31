@@ -1,6 +1,7 @@
 ﻿
 @media only screen and (min-width:620px) and (max-width: 767px), only screen and (max-device-width: 767px) {
-  #dashboard-wrapper {
+
+ #dashboard-wrapper {
      .minus:after {
       color: #ffffff;
       content: "-";
@@ -55,6 +56,11 @@
             }
           }
         }
+        #box-wrapper {
+          max-height: inherit;
+          overflow-x: visible;
+          overflow-y: visible;
+        }
     .table-responsive {
                 border:none;
                 clear: both;
@@ -79,7 +85,7 @@
                       margin-bottom:0;
                       td {
                         padding-bottom:0;
-                        padding-top:8px;
+                        padding-top:10px;
                       }
                     }
                   }
@@ -111,7 +117,7 @@
                     .actual {
                        padding-left:0;
                        padding-right:0;
-                       padding-top:5px;
+                       padding-top:1px;
                        text-align:center;
                        width:80px;
                        table {
@@ -146,7 +152,7 @@
                       text-align:right;
                       padding-left:0;
                       padding-right:0;
-                      width:130px;
+                      width:140px;
                     }
                     .away-team {
                         width:130px;
@@ -158,24 +164,6 @@
                       .away-team {
                         width:96px;
                       }
-                    }
-                    th.home-team {
-                    }
-                    th.away {
-
-                    }
-                    .actual-home, 
-                    .actual-away,
-                    .client-home,
-                    .client-away {
-
-                    }
-                    .actual-home {
-                    }
-                    .client-home {
-
-                    }
-                    .dash {
                     }
                     .game-state {
                       border-top: none;

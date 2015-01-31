@@ -112,19 +112,24 @@
             width: 100%;
             tr {
               th.away {
-                width: 50px;
+                padding-left:52px;
+                padding-right:0;
+                width: 10px;
               }
               th.home-team {
-                width: 93px;
+                width: 100px;
               }
               th.actual {
                 width: 85px;
+                padding-left:10px;
               }
               th.away-team {
-                width: 60px;
+                width: 20px;
+                padding-left:5px;
               }
               th.points {
-                width: 53px;
+                padding-left:20px;
+                width: 20px;
               }
             }
           }
@@ -228,6 +233,18 @@
 
               td {
                 width: 78px;
+              }
+            }
+          }
+          tr {
+            .AKKA {
+              width:25px;
+            }
+            .points {
+              padding-left: 0;
+              padding-right: 5px;
+              span {
+                width:29px;
               }
             }
           }

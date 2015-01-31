@@ -77,3 +77,10 @@ footer {
   }
 }
 /*  END FOOTER ------------------------------------------------  */
+
+
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+  footer#footer {
+    position:relative;
+  }
+}
